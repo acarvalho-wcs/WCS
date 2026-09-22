@@ -949,12 +949,17 @@ function renderFeed() {
     const recent = isRecent(event);
     const location = [event.location?.name, event.location?.admin1, event.location?.country].filter(Boolean).join(' • ');
     const primary = event.primary_crime_type || 'OTHER_ENVIRONMENTAL_CRIME';
-    const hasMedia = (event.source_media || []).some((m) => m.type === 'image' && m.url);
-    return `<article class="event-item" data-event-id="${escapeAttr(event.id)}" tabindex="0" role="button">
-      <div class="event-meta"><span>${escapeHtml(location)}</span><span>${escapeHtml(formatDate(eventDate(event)))}</span></div>
-      <div class="event-title-row"><span class="event-dot-marker" style="--icon-bg:${escapeAttr(crimeTypeMeta[primary]?.color || '#777')}"></span><h3>${escapeHtml(localized(event.title))}</h3></div>
-      <p>${escapeHtml(localized(event.summary))}</p>
-      <div class="event-tags">${recent ? `<span class="tag recent">${escapeHtml(t('recent'))}</span>` : ''}<span class="tag crime" style="--tag-color:${escapeAttr(crimeTypeMeta[primary]?.color || '#777')}">${escapeHtml(crimeLabel(primary))}</span>${hasMedia ? `<span class="tag">▧ ${escapeHtml(t('sourceImages'))}</span>` : ''}</div>
+    const media = (event.source_media || []).find((m) => m.type === 'image' && m.url);
+    const hasMedia = Boolean(media);
+    const imageHtml = media ? `<div class="event-thumb-wrap"><img class="event-thumb" src="${escapeAttr(media.url)}" alt="${escapeAttr(localized(media.caption) || localized(event.title) || t('sourceImages'))}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.event-thumb-wrap')?.remove()" /></div>` : '';
+    return `<article class="event-item ${hasMedia ? 'has-thumb' : ''}" data-event-id="${escapeAttr(event.id)}" tabindex="0" role="button">
+      ${imageHtml}
+      <div class="event-item-body">
+        <div class="event-meta"><span>${escapeHtml(location)}</span><span>${escapeHtml(formatDate(eventDate(event)))}</span></div>
+        <div class="event-title-row"><span class="event-dot-marker" style="--icon-bg:${escapeAttr(crimeTypeMeta[primary]?.color || '#777')}"></span><h3>${escapeHtml(localized(event.title))}</h3></div>
+        <p>${escapeHtml(localized(event.summary))}</p>
+        <div class="event-tags">${recent ? `<span class="tag recent">${escapeHtml(t('recent'))}</span>` : ''}<span class="tag crime" style="--tag-color:${escapeAttr(crimeTypeMeta[primary]?.color || '#777')}">${escapeHtml(crimeLabel(primary))}</span>${hasMedia ? `<span class="tag">▧ ${escapeHtml(t('sourceImages'))}</span>` : ''}</div>
+      </div>
     </article>`;
   }).join('');
   $$('.event-item').forEach((el) => {
