@@ -1,7 +1,7 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-09-16T04:10:00+07:00",
-  "note": "56 validated seed/backfill events covering all eight sovereign Amazon countries plus French Guiana; primary source remains Netlify Database when available.",
+  "generated_at": "2026-09-22T19:19:00+08:00",
+  "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
       "id": "BR-AM-2026-0914-PIRAAKAG",
@@ -120,7 +120,7 @@
         "admin1": "Rondônia",
         "country": "Brasil",
         "lat": -11.3333,
-        "lon": -65.0,
+        "lon": -65,
         "precision": "indigenous_land_approximate"
       },
       "protected_area": {
@@ -1359,7 +1359,7 @@
         "admin1": "Pará",
         "country": "Brasil",
         "lat": -7.5,
-        "lon": -55.0,
+        "lon": -55,
         "precision": "regional_approximate"
       },
       "protected_area": {
@@ -2235,7 +2235,7 @@
         "name": "Riberalta",
         "admin1": "Beni",
         "country": "Bolivia",
-        "lat": -11.0,
+        "lat": -11,
         "lon": -66.08,
         "precision": "city_centroid_approximate"
       },
@@ -2568,7 +2568,7 @@
         "name": "Atahualpa / Tena",
         "admin1": "Napo",
         "country": "Ecuador",
-        "lat": -1.0,
+        "lat": -1,
         "lon": -77.8,
         "precision": "sector_approximate"
       },
@@ -3356,7 +3356,7 @@
         "name": "Sector El Kino / Parque Nacional Caura",
         "admin1": "Bolívar",
         "country": "Venezuela",
-        "lat": 6.0,
+        "lat": 6,
         "lon": -64.5,
         "precision": "protected_area_regional_approximate"
       },
@@ -3488,7 +3488,7 @@
         "admin1": "Bolívar",
         "country": "Venezuela",
         "lat": 7.1,
-        "lon": -63.0,
+        "lon": -63,
         "precision": "river_segment_approximate"
       },
       "protected_area": {
@@ -3691,7 +3691,7 @@
         "admin1": "Guyane française",
         "country": "Guiana Francesa",
         "lat": 4.5,
-        "lon": -53.0,
+        "lon": -53,
         "precision": "territory_wide_approximate"
       },
       "protected_area": {
@@ -3755,7 +3755,7 @@
         "name": "Águas francesas próximas à fronteira Brasil–Guiana Francesa",
         "admin1": "Guyane française",
         "country": "Guiana Francesa",
-        "lat": 4.0,
+        "lat": 4,
         "lon": -51.7,
         "precision": "offshore_approximate"
       },
@@ -3827,7 +3827,7 @@
         "name": "Saint-Jean d’Abounami–massif Lucifer–bassin de l’Inini",
         "admin1": "Guyane française",
         "country": "Guiana Francesa",
-        "lat": 4.0,
+        "lat": 4,
         "lon": -53.5,
         "precision": "multi_site_regional_approximate"
       },
@@ -3856,6 +3856,84 @@
           "publisher": "Outremers360",
           "url": "https://www.outremers360.com/bassin-atlantique-appli/guyane-intensification-et-resultats-majeurs-dans-la-lutte-contre-lorpaillage-illegal-dans-louest-guyanais",
           "published_at": "2026-06-09T12:00:00-03:00",
+          "source_type": "media_republishing_official_results"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "PE-MDD-2026-0910-INAMBARI",
+      "title": {
+        "pt": "Operação em Inambari destrói infraestrutura usada na mineração ilegal",
+        "en": "Inambari operation destroys infrastructure used for illegal mining",
+        "es": "Operación en Inambari destruye infraestructura usada en la minería ilegal"
+      },
+      "summary": {
+        "pt": "O Comando Operacional do Sul e a Polícia Nacional do Peru informaram a interdição e destruição de infraestrutura e logística usadas na mineração ilegal nos setores Platanal I, Platanal II, Tambopata e Barrial 2, no distrito de Inambari, Madre de Dios. Segundo o balanço oficial, foram afetados bens avaliados em S/ 13.343.670, incluindo 25 acampamentos rústicos, 12 balsas-draga, 3 balsas traca, 17 motores, 4 tolvas, 7 motocicletas e 190 galões de combustível.",
+        "en": "Peru's Southern Operational Command and National Police reported the interdiction and destruction of infrastructure and logistics used for illegal mining in the Platanal I, Platanal II, Tambopata and Barrial 2 sectors of Inambari District, Madre de Dios. According to the official release, assets valued at S/13,343,670 were affected, including 25 makeshift camps, 12 dredging rafts, 3 traca rafts, 17 engines, 4 sluices, 7 motorcycles and 190 gallons of fuel.",
+        "es": "El Comando Operacional del Sur y la Policía Nacional del Perú informaron la interdicción y destrucción de infraestructura y logística usadas para la minería ilegal en los sectores Platanal I, Platanal II, Tambopata y Barrial 2, distrito de Inambari, Madre de Dios. Según el balance oficial, se afectaron bienes valorizados en S/ 13 343 670, incluidos 25 campamentos rústicos, 12 balsas draga, 3 balsas traca, 17 motores, 4 tolvas, 7 motocicletas y 190 galones de combustible."
+      },
+      "case_context": {
+        "pt": "A ocorrência abrange quatro setores e a fonte oficial não fornece coordenadas operacionais precisas; por isso, o marcador usa uma referência aproximada do distrito de Inambari. O registro é tratado como um único evento multi-sítio da operação de 10 de setembro, evitando contar separadamente cada setor. A descrição do impacto econômico reproduz a estimativa divulgada pelas autoridades e não implica avaliação independente do valor.",
+        "en": "The incident spans four sectors and the official source does not provide precise operational coordinates; the map marker therefore uses an approximate Inambari District reference point. The record is treated as one multi-site event for the September 10 operation, rather than counting each sector separately. The economic-impact figure reflects the authorities' published estimate and is not an independent valuation.",
+        "es": "El evento abarca cuatro sectores y la fuente oficial no proporciona coordenadas operativas precisas; por ello, el marcador utiliza un punto de referencia aproximado del distrito de Inambari. El registro se trata como un único evento multisitio de la operación del 10 de septiembre, evitando contar cada sector por separado. La cifra de impacto económico reproduce la estimación divulgada por las autoridades y no constituye una valoración independiente."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": null,
+      "agencies": [
+        "Comando Operacional del Sur",
+        "2.ª Brigada de Selva de Protección de la Amazonía",
+        "Policía Nacional del Perú",
+        "SERNANP",
+        "Ministerio Público del Perú"
+      ],
+      "occurred_at": "2026-09-10T23:59:00-05:00",
+      "published_at": "2026-09-11T16:39:00-05:00",
+      "added_at": "2026-09-22T19:19:00+08:00",
+      "updated_at": "2026-09-22T19:19:00+08:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official enforcement record; no inference of criminal guilt beyond what the cited sources state.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Platanal I e II, Tambopata e Barrial 2 — distrito de Inambari",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.9767,
+        "lon": -69.9388,
+        "precision": "district_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Inambari",
+        "Platanal I",
+        "Platanal II",
+        "Barrial 2",
+        "balsas draga",
+        "minería ilegal",
+        "Madre de Dios",
+        "S/ 13 343 670"
+      ],
+      "sources": [
+        {
+          "publisher": "Comando Conjunto de las Fuerzas Armadas del Perú",
+          "url": "https://www.gob.pe/institucion/ccffaa/noticias/1443219-nueva-afectacion-millonaria-a-la-mineria-ilegal-tras-exitosa-operacion-conjunta-en-inambari",
+          "published_at": "2026-09-11T16:39:00-05:00",
+          "source_type": "official"
+        },
+        {
+          "publisher": "Agencia Andina",
+          "url": "https://andina.pe/agencia/noticia-ccffaa-nueva-afectacion-millonaria-a-mineria-ilegal-tras-exitosa-operacion-inambari-1091435.aspx",
+          "published_at": "2026-09-11T18:30:00-05:00",
           "source_type": "media_republishing_official_results"
         }
       ],
