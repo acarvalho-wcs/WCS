@@ -28,15 +28,23 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          BASE="https://amazoncrimes.netlify.app"
+          SOURCES=("https://6aa9fad52829c83fdafd2d37--amazoncrimes.netlify.app" "https://amazoncrimes.netlify.app")
+          BASE=""
+          for candidate in "${SOURCES[@]}"; do
+            if curl --retry 3 --retry-delay 4 --retry-all-errors -fsSL "$candidate/" -o /tmp/amazon-index.html; then
+              BASE="$candidate"
+              break
+            fi
+          done
+          if [ -z "$BASE" ]; then echo "No Amazon Crimes source endpoint is currently reachable" >&2; exit 22; fi
           rm -rf _site
           mkdir -p _site/assets/css _site/assets/js _site/assets/img _site/data
 
           echo "Downloading the currently published frontend"
-          curl -fsSL "$BASE/" -o _site/index.html
-          curl -fsSL "$BASE/assets/css/app.css" -o _site/assets/css/app.css
-          curl -fsSL "$BASE/assets/js/app.js" -o _site/assets/js/app.js
-          curl -fsSL "$BASE/assets/img/wcs-brasil.png" -o _site/assets/img/wcs-brasil.png
+          cp /tmp/amazon-index.html _site/index.html
+          curl --retry 3 --retry-delay 4 --retry-all-errors -fsSL "$BASE/assets/css/app.css" -o _site/assets/css/app.css
+          curl --retry 3 --retry-delay 4 --retry-all-errors -fsSL "$BASE/assets/js/app.js" -o _site/assets/js/app.js
+          curl --retry 3 --retry-delay 4 --retry-all-errors -fsSL "$BASE/assets/img/wcs-brasil.png" -o _site/assets/img/wcs-brasil.png
 
           echo "Mirroring static JSON files referenced by the live JavaScript"
           grep -oE '/data/[A-Za-z0-9._/-]+\.json' _site/assets/js/app.js | sort -u > /tmp/amazon-data-paths.txt || true
@@ -47,11 +55,11 @@ jobs:
           done < /tmp/amazon-data-paths.txt
 
           echo "Snapshotting operational read APIs"
-          curl -fsSL "$BASE/api/events?limit=5000" -o _site/data/events-api.json
-          curl -fsSL "$BASE/api/fire-hotspots" -o _site/data/fire-hotspots.json || echo '{"type":"FeatureCollection","features":[]}' > _site/data/fire-hotspots.json
-          curl -fsSL "$BASE/api/deforestation-alerts" -o _site/data/deforestation-alerts.json || echo '{"type":"FeatureCollection","features":[]}' > _site/data/deforestation-alerts.json
-          curl -fsSL "$BASE/api/amazon-boundary" -o _site/data/amazon-boundary.json || echo '{"type":"FeatureCollection","features":[]}' > _site/data/amazon-boundary.json
-          curl -fsSL "$BASE/api/health" -o _site/data/health.json || echo '{"ok":true,"service":"amazon-crimes-pages"}' > _site/data/health.json
+          curl --retry 3 --retry-delay 4 --retry-all-errors -fsSL "$BASE/api/events?limit=5000" -o _site/data/events-api.json
+          curl --retry 3 --retry-delay 4 --retry-all-errors -fsSL "$BASE/api/fire-hotspots" -o _site/data/fire-hotspots.json || echo '{"type":"FeatureCollection","features":[]}' > _site/data/fire-hotspots.json
+          curl --retry 3 --retry-delay 4 --retry-all-errors -fsSL "$BASE/api/deforestation-alerts" -o _site/data/deforestation-alerts.json || echo '{"type":"FeatureCollection","features":[]}' > _site/data/deforestation-alerts.json
+          curl --retry 3 --retry-delay 4 --retry-all-errors -fsSL "$BASE/api/amazon-boundary" -o _site/data/amazon-boundary.json || echo '{"type":"FeatureCollection","features":[]}' > _site/data/amazon-boundary.json
+          curl --retry 3 --retry-delay 4 --retry-all-errors -fsSL "$BASE/api/health" -o _site/data/health.json || echo '{"ok":true,"service":"amazon-crimes-pages"}' > _site/data/health.json
 
           python3 - <<'PY'
           from pathlib import Path
@@ -194,6 +202,8 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
