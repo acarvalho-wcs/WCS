@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-09-22T19:19:00+08:00",
+  "generated_at": "2026-09-22T19:23:00+08:00",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -253,6 +253,7 @@
       },
       "primary_crime_type": "MULTIPLE_ENVIRONMENTAL_CRIMES",
       "crime_types": [
+        "MULTIPLE_ENVIRONMENTAL_CRIMES",
         "ILLEGAL_MINING",
         "ILLEGAL_LOGGING",
         "ILLEGAL_DEFORESTATION",
@@ -272,7 +273,7 @@
       "occurred_at": "2026-08-28T23:59:00-04:00",
       "published_at": "2026-08-31T18:17:00-04:00",
       "added_at": "2026-09-16T00:55:00+07:00",
-      "updated_at": "2026-09-16T00:55:00+07:00",
+      "updated_at": "2026-09-22T19:23:00+08:00",
       "backfill": true,
       "validation_status": "CONFIRMED",
       "legal_status_note": "Official binational enforcement event; no inference of guilt.",
