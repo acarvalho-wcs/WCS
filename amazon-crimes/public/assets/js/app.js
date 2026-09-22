@@ -1,5 +1,4 @@
 import { translations } from './i18n.js';
-import { howItWorksContent } from './how-it-works.js';
 import { crimeTypes, crimeTypeMeta, mapConfig, futureLayerGroups } from './config.js';
 
 let language = localStorage.getItem('amazon-observatory-language') || 'pt';
@@ -185,9 +184,7 @@ function setLanguage(next) {
   document.documentElement.lang = language === 'pt' ? 'pt-BR' : language;
   $$('[data-i18n]').forEach((el) => { el.textContent = t(el.dataset.i18n); });
   $$('[data-i18n-placeholder]').forEach((el) => { el.placeholder = t(el.dataset.i18nPlaceholder); });
-  $$('[data-i18n-aria-label]').forEach((el) => { el.setAttribute('aria-label', t(el.dataset.i18nAriaLabel)); });
   $$('.lang').forEach((button) => button.classList.toggle('active', button.dataset.lang === language));
-  renderHowItWorks();
   populateFilters();
   renderLayerPanel();
   render();
@@ -1127,64 +1124,8 @@ function escapeHtml(value = '') {
 }
 function escapeAttr(value = '') { return escapeHtml(value); }
 
-function renderHowItWorks() {
-  const content = howItWorksContent[language] || howItWorksContent.pt;
-  const root = $('#how-it-works-content');
-  if (!root || !content) return;
-
-  const eyebrow = $('#how-it-works-eyebrow');
-  const title = $('#how-it-works-title');
-  if (eyebrow) eyebrow.textContent = content.eyebrow;
-  if (title) title.textContent = content.title;
-
-  const intro = (content.intro || [])
-    .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`)
-    .join('');
-
-  const sections = (content.sections || [])
-    .map((section) => `<section class="how-it-works-section">
-      <div class="how-it-works-section-number">${escapeHtml(section.number)}</div>
-      <div class="how-it-works-section-body">
-        <h3>${escapeHtml(section.title)}</h3>
-        ${(section.paragraphs || []).map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join('')}
-      </div>
-    </section>`)
-    .join('');
-
-  root.innerHTML = `
-    <div class="how-it-works-intro">${intro}</div>
-    <div class="how-it-works-sections">${sections}</div>
-    <div class="how-it-works-signoff">
-      <strong>${escapeHtml(content.footerTitle || '')}</strong>
-      <p>${escapeHtml(content.footerText || '')}</p>
-    </div>
-  `;
-}
-
-function openHowItWorks() {
-  const dialog = $('#how-it-works-dialog');
-  if (!dialog) return;
-  renderHowItWorks();
-  if (typeof dialog.showModal === 'function') dialog.showModal();
-  else dialog.setAttribute('open', '');
-  document.body.classList.add('how-it-works-open');
-}
-
-function closeHowItWorks() {
-  const dialog = $('#how-it-works-dialog');
-  if (!dialog) return;
-  if (typeof dialog.close === 'function' && dialog.open) dialog.close();
-  else dialog.removeAttribute('open');
-  document.body.classList.remove('how-it-works-open');
-}
-
 function bindControls() {
   $$('.lang').forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
-  $('#how-it-works-open')?.addEventListener('click', openHowItWorks);
-  $('#how-it-works-close')?.addEventListener('click', closeHowItWorks);
-  $('#how-it-works-dialog')?.addEventListener('click', (event) => {
-    if (event.target === event.currentTarget) closeHowItWorks();
-  });
   $('#search').addEventListener('input', (event) => { state.search = event.target.value; applyFilters(); });
   $('#crime-type').addEventListener('change', (event) => { state.crimeType = event.target.value; applyFilters(); });
   $('#validation-status').addEventListener('change', (event) => { state.status = event.target.value; applyFilters(); });
@@ -1201,12 +1142,7 @@ function bindControls() {
   $('#layers-close').addEventListener('click', () => toggleLayersPanel(false));
   $('#layers-all').addEventListener('click', () => { crimeTypes.forEach((type) => activeCrimeLayers.add(type)); updateLayerVisibility(); });
   $('#layers-none').addEventListener('click', () => { activeCrimeLayers.clear(); updateLayerVisibility(); });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      toggleLayersPanel(false);
-      closeHowItWorks();
-    }
-  });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') toggleLayersPanel(false); });
   $$('[data-theme-choice]').forEach((button) => button.classList.toggle('active', button.dataset.themeChoice === mapTheme));
   $$('[data-mode]').forEach((button) => button.classList.toggle('active', button.dataset.mode === mapMode));
 }
