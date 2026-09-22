@@ -33,34 +33,58 @@ function attr(tag, name) {
   return match?.[1] || null;
 }
 
-function looksLikeContentImage(url) {
+function looksLikeContentImage(url, trusted = false) {
   const s = String(url || '').toLowerCase();
   if (!s) return false;
-  const blocked = ['logo', 'favicon', 'sprite', 'avatar', 'icon-', 'govbr-logo', 'banner-governo'];
+  const blocked = [
+    'logo', 'favicon', 'sprite', 'avatar', 'icon-', 'govbr-logo', 'banner-governo',
+    'blank.gif', 'spacer.gif', 'pixel.', 'tracking', 'analytics'
+  ];
   if (blocked.some((token) => s.includes(token))) return false;
-  return /\\.(?:jpe?g|png|webp|gif|avif)(?:$|[?#/])/i.test(s) || s.includes('/@@images/');
+  if (trusted) return true;
+  return /\\.(?:jpe?g|png|webp|gif|avif)(?:$|[?#/])/i.test(s)
+    || s.includes('/@@images/')
+    || s.includes('/wp-content/uploads/')
+    || s.includes('/uploads/')
+    || s.includes('/media/')
+    || s.includes('/images/')
+    || s.includes('/image/');
 }
 
 function extractImageCandidates(html, baseUrl) {
   const candidates = [];
-  const push = (raw, priority) => {
+  const push = (raw, priority, trusted = false) => {
     const url = normalizeUrl(raw, baseUrl);
-    if (!url || !looksLikeContentImage(url)) return;
+    if (!url || !looksLikeContentImage(url, trusted)) return;
     candidates.push({ url, priority });
   };
 
   for (const tag of html.match(/<meta\\b[^>]*>/gi) || []) {
     const key = (attr(tag, 'property') || attr(tag, 'name') || '').toLowerCase();
     if (!['og:image', 'og:image:secure_url', 'twitter:image', 'twitter:image:src'].includes(key)) continue;
-    push(attr(tag, 'content'), 100);
+    push(attr(tag, 'content'), 120, true);
   }
 
-  for (const tag of html.match(/<img\\b[^>]*>/gi) || []) {
-    const src = attr(tag, 'src') || attr(tag, 'data-src') || attr(tag, 'data-original');
-    push(src, String(src || '').includes('/@@images/') ? 90 : 50);
-    const srcset = attr(tag, 'srcset');
+  const mediaTags = [
+    ...(html.match(/<img\\b[^>]*>/gi) || []),
+    ...(html.match(/<source\\b[^>]*>/gi) || [])
+  ];
+
+  for (const tag of mediaTags) {
+    const src =
+      attr(tag, 'src')
+      || attr(tag, 'data-src')
+      || attr(tag, 'data-original')
+      || attr(tag, 'data-lazy-src')
+      || attr(tag, 'data-original-src')
+      || attr(tag, 'data-full-url');
+    push(src, String(src || '').includes('/@@images/') ? 100 : 60);
+
+    const srcset = attr(tag, 'srcset') || attr(tag, 'data-srcset') || attr(tag, 'data-lazy-srcset');
     if (srcset) {
-      for (const part of srcset.split(',')) push(part.trim().split(/\\s+/)[0], 55);
+      for (const part of srcset.split(',')) {
+        push(part.trim().split(/\\s+/)[0], 70);
+      }
     }
   }
 
@@ -73,7 +97,7 @@ function extractImageCandidates(html, baseUrl) {
       seen.add(key);
       return true;
     })
-    .slice(0, 10)
+    .slice(0, 20)
     .map((item) => item.url);
 }
 
@@ -157,17 +181,37 @@ async function discoverCandidates(event) {
   return candidates.slice(0, 12);
 }
 
-async function downloadImage(event, candidate) {
+async function downloadImage(event, candidate, depth = 0) {
   try {
     const response = await fetchWithTimeout(candidate.url, {
       headers: {
-        accept: 'image/avif,image/webp,image/*,*/*;q=0.8',
+        accept: 'image/avif,image/webp,image/*,text/html,application/xhtml+xml,*/*;q=0.8',
         referer: candidate.source_url || event.sources?.[0]?.url || ''
       }
     }, IMAGE_TIMEOUT_MS);
 
-    const type = response.headers.get('content-type') || '';
-    if (!response.ok || !type.startsWith('image/')) return null;
+    if (!response.ok) return null;
+
+    const type = (response.headers.get('content-type') || '').toLowerCase();
+
+    // Some public-sector CMSs expose an image through an HTML media-object
+    // page (for example, a /view URL). Follow the page's OG/image candidates
+    // once instead of discarding the media.
+    if (depth < 1 && (type.includes('text/html') || type.includes('application/xhtml+xml'))) {
+      const html = await response.text();
+      const nested = extractImageCandidates(html, response.url || candidate.url);
+      for (const imageUrl of nested.slice(0, 8)) {
+        if (imageUrl === candidate.url) continue;
+        const cached = await downloadImage(event, {
+          ...candidate,
+          url: imageUrl
+        }, depth + 1);
+        if (cached) return cached;
+      }
+      return null;
+    }
+
+    if (!type.startsWith('image/')) return null;
 
     const declaredLength = Number(response.headers.get('content-length') || 0);
     if (declaredLength && declaredLength > MAX_BYTES) return null;
@@ -175,7 +219,7 @@ async function downloadImage(event, candidate) {
     const buffer = Buffer.from(await response.arrayBuffer());
     if (!buffer.length || buffer.length > MAX_BYTES) return null;
 
-    const ext = extensionFor(type, candidate.url);
+    const ext = extensionFor(type, response.url || candidate.url);
     const filename = `${safeName(event.id)}${ext}`;
     const outPath = path.join(mediaDir, filename);
     await fs.writeFile(outPath, buffer);
@@ -183,7 +227,7 @@ async function downloadImage(event, candidate) {
     return {
       type: 'image',
       url: `./media/events/${filename}`,
-      original_url: candidate.url,
+      original_url: response.url || candidate.url,
       source_url: candidate.source_url || event.sources?.[0]?.url || null,
       credit: candidate.credit || event.sources?.[0]?.publisher || null,
       caption: candidate.caption || null,
