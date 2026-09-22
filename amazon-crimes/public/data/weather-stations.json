@@ -1,0 +1,113 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.0217,
+          -3.119
+        ]
+      },
+      "properties": {
+        "id": "ws-manaus-inmet",
+        "source_kind": "weather_station",
+        "name": "Estação meteorológica de Manaus",
+        "name_en": "Manaus weather station",
+        "name_es": "Estación meteorológica de Manaos",
+        "agency": "INMET / referência pública",
+        "location": "Manaus, Amazonas, Brasil",
+        "precision": "city_reference",
+        "status": "referência pública",
+        "summary": "Ponto de apoio para leitura meteorológica e contexto operacional local.",
+        "source_url": "https://portal.inmet.gov.br/",
+        "network": "INMET / rede meteorológica pública",
+        "station_type": "Estação meteorológica de referência",
+        "variables": "Precipitação, temperatura, umidade, vento e pressão, conforme disponibilidade da estação",
+        "data_note": "Camada inicial de referência. A próxima etapa poderá conectar telemetria/observações em tempo quase real."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.7107,
+          -3.3533
+        ]
+      },
+      "properties": {
+        "id": "ws-tefe",
+        "source_kind": "weather_station",
+        "name": "Estação meteorológica de Tefé",
+        "name_en": "Tefé weather station",
+        "name_es": "Estación meteorológica de Tefé",
+        "agency": "INMET / referência pública",
+        "location": "Tefé, Amazonas, Brasil",
+        "precision": "city_reference",
+        "status": "referência pública",
+        "summary": "Ponto de apoio para monitoramento de chuva, temperatura e condições atmosféricas no Médio Solimões.",
+        "source_url": "https://portal.inmet.gov.br/",
+        "network": "INMET / rede meteorológica pública",
+        "station_type": "Estação meteorológica de referência",
+        "variables": "Precipitação, temperatura, umidade, vento e pressão, conforme disponibilidade da estação",
+        "data_note": "Camada inicial de referência. A próxima etapa poderá conectar telemetria/observações em tempo quase real."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.9381,
+          -4.2525
+        ]
+      },
+      "properties": {
+        "id": "ws-tabatinga",
+        "source_kind": "weather_station",
+        "name": "Estação meteorológica de Tabatinga",
+        "name_en": "Tabatinga weather station",
+        "name_es": "Estación meteorológica de Tabatinga",
+        "agency": "INMET / referência pública",
+        "location": "Tabatinga, Amazonas, Brasil",
+        "precision": "city_reference",
+        "status": "referência pública",
+        "summary": "Ponto de apoio para contexto meteorológico na tríplice fronteira amazônica.",
+        "source_url": "https://portal.inmet.gov.br/",
+        "network": "INMET / rede meteorológica pública",
+        "station_type": "Estação meteorológica de referência",
+        "variables": "Precipitação, temperatura, umidade, vento e pressão, conforme disponibilidade da estação",
+        "data_note": "Camada inicial de referência. A próxima etapa poderá conectar telemetria/observações em tempo quase real."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.9039,
+          -8.7608
+        ]
+      },
+      "properties": {
+        "id": "ws-porto-velho",
+        "source_kind": "weather_station",
+        "name": "Estação meteorológica de Porto Velho",
+        "name_en": "Porto Velho weather station",
+        "name_es": "Estación meteorológica de Porto Velho",
+        "agency": "INMET / referência pública",
+        "location": "Porto Velho, Rondônia, Brasil",
+        "precision": "city_reference",
+        "status": "referência pública",
+        "summary": "Ponto de apoio para contexto meteorológico no corredor Madeira–Rondônia.",
+        "source_url": "https://portal.inmet.gov.br/",
+        "network": "INMET / rede meteorológica pública",
+        "station_type": "Estação meteorológica de referência",
+        "variables": "Precipitação, temperatura, umidade, vento e pressão, conforme disponibilidade da estação",
+        "data_note": "Camada inicial de referência. A próxima etapa poderá conectar telemetria/observações em tempo quase real."
+      }
+    }
+  ]
+}

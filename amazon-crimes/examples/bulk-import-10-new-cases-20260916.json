@@ -1,0 +1,680 @@
+{
+  "source": "osint_validated_2026-09-16",
+  "dry_run": false,
+  "events": [
+    {
+      "id": "BR-PA-2026-0904-AURUM-TAPAJOS",
+      "title": {
+        "pt": "Operação Aurum Tapajós apura exploração ilegal de ouro na APA do Tapajós",
+        "en": "Operation Aurum Tapajós investigates illegal gold mining in the Tapajós protected area",
+        "es": "Operación Aurum Tapajós investiga extracción ilegal de oro en el APA del Tapajós"
+      },
+      "summary": {
+        "pt": "A PF cumpriu dois mandados de busca e apreensão em investigação sobre exploração ilegal de ouro na APA do Tapajós. A apuração teve origem em fiscalização do ICMBio que identificou atividade mineral sem licença válida em cerca de 40 hectares de floresta nativa.",
+        "en": "Federal Police served two search warrants in an investigation into illegal gold mining in the Tapajós Environmental Protection Area. The case originated from ICMBio inspection that identified unlicensed mining over about 40 hectares of native forest.",
+        "es": "La Policía Federal cumplió dos órdenes de registro en una investigación sobre extracción ilegal de oro en el APA del Tapajós. La investigación surgió de una fiscalización del ICMBio que identificó minería sin licencia en unas 40 hectáreas de bosque nativo."
+      },
+      "case_context": {
+        "pt": "Trata-se de investigação oficial em unidade de conservação; o ponto cartográfico representa Novo Progresso de forma aproximada, não o sítio exato investigado.",
+        "en": "This is an official investigation in a protected area; the mapped point approximates Novo Progresso, not the exact investigated site.",
+        "es": "Se trata de una investigación oficial en un área protegida; el punto cartográfico aproxima Novo Progresso, no el sitio exacto investigado."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING",
+        "PROTECTED_AREA_INVASION"
+      ],
+      "operation_name": "Aurum Tapajós",
+      "agencies": [
+        "Polícia Federal",
+        "ICMBio"
+      ],
+      "occurred_at": "2026-09-04T11:52:00-03:00",
+      "published_at": "2026-09-04T11:52:00-03:00",
+      "added_at": "2026-09-16T02:05:00+07:00",
+      "updated_at": "2026-09-16T02:05:00+07:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "location": {
+        "name": "APA do Tapajós / Novo Progresso",
+        "admin1": "Pará",
+        "country": "Brasil",
+        "lat": -7.143,
+        "lon": -55.378,
+        "precision": "municipality_centroid_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "Área de Proteção Ambiental do Tapajós"
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "ouro",
+        "APA do Tapajós",
+        "Novo Progresso",
+        "40 hectares"
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-deflagra-operacao-contra-exploracao-ilegal-de-ouro-em-area-de-protecao-ambiental-no-para",
+          "published_at": "2026-09-04T11:52:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "legal_status_note": "Official enforcement or investigation record; no inference of guilt beyond the cited source."
+    },
+    {
+      "id": "BR-AM-2026-0827-CORRENTES-CAPITAL",
+      "title": {
+        "pt": "Operação Correntes do Capital apura desmatamento e ocupação irregular em Manicoré",
+        "en": "Operation Correntes do Capital investigates deforestation and illegal occupation in Manicoré",
+        "es": "Operación Correntes do Capital investiga deforestación y ocupación irregular en Manicoré"
+      },
+      "summary": {
+        "pt": "A PF cumpriu ordens judiciais em investigação sobre desmatamento ilegal em larga escala, ocupação irregular de terras públicas e exploração de trabalhadores em Manicoré. A PF informou dano ambiental estimado acima de R$ 179 milhões e resgate anterior de 50 trabalhadores.",
+        "en": "Federal Police executed court orders in an investigation into large-scale illegal deforestation, irregular occupation of public land and labor exploitation in Manicoré. Authorities reported estimated environmental damage above R$179 million and an earlier rescue of 50 workers.",
+        "es": "La Policía Federal ejecutó órdenes judiciales en una investigación sobre deforestación ilegal a gran escala, ocupación irregular de tierras públicas y explotación laboral en Manicoré. Se informó un daño ambiental estimado superior a R$179 millones y el rescate previo de 50 trabajadores."
+      },
+      "case_context": {
+        "pt": "O registro representa uma investigação oficial; não implica condenação dos investigados.",
+        "en": "The record represents an official investigation and does not imply conviction of those investigated.",
+        "es": "El registro representa una investigación oficial y no implica condena de los investigados."
+      },
+      "primary_crime_type": "ILLEGAL_DEFORESTATION",
+      "crime_types": [
+        "ILLEGAL_DEFORESTATION",
+        "LAND_GRABBING"
+      ],
+      "operation_name": "Correntes do Capital",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "occurred_at": "2026-08-27T08:54:00-04:00",
+      "published_at": "2026-08-27T08:54:00-04:00",
+      "added_at": "2026-09-16T02:05:00+07:00",
+      "updated_at": "2026-09-16T02:05:00+07:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "priority": "URGENT",
+      "location": {
+        "name": "Manicoré",
+        "admin1": "Amazonas",
+        "country": "Brasil",
+        "lat": -5.809,
+        "lon": -61.3,
+        "precision": "municipality_centroid_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "desmatamento",
+        "terras públicas",
+        "trabalho análogo à escravidão",
+        "Manicoré"
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/08/pf-reprime-crimes-ambientais-e-exploracao-de-trabalhadores-em-manicore-am",
+          "published_at": "2026-08-27T08:54:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "legal_status_note": "Official enforcement or investigation record; no inference of guilt beyond the cited source."
+    },
+    {
+      "id": "BR-RO-2026-0826-RIO-MADEIRA-10-DRAGAS",
+      "title": {
+        "pt": "PF e Ibama inutilizam 10 dragas de garimpo ilegal no Rio Madeira",
+        "en": "Federal Police and Ibama disable 10 illegal-mining dredges on the Madeira River",
+        "es": "Policía Federal e Ibama inutilizan 10 dragas de minería ilegal en el río Madeira"
+      },
+      "summary": {
+        "pt": "Ação de PF e Ibama localizou e destruiu 10 dragas usadas na extração ilegal de ouro no Rio Madeira, além de motores, combustível e outros equipamentos.",
+        "en": "A Federal Police and Ibama action located and destroyed 10 dredges used for illegal gold extraction on the Madeira River, along with engines, fuel and other equipment.",
+        "es": "Una acción de la Policía Federal e Ibama localizó y destruyó 10 dragas usadas para extracción ilegal de oro en el río Madeira, además de motores, combustible y otros equipos."
+      },
+      "case_context": {
+        "pt": "O ponto é aproximado no trecho de Porto Velho; a fonte não publica coordenadas das dez dragas.",
+        "en": "The point is approximate on the Porto Velho stretch; the source does not publish coordinates for the ten dredges.",
+        "es": "El punto es aproximado en el tramo de Porto Velho; la fuente no publica coordenadas de las diez dragas."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Ação PF-Ibama Rio Madeira",
+      "agencies": [
+        "Polícia Federal",
+        "Ibama"
+      ],
+      "occurred_at": "2026-08-26T12:00:00-04:00",
+      "published_at": "2026-08-27T12:04:00-04:00",
+      "added_at": "2026-09-16T02:05:00+07:00",
+      "updated_at": "2026-09-16T02:05:00+07:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "location": {
+        "name": "Rio Madeira / Porto Velho",
+        "admin1": "Rondônia",
+        "country": "Brasil",
+        "lat": -8.761,
+        "lon": -63.903,
+        "precision": "river_segment_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "dragas",
+        "ouro",
+        "Rio Madeira",
+        "Ibama"
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/08/pf-e-ibama-inutilizam-dez-dragas-em-acao-contra-garimpo-ilegal-no-rio-madeira",
+          "published_at": "2026-08-27T12:04:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "legal_status_note": "Official enforcement or investigation record; no inference of guilt beyond the cited source."
+    },
+    {
+      "id": "BR-MT-2026-0828-ARCANJO",
+      "title": {
+        "pt": "Operação Arcanjo investiga comercialização de ouro de origem ilícita",
+        "en": "Operation Arcanjo investigates trade in illicit-origin gold",
+        "es": "Operación Arcanjo investiga comercialización de oro de origen ilícito"
+      },
+      "summary": {
+        "pt": "A PF cumpriu 22 mandados de busca e apreensão e dois de prisão preventiva em investigação sobre aquisição, circulação e comercialização de ouro de origem ilícita. A apuração identificou cerca de 17,3 kg de ouro negociados e movimentação superior a R$ 5,2 milhões.",
+        "en": "Federal Police served 22 search warrants and two preventive-arrest warrants in an investigation into acquisition, circulation and trade of illicit-origin gold. Authorities identified about 17.3 kg of gold negotiated and more than R$5.2 million in related transactions.",
+        "es": "La Policía Federal cumplió 22 órdenes de registro y dos de prisión preventiva en una investigación sobre adquisición, circulación y comercialización de oro de origen ilícito. Se identificaron unos 17,3 kg de oro negociados y más de R$5,2 millones en movimientos relacionados."
+      },
+      "case_context": {
+        "pt": "O evento é uma investigação sobre a cadeia comercial do ouro; o ponto representa Poconé, origem indicada pela PF, e não todos os locais das medidas judiciais.",
+        "en": "The event concerns the gold trade chain; the mapped point represents Poconé, identified by Federal Police as the scheme origin, not every warrant location.",
+        "es": "El evento se refiere a la cadena comercial del oro; el punto representa Poconé, señalado por la Policía Federal como origen del esquema, no todos los lugares de las medidas."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING",
+        "OTHER_ENVIRONMENTAL_CRIME"
+      ],
+      "operation_name": "Arcanjo",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "occurred_at": "2026-08-28T08:18:00-04:00",
+      "published_at": "2026-08-28T08:18:00-04:00",
+      "added_at": "2026-09-16T02:05:00+07:00",
+      "updated_at": "2026-09-16T02:05:00+07:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "location": {
+        "name": "Poconé",
+        "admin1": "Mato Grosso",
+        "country": "Brasil",
+        "lat": -16.256,
+        "lon": -56.622,
+        "precision": "municipality_centroid_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "ouro",
+        "lavagem de dinheiro",
+        "Poconé",
+        "17,3 kg"
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/08/pf-reprime-comercializacao-de-ouro-de-origem-ilicita/",
+          "published_at": "2026-08-28T08:18:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "legal_status_note": "Official enforcement or investigation record; no inference of guilt beyond the cited source."
+    },
+    {
+      "id": "BR-RR-2026-0820-AQUILA-NERA-II",
+      "title": {
+        "pt": "Operação Aquila Nera II investiga apoio aéreo a garimpo ilegal em terra indígena",
+        "en": "Operation Aquila Nera II investigates air support to illegal mining in Indigenous land",
+        "es": "Operación Aquila Nera II investiga apoyo aéreo a minería ilegal en tierra indígena"
+      },
+      "summary": {
+        "pt": "A PF deflagrou a segunda fase da Operação Aquila Nera para investigar grupo suspeito de atuar no garimpo ilegal em terra indígena, com uso de aeronaves para apoio logístico e possível lavagem de capitais. A investigação começou após voo em baixa altitude sobre a Terra Indígena Yanomami.",
+        "en": "Federal Police launched the second phase of Operation Aquila Nera to investigate a group suspected of illegal mining in Indigenous land using aircraft for logistics and possible money laundering. The investigation began after a low-altitude flight over Yanomami Indigenous Land.",
+        "es": "La Policía Federal lanzó la segunda fase de la Operación Aquila Nera para investigar a un grupo sospechoso de minería ilegal en tierra indígena usando aeronaves para logística y posible lavado de activos. La investigación comenzó tras un vuelo a baja altura sobre la Tierra Indígena Yanomami."
+      },
+      "case_context": {
+        "pt": "A posição é um centróide aproximado da Terra Indígena Yanomami e não representa o aeródromo clandestino identificado na investigação.",
+        "en": "The position is an approximate centroid of Yanomami Indigenous Land and does not represent the clandestine airstrip identified in the investigation.",
+        "es": "La posición es un centroide aproximado de la Tierra Indígena Yanomami y no representa la pista clandestina identificada en la investigación."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING",
+        "PROTECTED_AREA_INVASION"
+      ],
+      "operation_name": "Aquila Nera II",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "occurred_at": "2026-08-20T15:31:00-04:00",
+      "published_at": "2026-08-20T15:31:00-04:00",
+      "added_at": "2026-09-16T02:05:00+07:00",
+      "updated_at": "2026-09-16T02:05:00+07:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "location": {
+        "name": "Terra Indígena Yanomami",
+        "admin1": "Roraima / Amazonas",
+        "country": "Brasil",
+        "lat": 2.1,
+        "lon": -63.8,
+        "precision": "indigenous_land_centroid_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "Terra Indígena Yanomami"
+      },
+      "impacts": {
+        "indigenous_or_local_communities": true
+      },
+      "cross_border": false,
+      "keywords": [
+        "aeronave",
+        "garimpo",
+        "Yanomami",
+        "pista clandestina"
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/08/pf-deflagra-segunda-fase-da-operacao-aquila-nera-em-roraima",
+          "published_at": "2026-08-20T15:31:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "legal_status_note": "Official enforcement or investigation record; no inference of guilt beyond the cited source."
+    },
+    {
+      "id": "BR-MT-2026-0818-SOLO-SAGRADO",
+      "title": {
+        "pt": "Operação Solo Sagrado combate extração e comercialização ilegal de ouro na TI Sararé",
+        "en": "Operation Solo Sagrado targets illegal gold extraction and trade in Sararé Indigenous Land",
+        "es": "Operación Solo Sagrado combate extracción y comercialización ilegal de oro en la TI Sararé"
+      },
+      "summary": {
+        "pt": "PF, Receita Federal e MPF realizaram operação contra estrutura investigada por extração ilegal de ouro na Terra Indígena Sararé e inserção do minério no mercado formal. Foram cumpridos 10 mandados de busca e apreensão e um de prisão preventiva.",
+        "en": "Federal Police, Federal Revenue and federal prosecutors carried out an operation against a structure investigated for illegal gold extraction in Sararé Indigenous Land and laundering the mineral into the formal market. Ten search warrants and one preventive-arrest warrant were executed.",
+        "es": "Policía Federal, Receita Federal y MPF realizaron una operación contra una estructura investigada por extracción ilegal de oro en la Tierra Indígena Sararé e inserción del mineral en el mercado formal. Se cumplieron diez órdenes de registro y una de prisión preventiva."
+      },
+      "case_context": {
+        "pt": "A coordenada é o centro aproximado da TI Sararé, calculado a partir da faixa geográfica publicada para o território; não indica frente de garimpo específica.",
+        "en": "The coordinate is an approximate center of Sararé Indigenous Land based on its published geographic range; it does not indicate a specific mining front.",
+        "es": "La coordenada es un centro aproximado de la Tierra Indígena Sararé basado en su rango geográfico publicado; no indica un frente minero específico."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING",
+        "PROTECTED_AREA_INVASION"
+      ],
+      "operation_name": "Solo Sagrado",
+      "agencies": [
+        "Polícia Federal",
+        "Receita Federal",
+        "Ministério Público Federal"
+      ],
+      "occurred_at": "2026-08-18T09:25:00-04:00",
+      "published_at": "2026-08-18T09:25:00-04:00",
+      "added_at": "2026-09-16T02:05:00+07:00",
+      "updated_at": "2026-09-16T02:05:00+07:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "priority": "URGENT",
+      "location": {
+        "name": "Terra Indígena Sararé",
+        "admin1": "Mato Grosso",
+        "country": "Brasil",
+        "lat": -14.72,
+        "lon": -59.5,
+        "precision": "indigenous_land_centroid_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "Terra Indígena Sararé"
+      },
+      "impacts": {
+        "indigenous_or_local_communities": true
+      },
+      "cross_border": false,
+      "keywords": [
+        "ouro",
+        "Sararé",
+        "Nambikwara",
+        "logística"
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/08/pf-receita-e-mpf-combatem-extracao-ilegal-de-ouro-em-terra-indigena-de-mato-grosso",
+          "published_at": "2026-08-18T09:25:00-04:00",
+          "source_type": "official"
+        },
+        {
+          "publisher": "Receita Federal",
+          "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/agosto/receita-federal-participa-da-operacao-solo-sagrado",
+          "published_at": "2026-08-18T08:13:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "legal_status_note": "Official enforcement or investigation record; no inference of guilt beyond the cited source."
+    },
+    {
+      "id": "BR-RO-MT-2026-0804-OLHOS-FECHADOS-II",
+      "title": {
+        "pt": "Operação Olhos Fechados II aprofunda investigação sobre desmatamento e garimpo ilegal",
+        "en": "Operation Olhos Fechados II expands investigation into deforestation and illegal mining",
+        "es": "Operación Olhos Fechados II profundiza investigación sobre deforestación y minería ilegal"
+      },
+      "summary": {
+        "pt": "A segunda fase cumpriu 22 mandados de busca e apreensão e determinou monitoramento eletrônico de 17 investigados, além de sequestro de até R$ 11,3 milhões em bens e valores. A investigação apura desmatamento, garimpo ilegal, usurpação de bens da União e lavagem de dinheiro.",
+        "en": "The second phase executed 22 search warrants, electronic monitoring of 17 investigated people and seizure of up to R$11.3 million in assets. The investigation covers deforestation, illegal mining, unlawful exploitation of federal resources and money laundering.",
+        "es": "La segunda fase cumplió 22 órdenes de registro, monitoreo electrónico de 17 investigados y embargo de hasta R$11,3 millones en bienes. La investigación abarca deforestación, minería ilegal, usurpación de bienes de la Unión y lavado de dinero."
+      },
+      "case_context": {
+        "pt": "O ponto representa Ji-Paraná, base operacional divulgada pela PF; a fonte não publica a coordenada exata das áreas ambientais investigadas.",
+        "en": "The point represents Ji-Paraná, the operational location published by Federal Police; the source does not publish exact coordinates of the investigated environmental sites.",
+        "es": "El punto representa Ji-Paraná, base operativa divulgada por la Policía Federal; la fuente no publica coordenadas exactas de las áreas ambientales investigadas."
+      },
+      "primary_crime_type": "MULTIPLE_ENVIRONMENTAL_CRIMES",
+      "crime_types": [
+        "ILLEGAL_DEFORESTATION",
+        "ILLEGAL_MINING",
+        "MULTIPLE_ENVIRONMENTAL_CRIMES"
+      ],
+      "operation_name": "Olhos Fechados II",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "occurred_at": "2026-08-04T11:07:00-04:00",
+      "published_at": "2026-08-04T11:07:00-04:00",
+      "added_at": "2026-09-16T02:05:00+07:00",
+      "updated_at": "2026-09-16T02:05:00+07:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "location": {
+        "name": "Ji-Paraná (base operacional)",
+        "admin1": "Rondônia",
+        "country": "Brasil",
+        "lat": -10.877,
+        "lon": -61.932,
+        "precision": "operation_city_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": true
+      },
+      "impacts": {
+        "indigenous_or_local_communities": true
+      },
+      "cross_border": false,
+      "keywords": [
+        "desmatamento",
+        "garimpo",
+        "lavagem de dinheiro",
+        "Rondônia"
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/08/pf-deflagra-2a-fase-de-operacao-contra-crimes-ambientais-e-lavagem-de-dinheiro-em-terra-indigena-em-rondonia",
+          "published_at": "2026-08-04T11:07:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "legal_status_note": "Official enforcement or investigation record; no inference of guilt beyond the cited source."
+    },
+    {
+      "id": "BR-AM-RO-2026-0801-CARAIBA-IV",
+      "title": {
+        "pt": "Operação Caraíba IV desativa frentes de garimpo no Parque Nacional Mapinguari",
+        "en": "Operation Caraíba IV disables illegal-mining fronts in Mapinguari National Park",
+        "es": "Operación Caraíba IV desactiva frentes de minería ilegal en el Parque Nacional Mapinguari"
+      },
+      "summary": {
+        "pt": "PF e ICMBio atuaram no Parque Nacional Mapinguari contra garimpo ilegal de ouro e cassiterita, exploração ilegal de madeira e ocupação irregular. Foram inutilizados maquinários, 23 acampamentos e mais de 10 mil litros de combustível.",
+        "en": "Federal Police and ICMBio operated in Mapinguari National Park against illegal gold and cassiterite mining, illegal logging and irregular occupation. Machinery, 23 camps and more than 10,000 liters of fuel were disabled.",
+        "es": "Policía Federal e ICMBio actuaron en el Parque Nacional Mapinguari contra minería ilegal de oro y casiterita, tala ilegal y ocupación irregular. Se inutilizaron maquinarias, 23 campamentos y más de 10.000 litros de combustible."
+      },
+      "case_context": {
+        "pt": "O parque abrange Amazonas e Rondônia; a coordenada utilizada é uma referência aproximada do parque, não das frentes individuais.",
+        "en": "The park spans Amazonas and Rondônia; the coordinate is an approximate park reference, not the individual mining fronts.",
+        "es": "El parque abarca Amazonas y Rondônia; la coordenada utilizada es una referencia aproximada del parque, no de los frentes individuales."
+      },
+      "primary_crime_type": "MULTIPLE_ENVIRONMENTAL_CRIMES",
+      "crime_types": [
+        "ILLEGAL_MINING",
+        "ILLEGAL_LOGGING",
+        "LAND_GRABBING",
+        "PROTECTED_AREA_INVASION",
+        "MULTIPLE_ENVIRONMENTAL_CRIMES"
+      ],
+      "operation_name": "Caraíba IV",
+      "agencies": [
+        "Polícia Federal",
+        "ICMBio"
+      ],
+      "occurred_at": "2026-08-01T12:00:00-04:00",
+      "published_at": "2026-08-01T14:19:00-04:00",
+      "added_at": "2026-09-16T02:05:00+07:00",
+      "updated_at": "2026-09-16T02:05:00+07:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "priority": "URGENT",
+      "location": {
+        "name": "Parque Nacional Mapinguari",
+        "admin1": "Amazonas / Rondônia",
+        "country": "Brasil",
+        "lat": -8.752,
+        "lon": -64.643,
+        "precision": "protected_area_centroid_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "Parque Nacional Mapinguari"
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Mapinguari",
+        "cassiterita",
+        "ouro",
+        "23 acampamentos"
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/08/pf-e-icmbio-deflagram-operacao-caraiba-iv-no-parque-nacional-mapinguari",
+          "published_at": "2026-08-01T14:19:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "legal_status_note": "Official enforcement or investigation record; no inference of guilt beyond the cited source."
+    },
+    {
+      "id": "BR-PA-2026-0731-TI-BAU",
+      "title": {
+        "pt": "Operação combate garimpo ilegal na Terra Indígena Baú",
+        "en": "Operation targets illegal mining in Baú Indigenous Land",
+        "es": "Operación combate minería ilegal en la Tierra Indígena Baú"
+      },
+      "summary": {
+        "pt": "PF, Ibama, Força Nacional e CCPI realizaram ação de desintrusão na Terra Indígena Baú. Foram inutilizadas pás-carregadeiras, motores, acampamentos e outros equipamentos; o Ibama apreendeu duas motosserras.",
+        "en": "Federal Police, Ibama, National Force and CCPI carried out a removal operation in Baú Indigenous Land. Loaders, engines, camps and other equipment were disabled, and Ibama seized two chainsaws.",
+        "es": "Policía Federal, Ibama, Fuerza Nacional y CCPI realizaron una acción de desintrusión en la Tierra Indígena Baú. Se inutilizaron cargadoras, motores, campamentos y otros equipos, y el Ibama incautó dos motosierras."
+      },
+      "case_context": {
+        "pt": "A fonte situa a ação no sudoeste do Pará, no limite entre Novo Progresso e Castelo dos Sonhos. O ponto é regional e aproximado.",
+        "en": "The source places the action in southwestern Pará, around the Novo Progresso/Castelo dos Sonhos area. The point is regional and approximate.",
+        "es": "La fuente ubica la acción en el sudoeste de Pará, en la zona de Novo Progresso/Castelo dos Sonhos. El punto es regional y aproximado."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING",
+        "PROTECTED_AREA_INVASION",
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": "Desintrusão TI Baú",
+      "agencies": [
+        "Polícia Federal",
+        "Ibama",
+        "Força Nacional",
+        "CCPI"
+      ],
+      "occurred_at": "2026-07-31T12:00:00-03:00",
+      "published_at": "2026-07-31T17:05:00-03:00",
+      "added_at": "2026-09-16T02:05:00+07:00",
+      "updated_at": "2026-09-16T02:05:00+07:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "priority": "URGENT",
+      "location": {
+        "name": "Terra Indígena Baú / região de Novo Progresso",
+        "admin1": "Pará",
+        "country": "Brasil",
+        "lat": -7.5,
+        "lon": -55.0,
+        "precision": "regional_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "Terra Indígena Baú"
+      },
+      "impacts": {
+        "indigenous_or_local_communities": true
+      },
+      "cross_border": false,
+      "keywords": [
+        "Baú",
+        "garimpo",
+        "desintrusão",
+        "Curuá",
+        "Curuaés"
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/07/pf-realiza-operacao-de-desintrusao-e-combate-a-garimpo-em-terra-indigena",
+          "published_at": "2026-07-31T17:05:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "legal_status_note": "Official enforcement or investigation record; no inference of guilt beyond the cited source."
+    },
+    {
+      "id": "BR-PA-2026-0724-JACAREACANGA",
+      "title": {
+        "pt": "PF fecha garimpo ilegal em terra da União em Jacareacanga",
+        "en": "Federal Police shuts illegal mine on federal land in Jacareacanga",
+        "es": "Policía Federal cierra minería ilegal en tierra de la Unión en Jacareacanga"
+      },
+      "summary": {
+        "pt": "A PF fechou um garimpo ilegal em Jacareacanga e apreendeu uma escavadeira, duas espingardas, mercúrio e uma caminhonete. O dano socioambiental foi avaliado em cerca de R$ 13 milhões.",
+        "en": "Federal Police shut down an illegal mine in Jacareacanga and seized an excavator, two shotguns, mercury and a pickup truck. Socio-environmental damage was estimated at about R$13 million.",
+        "es": "La Policía Federal cerró una mina ilegal en Jacareacanga e incautó una excavadora, dos escopetas, mercurio y una camioneta. El daño socioambiental se estimó en unos R$13 millones."
+      },
+      "case_context": {
+        "pt": "A fonte informa que o garimpo funcionava em gleba federal. A coordenada representa o município, pois o local exato não foi publicado.",
+        "en": "The source states the mine operated on federal land. The coordinate represents the municipality because the exact site was not published.",
+        "es": "La fuente informa que la minería funcionaba en tierra federal. La coordenada representa el municipio porque no se publicó el sitio exacto."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING",
+        "ENVIRONMENTAL_CONTAMINATION"
+      ],
+      "operation_name": "Ação PF Jacareacanga",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "occurred_at": "2026-07-24T12:00:00-03:00",
+      "published_at": "2026-07-25T21:04:00-03:00",
+      "added_at": "2026-09-16T02:05:00+07:00",
+      "updated_at": "2026-09-16T02:05:00+07:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "location": {
+        "name": "Jacareacanga",
+        "admin1": "Pará",
+        "country": "Brasil",
+        "lat": -6.223,
+        "lon": -57.752,
+        "precision": "municipality_centroid_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "mercúrio",
+        "ouro",
+        "gleba federal",
+        "Jacareacanga"
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/07/pf-prende-dois-por-garimpo-em-terra-da-uniao",
+          "published_at": "2026-07-25T21:04:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "legal_status_note": "Official enforcement or investigation record; no inference of guilt beyond the cited source."
+    }
+  ]
+}

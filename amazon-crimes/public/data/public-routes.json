@@ -1,0 +1,116 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -69.9381,
+            -4.2525
+          ],
+          [
+            -64.7107,
+            -3.3533
+          ],
+          [
+            -60.0217,
+            -3.119
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route-solimoes-manaus",
+        "source_kind": "public_route",
+        "name": "Corredor Solimões–Manaus",
+        "name_en": "Solimões–Manaus corridor",
+        "name_es": "Corredor Solimões–Manaos",
+        "agency": "Curadoria OSINT pública",
+        "location": "AM, Brasil",
+        "precision": "corridor_generalized",
+        "status": "rota documentada publicamente",
+        "summary": "Corredor fluvial/logístico citado publicamente em discussões sobre circulação ilícita e fiscalização.",
+        "source_url": "https://www.unodc.org/",
+        "signal_type": "Rotas ilícitas documentadas publicamente",
+        "evidence_level": "Referência pública / camada OSINT inicial",
+        "modality": "Corredor logístico generalizado",
+        "caution": "Camada generalizada para situational awareness. Não demonstra presença atual, autoria individual ou vínculo criminal confirmado em um ponto específico."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -70.37,
+            -11.02
+          ],
+          [
+            -67.81,
+            -9.97
+          ],
+          [
+            -63.9039,
+            -8.7608
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route-madre-de-dios-acre-madeira",
+        "source_kind": "public_route",
+        "name": "Corredor Madre de Dios–Acre–Madeira",
+        "name_en": "Madre de Dios–Acre–Madeira corridor",
+        "name_es": "Corredor Madre de Dios–Acre–Madeira",
+        "agency": "Curadoria OSINT pública",
+        "location": "PE–BR",
+        "precision": "corridor_generalized",
+        "status": "rota documentada publicamente",
+        "summary": "Corredor transfronteiriço frequentemente citado em análises públicas sobre ilícitos ambientais e logística terrestre/fluvial.",
+        "source_url": "https://www.unodc.org/",
+        "signal_type": "Rotas ilícitas documentadas publicamente",
+        "evidence_level": "Referência pública / camada OSINT inicial",
+        "modality": "Corredor logístico generalizado",
+        "caution": "Camada generalizada para situational awareness. Não demonstra presença atual, autoria individual ou vínculo criminal confirmado em um ponto específico."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -54.38,
+            4.84
+          ],
+          [
+            -55.17,
+            5.84
+          ],
+          [
+            -57.55,
+            3.84
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route-guianas-riverine",
+        "source_kind": "public_route",
+        "name": "Corredor fluvial do escudo das Guianas",
+        "name_en": "Guiana Shield riverine corridor",
+        "name_es": "Corredor fluvial del Escudo Guayanés",
+        "agency": "Curadoria OSINT pública",
+        "location": "FR–SR–GY",
+        "precision": "corridor_generalized",
+        "status": "rota documentada publicamente",
+        "summary": "Corredor generalizado para referência OSINT pública na faixa das Guianas.",
+        "source_url": "https://www.unodc.org/",
+        "signal_type": "Rotas ilícitas documentadas publicamente",
+        "evidence_level": "Referência pública / camada OSINT inicial",
+        "modality": "Corredor logístico generalizado",
+        "caution": "Camada generalizada para situational awareness. Não demonstra presença atual, autoria individual ou vínculo criminal confirmado em um ponto específico."
+      }
+    }
+  ]
+}

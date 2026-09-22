@@ -1,0 +1,71 @@
+{
+  "id": "BR-AM-YYYY-MMDD-SHORT-NAME",
+  "canonical_fingerprint": "sha256-or-deterministic-key",
+  "title": {"pt": "", "en": "", "es": ""},
+  "summary": {"pt": "", "en": "", "es": ""},
+  "case_context": {"pt": "", "en": "", "es": ""},
+  "primary_crime_type": "ILLEGAL_MINING",
+  "crime_types": ["ILLEGAL_MINING", "PROTECTED_AREA_INVASION"],
+  "operation_name": null,
+  "agencies": [],
+  "priority": "NORMAL",
+  "validation_status": "UNDER_REVIEW",
+  "confidence": null,
+  "legal_status_note": "Official enforcement event; no inference of criminal guilt beyond what the cited source states.",
+  "occurred_at": null,
+  "occurred_at_precision": "unknown",
+  "published_at": null,
+  "added_at": null,
+  "updated_at": null,
+  "backfill": false,
+  "location": {
+    "name": "",
+    "admin1": "",
+    "country": "",
+    "lat": null,
+    "lon": null,
+    "precision": "exact|site_approximate|municipality_centroid_approximate|protected_area_centroid_approximate|regional_approximate",
+    "geo_source": ""
+  },
+  "protected_area": {"is_protected_area": false, "name": null, "category": null},
+  "indigenous_territory": {"is_indigenous_territory": false, "name": null},
+  "cross_border": false,
+  "actors_named_in_public_sources": [],
+  "species": [],
+  "commodities_or_materials": [],
+  "quantities": [],
+  "impacts": {
+    "indigenous_or_local_communities": false,
+    "biodiversity": false,
+    "water": false,
+    "forest": false,
+    "human_health": false
+  },
+  "sources": [
+    {
+      "url": "",
+      "publisher": "",
+      "published_at": null,
+      "language": "pt",
+      "source_type": "official|news|ngo|scientific|other",
+      "archived_url": null,
+      "is_primary": true
+    }
+  ],
+  "source_media": [
+    {
+      "type": "image",
+      "url": "",
+      "credit": "Source/publisher name",
+      "caption": {"pt": "", "en": "", "es": ""}
+    }
+  ],
+  "evidence_notes": "",
+  "limitations": "",
+  "keywords": [],
+  "review": {
+    "reviewer": null,
+    "validated_at": null,
+    "context_updated_at": null
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.0217,
+          -3.133
+        ]
+      },
+      "properties": {
+        "id": "rg-manaus-negro",
+        "source_kind": "river_gauge",
+        "name": "Régua fluviométrica de Manaus",
+        "name_en": "Manaus river gauge",
+        "name_es": "Regla fluviométrica de Manaos",
+        "agency": "ANA / Porto de Manaus",
+        "location": "Manaus, Amazonas, Brasil",
+        "precision": "city_reference",
+        "status": "referência pública",
+        "summary": "Referência hidrológica no rio Negro, útil para contexto de cheias, navegação e acesso.",
+        "source_url": "https://www.gov.br/ana/",
+        "network": "ANA / rede hidrometeorológica pública",
+        "river": "Rio Negro",
+        "variables": "Nível d’água/cota; vazão quando disponível na estação",
+        "data_note": "Camada inicial de referência. A próxima etapa poderá conectar séries e leituras atualizadas."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.9381,
+          -4.2525
+        ]
+      },
+      "properties": {
+        "id": "rg-tabatinga-solimoes",
+        "source_kind": "river_gauge",
+        "name": "Régua fluviométrica de Tabatinga",
+        "name_en": "Tabatinga river gauge",
+        "name_es": "Regla fluviométrica de Tabatinga",
+        "agency": "ANA / referência pública",
+        "location": "Tabatinga, Amazonas, Brasil",
+        "precision": "city_reference",
+        "status": "referência pública",
+        "summary": "Referência hidrológica do Solimões na tríplice fronteira.",
+        "source_url": "https://www.gov.br/ana/",
+        "network": "ANA / rede hidrometeorológica pública",
+        "river": "Rio Solimões",
+        "variables": "Nível d’água/cota; vazão quando disponível na estação",
+        "data_note": "Camada inicial de referência. A próxima etapa poderá conectar séries e leituras atualizadas."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.7107,
+          -3.3533
+        ]
+      },
+      "properties": {
+        "id": "rg-tefe-solimoes",
+        "source_kind": "river_gauge",
+        "name": "Régua fluviométrica de Tefé",
+        "name_en": "Tefé river gauge",
+        "name_es": "Regla fluviométrica de Tefé",
+        "agency": "ANA / referência pública",
+        "location": "Tefé, Amazonas, Brasil",
+        "precision": "city_reference",
+        "status": "referência pública",
+        "summary": "Referência hidrológica do Médio Solimões para leitura operacional de nível d’água.",
+        "source_url": "https://www.gov.br/ana/",
+        "network": "ANA / rede hidrometeorológica pública",
+        "river": "Rio Solimões",
+        "variables": "Nível d’água/cota; vazão quando disponível na estação",
+        "data_note": "Camada inicial de referência. A próxima etapa poderá conectar séries e leituras atualizadas."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4449,
+          -3.1386
+        ]
+      },
+      "properties": {
+        "id": "rg-itacoatiara-amazonas",
+        "source_kind": "river_gauge",
+        "name": "Régua fluviométrica de Itacoatiara",
+        "name_en": "Itacoatiara river gauge",
+        "name_es": "Regla fluviométrica de Itacoatiara",
+        "agency": "ANA / referência pública",
+        "location": "Itacoatiara, Amazonas, Brasil",
+        "precision": "city_reference",
+        "status": "referência pública",
+        "summary": "Referência hidrológica no Amazonas, útil para logística fluvial e contexto de campo.",
+        "source_url": "https://www.gov.br/ana/",
+        "network": "ANA / rede hidrometeorológica pública",
+        "river": "Rio Amazonas",
+        "variables": "Nível d’água/cota; vazão quando disponível na estação",
+        "data_note": "Camada inicial de referência. A próxima etapa poderá conectar séries e leituras atualizadas."
+      }
+    }
+  ]
+}

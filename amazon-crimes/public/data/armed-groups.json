@@ -1,0 +1,86 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.94,
+          -4.24
+        ]
+      },
+      "properties": {
+        "id": "sec-tabatinga-leticia",
+        "source_kind": "armed_group",
+        "name": "Tríplice fronteira Solimões",
+        "name_en": "Solimões tri-border area",
+        "name_es": "Zona de triple frontera del Solimões",
+        "agency": "Curadoria OSINT pública",
+        "location": "Tabatinga–Leticia–Santa Rosa",
+        "precision": "regional_approximate",
+        "status": "presença reportada publicamente",
+        "summary": "Área com relatos públicos recorrentes sobre presença armada e pressão sobre rotas fluviais transfronteiriças.",
+        "source_url": "https://www.unodc.org/",
+        "signal_type": "Presença pública reportada de grupos armados",
+        "evidence_level": "Referência pública / camada OSINT inicial",
+        "modality": "Presença/área de influência reportada",
+        "caution": "Camada generalizada para situational awareness. Não demonstra presença atual, autoria individual ou vínculo criminal confirmado em um ponto específico."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.86,
+          1.73
+        ]
+      },
+      "properties": {
+        "id": "sec-upper-rio-negro",
+        "source_kind": "armed_group",
+        "name": "Alto Rio Negro / fronteira norte",
+        "name_en": "Upper Rio Negro / northern frontier",
+        "name_es": "Alto Río Negro / frontera norte",
+        "agency": "Curadoria OSINT pública",
+        "location": "Faixa fronteiriça Brasil–Venezuela–Colômbia",
+        "precision": "regional_approximate",
+        "status": "presença reportada publicamente",
+        "summary": "Faixa com menções públicas a economias ilícitas e circulação armada em áreas remotas.",
+        "source_url": "https://www.unodc.org/",
+        "signal_type": "Presença pública reportada de grupos armados",
+        "evidence_level": "Referência pública / camada OSINT inicial",
+        "modality": "Presença/área de influência reportada",
+        "caution": "Camada generalizada para situational awareness. Não demonstra presença atual, autoria individual ou vínculo criminal confirmado em um ponto específico."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.65,
+          -2.44
+        ]
+      },
+      "properties": {
+        "id": "sec-putumayo-border",
+        "source_kind": "armed_group",
+        "name": "Corredor Putumayo/Içá",
+        "name_en": "Putumayo/Içá corridor",
+        "name_es": "Corredor Putumayo/Içá",
+        "agency": "Curadoria OSINT pública",
+        "location": "Colômbia–Peru–Brasil",
+        "precision": "regional_approximate",
+        "status": "presença reportada publicamente",
+        "summary": "Corredor de fronteira citado publicamente em discussões sobre circulação armada e logística ilícita.",
+        "source_url": "https://www.unodc.org/",
+        "signal_type": "Presença pública reportada de grupos armados",
+        "evidence_level": "Referência pública / camada OSINT inicial",
+        "modality": "Presença/área de influência reportada",
+        "caution": "Camada generalizada para situational awareness. Não demonstra presença atual, autoria individual ou vínculo criminal confirmado em um ponto específico."
+      }
+    }
+  ]
+}

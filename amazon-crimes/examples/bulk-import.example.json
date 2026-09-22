@@ -1,0 +1,20 @@
+{
+  "source": "manual_validated_batch",
+  "dry_run": true,
+  "events": [
+    {
+      "id": "BR-AM-2026-EXAMPLE-001",
+      "title": {"pt": "Exemplo", "en": "Example", "es": "Ejemplo"},
+      "summary": {"pt": "Substituir por fato validado.", "en": "Replace with validated fact.", "es": "Sustituir por hecho validado."},
+      "case_context": {"pt": "Contexto analítico.", "en": "Analytical context.", "es": "Contexto analítico."},
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": ["ILLEGAL_MINING"],
+      "validation_status": "VALIDATED",
+      "priority": "MEDIUM",
+      "occurred_at": "2026-09-16T12:00:00-04:00",
+      "published_at": "2026-09-16T13:00:00-04:00",
+      "location": {"name": "Município", "admin1": "Amazonas", "country": "Brasil", "lat": -3.1, "lon": -60.0, "precision": "municipality_approximate"},
+      "sources": [{"publisher": "Fonte oficial", "url": "https://example.org/source", "published_at": "2026-09-16T13:00:00-04:00", "source_type": "official"}]
+    }
+  ]
+}

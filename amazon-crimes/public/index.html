@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Observatório OSINT de crimes ambientais na Amazônia em near-real-time" />
+  <title>Observatório de Crimes Ambientais na Amazônia</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@6.9.0/dist/maplibre-gl.css" />
+  <link rel="stylesheet" href="./assets/css/app.css" />
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <a class="wcs-brand" href="https://brasil.wcs.org" target="_blank" rel="noopener noreferrer" aria-label="WCS Brasil"><img class="wcs-brand-logo" src="./assets/img/wcs-brasil.png" alt="WCS Brasil" /></a>
+        <div>
+          <p class="eyebrow" data-i18n="eyebrow">MONITORAMENTO • AMAZÔNIA</p>
+          <h1 data-i18n="title">Observatório de Crimes Ambientais na Amazônia</h1>
+          <p class="subtitle" data-i18n="subtitle">Inteligência OSINT em near-real-time</p>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <span class="live-pill"><span class="pulse"></span><span data-i18n="nearRealTime">Near-real-time</span></span>
+        <div class="language-switcher" aria-label="Idioma">
+          <button class="lang active" data-lang="pt">PT</button>
+          <button class="lang" data-lang="en">EN</button>
+          <button class="lang" data-lang="es">ES</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="stats-grid" aria-label="Indicadores principais">
+        <article class="stat-card"><span class="stat-label" data-i18n="totalEvents">Eventos monitorados</span><strong id="stat-total">0</strong><small data-i18n="allTime">base consolidada</small></article>
+        <article class="stat-card accent"><span class="stat-label" data-i18n="last24h">Novos nas últimas 24h</span><strong id="stat-24h">0</strong><small data-i18n="recentLayer">sem contar backfill inicial</small></article>
+        <article class="stat-card"><span class="stat-label" data-i18n="validated">Validados</span><strong id="stat-validated">0</strong><small data-i18n="validatedSources">com fontes verificadas</small></article>
+        <article class="stat-card"><span class="stat-label" data-i18n="statesCountries">Áreas com registros</span><strong id="stat-areas">0</strong><small data-i18n="geographicCoverage">cobertura geográfica</small></article>
+      </section>
+
+      <section class="filters-panel">
+        <div class="filter-group grow"><label for="search" data-i18n="searchLabel">Buscar</label><input id="search" type="search" data-i18n-placeholder="searchPlaceholder" placeholder="local, operação, órgão, palavra-chave..." /></div>
+        <div class="filter-group"><label for="crime-type" data-i18n="crimeType">Tipo de crime</label><select id="crime-type"></select></div>
+        <div class="filter-group"><label for="validation-status" data-i18n="status">Status</label><select id="validation-status"></select></div>
+        <div class="filter-group"><label for="time-window" data-i18n="period">Período</label><select id="time-window"></select></div>
+        <button id="clear-filters" class="secondary" data-i18n="clearFilters">Limpar filtros</button>
+      </section>
+
+      <section class="main-grid">
+        <article class="map-card">
+          <div class="section-head map-head">
+            <div><span class="section-kicker" data-i18n="spatialView">VISÃO ESPACIAL</span><h2 data-i18n="eventMap">Mapa operacional</h2><small class="map-hint" data-i18n="clickMapHint">Clique em um evento para abrir ficha, imagens e fontes.</small></div>
+            <div class="map-toolbar" aria-label="Controles do mapa">
+              <div class="segmented" id="dimension-toggle"><button class="active" data-mode="2d" data-i18n="mapMode2d">2D</button><button data-mode="globe" data-i18n="mapModeGlobe">Globo</button></div>
+              <div class="segmented" id="theme-toggle"><button data-theme-choice="light" data-i18n="light">Claro</button><button class="active" data-theme-choice="dark" data-i18n="dark">Escuro</button></div>
+              <button id="layers-toggle" class="toolbar-button"><span>☷</span><span data-i18n="layers">Camadas</span></button>
+              <button id="map-fullscreen" class="toolbar-button" type="button" aria-label="Tela cheia"><span class="fullscreen-icon" aria-hidden="true"></span><span data-i18n="fullscreen">Tela cheia</span></button>
+            </div>
+          </div>
+          <div class="map-wrap">
+            <div id="map" aria-label="Mapa de crimes ambientais"></div>
+            <aside id="layers-panel" class="layers-panel" aria-hidden="true">
+              <div class="layers-panel-head"><div><strong data-i18n="layerCatalog">Catálogo de camadas OSINT</strong><p data-i18n="layerCatalogHint">A estrutura já reserva espaço para dados ambientais, apreensões, segurança, sensores e territórios.</p></div><button id="layers-close" aria-label="Fechar">×</button></div>
+              <section class="layer-section"><div class="layer-section-title"><span data-i18n="crimeLayers">Crimes ambientais</span><div><button id="layers-all" class="tiny" data-i18n="allCrimeLayers">Todas as categorias</button><button id="layers-none" class="tiny" data-i18n="none">Nenhuma</button></div></div><div id="crime-layer-list" class="layer-list"></div></section>
+              <section class="layer-section future"><div class="layer-section-title"><span data-i18n="futureLayers">Camadas futuras</span></div><div id="future-layer-list"></div></section>
+            </aside>
+          </div>
+          <div class="map-footer"><div class="legend"><span><i class="dot recent"></i><span data-i18n="recent">&lt;24h</span></span><span><i class="dot historical"></i><span data-i18n="historical">Histórico</span></span></div><div><span data-i18n="currentLayers">Camadas ativas</span>: <strong id="active-layer-count">0</strong></div></div>
+        </article>
+
+        <aside class="feed-card">
+          <div class="section-head compact"><div><span class="section-kicker" data-i18n="eventFeedKicker">FLUXO DE EVENTOS</span><h2 data-i18n="eventFeed">Eventos recentes</h2></div><span id="feed-count" class="count-badge">0</span></div>
+          <div id="event-feed" class="event-feed"><div class="empty-state"><strong data-i18n="noEvents">Nenhum evento encontrado.</strong><span data-i18n="emptyHint">Ajuste os filtros ou ative outras camadas.</span></div></div>
+        </aside>
+      </section>
+
+      <section class="lower-grid">
+        <article class="panel"><div class="section-head compact"><div><span class="section-kicker" data-i18n="distributionKicker">DISTRIBUIÇÃO</span><h2 data-i18n="byCrimeType">Por tipo de crime</h2></div></div><div id="crime-bars" class="bars"></div></article>
+        <article class="panel"><div class="section-head compact"><div><span class="section-kicker" data-i18n="intelligenceKicker">INTELIGÊNCIA</span><h2 data-i18n="prioritySignals">Sinais prioritários</h2></div></div><div class="signal-list"><div class="signal"><span data-i18n="urgentEvents">Eventos urgentes</span><strong id="signal-urgent">0</strong></div><div class="signal"><span data-i18n="indigenousImpact">Povos indígenas/comunidades</span><strong id="signal-community">0</strong></div><div class="signal"><span data-i18n="protectedAreas">Áreas protegidas</span><strong id="signal-protected">0</strong></div><div class="signal"><span data-i18n="crossBorder">Transfronteiriços</span><strong id="signal-crossborder">0</strong></div></div></article>
+        <article class="panel methodology"><div class="section-head compact"><div><span class="section-kicker" data-i18n="methodKicker">METODOLOGIA</span><h2 data-i18n="validationPipeline">Pipeline de validação</h2></div></div><ol><li data-i18n="method1">Coleta multilíngue e multifuente.</li><li data-i18n="method2">Deduplicação e vinculação a evento canônico.</li><li data-i18n="method3">Validação de fonte, local, data e natureza do crime.</li><li data-i18n="method4">Geocodificação com nível de precisão explícito.</li><li data-i18n="method5">Publicação incremental, contexto do caso e trilha de fontes.</li></ol></article>
+      </section>
+    </main>
+
+    <footer><span class="footer-program"><span data-i18n="footerProgram">Programa de Inteligência para Conservação | WCS Brasil</span> <span aria-hidden="true">•</span> <a href="https://brasil.wcs.org" target="_blank" rel="noopener noreferrer">brasil.wcs.org</a></span><span id="last-updated">—</span></footer>
+  </div>
+
+  <script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>

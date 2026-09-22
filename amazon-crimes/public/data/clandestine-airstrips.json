@@ -1,0 +1,86 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.37,
+          -11.02
+        ]
+      },
+      "properties": {
+        "id": "air-madre-de-dios",
+        "source_kind": "clandestine_airstrip",
+        "name": "Pistas reportadas em Madre de Dios",
+        "name_en": "Reported airstrips in Madre de Dios",
+        "name_es": "Pistas reportadas en Madre de Dios",
+        "agency": "Curadoria OSINT pública",
+        "location": "Madre de Dios, Peru",
+        "precision": "regional_approximate",
+        "status": "pistas clandestinas reportadas",
+        "summary": "Área de referência pública com relatos recorrentes sobre pistas clandestinas associadas a economias ilícitas.",
+        "source_url": "https://www.unodc.org/",
+        "signal_type": "Pistas clandestinas reportadas",
+        "evidence_level": "Referência pública / camada OSINT inicial",
+        "modality": "Infraestrutura aérea remota reportada",
+        "caution": "Camada generalizada para situational awareness. Não demonstra presença atual, autoria individual ou vínculo criminal confirmado em um ponto específico."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.91,
+          5.68
+        ]
+      },
+      "properties": {
+        "id": "air-guiana-highlands",
+        "source_kind": "clandestine_airstrip",
+        "name": "Pistas reportadas no escudo das Guianas",
+        "name_en": "Reported airstrips in the Guiana Shield",
+        "name_es": "Pistas reportadas en el Escudo Guayanés",
+        "agency": "Curadoria OSINT pública",
+        "location": "Faixa Guiana–Suriname–Venezuela",
+        "precision": "regional_approximate",
+        "status": "pistas clandestinas reportadas",
+        "summary": "Área com referências públicas a aeródromos/pistas remotas usados por circuitos ilícitos.",
+        "source_url": "https://www.unodc.org/",
+        "signal_type": "Pistas clandestinas reportadas",
+        "evidence_level": "Referência pública / camada OSINT inicial",
+        "modality": "Infraestrutura aérea remota reportada",
+        "caution": "Camada generalizada para situational awareness. Não demonstra presença atual, autoria individual ou vínculo criminal confirmado em um ponto específico."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.5,
+          -9.74
+        ]
+      },
+      "properties": {
+        "id": "air-madeira-upper",
+        "source_kind": "clandestine_airstrip",
+        "name": "Pistas reportadas no alto Madeira",
+        "name_en": "Reported airstrips in the upper Madeira",
+        "name_es": "Pistas reportadas en el alto Madeira",
+        "agency": "Curadoria OSINT pública",
+        "location": "Faixa RO–AM–BO",
+        "precision": "regional_approximate",
+        "status": "pistas clandestinas reportadas",
+        "summary": "Faixa com menções públicas a pistas remotas em áreas de difícil acesso.",
+        "source_url": "https://www.unodc.org/",
+        "signal_type": "Pistas clandestinas reportadas",
+        "evidence_level": "Referência pública / camada OSINT inicial",
+        "modality": "Infraestrutura aérea remota reportada",
+        "caution": "Camada generalizada para situational awareness. Não demonstra presença atual, autoria individual ou vínculo criminal confirmado em um ponto específico."
+      }
+    }
+  ]
+}

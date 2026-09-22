@@ -1,0 +1,303 @@
+{
+  "schema_version": "0.3.0",
+  "updated_at": "2026-09-16T04:25:00+07:00",
+  "groups": [
+    {
+      "id": "environment_realtime",
+      "label": {
+        "pt": "Ambiente em tempo real",
+        "en": "Real-time environment",
+        "es": "Ambiente en tiempo real"
+      },
+      "layers": [
+        {
+          "id": "fire_hotspots",
+          "label": {
+            "pt": "Focos de calor",
+            "en": "Fire hotspots",
+            "es": "Focos de calor"
+          },
+          "status": "active",
+          "data": "/api/fire-hotspots",
+          "icon": "fire",
+          "cadence": {
+            "pt": "~10 min",
+            "en": "~10 min",
+            "es": "~10 min"
+          },
+          "source": "INPE Programa Queimadas / BDQueimadas"
+        },
+        [
+          "drought_alerts",
+          "Alertas de seca",
+          "Drought alerts",
+          "Alertas de sequía"
+        ],
+        [
+          "severe_weather",
+          "Mau tempo e tempestades",
+          "Severe weather & storms",
+          "Mal tiempo y tormentas"
+        ],
+        [
+          "floods",
+          "Cheias e inundações",
+          "Floods",
+          "Crecidas e inundaciones"
+        ],
+        [
+          "smoke_air_quality",
+          "Fumaça/qualidade do ar",
+          "Smoke / air quality",
+          "Humo / calidad del aire"
+        ]
+      ]
+    },
+    {
+      "id": "seizures",
+      "label": {
+        "pt": "Apreensões",
+        "en": "Seizures",
+        "es": "Incautaciones"
+      },
+      "layers": [
+        [
+          "wildlife_seizures",
+          "Fauna",
+          "Wildlife",
+          "Fauna"
+        ],
+        [
+          "flora_seizures",
+          "Flora/madeira",
+          "Flora / timber",
+          "Flora / madera"
+        ],
+        [
+          "mineral_seizures",
+          "Minerais/ouro",
+          "Minerals / gold",
+          "Minerales / oro"
+        ],
+        [
+          "mercury_fuel_equipment",
+          "Mercúrio, combustível e equipamentos",
+          "Mercury, fuel & equipment",
+          "Mercurio, combustible y equipos"
+        ]
+      ]
+    },
+    {
+      "id": "extractive_pressure",
+      "label": {
+        "pt": "Pressão extrativa",
+        "en": "Extractive pressure",
+        "es": "Presión extractiva"
+      },
+      "layers": [
+        [
+          "mining_zones",
+          "Zonas de garimpo",
+          "Mining zones",
+          "Zonas de minería"
+        ],
+        {
+          "id": "deforestation_alerts",
+          "label": {
+            "pt": "Alertas de desmatamento (DETER)",
+            "en": "Deforestation alerts (DETER)",
+            "es": "Alertas de deforestación (DETER)"
+          },
+          "status": "active",
+          "data": "/api/deforestation-alerts",
+          "icon": "deforestation",
+          "cadence": {
+            "pt": "diária",
+            "en": "daily",
+            "es": "diaria"
+          },
+          "source": "INPE DETER / TerraBrasilis"
+        },
+        [
+          "logging_roads",
+          "Ramais e estradas de exploração",
+          "Logging roads & tracks",
+          "Caminos y ramales de explotación"
+        ],
+        [
+          "dredge_signatures",
+          "Assinaturas/pontos de dragas",
+          "Dredge signatures / locations",
+          "Firmas/puntos de dragas"
+        ]
+      ]
+    },
+    {
+      "id": "security_osint",
+      "label": {
+        "pt": "Segurança e crime organizado",
+        "en": "Security & organized crime",
+        "es": "Seguridad y crimen organizado"
+      },
+      "layers": [
+        {
+          "id": "armed_groups",
+          "label": {
+            "pt": "Presença pública reportada de grupos armados",
+            "en": "Publicly reported armed-group presence",
+            "es": "Presencia reportada públicamente de grupos armados"
+          },
+          "status": "active",
+          "data": "/data/armed-groups.json",
+          "icon": "security",
+          "cadence": {
+            "pt": "seed pública",
+            "en": "public seed",
+            "es": "semilla pública"
+          },
+          "source": "Curadoria OSINT pública / camada inicial"
+        },
+        {
+          "id": "clandestine_airstrips",
+          "label": {
+            "pt": "Pistas clandestinas reportadas",
+            "en": "Reported clandestine airstrips",
+            "es": "Pistas clandestinas reportadas"
+          },
+          "status": "active",
+          "data": "/data/clandestine-airstrips.json",
+          "icon": "airstrip",
+          "cadence": {
+            "pt": "seed pública",
+            "en": "public seed",
+            "es": "semilla pública"
+          },
+          "source": "Curadoria OSINT pública / camada inicial"
+        },
+        {
+          "id": "public_routes",
+          "label": {
+            "pt": "Rotas ilícitas documentadas publicamente",
+            "en": "Publicly documented illicit routes",
+            "es": "Rutas ilícitas documentadas públicamente"
+          },
+          "status": "active",
+          "data": "/data/public-routes.json",
+          "icon": "route",
+          "cadence": {
+            "pt": "seed pública",
+            "en": "public seed",
+            "es": "semilla pública"
+          },
+          "source": "Curadoria OSINT pública / camada inicial"
+        }
+      ]
+    },
+    {
+      "id": "sensors_media",
+      "label": {
+        "pt": "Sensores e mídia OSINT",
+        "en": "OSINT sensors & media",
+        "es": "Sensores y medios OSINT"
+      },
+      "layers": [
+        {
+          "id": "radio_stations",
+          "label": {
+            "pt": "Rádios ao vivo",
+            "en": "Live radio",
+            "es": "Radios en vivo"
+          },
+          "status": "active",
+          "data": "/data/radios.json",
+          "icon": "radio"
+        },
+        {
+          "id": "public_cameras",
+          "label": {
+            "pt": "Câmeras públicas ao vivo",
+            "en": "Public live cameras",
+            "es": "Cámaras públicas en vivo"
+          },
+          "status": "active",
+          "data": "/data/cameras.json",
+          "icon": "camera"
+        },
+        {
+          "id": "weather_stations",
+          "label": {
+            "pt": "Estações meteorológicas",
+            "en": "Weather stations",
+            "es": "Estaciones meteorológicas"
+          },
+          "status": "active",
+          "data": "/data/weather-stations.json",
+          "icon": "weather",
+          "cadence": {
+            "pt": "referência fixa",
+            "en": "static reference",
+            "es": "referencia fija"
+          },
+          "source": "Camada inicial de referência pública"
+        },
+        {
+          "id": "river_gauges",
+          "label": {
+            "pt": "Réguas/estações fluviométricas",
+            "en": "River gauges",
+            "es": "Estaciones fluviométricas"
+          },
+          "status": "active",
+          "data": "/data/river-gauges.json",
+          "icon": "gauge",
+          "cadence": {
+            "pt": "referência fixa",
+            "en": "static reference",
+            "es": "referencia fija"
+          },
+          "source": "Camada inicial de referência pública"
+        }
+      ]
+    },
+    {
+      "id": "territories",
+      "label": {
+        "pt": "Territórios e proteção",
+        "en": "Territories & protection",
+        "es": "Territorios y protección"
+      },
+      "layers": [
+        {
+          "id": "amazon_boundary",
+          "label": {
+            "pt": "Limite internacional da Amazônia (RAISG)",
+            "en": "International Amazon boundary (RAISG)",
+            "es": "Límite internacional de la Amazonía (RAISG)"
+          },
+          "status": "fixed",
+          "data": "/api/amazon-boundary",
+          "icon": "protected",
+          "source": "RAISG"
+        },
+        [
+          "indigenous_lands",
+          "Terras indígenas",
+          "Indigenous lands",
+          "Tierras indígenas"
+        ],
+        [
+          "protected_areas",
+          "Unidades de conservação",
+          "Protected areas",
+          "Áreas protegidas"
+        ],
+        [
+          "traditional_communities",
+          "Comunidades tradicionais",
+          "Traditional communities",
+          "Comunidades tradicionales"
+        ]
+      ]
+    }
+  ]
+}
