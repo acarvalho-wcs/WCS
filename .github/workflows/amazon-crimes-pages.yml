@@ -45,6 +45,9 @@ jobs:
       - name: Publish canonical event database
         run: cp data/events.json public/data/events.json
 
+      - name: Cache event source images
+        run: node scripts/build-event-media.mjs
+
       - name: Refresh public live-data snapshots
         run: node scripts/build-pages-data.mjs
 
