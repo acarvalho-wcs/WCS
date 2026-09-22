@@ -37,7 +37,13 @@ jobs:
         run: |
           test -f public/index.html
           test -f public/assets/js/app.js
-          test -f public/data/events.json
+          test -f data/events.json
+
+      - name: Validate canonical event database
+        run: node scripts/validate-events.mjs
+
+      - name: Publish canonical event database
+        run: cp data/events.json public/data/events.json
 
       - name: Refresh public live-data snapshots
         run: node scripts/build-pages-data.mjs
