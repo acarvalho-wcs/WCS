@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-09-22T19:23:00+08:00",
+  "generated_at": "2026-09-22T19:37:00+08:00",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -3936,6 +3936,642 @@
           "url": "https://andina.pe/agencia/noticia-ccffaa-nueva-afectacion-millonaria-a-mineria-ilegal-tras-exitosa-operacion-inambari-1091435.aspx",
           "published_at": "2026-09-11T18:30:00-05:00",
           "source_type": "media_republishing_official_results"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "PE-MDD-2026-0908-EL-PLATANAL",
+      "title": {
+        "pt": "Operação em El Platanal desmonta 25 acampamentos ligados à mineração ilegal",
+        "en": "El Platanal operation dismantles 25 camps linked to illegal mining",
+        "es": "Operación en El Platanal desmantela 25 campamentos vinculados a la minería ilegal"
+      },
+      "summary": {
+        "pt": "No âmbito do Plano de Operações Restauración 2026, forças peruanas realizaram uma operação helitransportada no setor El Platanal, na zona de amortecimento da Reserva Nacional Tambopata, em Madre de Dios. As autoridades informaram a interdição de 25 acampamentos logísticos, 25 geradores, dois motores e outros equipamentos usados para sustentar a mineração ilegal, com impacto econômico estimado oficialmente em mais de S/ 1 milhão.",
+        "en": "Under the Restauración 2026 Operations Plan, Peruvian forces carried out an air-mobile operation in the El Platanal sector, within the buffer zone of Tambopata National Reserve in Madre de Dios. Authorities reported the interdiction of 25 logistics camps, 25 generators, two engines and other equipment used to sustain illegal mining, with an officially estimated economic impact of more than S/1 million.",
+        "es": "En el marco del Plan de Operaciones Restauración 2026, fuerzas peruanas realizaron una operación helitransportada en el sector El Platanal, en la zona de amortiguamiento de la Reserva Nacional Tambopata, Madre de Dios. Las autoridades informaron la interdicción de 25 campamentos logísticos, 25 generadores, dos motores y otros equipos utilizados para sostener la minería ilegal, con una afectación económica oficial estimada en más de S/ 1 millón."
+      },
+      "case_context": {
+        "pt": "A fonte oficial do Comando Conjunto situa a ação em 8 de setembro no posto de vigilância Yarinal, setor Platanal 1; reportagens publicadas no dia seguinte usam a denominação mais ampla El Platanal. O ponto no mapa é uma referência aproximada do distrito de Inambari, pois não foram divulgadas coordenadas operacionais. Este registro é distinto da operação multissetorial de 10 de setembro já existente no observatório.",
+        "en": "The Joint Command's official release dates the action to September 8 at the Yarinal surveillance post, Platanal 1 sector; reports published the following day use the broader El Platanal name. The map point is an approximate Inambari District reference because operational coordinates were not disclosed. This record is distinct from the September 10 multi-site operation already in the observatory.",
+        "es": "La fuente oficial del Comando Conjunto fecha la acción el 8 de septiembre en el puesto de vigilancia Yarinal, sector Platanal 1; publicaciones del día siguiente utilizan la denominación más amplia El Platanal. El punto del mapa es una referencia aproximada del distrito de Inambari porque no se divulgaron coordenadas operativas. Este registro es distinto de la operación multisitio del 10 de septiembre ya existente en el observatorio."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Plan de Operaciones Restauración 2026 — El Platanal",
+      "agencies": [
+        "Comando Operacional del Sur",
+        "2.ª Brigada de Selva de Protección de la Amazonía",
+        "Policía Nacional del Perú",
+        "SERNANP",
+        "Ministerio Público del Perú"
+      ],
+      "occurred_at": "2026-09-08T23:59:00-05:00",
+      "published_at": "2026-09-09T19:16:00-05:00",
+      "added_at": "2026-09-22T19:37:00+08:00",
+      "updated_at": "2026-09-22T19:37:00+08:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official enforcement or investigation record; no inference of criminal guilt beyond what the cited sources state.",
+      "priority": "HIGH",
+      "location": {
+        "name": "El Platanal / Platanal 1 — distrito de Inambari",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.9767,
+        "lon": -69.9388,
+        "precision": "district_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "El Platanal",
+        "Platanal 1",
+        "Yarinal",
+        "Inambari",
+        "Reserva Nacional Tambopata",
+        "zona de amortiguamiento",
+        "minería ilegal",
+        "Restauración 2026"
+      ],
+      "sources": [
+        {
+          "publisher": "Diario Oficial El Peruano",
+          "url": "https://elperuano.pe/noticia/304392-madre-de-dios-policia-destruye-25-campamentos-y-equipos-utilizados-por-la-mineria-ilegal",
+          "published_at": "2026-09-09T19:16:00-05:00",
+          "source_type": "official_state_media"
+        },
+        {
+          "publisher": "Agencia Andina",
+          "url": "https://andina.pe/agencia/noticia-restauracion-2026-pnp-destruye-maquinaria-y-enseres-de-mineria-ilegal-madre-dios-1091134.aspx",
+          "published_at": "2026-09-09T18:00:00-05:00",
+          "source_type": "media_republishing_official_results"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "PE-MDD-2026-0914-GAMITANAL-OTORONGO",
+      "title": {
+        "pt": "Operação aérea atinge bases de mineração ilegal em Gamitanal, Aguas Negras e Otorongo",
+        "en": "Air operation targets illegal-mining bases in Gamitanal, Aguas Negras and Otorongo",
+        "es": "Operación aérea afecta bases de minería ilegal en Gamitanal, Aguas Negras y Otorongo"
+      },
+      "summary": {
+        "pt": "As Forças Armadas do Peru informaram uma operação aérea em Quebrada Gamitanal, Aguas Negras e Otorongo, no distrito de Inambari, Madre de Dios. Foram inutilizados 15 acampamentos rústicos, nove balsas, nove motores, um motocargueiro, três geradores, 14 tolvas e outros materiais, com valor estimado pelas autoridades em mais de S/ 8,3 milhões.",
+        "en": "Peru's Armed Forces reported an air operation in Quebrada Gamitanal, Aguas Negras and Otorongo in Inambari District, Madre de Dios. Authorities said 15 makeshift camps, nine rafts, nine engines, one cargo tricycle, three generators, 14 sluices and other materials were disabled, with an official estimated value above S/8.3 million.",
+        "es": "Las Fuerzas Armadas del Perú informaron una operación aérea en Quebrada Gamitanal, Aguas Negras y Otorongo, distrito de Inambari, Madre de Dios. Las autoridades señalaron que fueron inutilizados 15 campamentos rústicos, nueve balsas, nueve motores, un motocarguero, tres generadores, 14 tolvas y otros materiales, con un valor oficial estimado superior a S/ 8,3 millones."
+      },
+      "case_context": {
+        "pt": "A operação abrangeu três setores de difícil acesso e a fonte não divulgou coordenadas específicas; por isso, o marcador representa Inambari de forma aproximada. A estimativa de S/ 8,3 milhões corresponde à valorização oficial dos bens e da logística neutralizados, não a uma avaliação independente.",
+        "en": "The operation covered three hard-to-access sectors and the source did not disclose precise coordinates; the marker therefore represents Inambari approximately. The S/8.3 million figure is the authorities' valuation of neutralized assets and logistics, not an independent assessment.",
+        "es": "La operación abarcó tres sectores de difícil acceso y la fuente no divulgó coordenadas específicas; por ello, el marcador representa Inambari de forma aproximada. La cifra de S/ 8,3 millones corresponde a la valorización oficial de los bienes y la logística neutralizados, no a una evaluación independiente."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": null,
+      "agencies": [
+        "Comando Operacional del Sur",
+        "2.ª Brigada de Selva de Protección de la Amazonía",
+        "Policía Nacional del Perú",
+        "SERNANP",
+        "Ministerio Público del Perú"
+      ],
+      "occurred_at": "2026-09-14T23:59:00-05:00",
+      "published_at": "2026-09-14T11:54:00-05:00",
+      "added_at": "2026-09-22T19:37:00+08:00",
+      "updated_at": "2026-09-22T19:37:00+08:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official enforcement or investigation record; no inference of criminal guilt beyond what the cited sources state.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Quebrada Gamitanal, Aguas Negras e Otorongo — distrito de Inambari",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.9767,
+        "lon": -69.9388,
+        "precision": "district_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Quebrada Gamitanal",
+        "Aguas Negras",
+        "Otorongo",
+        "Inambari",
+        "minería ilegal",
+        "balsas",
+        "campamentos",
+        "S/ 8,3 millones"
+      ],
+      "sources": [
+        {
+          "publisher": "Diario Oficial El Peruano",
+          "url": "https://elperuano.pe/noticia/304675-madre-de-dios-ff-aa-destruyen-bienes-de-la-mineria-ilegal-valorizados-en-mas-de-s-83-millones",
+          "published_at": "2026-09-14T11:54:00-05:00",
+          "source_type": "official_state_media"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "PE-MDD-2026-0914-TAMBOPATA-MANGOTE-APAILON",
+      "title": {
+        "pt": "Duas operações em Tambopata-Mangote e Apailón atingem infraestrutura de mineração ilegal",
+        "en": "Two operations in Tambopata-Mangote and Apailón hit illegal-mining infrastructure",
+        "es": "Dos operaciones en Tambopata-Mangote y Apailón afectan infraestructura de minería ilegal"
+      },
+      "summary": {
+        "pt": "A Polícia Nacional do Peru realizou duas operações de interdição em Tambopata-Mangote e Apailón, no distrito de Inambari. Em conjunto, as autoridades informaram a inutilização de balsas, motores, plataformas, acampamentos, geradores, combustível e outros equipamentos, com bens avaliados em S/ 15.382.840.",
+        "en": "Peru's National Police carried out two interdiction operations in Tambopata-Mangote and Apailón in Inambari District. Authorities reported disabling rafts, engines, platforms, camps, generators, fuel and other equipment, with assets valued at S/15,382,840.",
+        "es": "La Policía Nacional del Perú ejecutó dos operaciones de interdicción en Tambopata-Mangote y Apailón, distrito de Inambari. En conjunto, las autoridades informaron la inutilización de balsas, motores, plataformas, campamentos, generadores, combustible y otros equipos, con bienes valorizados en S/ 15 382 840."
+      },
+      "case_context": {
+        "pt": "As duas ações ocorreram em 14 de setembro e foram divulgadas pelo Ministério do Interior no dia seguinte. O registro as agrega porque foram apresentadas conjuntamente pelas autoridades como parte do Plano Restauración 2026. O ponto cartográfico usa a referência do distrito de Inambari e não representa o local exato de cada frente de interdição.",
+        "en": "The two actions took place on September 14 and were publicized by the Interior Ministry the following day. They are aggregated here because authorities presented them jointly under the Restauración 2026 Plan. The map point uses an Inambari District reference and does not represent the exact location of each interdiction site.",
+        "es": "Las dos acciones se realizaron el 14 de septiembre y fueron divulgadas por el Ministerio del Interior al día siguiente. Se agregan en un solo registro porque las autoridades las presentaron conjuntamente como parte del Plan Restauración 2026. El punto cartográfico usa una referencia del distrito de Inambari y no representa la ubicación exacta de cada frente de interdicción."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Plan Restauración 2026 — Tambopata-Mangote / Apailón",
+      "agencies": [
+        "Policía Nacional del Perú",
+        "Dirección de Medio Ambiente de la PNP",
+        "Ejército del Perú",
+        "Fiscalía Especializada en Materia Ambiental",
+        "SERNANP"
+      ],
+      "occurred_at": "2026-09-14T23:59:00-05:00",
+      "published_at": "2026-09-15T18:37:00-05:00",
+      "added_at": "2026-09-22T19:37:00+08:00",
+      "updated_at": "2026-09-22T19:37:00+08:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official enforcement or investigation record; no inference of criminal guilt beyond what the cited sources state.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Tambopata-Mangote e Apailón — distrito de Inambari",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.9767,
+        "lon": -69.9388,
+        "precision": "district_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Tambopata-Mangote",
+        "Apailón",
+        "Inambari",
+        "Restauración 2026",
+        "minería ilegal",
+        "balsas draga",
+        "combustible",
+        "S/ 15 382 840"
+      ],
+      "sources": [
+        {
+          "publisher": "Diario Oficial El Peruano",
+          "url": "https://elperuano.pe/noticia/304781-pnp-golpea-a-la-mineria-ilegal-por-mas-de-s-15-millones-tras-operativos-en-madre-de-dios",
+          "published_at": "2026-09-15T18:37:00-05:00",
+          "source_type": "official_state_media"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "BR-RO-2026-0916-ROOSEVELT-ARIPUANA-TIMBER",
+      "title": {
+        "pt": "PF combate exploração ilegal de madeira ligada às TIs Roosevelt e Parque do Aripuanã",
+        "en": "Federal Police target illegal logging linked to Roosevelt and Parque do Aripuanã Indigenous Lands",
+        "es": "La Policía Federal combate tala ilegal vinculada a las TI Roosevelt y Parque do Aripuanã"
+      },
+      "summary": {
+        "pt": "A Polícia Federal cumpriu 19 mandados de busca e apreensão em residências e estabelecimentos empresariais de Espigão d'Oeste e Vilhena, Rondônia, em investigação sobre extração, transporte e comercialização ilegal de madeira proveniente especialmente das Terras Indígenas Roosevelt e Parque do Aripuanã.",
+        "en": "Brazil's Federal Police executed 19 search-and-seizure warrants at homes and businesses in Espigão d'Oeste and Vilhena, Rondônia, in an investigation into the illegal extraction, transport and commercialization of timber originating especially from the Roosevelt and Parque do Aripuanã Indigenous Lands.",
+        "es": "La Policía Federal de Brasil cumplió 19 órdenes de allanamiento y registro en residencias y establecimientos empresariales de Espigão d'Oeste y Vilhena, Rondônia, en una investigación sobre extracción, transporte y comercialización ilegal de madera procedente especialmente de las Tierras Indígenas Roosevelt y Parque do Aripuanã."
+      },
+      "case_context": {
+        "pt": "A fonte oficial descreve uma investigação e o cumprimento de mandados, não uma condenação. Como a ação envolveu dois municípios e áreas indígenas extensas sem coordenadas operacionais divulgadas, o marcador usa um ponto intermediário apenas como referência regional. O registro relaciona a investigação à madeira das TIs apenas na medida expressamente informada pela Polícia Federal.",
+        "en": "The official source describes an investigation and the execution of warrants, not a conviction. Because the action involved two municipalities and extensive Indigenous Lands without disclosed operational coordinates, the marker uses a midpoint only as a regional reference. The record links the investigation to timber from the Indigenous Lands only to the extent expressly stated by the Federal Police.",
+        "es": "La fuente oficial describe una investigación y el cumplimiento de órdenes judiciales, no una condena. Como la acción involucró dos municipios y extensas Tierras Indígenas sin coordenadas operativas divulgadas, el marcador utiliza un punto intermedio únicamente como referencia regional. El registro vincula la investigación con madera de las TI solo en la medida expresamente informada por la Policía Federal."
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": null,
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "occurred_at": "2026-09-16T12:00:00-04:00",
+      "published_at": "2026-09-16T11:22:00-03:00",
+      "added_at": "2026-09-22T19:37:00+08:00",
+      "updated_at": "2026-09-22T19:37:00+08:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official enforcement or investigation record; no inference of criminal guilt beyond what the cited sources state.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Espigão d'Oeste e Vilhena; foco nas TIs Roosevelt e Parque do Aripuanã",
+        "admin1": "Rondônia",
+        "country": "Brazil",
+        "lat": -12.1308,
+        "lon": -60.5797,
+        "precision": "multi_municipality_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": true
+      },
+      "cross_border": false,
+      "keywords": [
+        "Rondônia",
+        "Espigão d'Oeste",
+        "Vilhena",
+        "Terra Indígena Roosevelt",
+        "Parque do Aripuanã",
+        "madeira ilegal",
+        "19 mandados"
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-combate-exploracao-ilegal-de-madeira-em-terras-indigenas-em-rondonia/",
+          "published_at": "2026-09-16T11:22:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "BR-MT-2026-0915-KAYABI-TELES-PIRES",
+      "title": {
+        "pt": "PF, Ibama e Funai combatem garimpo ilegal na TI Kayabi e nos rios Teles Pires e São Manuel",
+        "en": "Federal Police, Ibama and Funai target illegal mining in Kayabi Indigenous Land and the Teles Pires and São Manuel rivers",
+        "es": "Policía Federal, Ibama y Funai combaten minería ilegal en la TI Kayabi y en los ríos Teles Pires y São Manuel"
+      },
+      "summary": {
+        "pt": "Entre 15 e 16 de setembro, Polícia Federal, Ibama e Funai realizaram uma operação na Terra Indígena Kayabi, em Apiacás, Mato Grosso, e áreas próximas, contra mineração ilegal nos rios Teles Pires e São Manuel. Foram inutilizadas 16 balsas escariantes, cinco balsas de mergulho, cinco barcos, um rebocador, motobombas, motores e cerca de 37,7 mil litros de combustível.",
+        "en": "On September 15–16, the Federal Police, Ibama and Funai conducted an operation in Kayabi Indigenous Land, Apiacás, Mato Grosso, and nearby areas against illegal mining in the Teles Pires and São Manuel rivers. Authorities disabled 16 suction-dredging rafts, five diving rafts, five boats, a tugboat, pumps, engines and about 37,700 liters of fuel.",
+        "es": "Entre el 15 y el 16 de septiembre, la Policía Federal, Ibama y Funai realizaron una operación en la Tierra Indígena Kayabi, en Apiacás, Mato Grosso, y áreas cercanas, contra la minería ilegal en los ríos Teles Pires y São Manuel. Fueron inutilizadas 16 balsas de dragado, cinco balsas de buceo, cinco embarcaciones, un remolcador, motobombas, motores y cerca de 37.700 litros de combustible."
+      },
+      "case_context": {
+        "pt": "A operação ocorreu ao longo de rios e em áreas próximas à TI Kayabi, sem um único ponto geográfico divulgado. O marcador utiliza a sede municipal de Apiacás como referência aproximada e não deve ser interpretado como coordenada do local de interdição. A presença na TI torna relevante o possível impacto sobre território indígena, sem atribuir dano específico não descrito pela fonte.",
+        "en": "The operation took place along rivers and in areas near Kayabi Indigenous Land, with no single geographic point disclosed. The marker uses Apiacás municipal seat as an approximate reference and should not be read as the interdiction site's coordinates. The operation's location in the Indigenous Land makes potential impacts on Indigenous territory relevant, without attributing specific harm not described by the source.",
+        "es": "La operación se desarrolló a lo largo de ríos y en áreas próximas a la Tierra Indígena Kayabi, sin que se divulgara un único punto geográfico. El marcador utiliza la cabecera municipal de Apiacás como referencia aproximada y no debe interpretarse como la coordenada del sitio de interdicción. La presencia en la TI hace relevante el posible impacto sobre territorio indígena, sin atribuir daños específicos no descritos por la fuente."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": null,
+      "agencies": [
+        "Polícia Federal",
+        "Ibama",
+        "Funai"
+      ],
+      "occurred_at": "2026-09-16T23:59:00-04:00",
+      "published_at": "2026-09-18T14:40:00-03:00",
+      "added_at": "2026-09-22T19:37:00+08:00",
+      "updated_at": "2026-09-22T19:37:00+08:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official enforcement or investigation record; no inference of criminal guilt beyond what the cited sources state.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Terra Indígena Kayabi e áreas próximas — Apiacás",
+        "admin1": "Mato Grosso",
+        "country": "Brazil",
+        "lat": -9.5436,
+        "lon": -57.4492,
+        "precision": "municipality_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": true
+      },
+      "cross_border": false,
+      "keywords": [
+        "Terra Indígena Kayabi",
+        "Apiacás",
+        "Teles Pires",
+        "São Manuel",
+        "garimpo ilegal",
+        "balsas",
+        "37,7 mil litros de combustível"
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-ibama-e-funai-combatem-garimpo-ilegal-em-terra-indigena-em-mato-grosso/",
+          "published_at": "2026-09-18T14:40:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "GY-PURUNI-2026-0917-RIVER-DREDGES",
+      "title": {
+        "pt": "Autoridades apreendem duas dragas e ouro em operação contra mineração ilegal no rio Puruni",
+        "en": "Authorities seize two dredges and gold in illegal-mining operation on the Puruni River",
+        "es": "Autoridades incautan dos dragas y oro en operativo contra minería ilegal en el río Puruni"
+      },
+      "summary": {
+        "pt": "O Departamento de Fiscalização da Guyana Geology and Mines Commission, com apoio da Polícia da Guiana, desmantelou em 17 de setembro uma operação de mineração ilegal na zona de proteção do rio Puruni. Duas dragas aquáticas e uma quantidade não divulgada de ouro foram apreendidas, e três pessoas associadas à atividade foram conduzidas a Puruni Landing para investigação.",
+        "en": "The Enforcement Department of the Guyana Geology and Mines Commission, supported by the Guyana Police Force, dismantled an illegal mining operation within the Puruni River buffer zone on September 17. Two water dredges and an undisclosed quantity of gold were seized, and three persons associated with the operation were taken to Puruni Landing for investigation.",
+        "es": "El Departamento de Fiscalización de la Guyana Geology and Mines Commission, con apoyo de la Policía de Guyana, desmanteló el 17 de septiembre una operación de minería ilegal en la zona de protección del río Puruni. Fueron incautadas dos dragas acuáticas y una cantidad de oro no divulgada, y tres personas asociadas con la actividad fueron trasladadas a Puruni Landing para investigación."
+      },
+      "case_context": {
+        "pt": "A nota oficial não informa a quantidade de ouro nem coordenadas do ponto de mineração no rio. O marcador usa Puruni Landing como referência geográfica aproximada, pois foi o local para onde as pessoas foram conduzidas após a fiscalização. O caso é separado da operação de 10–12 de setembro no Potaro Mining District, que já consta no observatório.",
+        "en": "The official release does not disclose the quantity of gold or the coordinates of the mining site on the river. The marker uses Puruni Landing as an approximate geographic reference because that is where the persons were taken after enforcement. This case is separate from the September 10–12 Potaro Mining District operation already recorded in the observatory.",
+        "es": "El comunicado oficial no informa la cantidad de oro ni las coordenadas del punto de minería en el río. El marcador utiliza Puruni Landing como referencia geográfica aproximada porque allí fueron trasladadas las personas después de la fiscalización. Este caso es distinto de la operación del 10–12 de septiembre en el Potaro Mining District ya registrada en el observatorio."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": null,
+      "agencies": [
+        "Guyana Geology and Mines Commission — Enforcement Department",
+        "Guyana Police Force",
+        "Ministry of Natural Resources"
+      ],
+      "occurred_at": "2026-09-17T12:00:00-04:00",
+      "published_at": "2026-09-19T12:00:00-04:00",
+      "added_at": "2026-09-22T19:37:00+08:00",
+      "updated_at": "2026-09-22T19:37:00+08:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official enforcement or investigation record; no inference of criminal guilt beyond what the cited sources state.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Puruni River / Puruni Landing reference",
+        "admin1": "Cuyuni-Mazaruni",
+        "country": "Guyana",
+        "lat": 6.25125,
+        "lon": -59.37646,
+        "precision": "river_landing_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Puruni River",
+        "Puruni Landing",
+        "illegal mining",
+        "dredges",
+        "gold",
+        "GGMC",
+        "Guyana Police Force"
+      ],
+      "sources": [
+        {
+          "publisher": "Department of Public Information, Guyana",
+          "url": "https://dpi.gov.gy/press-statement-dredges-gold-seized-following-crackdown-on-illegal-operation-in-puruni-river/",
+          "published_at": "2026-09-19T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "PE-MDD-2026-0917-SIX-OPERATIONS",
+      "title": {
+        "pt": "Seis operações em Inambari atingem infraestrutura de mineração ilegal avaliada em S/ 54,1 milhões",
+        "en": "Six Inambari operations hit illegal-mining infrastructure valued at S/54.1 million",
+        "es": "Seis operaciones en Inambari afectan infraestructura de minería ilegal valorizada en S/ 54,1 millones"
+      },
+      "summary": {
+        "pt": "Em 17 de setembro, autoridades peruanas realizaram seis operações de interdição nos setores Toscana, Apailón, A-8, Mega 16, Y-Malinosky e Valle Dorado, em Inambari, Madre de Dios. Segundo o balanço divulgado, foram destruídos ou inutilizados 57 acampamentos rústicos e ampla infraestrutura de mineração ilegal, com valor total estimado oficialmente em S/ 54.128.485.",
+        "en": "On September 17, Peruvian authorities carried out six interdiction operations in the Toscana, Apailón, A-8, Mega 16, Y-Malinosky and Valle Dorado sectors of Inambari, Madre de Dios. According to the published tally, 57 makeshift camps and extensive illegal-mining infrastructure were destroyed or disabled, with an officially estimated total value of S/54,128,485.",
+        "es": "El 17 de septiembre, autoridades peruanas ejecutaron seis operaciones de interdicción en los sectores Toscana, Apailón, A-8, Mega 16, Y-Malinosky y Valle Dorado, en Inambari, Madre de Dios. Según el balance divulgado, fueron destruidos o inutilizados 57 campamentos rústicos y una amplia infraestructura de minería ilegal, con un valor total oficial estimado en S/ 54 128 485."
+      },
+      "case_context": {
+        "pt": "Este registro agrega as seis intervenções do mesmo ciclo operacional de 17 de setembro para evitar multiplicar um único balanço oficial em seis eventos. Embora Apailón também tenha sido alvo em 14 de setembro, trata-se de uma nova intervenção em data diferente. O marcador é apenas uma referência distrital e os valores econômicos reproduzem estimativas oficiais.",
+        "en": "This record aggregates the six interventions from the same September 17 operational cycle to avoid splitting one official tally into six events. Although Apailón was also targeted on September 14, this was a new intervention on a different date. The marker is only a district reference and the economic figures reproduce official estimates.",
+        "es": "Este registro agrega las seis intervenciones del mismo ciclo operativo del 17 de septiembre para evitar dividir un único balance oficial en seis eventos. Aunque Apailón también fue intervenido el 14 de septiembre, se trató de una nueva acción en una fecha diferente. El marcador es solo una referencia distrital y las cifras económicas reproducen estimaciones oficiales."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Plan Restauración 2026 — seis operaciones en Inambari",
+      "agencies": [
+        "Policía Nacional del Perú",
+        "Dirección de Medio Ambiente de la PNP",
+        "Ministerio Público del Perú",
+        "Ejército del Perú",
+        "SERNANP"
+      ],
+      "occurred_at": "2026-09-17T23:59:00-05:00",
+      "published_at": "2026-09-18T12:00:00-05:00",
+      "added_at": "2026-09-22T19:37:00+08:00",
+      "updated_at": "2026-09-22T19:37:00+08:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official enforcement or investigation record; no inference of criminal guilt beyond what the cited sources state.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Toscana, Apailón, A-8, Mega 16, Y-Malinosky e Valle Dorado — Inambari",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.9767,
+        "lon": -69.9388,
+        "precision": "district_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Toscana",
+        "Apailón",
+        "A-8",
+        "Mega 16",
+        "Y-Malinosky",
+        "Valle Dorado",
+        "Inambari",
+        "minería ilegal",
+        "57 campamentos",
+        "S/ 54 128 485"
+      ],
+      "sources": [
+        {
+          "publisher": "Agencia Andina",
+          "url": "https://andina.pe/agencia/noticia-madre-dios-pnp-destruye-bienes-de-mineria-ilegal-valorizados-mas-s54-mllns-1092419.aspx",
+          "published_at": "2026-09-18T12:00:00-05:00",
+          "source_type": "media_republishing_official_results"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "BR-PA-2026-0919-TRIPLEX",
+      "title": {
+        "pt": "Operação Triplex combate garimpo ilegal em Conceição do Araguaia",
+        "en": "Operation Triplex targets illegal mining in Conceição do Araguaia",
+        "es": "Operación Triplex combate minería ilegal en Conceição do Araguaia"
+      },
+      "summary": {
+        "pt": "A Polícia Federal deflagrou a Operação Triplex em Conceição do Araguaia, Pará, no contexto de investigação sobre garimpo ilegal. Foram cumpridos dois mandados de busca e apreensão e um de prisão; durante a ação, a PF informou a apreensão de duas armas de fogo, 112 munições, duas caminhonetes e um celular.",
+        "en": "Brazil's Federal Police launched Operation Triplex in Conceição do Araguaia, Pará, in the context of an illegal-mining investigation. Two search-and-seizure warrants and one arrest warrant were executed; the Federal Police reported seizing two firearms, 112 rounds of ammunition, two pickup trucks and a mobile phone.",
+        "es": "La Policía Federal de Brasil lanzó la Operación Triplex en Conceição do Araguaia, Pará, en el contexto de una investigación sobre minería ilegal. Se cumplieron dos órdenes de allanamiento y registro y una orden de detención; durante la acción, la PF informó la incautación de dos armas de fuego, 112 municiones, dos camionetas y un teléfono móvil."
+      },
+      "case_context": {
+        "pt": "O comunicado oficial descreve medidas investigativas e apreensões realizadas durante o cumprimento de ordens judiciais. A existência de mandado de prisão ou de bens apreendidos não constitui, por si só, prova de culpa de pessoas específicas. O marcador representa a cidade de Conceição do Araguaia, onde os mandados foram cumpridos.",
+        "en": "The official release describes investigative measures and seizures carried out while executing judicial orders. The existence of an arrest warrant or seized property does not by itself establish the guilt of any specific person. The marker represents Conceição do Araguaia, where the warrants were executed.",
+        "es": "El comunicado oficial describe medidas de investigación e incautaciones realizadas durante el cumplimiento de órdenes judiciales. La existencia de una orden de detención o de bienes incautados no constituye por sí sola prueba de culpabilidad de personas específicas. El marcador representa la ciudad de Conceição do Araguaia, donde se cumplieron las órdenes."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Operação Triplex",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "occurred_at": "2026-09-19T12:00:00-03:00",
+      "published_at": "2026-09-19T18:40:00-03:00",
+      "added_at": "2026-09-22T19:37:00+08:00",
+      "updated_at": "2026-09-22T19:37:00+08:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official enforcement or investigation record; no inference of criminal guilt beyond what the cited sources state.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Conceição do Araguaia",
+        "admin1": "Pará",
+        "country": "Brazil",
+        "lat": -8.258,
+        "lon": -49.265,
+        "precision": "municipality_seat_reference"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Operação Triplex",
+        "Conceição do Araguaia",
+        "Pará",
+        "garimpo ilegal",
+        "mandados",
+        "armas",
+        "munições"
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-deflagra-a-operacao-triplex-em-combate-ao-garimpo-ilegal-no-para/",
+          "published_at": "2026-09-19T18:40:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "BR-PA-2026-0914-MUNDURUKU-II",
+      "title": {
+        "pt": "Operação fecha pontos reincidentes de garimpo ilegal na Terra Indígena Munduruku",
+        "en": "Operation shuts down recurrent illegal-mining sites in Munduruku Indigenous Land",
+        "es": "Operación cierra puntos reincidentes de minería ilegal en la Tierra Indígena Munduruku"
+      },
+      "summary": {
+        "pt": "Entre 14 e 18 de setembro, a Polícia Federal, com apoio da Polícia Militar do Pará, realizou fiscalização em diversos pontos da Terra Indígena Munduruku. Foram inutilizadas duas dragas, uma escavadeira hidráulica, dois motores estacionários a diesel, combustível e estruturas de apoio, com prejuízo estimado pela PF em mais de R$ 5 milhões aos responsáveis pela atividade ilegal.",
+        "en": "From September 14 to 18, Brazil's Federal Police, supported by the Pará Military Police, carried out enforcement at multiple sites in Munduruku Indigenous Land. Two dredges, one hydraulic excavator, two stationary diesel engines, fuel and support structures were disabled, with the Federal Police estimating losses of more than R$5 million to those responsible for the illegal activity.",
+        "es": "Entre el 14 y el 18 de septiembre, la Policía Federal de Brasil, con apoyo de la Policía Militar de Pará, realizó fiscalizaciones en diversos puntos de la Tierra Indígena Munduruku. Fueron inutilizadas dos dragas, una excavadora hidráulica, dos motores estacionarios diésel, combustible y estructuras de apoyo, con pérdidas estimadas por la PF en más de R$ 5 millones para los responsables de la actividad ilegal."
+      },
+      "case_context": {
+        "pt": "A fonte informa que esta foi a segunda edição de uma operação de fiscalização motivada pela persistência de garimpo em pontos anteriormente fiscalizados. Como a ação ocorreu em vários locais dentro de uma terra indígena extensa, o marcador é uma referência territorial aproximada e não indica um ponto específico de interdição. O valor de R$ 5 milhões é estimativa divulgada pela Polícia Federal.",
+        "en": "The source states that this was the second edition of an enforcement operation prompted by persistent mining at sites previously inspected. Because the action covered multiple locations within a large Indigenous Land, the marker is an approximate territorial reference and does not indicate a specific interdiction point. The R$5 million figure is an estimate published by the Federal Police.",
+        "es": "La fuente informa que esta fue la segunda edición de una operación de fiscalización motivada por la persistencia de minería en puntos previamente inspeccionados. Como la acción se desarrolló en varios lugares dentro de una extensa Tierra Indígena, el marcador es una referencia territorial aproximada y no indica un punto específico de interdicción. La cifra de R$ 5 millones es una estimación divulgada por la Policía Federal."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Fiscalização na Terra Indígena Munduruku — 2.ª edição",
+      "agencies": [
+        "Polícia Federal",
+        "Polícia Militar do Pará"
+      ],
+      "occurred_at": "2026-09-18T23:59:00-03:00",
+      "published_at": "2026-09-21T15:51:00-03:00",
+      "added_at": "2026-09-22T19:37:00+08:00",
+      "updated_at": "2026-09-22T19:37:00+08:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official enforcement or investigation record; no inference of criminal guilt beyond what the cited sources state.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Terra Indígena Munduruku",
+        "admin1": "Pará",
+        "country": "Brazil",
+        "lat": -3.23332,
+        "lon": -55.05592,
+        "precision": "indigenous_territory_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": true
+      },
+      "cross_border": false,
+      "keywords": [
+        "Terra Indígena Munduruku",
+        "Pará",
+        "garimpo ilegal",
+        "dragas",
+        "escavadeira",
+        "R$ 5 milhões",
+        "desintrusão"
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/operacao-fecha-pontos-reincidentes-de-garimpo-ilegal-na-terra-indigena-munduruku-pa",
+          "published_at": "2026-09-21T15:51:00-03:00",
+          "source_type": "official"
         }
       ],
       "source_media": []
