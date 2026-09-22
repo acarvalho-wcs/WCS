@@ -14,6 +14,16 @@ async function readJson(name) {
   return JSON.parse(await fs.readFile(path.join(dataDir, name), 'utf8'));
 }
 
+function withTimeout(promise, ms, label) {
+  let timer;
+  return Promise.race([
+    promise.finally(() => clearTimeout(timer)),
+    new Promise((_, reject) => {
+      timer = setTimeout(() => reject(new Error(`${label} timed out after ${ms}ms`)), ms);
+    })
+  ]);
+}
+
 async function responseJson(response) {
   const text = await response.text();
   try { return JSON.parse(text); }
@@ -23,7 +33,7 @@ async function responseJson(response) {
 async function refreshLayer(modulePath, outputName, fallback) {
   try {
     const mod = await import(pathToFileURL(path.join(root, modulePath)));
-    const response = await mod.default();
+    const response = await withTimeout(Promise.resolve(mod.default()), 20000, outputName);
     const body = await responseJson(response);
     if (!response.ok) throw new Error(body?.message || `${outputName}: HTTP ${response.status}`);
     await writeJson(outputName, body);
@@ -59,7 +69,7 @@ async function refreshRadios() {
         city: station.city || ''
       });
       const request = new Request(`https://pages.local/api/radio-stream?${params.toString()}`);
-      const response = await resolver(request);
+      const response = await withTimeout(Promise.resolve(resolver(request)), 6000, `radio ${station.id}`);
       const data = await responseJson(response);
       if (response.ok) {
         copy.stream_url = data.stream_url || null;
