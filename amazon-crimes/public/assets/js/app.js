@@ -183,10 +183,10 @@ function setLanguage(next) {
   language = next;
   localStorage.setItem('amazon-observatory-language', language);
   document.documentElement.lang = language === 'pt' ? 'pt-BR' : language;
-  $('[data-i18n]').forEach((el) => { el.textContent = t(el.dataset.i18n); });
-  $('[data-i18n-placeholder]').forEach((el) => { el.placeholder = t(el.dataset.i18nPlaceholder); });
-  $('[data-i18n-aria-label]').forEach((el) => { el.setAttribute('aria-label', t(el.dataset.i18nAriaLabel)); });
-  $('.lang').forEach((button) => button.classList.toggle('active', button.dataset.lang === language));
+  $$('[data-i18n]').forEach((el) => { el.textContent = t(el.dataset.i18n); });
+  $$('[data-i18n-placeholder]').forEach((el) => { el.placeholder = t(el.dataset.i18nPlaceholder); });
+  $$('[data-i18n-aria-label]').forEach((el) => { el.setAttribute('aria-label', t(el.dataset.i18nAriaLabel)); });
+  $$('.lang').forEach((button) => button.classList.toggle('active', button.dataset.lang === language));
   renderHowItWorks();
   populateFilters();
   renderLayerPanel();
@@ -1179,7 +1179,7 @@ function closeHowItWorks() {
 }
 
 function bindControls() {
-  $('.lang').forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
+  $$('.lang').forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
   $('#how-it-works-open')?.addEventListener('click', openHowItWorks);
   $('#how-it-works-close')?.addEventListener('click', closeHowItWorks);
   $('#how-it-works-dialog')?.addEventListener('click', (event) => {
