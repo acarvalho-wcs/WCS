@@ -1,0 +1,384 @@
+.how-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 80% 0%, color-mix(in srgb, var(--green) 9%, transparent), transparent 34%),
+    var(--bg);
+}
+
+.how-page-shell {
+  width: min(1460px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 24px 0 36px;
+}
+
+.how-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.how-page-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.how-page-brand-copy {
+  min-width: 0;
+}
+
+.how-page-brand-copy h1 {
+  max-width: 900px;
+  font-size: clamp(24px, 2.8vw, 40px);
+  line-height: 1.08;
+}
+
+.how-page-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.how-page-back {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.how-page-back:hover {
+  border-color: rgba(98,214,141,.4);
+  background: var(--surface-3);
+}
+
+.how-page-main {
+  display: grid;
+  gap: 16px;
+}
+
+.how-page-hero,
+.how-page-toc-card,
+.how-page-section,
+.how-page-signoff {
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--surface-2) 97%, transparent),
+      color-mix(in srgb, var(--surface) 97%, transparent)
+    );
+  box-shadow: var(--shadow);
+}
+
+.how-page-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(280px, .7fr);
+  gap: 18px;
+  align-items: stretch;
+  border-radius: 22px;
+  padding: 28px;
+}
+
+.how-page-hero-copy {
+  max-width: 900px;
+}
+
+.how-page-hero-copy p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.72;
+}
+
+.how-page-hero-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.how-page-hero-copy .how-page-lead {
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.62;
+  font-weight: 620;
+}
+
+.how-page-summary-card {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 9px;
+  padding: 20px;
+  border: 1px solid rgba(98,214,141,.22);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(98,214,141,.09), transparent 42%),
+    var(--surface-2);
+}
+
+.how-page-summary-card strong {
+  font-size: 17px;
+  line-height: 1.28;
+}
+
+.how-page-summary-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.58;
+}
+
+.how-page-layout {
+  display: grid;
+  grid-template-columns: 270px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.how-page-toc-card {
+  position: sticky;
+  top: 16px;
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.how-page-toc-head {
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.how-page-toc-head strong {
+  display: block;
+  font-size: 13px;
+}
+
+.how-page-toc {
+  display: grid;
+  gap: 2px;
+  padding-top: 9px;
+}
+
+.how-page-toc a {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  gap: 8px;
+  align-items: start;
+  padding: 8px 7px;
+  border-radius: 9px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 1.35;
+}
+
+.how-page-toc a:hover {
+  color: var(--text);
+  background: var(--surface-3);
+}
+
+.how-page-toc a > span:first-child {
+  width: 21px;
+  height: 21px;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  background: rgba(98,214,141,.07);
+  color: var(--green-2);
+  font-size: 8px;
+  font-weight: 900;
+}
+
+.how-page-sections {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+}
+
+.how-page-section {
+  scroll-margin-top: 18px;
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  gap: 16px;
+  border-radius: 18px;
+  padding: 22px;
+}
+
+.how-page-section-meta {
+  display: flex;
+  justify-content: center;
+}
+
+.how-page-section-number {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(98,214,141,.26);
+  border-radius: 10px;
+  background: rgba(98,214,141,.07);
+  color: var(--green-2);
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.how-page-section-copy {
+  max-width: 930px;
+}
+
+.how-page-section-copy h2 {
+  margin: 2px 0 12px;
+  font-size: 18px;
+  letter-spacing: -.015em;
+}
+
+.how-page-section-copy p {
+  margin: 0 0 11px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.68;
+}
+
+.how-page-section-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.how-page-signoff {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-radius: 18px;
+  padding: 20px 22px;
+}
+
+.how-page-signoff strong {
+  display: block;
+  font-size: 12px;
+}
+
+.how-page-signoff p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 10.5px;
+}
+
+.how-page-signoff a {
+  color: var(--green-2);
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+@media (max-width: 1050px) {
+  .how-page-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .how-page-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .how-page-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .how-page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .how-page-toc-card {
+    position: static;
+  }
+
+  .how-page-toc {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .how-page-shell {
+    width: min(100% - 18px, 1460px);
+    padding-top: 14px;
+  }
+
+  .how-page-brand {
+    align-items: flex-start;
+  }
+
+  .how-page-brand-copy h1 {
+    font-size: 25px;
+  }
+
+  .how-page-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .language-switcher {
+    align-self: flex-start;
+  }
+
+  .how-page-back {
+    justify-content: center;
+  }
+
+  .how-page-hero {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .how-page-hero-copy .how-page-lead {
+    font-size: 14px;
+  }
+
+  .how-page-hero-copy p {
+    font-size: 11.5px;
+  }
+
+  .how-page-toc {
+    grid-template-columns: 1fr;
+  }
+
+  .how-page-section {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 11px;
+    padding: 18px 16px;
+    border-radius: 15px;
+  }
+
+  .how-page-section-number {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+  }
+
+  .how-page-section-copy h2 {
+    font-size: 15px;
+    margin-top: 0;
+  }
+
+  .how-page-section-copy p {
+    font-size: 11px;
+    line-height: 1.62;
+  }
+
+  .how-page-signoff {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
