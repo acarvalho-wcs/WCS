@@ -27,10 +27,10 @@
           <button class="lang" data-lang="en">EN</button>
           <button class="lang" data-lang="es">ES</button>
         </div>
-        <button id="how-it-works-open" class="how-it-works-button" type="button" aria-haspopup="dialog" aria-controls="how-it-works-dialog">
+        <a id="how-it-works-link" class="how-it-works-button" href="./how-it-works.html?lang=pt">
           <span class="how-it-works-icon" aria-hidden="true">i</span>
           <span id="how-it-works-label">Como funciona</span>
-        </button>
+        </a>
       </div>
     </header>
 
@@ -88,20 +88,7 @@
     <footer><span class="footer-program"><span data-i18n="footerProgram">Programa de Inteligência para Conservação | WCS Brasil</span> <span aria-hidden="true">•</span> <a href="https://brasil.wcs.org" target="_blank" rel="noopener noreferrer">brasil.wcs.org</a></span><span id="last-updated">—</span></footer>
   </div>
 
-  <div id="how-it-works-dialog" class="how-it-works-dialog" role="dialog" aria-modal="true" aria-labelledby="how-it-works-title" hidden>
-    <div class="how-it-works-shell">
-      <div class="how-it-works-topbar">
-        <div>
-          <span id="how-it-works-eyebrow" class="section-kicker">COMO FUNCIONA</span>
-          <h2 id="how-it-works-title">Observatório de Crimes Ambientais na Amazônia</h2>
-        </div>
-        <button id="how-it-works-close" class="how-it-works-close" type="button" aria-label="Fechar">×</button>
-      </div>
-      <div id="how-it-works-content" class="how-it-works-content"></div>
-    </div>
-  </div>
-
   <script type="module" src="./assets/js/app.js"></script>
-  <script type="module" src="./assets/js/how-it-works.js"></script>
+  <script type="module" src="./assets/js/how-it-works-link.js"></script>
 </body>
 </html>
