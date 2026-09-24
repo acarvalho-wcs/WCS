@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-09-22T19:37:00+08:00",
+  "generated_at": "2026-09-24T21:06:00+08:00",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -4571,6 +4571,242 @@
           "publisher": "Polícia Federal",
           "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/operacao-fecha-pontos-reincidentes-de-garimpo-ilegal-na-terra-indigena-munduruku-pa",
           "published_at": "2026-09-21T15:51:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "BR-AM-2026-0921-COARI-PIRARUCU",
+      "title": {
+        "pt": "Fiscalização apreende 27,6 toneladas de pirarucu sem documentação no Rio Solimões",
+        "en": "Enforcement seizes 27.6 tonnes of undocumented pirarucu on the Solimões River",
+        "es": "Fiscalización incauta 27,6 toneladas de pirarucú sin documentación en el río Solimões"
+      },
+      "summary": {
+        "pt": "Policiais militares do Amazonas apreenderam 27,6 toneladas de pirarucu seco distribuídas em 667 sacos em duas embarcações no Rio Solimões, nas proximidades de Coari. Segundo as fontes, os condutores não apresentaram documentação que comprovasse a origem legal nem autorizasse o transporte e a comercialização do pescado. Dois homens foram presos em flagrante e a carga, avaliada em R$ 828 mil, foi apreendida.",
+        "en": "Amazonas state military police seized 27.6 tonnes of dried pirarucu packed in 667 sacks from two vessels on the Solimões River near Coari. According to the sources, the operators did not present documentation proving legal origin or authorizing transport and trade of the fish. Two men were arrested in flagrante and the load, valued at R$828,000, was seized.",
+        "es": "Policías militares del estado de Amazonas incautaron 27,6 toneladas de pirarucú seco distribuidas en 667 sacos en dos embarcaciones del río Solimões, cerca de Coari. Según las fuentes, los conductores no presentaron documentación que acreditara el origen legal ni autorizara el transporte y comercio del pescado. Dos hombres fueron detenidos en flagrancia y la carga, valorada en R$ 828.000, fue incautada."
+      },
+      "case_context": {
+        "pt": "A apreensão ocorreu em 21 de setembro e foi divulgada no dia seguinte por veículos locais que atribuem as informações à Polícia Militar do Amazonas. O ponto cartográfico usa a sede de Coari apenas como referência aproximada, pois as fontes não publicaram as coordenadas do ponto de abordagem no Rio Solimões. O registro descreve a apreensão e a ausência de documentação informadas pelas fontes, sem inferir uma cadeia de tráfico ou responsabilidade criminal além do que foi reportado.",
+        "en": "The seizure occurred on September 21 and was reported the following day by local outlets attributing the information to Amazonas state military police. The map point uses Coari town only as an approximate reference because the sources did not publish coordinates for the interception point on the Solimões River. The record describes the seizure and missing documentation reported by the sources without inferring a trafficking chain or criminal responsibility beyond what was reported.",
+        "es": "La incautación ocurrió el 21 de septiembre y fue divulgada al día siguiente por medios locales que atribuyen la información a la Policía Militar de Amazonas. El punto cartográfico utiliza la ciudad de Coari solo como referencia aproximada porque las fuentes no publicaron coordenadas del punto de abordaje en el río Solimões. El registro describe la incautación y la falta de documentación informadas por las fuentes, sin inferir una cadena de tráfico ni responsabilidad penal más allá de lo reportado."
+      },
+      "primary_crime_type": "ILLEGAL_FISHING",
+      "crime_types": [
+        "ILLEGAL_FISHING"
+      ],
+      "operation_name": null,
+      "agencies": [
+        "Polícia Militar do Amazonas",
+        "Batalhão de Operações Policiais Especiais (BOPE/PMAM)",
+        "Base Fluvial Arpão II",
+        "Polícia Civil do Amazonas — Delegacia Interativa de Polícia de Coari"
+      ],
+      "occurred_at": "2026-09-21T12:00:00-04:00",
+      "published_at": "2026-09-22T09:30:00-04:00",
+      "added_at": "2026-09-24T21:06:00+08:00",
+      "updated_at": "2026-09-24T21:06:00+08:00",
+      "backfill": false,
+      "validation_status": "VALIDATED",
+      "legal_status_note": "Validated public-source record based on multiple local outlets reproducing police information; arrests and alleged violations are reported as attributed facts, with no inference of guilt beyond the cited sources.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Rio Solimões / Coari reference",
+        "admin1": "Amazonas",
+        "country": "Brazil",
+        "lat": -4.085,
+        "lon": -63.1414,
+        "precision": "municipality_seat_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Coari",
+        "Rio Solimões",
+        "Base Arpão II",
+        "pirarucu",
+        "Arapaima gigas",
+        "27,6 toneladas",
+        "667 sacos",
+        "pescado sem documentação"
+      ],
+      "sources": [
+        {
+          "publisher": "Amazonas Atual",
+          "url": "https://amazonasatual.com.br/carga-de-27-toneladas-de-pirarucu-e-apreendida-em-coari-am/",
+          "published_at": "2026-09-22T09:30:00-04:00",
+          "source_type": "media_with_official_source"
+        },
+        {
+          "publisher": "A Crítica",
+          "url": "https://www.acritica.com/policia/dupla-e-presa-em-coari-com-quase-30-toneladas-de-pirarucu-ilegal-avaliadas-em-r-828-mil-1.415709",
+          "published_at": "2026-09-22T16:31:00-04:00",
+          "source_type": "media_with_official_source"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "EC-AMZ-2026-0922-EASTERN-OPS",
+      "title": {
+        "pt": "Operações militares atingem mineração ilegal e madeira sem autorização na Amazônia equatoriana",
+        "en": "Military operations target illegal mining and unauthorized timber in the Ecuadorian Amazon",
+        "es": "Operaciones militares afectan minería ilegal y madera sin autorización en la Amazonía ecuatoriana"
+      },
+      "summary": {
+        "pt": "O Exército Ecuatoriano realizou incursões simultâneas em Napo, Pastaza e Morona Santiago, incluindo Misahuallí, Arajuno, Shell e Macuma. Segundo os balanços divulgados, foram destruídas ou inabilitadas dragas, escavadeiras, bombas, uma classificadora e outras estruturas de mineração, além da apreensão de combustível e de um caminhão com cerca de 20 m³ de madeira transportada sem autorização. As autoridades estimaram impacto econômico de aproximadamente US$ 511,2 mil.",
+        "en": "The Ecuadorian Army carried out simultaneous incursions in Napo, Pastaza and Morona Santiago, including Misahuallí, Arajuno, Shell and Macuma. According to the published tallies, dredges, excavators, pumps, a classifier and other mining infrastructure were destroyed or disabled, while fuel and a truck carrying about 20 m³ of timber transported without authorization were seized. Authorities estimated an economic impact of approximately US$511,200.",
+        "es": "El Ejército Ecuatoriano realizó incursiones simultáneas en Napo, Pastaza y Morona Santiago, incluidas Misahuallí, Arajuno, Shell y Macuma. Según los balances divulgados, fueron destruidas o inhabilitadas dragas, excavadoras, bombas, una clasificadora y otras estructuras mineras, además de la incautación de combustible y de un camión con cerca de 20 m³ de madera transportada sin autorización. Las autoridades estimaron una afectación económica de aproximadamente USD 511.200."
+      },
+      "case_context": {
+        "pt": "As reportagens de 23 de setembro reproduzem resultados atribuídos ao Exército Ecuatoriano e descrevem uma ação multissítio em três províncias amazônicas. Uma das fontes registra o dia 22 de setembro, mas apresenta um ano aparentemente incorreto no corpo da matéria; por isso, a data operacional é mantida como 22 de setembro de 2026 com essa limitação explicitada, apoiada pela cobertura contemporânea convergente. O marcador usa Tena apenas como referência regional e não representa os locais exatos das intervenções. O valor de US$ 511,2 mil é uma estimativa oficial reproduzida pelas fontes.",
+        "en": "Reports published on September 23 reproduce results attributed to the Ecuadorian Army and describe a multi-site action across three Amazonian provinces. One source gives September 22 as the operation day but prints an apparently incorrect year in the article body; the operational date is therefore retained as September 22, 2026 with this limitation explicitly noted and supported by convergent contemporary coverage. The marker uses Tena only as a regional reference and does not represent the exact intervention sites. The US$511,200 figure is an official estimate reproduced by the sources.",
+        "es": "Las publicaciones del 23 de septiembre reproducen resultados atribuidos al Ejército Ecuatoriano y describen una acción multisitio en tres provincias amazónicas. Una de las fuentes señala el 22 de septiembre como día de la operación, pero presenta un año aparentemente incorrecto en el cuerpo de la nota; por ello, se mantiene como fecha operativa el 22 de septiembre de 2026 con esta limitación expresamente indicada y respaldada por cobertura contemporánea convergente. El marcador utiliza Tena solo como referencia regional y no representa los lugares exactos de las intervenciones. La cifra de USD 511.200 es una estimación oficial reproducida por las fuentes."
+      },
+      "primary_crime_type": "MULTIPLE_ENVIRONMENTAL_CRIMES",
+      "crime_types": [
+        "MULTIPLE_ENVIRONMENTAL_CRIMES",
+        "ILLEGAL_MINING",
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": null,
+      "agencies": [
+        "Ejército Ecuatoriano",
+        "Fuerzas Armadas del Ecuador"
+      ],
+      "occurred_at": "2026-09-22T23:59:00-05:00",
+      "published_at": "2026-09-23T16:26:00-05:00",
+      "added_at": "2026-09-24T21:06:00+08:00",
+      "updated_at": "2026-09-24T21:06:00+08:00",
+      "backfill": false,
+      "validation_status": "VALIDATED",
+      "legal_status_note": "Validated through convergent current reporting reproducing Ecuadorian Army results; the record preserves uncertainty in the reported operation date and makes no inference of guilt beyond the cited sources.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Misahuallí, Arajuno, Shell e Macuma — Tena regional reference",
+        "admin1": "Napo / Pastaza / Morona Santiago",
+        "country": "Ecuador",
+        "lat": -0.9916,
+        "lon": -77.8163,
+        "precision": "multi_site_operational_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Misahuallí",
+        "Arajuno",
+        "Shell",
+        "Macuma",
+        "Amazonía ecuatoriana",
+        "minería ilegal",
+        "madera sin autorización",
+        "dragas",
+        "USD 511.200"
+      ],
+      "sources": [
+        {
+          "publisher": "El Comercio Ecuador",
+          "url": "https://www.elcomercio.com/actualidad/seguridad/redes-delictivas-pierden-511-000-dolares-mineria-madera-ilegal/",
+          "published_at": "2026-09-23T23:42:00-05:00",
+          "source_type": "media_with_official_source"
+        },
+        {
+          "publisher": "La Hora",
+          "url": "https://www.lahora.com.ec/seguridad/operaciones-militares-contra-la-mineria-ilegal-generar-perdidas-por-511.200-a-las-estructuras-criminales-20260923-0036.html",
+          "published_at": "2026-09-23T16:26:00-05:00",
+          "source_type": "media_with_official_source"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "SR-PARA-2026-0630-SARAMACCA-POLLUTION",
+      "title": {
+        "pt": "Investigação confirma contaminação química no rio Saramacca após mortandade de peixes",
+        "en": "Investigation confirms chemical contamination in Saramacca River after mass fish kill",
+        "es": "Investigación confirma contaminación química en el río Saramacca tras mortandad masiva de peces"
+      },
+      "summary": {
+        "pt": "Autoridades do Suriname confirmaram contaminação no rio Saramacca após uma mortandade massiva de peixes registrada no fim de junho. Análises da Autoridade Nacional de Meio Ambiente detectaram altas concentrações de substâncias químicas, metais pesados e cianeto na água e em peixes. O governo informou que comunidades indígenas e marrons dependentes do rio receberam orientações para não consumir água nem pescado da área afetada.",
+        "en": "Surinamese authorities confirmed contamination in the Saramacca River after a mass fish kill recorded at the end of June. Analyses by the National Environment Authority detected high concentrations of chemicals, heavy metals and cyanide in water and fish. The government reported that Indigenous and Maroon communities dependent on the river were advised not to consume water or fish from the affected area.",
+        "es": "Autoridades de Surinam confirmaron contaminación en el río Saramacca tras una mortandad masiva de peces registrada a finales de junio. Análisis de la Autoridad Nacional de Medio Ambiente detectaron altas concentraciones de sustancias químicas, metales pesados y cianuro en agua y peces. El gobierno informó que comunidades indígenas y cimarronas dependientes del río recibieron recomendaciones de no consumir agua ni pescado de la zona afectada."
+      },
+      "case_context": {
+        "pt": "O governo informa que a mortandade ocorreu no fim de junho; como o dia exato não foi publicado, o timestamp usa o último dia do mês apenas como âncora temporal aproximada. Em agosto, a NMA confirmou a presença de cianeto e metais pesados. Em setembro, novas comunicações oficiais ampliaram o monitoramento de saúde, segurança alimentar e fauna consumida pelas comunidades. O marcador utiliza uma referência próxima a Pikin Saron e não representa o ponto exato de origem da contaminação. O registro reproduz apenas constatações e atribuições oficiais, sem estabelecer responsabilidade penal ou civil definitiva.",
+        "en": "The government states that the fish kill occurred at the end of June; because the exact day was not published, the timestamp uses the last day of the month only as an approximate temporal anchor. In August, the NMA confirmed cyanide and heavy metals. In September, further official communications expanded monitoring of health, food safety and game consumed by communities. The marker uses a reference near Pikin Saron and does not represent the exact source of contamination. The record reproduces only official findings and attributions without establishing final criminal or civil liability.",
+        "es": "El gobierno informa que la mortandad ocurrió a finales de junio; como no se publicó el día exacto, el timestamp utiliza el último día del mes solo como anclaje temporal aproximado. En agosto, la NMA confirmó cianuro y metales pesados. En septiembre, nuevas comunicaciones oficiales ampliaron el monitoreo de salud, seguridad alimentaria y fauna consumida por las comunidades. El marcador utiliza una referencia cercana a Pikin Saron y no representa el punto exacto de origen de la contaminación. El registro reproduce únicamente constataciones y atribuciones oficiales, sin establecer responsabilidad penal o civil definitiva."
+      },
+      "primary_crime_type": "ENVIRONMENTAL_CONTAMINATION",
+      "crime_types": [
+        "ENVIRONMENTAL_CONTAMINATION"
+      ],
+      "operation_name": null,
+      "agencies": [
+        "Nationale Milieu Autoriteit (NMA)",
+        "Government of Suriname"
+      ],
+      "occurred_at": "2026-06-30T23:59:00-03:00",
+      "published_at": "2026-07-27T12:00:00-03:00",
+      "added_at": "2026-09-24T21:06:00+08:00",
+      "updated_at": "2026-09-24T21:06:00+08:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official environmental-contamination record; this database does not infer criminal or civil liability beyond the cited government sources.",
+      "priority": "URGENT",
+      "location": {
+        "name": "Saramaccarivier / Pikin Saron reference",
+        "admin1": "Para",
+        "country": "Suriname",
+        "lat": 5.39,
+        "lon": -55.37,
+        "precision": "river_community_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": true
+      },
+      "cross_border": false,
+      "keywords": [
+        "Saramaccarivier",
+        "Pikin Saron",
+        "cyanide",
+        "heavy metals",
+        "mass fish kill",
+        "pollution",
+        "Indigenous communities",
+        "Maroon communities"
+      ],
+      "sources": [
+        {
+          "publisher": "Government of Suriname",
+          "url": "https://gov.sr/massale-vissterfte-saramaccarivier-heeft-vermoedelijk-chemische-oorzaak/",
+          "published_at": "2026-07-27T12:00:00-03:00",
+          "source_type": "official"
+        },
+        {
+          "publisher": "Government of Suriname",
+          "url": "https://gov.sr/regering-laat-gemeenschappen-saramaccarivier-niet-in-de-steek/",
+          "published_at": "2026-08-28T12:00:00-03:00",
+          "source_type": "official"
+        },
+        {
+          "publisher": "Government of Suriname",
+          "url": "https://gov.sr/gezondheid-voedselveiligheid-en-jachtwild-onderdeel-van-vervolgaanpak-saramaccarivier/",
+          "published_at": "2026-09-23T12:00:00-03:00",
           "source_type": "official"
         }
       ],
