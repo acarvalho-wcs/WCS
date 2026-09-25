@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-09-24T21:06:00+08:00",
+  "generated_at": "2026-09-25T14:44:00+07:00",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -4808,6 +4808,282 @@
           "url": "https://gov.sr/gezondheid-voedselveiligheid-en-jachtwild-onderdeel-van-vervolgaanpak-saramaccarivier/",
           "published_at": "2026-09-23T12:00:00-03:00",
           "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "BR-AM-2026-0924-VALPARAISO-LOGGING",
+      "title": {
+        "pt": "PF e Ibama apuram extração e comércio ilegal de madeira da Terra Indígena Valparaíso",
+        "en": "Federal Police and Ibama investigate illegal extraction and trade of timber from Valparaíso Indigenous Land",
+        "es": "Policía Federal e Ibama investigan extracción y comercio ilegal de madera de la Tierra Indígena Valparaíso"
+      },
+      "summary": {
+        "pt": "A Polícia Federal, com apoio do Ibama, cumpriu nove mandados de busca e apreensão em investigação sobre extração, transporte, beneficiamento e comercialização irregular de madeira oriunda da Terra Indígena Valparaíso, em Boca do Acre (AM). Segundo a PF, a madeira era retirada da terra indígena, transportada pelo Rio Purus e destinada a estabelecimentos na zona urbana de Boca do Acre; duas madeireiras estavam entre os alvos.",
+        "en": "Brazilian Federal Police, supported by Ibama, executed nine search warrants in an investigation into the illegal extraction, transport, processing and commercialization of timber originating from Valparaíso Indigenous Land in Boca do Acre, Amazonas. According to Federal Police, the timber was removed from the Indigenous territory, transported along the Purus River and taken to businesses in urban Boca do Acre; two sawmills were among the targets.",
+        "es": "La Policía Federal de Brasil, con apoyo de Ibama, cumplió nueve órdenes de allanamiento en una investigación sobre extracción, transporte, procesamiento y comercialización irregular de madera procedente de la Tierra Indígena Valparaíso, en Boca do Acre (Amazonas). Según la Policía Federal, la madera era retirada del territorio indígena, transportada por el río Purus y destinada a establecimientos de la zona urbana de Boca do Acre; dos aserraderos estaban entre los objetivos."
+      },
+      "case_context": {
+        "pt": "A ocorrência é uma operação investigativa confirmada por fonte oficial, não uma condenação. A PF descreve indícios de uma cadeia que conectaria a retirada de madeira da Terra Indígena Valparaíso ao transporte fluvial pelo Rio Purus e a estabelecimentos urbanos em Boca do Acre. O ponto no mapa usa a sede de Boca do Acre apenas como referência geográfica aproximada; a fonte não divulga as coordenadas dos locais de extração nem dos alvos. O horário exato da operação não foi informado; o timestamp de occurred_at representa apenas a data documentada.",
+        "en": "This is an investigative enforcement action confirmed by an official source, not a conviction. Federal Police describe evidence of a chain linking timber removal from Valparaíso Indigenous Land to river transport on the Purus River and businesses in urban Boca do Acre. The map point uses Boca do Acre town only as an approximate geographic reference; the source does not disclose coordinates for extraction sites or targets. The exact operation time was not reported; occurred_at represents the documented date only.",
+        "es": "Se trata de una acción investigativa confirmada por fuente oficial, no de una condena. La Policía Federal describe indicios de una cadena que vincularía la extracción de madera de la Tierra Indígena Valparaíso con el transporte fluvial por el río Purus y establecimientos urbanos de Boca do Acre. El punto del mapa utiliza la ciudad de Boca do Acre solo como referencia geográfica aproximada; la fuente no publica coordenadas de los lugares de extracción ni de los objetivos. No se informó la hora exacta de la operación; occurred_at representa únicamente la fecha documentada."
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING",
+        "PROTECTED_AREA_INVASION"
+      ],
+      "operation_name": null,
+      "agencies": [
+        "Polícia Federal",
+        "Ibama"
+      ],
+      "occurred_at": "2026-09-24T00:00:00-04:00",
+      "published_at": "2026-09-24T10:35:00-04:00",
+      "added_at": "2026-09-25T14:44:00+07:00",
+      "updated_at": "2026-09-25T14:44:00+07:00",
+      "backfill": false,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official investigation; suspects and businesses are described as under investigation. No inference of guilt beyond the cited source.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Boca do Acre reference / Terra Indígena Valparaíso",
+        "admin1": "Amazonas",
+        "country": "Brazil",
+        "lat": -8.7553,
+        "lon": -67.3931,
+        "precision": "municipality_centroid_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "Terra Indígena Valparaíso"
+      },
+      "impacts": {
+        "indigenous_or_local_communities": true
+      },
+      "cross_border": false,
+      "keywords": [
+        "Boca do Acre",
+        "Terra Indígena Valparaíso",
+        "Rio Purus",
+        "madeira",
+        "madeireiras",
+        "extração ilegal",
+        "transporte fluvial"
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-deflagra-operacao-policial-para-coibir-crimes-ambientais-no-sul-do-amazonas/",
+          "published_at": "2026-09-24T10:35:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "EC-MOR-2026-0903-CHUCHUMBLETZA",
+      "title": {
+        "pt": "Exército equatoriano inabilita maquinário usado em mineração ilegal em Chuchumbletza",
+        "en": "Ecuadorian Army disables machinery used for illegal mining in Chuchumbletza",
+        "es": "Ejército Ecuatoriano inhabilita maquinaria usada en minería ilegal en Chuchumbletza"
+      },
+      "summary": {
+        "pt": "As Forças Armadas do Equador, por meio do Exército, realizaram operação no setor Chuchumbletza, cantão Gualaquiza, Morona Santiago. A fonte oficial informa a destruição ou inabilitação de uma escavadeira, dois motores de sucção industrial, uma classificadora tipo Z, 600 galões de diesel, um gerador, 300 metros de mangueira, um acampamento e ferramentas associadas à mineração ilegal.",
+        "en": "Ecuador's Armed Forces, through the Army, carried out an operation in the Chuchumbletza sector of Gualaquiza Canton, Morona Santiago. The official source reports the destruction or disabling of one excavator, two industrial suction engines, one Z-type classifier, 600 gallons of diesel, a generator, 300 metres of hose, a camp and tools associated with illegal mining.",
+        "es": "Las Fuerzas Armadas del Ecuador, a través del Ejército, ejecutaron una operación en el sector Chuchumbletza, cantón Gualaquiza, Morona Santiago. La fuente oficial informa la destrucción o inhabilitación de una excavadora, dos motores de succión industrial, una clasificadora tipo Z, 600 galones de diésel, un generador, 300 metros de manguera, un campamento y herramientas asociadas a minería ilegal."
+      },
+      "case_context": {
+        "pt": "O evento é documentado diretamente pelo Exército Ecuatoriano. A publicação informa o setor Chuchumbletza, mas não fornece coordenadas operacionais; por isso, o mapa usa Gualaquiza apenas como referência municipal aproximada. A hora exata da ação não é publicada e o timestamp representa apenas a data documentada.",
+        "en": "The event is documented directly by the Ecuadorian Army. The publication identifies the Chuchumbletza sector but provides no operational coordinates, so the map uses Gualaquiza only as an approximate municipal reference. The exact time of the action is not published and the timestamp represents the documented date only.",
+        "es": "El evento está documentado directamente por el Ejército Ecuatoriano. La publicación identifica el sector Chuchumbletza, pero no proporciona coordenadas operativas; por ello, el mapa utiliza Gualaquiza únicamente como referencia municipal aproximada. No se publica la hora exacta de la acción y el timestamp representa solo la fecha documentada."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": null,
+      "agencies": [
+        "Fuerzas Armadas del Ecuador",
+        "Ejército Ecuatoriano"
+      ],
+      "occurred_at": "2026-09-03T00:00:00-05:00",
+      "published_at": "2026-09-03T00:00:00-05:00",
+      "added_at": "2026-09-25T14:44:00+07:00",
+      "updated_at": "2026-09-25T14:44:00+07:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official military enforcement record; no inference of individual criminal guilt.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Chuchumbletza / Gualaquiza reference",
+        "admin1": "Morona Santiago",
+        "country": "Ecuador",
+        "lat": -3.4036,
+        "lon": -78.5817,
+        "precision": "municipality_centroid_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Chuchumbletza",
+        "Gualaquiza",
+        "Morona Santiago",
+        "minería ilegal",
+        "excavadora",
+        "diésel",
+        "clasificadora tipo Z"
+      ],
+      "sources": [
+        {
+          "publisher": "Ejército Ecuatoriano",
+          "url": "https://ejercitoecuatoriano.mil.ec/index.php/projects/noticias/maquinaria-e-insumos-utilizados-en-mineria-ilegal-en-gualaquiza-fueron-inhabilitados",
+          "published_at": "2026-09-03T00:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "EC-AMZ-2026-0904-ORIENTE-MULTISITE",
+      "title": {
+        "pt": "Operações militares inabilitam dragas e maquinário de mineração ilegal na Amazônia equatoriana",
+        "en": "Military operations disable dredges and illegal-mining machinery in the Ecuadorian Amazon",
+        "es": "Operaciones militares inhabilitan dragas y maquinaria de minería ilegal en la Amazonía ecuatoriana"
+      },
+      "summary": {
+        "pt": "O Exército Ecuatoriano informou operações na região oriental envolvendo Tena, Arosemena Tola, Arajuno e Taisha. Em Tena foram inabilitadas 13 dragas, uma escavadeira, uma classificadora tipo Z, seis bombas de sucção, tanques e recipientes de combustível; também houve equipamentos inabilitados em Arosemena Tola e Arajuno e apreensão de duas espingardas artesanais em Taisha. A estimativa oficial de impacto econômico foi de aproximadamente US$ 468 mil.",
+        "en": "The Ecuadorian Army reported operations in the eastern region involving Tena, Arosemena Tola, Arajuno and Taisha. In Tena, 13 dredges, one excavator, one Z-type classifier, six suction pumps, fuel tanks and containers were disabled; equipment was also disabled in Arosemena Tola and Arajuno, and two homemade shotguns were seized in Taisha. The official estimated economic impact was approximately US$468,000.",
+        "es": "El Ejército Ecuatoriano informó operaciones en la región oriental que incluyeron Tena, Arosemena Tola, Arajuno y Taisha. En Tena fueron inhabilitadas 13 dragas, una excavadora, una clasificadora tipo Z, seis bombas de succión, tanques y recipientes de combustible; también se inhabilitaron equipos en Arosemena Tola y Arajuno y se incautaron dos escopetas artesanales en Taisha. La estimación oficial de afectación económica fue de aproximadamente USD 468.000."
+      },
+      "case_context": {
+        "pt": "A fonte oficial apresenta uma ação multissítio e não fornece coordenadas específicas de cada intervenção. O ponto cartográfico usa Tena como referência regional aproximada e não deve ser interpretado como o local exato das ocorrências. O valor de US$ 468 mil é uma estimativa atribuída oficialmente às forças equatorianas. A hora exata não é publicada; os timestamps representam a data documentada.",
+        "en": "The official source describes a multi-site action and does not provide specific coordinates for each intervention. The map point uses Tena as an approximate regional reference and should not be interpreted as the exact location of the incidents. The US$468,000 figure is an estimate officially attributed to Ecuadorian forces. The exact time is not published; the timestamps represent the documented date.",
+        "es": "La fuente oficial describe una acción multisitio y no proporciona coordenadas específicas de cada intervención. El punto cartográfico utiliza Tena como referencia regional aproximada y no debe interpretarse como el lugar exacto de los hechos. La cifra de USD 468.000 es una estimación atribuida oficialmente a las fuerzas ecuatorianas. No se publica la hora exacta; los timestamps representan la fecha documentada."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": null,
+      "agencies": [
+        "Fuerzas Armadas del Ecuador",
+        "Ejército Ecuatoriano"
+      ],
+      "occurred_at": "2026-09-04T00:00:00-05:00",
+      "published_at": "2026-09-04T00:00:00-05:00",
+      "added_at": "2026-09-25T14:44:00+07:00",
+      "updated_at": "2026-09-25T14:44:00+07:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official military enforcement record; the economic-impact figure is reproduced as an official estimate.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Tena / eastern-region multi-site reference",
+        "admin1": "Napo / Pastaza / Morona Santiago",
+        "country": "Ecuador",
+        "lat": -0.9916,
+        "lon": -77.8163,
+        "precision": "multi_site_regional_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Tena",
+        "Arosemena Tola",
+        "Arajuno",
+        "Taisha",
+        "13 dragas",
+        "minería ilegal",
+        "USD 468.000",
+        "Amazonía ecuatoriana"
+      ],
+      "sources": [
+        {
+          "publisher": "Ejército Ecuatoriano",
+          "url": "https://ejercitoecuatoriano.mil.ec/index.php/projects/noticias/golpe-a-las-economias-ilicitas-durante-operaciones-militares-en-la-amazonia",
+          "published_at": "2026-09-04T00:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "GF-SAV-2026-0923-MATITI-LOGISTICS",
+      "title": {
+        "pt": "Operação judicial atinge pontos logísticos ligados ao garimpo ilegal nas Savanes",
+        "en": "Judicial operation targets logistics sites linked to illegal gold mining in Les Savanes",
+        "es": "Operación judicial alcanza puntos logísticos vinculados a la minería ilegal de oro en Les Savanes"
+      },
+      "summary": {
+        "pt": "Uma operação judicial realizada entre o PK6 e a pista de Matiti, na região das Savanes, identificou vários locais suspeitos de funcionar como pontos de armazenamento de equipamentos e mercadorias destinados ao abastecimento de frentes de garimpo ilegal no interior da Guiana Francesa. Segundo o France-Guyane, sete pessoas foram colocadas sob custódia policial.",
+        "en": "A judicial operation carried out between PK6 and the Matiti track in the Les Savanes area identified several sites suspected of serving as storage points for equipment and goods intended to supply illegal gold-mining sites in the interior of French Guiana. According to France-Guyane, seven people were taken into police custody.",
+        "es": "Una operación judicial realizada entre PK6 y la pista de Matiti, en la zona de Les Savanes, identificó varios lugares sospechosos de funcionar como puntos de almacenamiento de equipos y mercancías destinados a abastecer frentes de minería ilegal de oro en el interior de la Guayana Francesa. Según France-Guyane, siete personas fueron puestas bajo custodia policial."
+      },
+      "case_context": {
+        "pt": "A reportagem descreve uma ação judicial realizada na tarde de 23 de setembro sob direção do Parquet de Cayenne e com participação da gendarmerie. Os locais são apresentados como possíveis bases logísticas de abastecimento do garimpo ilegal; essa relação é mantida como alegação investigativa, não como conclusão judicial definitiva. O marcador usa Matiti apenas como referência aproximada para a área descrita entre PK6 e a pista de Matiti, não como coordenada exata dos pontos vistoriados.",
+        "en": "The report describes a judicial operation conducted on the afternoon of September 23 under the direction of the Cayenne prosecutor's office and involving the gendarmerie. The sites are presented as possible logistics bases supplying illegal gold mining; this link is retained as an investigative allegation rather than a final judicial finding. The marker uses Matiti only as an approximate reference for the area described between PK6 and the Matiti track, not as exact coordinates for the searched sites.",
+        "es": "La nota describe una operación judicial realizada la tarde del 23 de septiembre bajo la dirección de la Fiscalía de Cayena y con participación de la gendarmería. Los lugares son presentados como posibles bases logísticas de abastecimiento de la minería ilegal de oro; esa relación se mantiene como una alegación investigativa y no como una conclusión judicial definitiva. El marcador utiliza Matiti solo como referencia aproximada del área descrita entre PK6 y la pista de Matiti, no como coordenada exacta de los sitios inspeccionados."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": null,
+      "agencies": [
+        "Gendarmerie de Guyane",
+        "Section de recherches de Cayenne",
+        "Parquet de Cayenne"
+      ],
+      "occurred_at": "2026-09-23T12:00:00-03:00",
+      "published_at": "2026-09-24T00:00:00-03:00",
+      "added_at": "2026-09-25T14:44:00+07:00",
+      "updated_at": "2026-09-25T14:44:00+07:00",
+      "backfill": false,
+      "validation_status": "VALIDATED",
+      "legal_status_note": "Judicial investigation reported by a reliable local outlet. Persons in custody are not treated as convicted, and the alleged logistics role of the sites remains attributed to the investigation.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Les Savanes / Matiti reference",
+        "admin1": "Guyane",
+        "country": "French Guiana",
+        "lat": 5.03313,
+        "lon": -52.57423,
+        "precision": "district_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Les Savanes",
+        "Matiti",
+        "PK6",
+        "orpaillage illégal",
+        "logistique",
+        "stockage",
+        "sept gardes à vue"
+      ],
+      "sources": [
+        {
+          "publisher": "France-Guyane",
+          "url": "https://www.franceguyane.fr/actualite/economie-consommation/les-savanes-vaste-operation-contre-lorpaillage-illegal-avec-sept-gardes-a-vue-1093955.php",
+          "published_at": "2026-09-24T00:00:00-03:00",
+          "source_type": "reliable_local_media"
         }
       ],
       "source_media": []
