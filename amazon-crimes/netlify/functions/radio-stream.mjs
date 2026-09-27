@@ -22,6 +22,42 @@ function idFromListenUrl(value = '') {
   return match?.[1] || null;
 }
 
+function placeIdFromVisitUrl(value = '') {
+  const match = String(value).match(/radio\.garden\/visit\/[^/]+\/([A-Za-z0-9_-]{6,})/i);
+  return match?.[1] || null;
+}
+
+async function channelIdFromPlace(placeId, name) {
+  if (!placeId) return null;
+  try {
+    const response = await fetch(`${RADIO_GARDEN_API}/ara/content/page/${encodeURIComponent(placeId)}/channels`, {
+      headers: { accept: 'application/json', 'user-agent': 'Amazon-Environmental-Crime-Observatory/0.7.0' },
+      signal: AbortSignal.timeout(4500)
+    });
+    if (!response.ok) return null;
+    const payload = await response.json();
+    const sections = Array.isArray(payload?.data?.content) ? payload.data.content : [];
+    const items = sections.flatMap((section) => Array.isArray(section?.items) ? section.items : []);
+    const wanted = normalize(name);
+    const ranked = items
+      .filter((item) => item?.href)
+      .map((item) => {
+        const title = normalize(item.title);
+        let score = 0;
+        if (title === wanted) score += 12;
+        else if (title.includes(wanted) || wanted.includes(title)) score += 8;
+        const tokens = wanted.split(' ').filter((token) => token.length > 2);
+        score += tokens.filter((token) => title.includes(token)).length * 2;
+        return { item, score };
+      })
+      .sort((a, b) => b.score - a.score);
+    const href = ranked[0]?.item?.href;
+    return href ? idFromListenUrl(`https://radio.garden${href}`) : null;
+  } catch {
+    return null;
+  }
+}
+
 function scoreRadioBrowserStation(station, name, city) {
   const wantedName = normalize(name);
   const wantedCity = normalize(city);
@@ -147,6 +183,10 @@ export default async (req) => {
     const streams = await searchRadioBrowser(name, city);
 
     let channelId = idFromListenUrl(sourceUrl);
+    if (!channelId) {
+      const placeId = placeIdFromVisitUrl(sourceUrl);
+      if (placeId) channelId = await channelIdFromPlace(placeId, name);
+    }
     if (!channelId) channelId = await searchGardenChannelId(name, city);
     if (channelId) {
       const garden = await resolveGardenStream(channelId);
