@@ -85,10 +85,26 @@
       </section>
     </main>
 
+    <aside id="media-dock" class="media-dock" hidden aria-live="polite">
+      <div class="media-dock-head">
+        <div class="media-dock-title-wrap">
+          <span id="media-dock-kicker" class="section-kicker">MÍDIA AO VIVO</span>
+          <strong id="media-dock-title">—</strong>
+          <small id="media-dock-meta"></small>
+        </div>
+        <div class="media-dock-actions">
+          <button id="media-dock-minimize" type="button" aria-label="Minimizar">—</button>
+          <button id="media-dock-close" type="button" aria-label="Fechar">×</button>
+        </div>
+      </div>
+      <div id="media-dock-body" class="media-dock-body"></div>
+    </aside>
+
     <footer><span class="footer-program"><span data-i18n="footerProgram">Programa de Inteligência para Conservação | WCS Brasil</span> <span aria-hidden="true">•</span> <a href="https://brasil.wcs.org" target="_blank" rel="noopener noreferrer">brasil.wcs.org</a></span><span id="last-updated">—</span></footer>
   </div>
 
   <script type="module" src="./assets/js/app.js"></script>
   <script type="module" src="./assets/js/how-it-works-link.js"></script>
+  <script type="module" src="./assets/js/media-dock.js"></script>
 </body>
 </html>
