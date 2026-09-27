@@ -86,6 +86,78 @@ async function refreshRadios() {
   console.log(`resolved ${stations.filter(s => s.stream_url).length}/${stations.length} radio streams`);
 }
 
+
+function absoluteUrl(value, base) {
+  if (!value) return null;
+  try { return new URL(value, base).href; } catch { return null; }
+}
+
+function extractCameraMedia(html, pageUrl) {
+  const candidates = [];
+  const push = (raw, kind) => {
+    const url = absoluteUrl(raw, pageUrl);
+    if (!url) return;
+    candidates.push({ url, kind });
+  };
+
+  for (const tag of html.match(/<iframe\b[^>]*>/gi) || []) {
+    const src = tag.match(/\bsrc\s*=\s*["']([^"']+)["']/i)?.[1];
+    if (src && /skylinewebcams\.com/i.test(src)) push(src, 'embed');
+  }
+
+  for (const match of html.matchAll(/https?:\/\/embed\.skylinewebcams\.com\/[^"'\s<>]+/gi)) {
+    const url = match[0].replace(/&amp;/g, '&');
+    if (/\/img\/\d+\.jpg/i.test(url) || /media\.php\?/i.test(url)) push(url, 'snapshot');
+    else push(url, 'embed');
+  }
+
+  for (const match of html.matchAll(/(?:src|data-src)\s*=\s*["']([^"']*embed\.skylinewebcams\.com[^"']+)["']/gi)) {
+    const url = match[1].replace(/&amp;/g, '&');
+    if (/\/img\/\d+\.jpg/i.test(url) || /media\.php\?/i.test(url)) push(url, 'snapshot');
+    else push(url, 'embed');
+  }
+
+  const unique = new Map();
+  for (const item of candidates) {
+    if (!unique.has(item.url)) unique.set(item.url, item);
+  }
+  const list = [...unique.values()];
+  return {
+    embed_url: list.find((item) => item.kind === 'embed')?.url || null,
+    snapshot_url: list.find((item) => item.kind === 'snapshot')?.url || null
+  };
+}
+
+async function refreshCameras() {
+  const source = await readJson('cameras.json');
+  const cameras = [];
+  for (const camera of source.cameras || []) {
+    const copy = { ...camera };
+    if (camera.amazon_scope === 'within_amazon_region' && camera.original_url) {
+      try {
+        const response = await withTimeout(fetch(camera.original_url, {
+          headers: {
+            accept: 'text/html,application/xhtml+xml',
+            'user-agent': 'Amazon-Environmental-Crime-Observatory/0.7.0'
+          }
+        }), 8000, `camera ${camera.id}`);
+        if (response.ok) {
+          const html = await response.text();
+          const media = extractCameraMedia(html, camera.original_url);
+          copy.embed_url = media.embed_url;
+          copy.snapshot_url = media.snapshot_url;
+          copy.media_resolved_at = new Date().toISOString();
+        }
+      } catch (error) {
+        console.warn(`warning: camera ${camera.id} media unresolved: ${error.message}`);
+      }
+    }
+    cameras.push(copy);
+  }
+  await writeJson('cameras.json', { ...source, updated_at: new Date().toISOString(), cameras });
+  console.log(`resolved ${cameras.filter(c => c.embed_url).length} camera embeds and ${cameras.filter(c => c.snapshot_url).length} camera snapshots`);
+}
+
 await refreshLayer(
   'netlify/functions/amazon-boundary.mjs',
   'amazon-boundary.json',
@@ -105,3 +177,4 @@ await refreshLayer(
 );
 
 await refreshRadios();
+await refreshCameras();
