@@ -93,6 +93,7 @@ function absoluteUrl(value, base) {
 }
 
 function extractCameraMedia(html, pageUrl) {
+  const normalizedHtml = String(html || '').replace(/\\\//g, '/').replace(/&amp;/g, '&');
   const candidates = [];
   const push = (raw, kind) => {
     const url = absoluteUrl(raw, pageUrl);
@@ -100,20 +101,24 @@ function extractCameraMedia(html, pageUrl) {
     candidates.push({ url, kind });
   };
 
-  for (const tag of html.match(/<iframe\b[^>]*>/gi) || []) {
-    const src = tag.match(/\bsrc\s*=\s*["']([^"']+)["']/i)?.[1];
-    if (src && /skylinewebcams\.com/i.test(src)) push(src, 'embed');
+  for (const match of normalizedHtml.matchAll(/(?:https?:)?\\/\\/[^"'\\s<>]+\\.m3u8[^"'\\s<>]*/gi)) {
+    push(match[0], 'stream');
   }
 
-  for (const match of html.matchAll(/https?:\/\/embed\.skylinewebcams\.com\/[^"'\s<>]+/gi)) {
-    const url = match[0].replace(/&amp;/g, '&');
-    if (/\/img\/\d+\.jpg/i.test(url) || /media\.php\?/i.test(url)) push(url, 'snapshot');
+  for (const tag of normalizedHtml.match(/<iframe\\b[^>]*>/gi) || []) {
+    const src = tag.match(/\\bsrc\\s*=\\s*["']([^"']+)["']/i)?.[1];
+    if (src && /skylinewebcams\\.com/i.test(src)) push(src, 'embed');
+  }
+
+  for (const match of normalizedHtml.matchAll(/https?:\\/\\/embed\\.skylinewebcams\\.com\\/[^"'\\s<>]+/gi)) {
+    const url = match[0];
+    if (/\\/img\\/\\d+\\.jpg/i.test(url) || /media\\.php\\?/i.test(url)) push(url, 'snapshot');
     else push(url, 'embed');
   }
 
-  for (const match of html.matchAll(/(?:src|data-src)\s*=\s*["']([^"']*embed\.skylinewebcams\.com[^"']+)["']/gi)) {
-    const url = match[1].replace(/&amp;/g, '&');
-    if (/\/img\/\d+\.jpg/i.test(url) || /media\.php\?/i.test(url)) push(url, 'snapshot');
+  for (const match of normalizedHtml.matchAll(/(?:src|data-src)\\s*=\\s*["']([^"']*embed\\.skylinewebcams\\.com[^"']+)["']/gi)) {
+    const url = match[1];
+    if (/\\/img\\/\\d+\\.jpg/i.test(url) || /media\\.php\\?/i.test(url)) push(url, 'snapshot');
     else push(url, 'embed');
   }
 
@@ -123,6 +128,7 @@ function extractCameraMedia(html, pageUrl) {
   }
   const list = [...unique.values()];
   return {
+    stream_url: list.find((item) => item.kind === 'stream')?.url || null,
     embed_url: list.find((item) => item.kind === 'embed')?.url || null,
     snapshot_url: list.find((item) => item.kind === 'snapshot')?.url || null
   };
@@ -144,6 +150,7 @@ async function refreshCameras() {
         if (response.ok) {
           const html = await response.text();
           const media = extractCameraMedia(html, camera.original_url);
+          copy.stream_url = media.stream_url;
           copy.embed_url = media.embed_url;
           copy.snapshot_url = media.snapshot_url;
           copy.media_resolved_at = new Date().toISOString();
@@ -155,7 +162,7 @@ async function refreshCameras() {
     cameras.push(copy);
   }
   await writeJson('cameras.json', { ...source, updated_at: new Date().toISOString(), cameras });
-  console.log(`resolved ${cameras.filter(c => c.embed_url).length} camera embeds and ${cameras.filter(c => c.snapshot_url).length} camera snapshots`);
+  console.log(`resolved ${cameras.filter(c => c.stream_url).length} camera streams, ${cameras.filter(c => c.embed_url).length} embeds and ${cameras.filter(c => c.snapshot_url).length} snapshots`);
 }
 
 await refreshLayer(
