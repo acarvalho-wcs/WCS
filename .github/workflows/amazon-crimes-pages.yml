@@ -59,6 +59,8 @@ jobs:
           node --check public/assets/js/how-it-works.js
           node --check public/assets/js/how-it-works-link.js
           node --check public/assets/js/how-it-works-page.js
+          node --check public/assets/js/media-dock.js
+          node --check scripts/build-pages-data.mjs
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
