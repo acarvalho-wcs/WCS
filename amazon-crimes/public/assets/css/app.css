@@ -579,13 +579,15 @@ body.how-it-works-open { overflow: hidden; }
   background: #000;
 }
 .media-camera-frame iframe,
-.media-camera-frame img {
+.media-camera-frame img,
+.media-camera-frame video {
   width: 100%;
   height: 100%;
   display: block;
   border: 0;
 }
-.media-camera-frame img {
+.media-camera-frame img,
+.media-camera-frame video {
   object-fit: cover;
 }
 .media-dock-note,
