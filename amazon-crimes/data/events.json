@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-09-25T14:44:00+07:00",
+  "generated_at": "2026-09-27T04:44:00-03:00",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -5084,6 +5084,442 @@
           "url": "https://www.franceguyane.fr/actualite/economie-consommation/les-savanes-vaste-operation-contre-lorpaillage-illegal-avec-sept-gardes-a-vue-1093955.php",
           "published_at": "2026-09-24T00:00:00-03:00",
           "source_type": "reliable_local_media"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "BR-RO-MT-2026-0925-FORNALHA",
+      "title": {
+        "pt": "Operação Fornalha combate garimpo ilegal nas TIs Sete de Setembro, Zoró e Roosevelt",
+        "en": "Operation Fornalha targets illegal mining in the Sete de Setembro, Zoró and Roosevelt Indigenous Lands",
+        "es": "Operación Fornalha combate minería ilegal en las TI Sete de Setembro, Zoró y Roosevelt"
+      },
+      "summary": {
+        "pt": "Nos dias 24 e 25 de setembro, a Polícia Federal e o Ibama fiscalizaram áreas de garimpo nas Terras Indígenas Sete de Setembro, Zoró e Roosevelt, na divisa entre Rondônia e Mato Grosso. Segundo a PF, foram inutilizadas duas escavadeiras hidráulicas, quatro dragas, cinco motores e dois acampamentos; também foram apreendidos um frasco contendo mercúrio, uma espingarda e aparelhos celulares. O impacto econômico foi estimado oficialmente em mais de R$ 2 milhões.",
+        "en": "On September 24 and 25, Brazil's Federal Police and Ibama inspected mining areas in the Sete de Setembro, Zoró and Roosevelt Indigenous Lands along the Rondônia-Mato Grosso border. According to Federal Police, two hydraulic excavators, four dredges, five engines and two camps were disabled; a vial containing mercury, a shotgun and mobile phones were also seized. Authorities estimated the economic impact at more than R$2 million.",
+        "es": "Los días 24 y 25 de septiembre, la Policía Federal de Brasil e Ibama fiscalizaron áreas de minería en las Tierras Indígenas Sete de Setembro, Zoró y Roosevelt, en la frontera entre Rondônia y Mato Grosso. Según la Policía Federal, fueron inutilizadas dos excavadoras hidráulicas, cuatro dragas, cinco motores y dos campamentos; también se incautaron un frasco con mercurio, una escopeta y teléfonos móviles. La afectación económica fue estimada oficialmente en más de R$ 2 millones."
+      },
+      "case_context": {
+        "pt": "A Operação Fornalha é distinta das ações anteriores registradas na TI Sete de Setembro em julho e agosto e das fiscalizações anteriores em Roosevelt: ocorreu em 24–25 de setembro e abrangeu simultaneamente três terras indígenas. A apreensão de mercúrio é documentada, mas a fonte não demonstra, por si só, contaminação ambiental; por isso, o registro permanece classificado como mineração ilegal. O marcador usa Rondolândia como referência regional aproximada e não representa as coordenadas exatas das frentes fiscalizadas.",
+        "en": "Operation Fornalha is distinct from earlier actions recorded in Sete de Setembro Indigenous Land in July and August and from previous enforcement in Roosevelt: it took place on September 24–25 and simultaneously covered three Indigenous Lands. The mercury seizure is documented, but the source does not by itself establish environmental contamination; the record is therefore classified as illegal mining. The marker uses Rondolândia as an approximate regional reference and does not represent the exact coordinates of the inspected sites.",
+        "es": "La Operación Fornalha es distinta de las acciones anteriores registradas en la Tierra Indígena Sete de Setembro en julio y agosto y de fiscalizaciones anteriores en Roosevelt: se realizó los días 24–25 de septiembre y abarcó simultáneamente tres tierras indígenas. La incautación de mercurio está documentada, pero la fuente no demuestra por sí sola contaminación ambiental; por ello, el registro se clasifica como minería ilegal. El marcador utiliza Rondolândia como referencia regional aproximada y no representa las coordenadas exactas de los frentes fiscalizados."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING",
+        "PROTECTED_AREA_INVASION"
+      ],
+      "operation_name": "Operação Fornalha",
+      "agencies": [
+        "Polícia Federal",
+        "Ibama",
+        "Coordenação de Aviação Operacional da Polícia Federal (CAOP/PF)"
+      ],
+      "occurred_at": "2026-09-25T23:59:00-04:00",
+      "published_at": "2026-09-26T12:05:00-03:00",
+      "added_at": "2026-09-27T04:44:00-03:00",
+      "updated_at": "2026-09-27T04:44:00-03:00",
+      "backfill": false,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official enforcement record. No inference of individual criminal guilt is made beyond the cited source.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Rondolândia regional reference / TIs Sete de Setembro, Zoró e Roosevelt",
+        "admin1": "Rondônia / Mato Grosso",
+        "country": "Brazil",
+        "lat": -10.84,
+        "lon": -61.46,
+        "precision": "multi_site_regional_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "Terras Indígenas Sete de Setembro, Zoró e Roosevelt"
+      },
+      "impacts": {
+        "indigenous_or_local_communities": true
+      },
+      "cross_border": false,
+      "keywords": [
+        "Operação Fornalha",
+        "Sete de Setembro",
+        "Zoró",
+        "Roosevelt",
+        "Rondolândia",
+        "garimpo ilegal",
+        "dragas",
+        "escavadeiras",
+        "mercúrio"
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-e-ibama-deflagram-operacao-fornalha-contra-garimpo-ilegal-nas-terra-indigenas-sete-de-setembro-zoro-e-roosevelt/",
+          "published_at": "2026-09-26T12:05:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "PE-MDD-2026-0922-INAMBARI-THREE-OPS",
+      "title": {
+        "pt": "Três operações em Inambari atingem infraestrutura de mineração ilegal avaliada em S/ 27,8 milhões",
+        "en": "Three Inambari operations hit illegal-mining infrastructure valued at S/27.8 million",
+        "es": "Tres operaciones en Inambari afectan infraestructura de minería ilegal valorizada en S/ 27,8 millones"
+      },
+      "summary": {
+        "pt": "Em 22 de setembro, a Polícia Nacional do Peru executou três operações em diferentes setores de Inambari, Madre de Dios, como parte do Plano Restauración 2026. O balanço divulgado pelo Ministério do Interior registra a inutilização de pozas, balsas, dragas, motores, tolvas, acampamentos, combustível e materiais logísticos, com valor total superior a S/ 27,8 milhões.",
+        "en": "On September 22, Peru's National Police carried out three operations in different sectors of Inambari, Madre de Dios, under the Restauración 2026 Plan. The Interior Ministry tally reports the disabling of ponds, rafts, dredges, engines, sluices, camps, fuel and logistics materials, with a total value above S/27.8 million.",
+        "es": "El 22 de septiembre, la Policía Nacional del Perú ejecutó tres operaciones en distintos sectores de Inambari, Madre de Dios, como parte del Plan Restauración 2026. El balance divulgado por el Ministerio del Interior registra la inutilización de pozas, balsas, dragas, motores, tolvas, campamentos, combustible y materiales logísticos, con un valor total superior a S/ 27,8 millones."
+      },
+      "case_context": {
+        "pt": "O registro agrega as três intervenções apresentadas conjuntamente no mesmo balanço oficial de 22 de setembro. Uma ocorreu no setor Chicle, outra em ponto não especificado de Inambari e a terceira no setor Balata. Embora Inambari já tenha vários registros em setembro, esta é uma rodada operacional em data distinta. O marcador usa a referência distrital de Inambari e não representa os locais exatos das três intervenções.",
+        "en": "This record aggregates the three interventions presented together in the same official September 22 tally. One occurred in the Chicle sector, another at an unspecified Inambari site and the third in the Balata sector. Although Inambari already has several September records, this is a distinct operational round on a different date. The marker uses an Inambari district reference and does not represent the exact locations of the three interventions.",
+        "es": "Este registro agrega las tres intervenciones presentadas conjuntamente en el mismo balance oficial del 22 de septiembre. Una ocurrió en el sector Chicle, otra en un punto no especificado de Inambari y la tercera en el sector Balata. Aunque Inambari ya tiene varios registros en septiembre, esta es una ronda operativa distinta en otra fecha. El marcador utiliza una referencia distrital de Inambari y no representa las ubicaciones exactas de las tres intervenciones."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Plan de Operaciones Restauración 2026",
+      "agencies": [
+        "Policía Nacional del Perú",
+        "Dirección de Medio Ambiente de la PNP",
+        "Fiscalía Especializada en Materia Ambiental de Madre de Dios",
+        "Ejército del Perú"
+      ],
+      "occurred_at": "2026-09-22T23:59:00-05:00",
+      "published_at": "2026-09-24T13:20:00-05:00",
+      "added_at": "2026-09-27T04:44:00-03:00",
+      "updated_at": "2026-09-27T04:44:00-03:00",
+      "backfill": false,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official-state reporting of enforcement results attributed to Peru's Interior Ministry and National Police. Economic values and equipment counts are retained as official figures.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Chicle, Balata e outros pontos — distrito de Inambari",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.9767,
+        "lon": -69.9388,
+        "precision": "district_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Inambari",
+        "Chicle",
+        "Balata",
+        "Restauración 2026",
+        "minería ilegal",
+        "balsas",
+        "dragas",
+        "campamentos",
+        "S/ 27,8 millones"
+      ],
+      "sources": [
+        {
+          "publisher": "Diario Oficial El Peruano",
+          "url": "https://elperuano.pe/noticia/305427-mininter-intensifica-lucha-contra-la-mineria-ilegal-destruyen-bienes-valorizados-en-mas-de-s-278-mllns",
+          "published_at": "2026-09-24T13:20:00-05:00",
+          "source_type": "official_state_media"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "PE-MDD-2026-0924-INAMBARI-TWO-OPS",
+      "title": {
+        "pt": "Operações de 23 e 24 de setembro atingem mineração ilegal em Inambari em mais de S/ 50 milhões",
+        "en": "September 23–24 operations hit illegal mining in Inambari by more than S/50 million",
+        "es": "Operativos del 23 y 24 de septiembre afectan minería ilegal en Inambari por más de S/ 50 millones"
+      },
+      "summary": {
+        "pt": "Duas operações helitransportadas realizadas em 23 e 24 de setembro em Inambari, Madre de Dios, atingiram infraestrutura de mineração ilegal nos setores Valle Dorado, Aquiles, Balata, zona de amortecimento Manuani, Malinowski e Mangote. Segundo o balanço publicado, foram afetadas pozas, campamentos, balsas, motores, tolvas, combustível e outros equipamentos avaliados em S/ 50,36 milhões.",
+        "en": "Two air-mobile operations conducted on September 23 and 24 in Inambari, Madre de Dios, targeted illegal-mining infrastructure in Valle Dorado, Aquiles, Balata, the Manuani buffer zone, Malinowski and Mangote. According to the published tally, ponds, camps, rafts, engines, sluices, fuel and other equipment valued at S/50.36 million were affected.",
+        "es": "Dos operaciones helitransportadas realizadas el 23 y 24 de septiembre en Inambari, Madre de Dios, afectaron infraestructura de minería ilegal en Valle Dorado, Aquiles, Balata, la zona de amortiguamiento Manuani, Malinowski y Mangote. Según el balance publicado, fueron afectados pozas, campamentos, balsas, motores, tolvas, combustible y otros equipos valorizados en S/ 50,36 millones."
+      },
+      "case_context": {
+        "pt": "A fonte local descreve duas jornadas operacionais consecutivas e atribui os números às instituições participantes: Segunda Brigada de Selva de Protección de la Amazonía, Polícia Nacional, Sernanp e Ministério Público. O evento é mantido separado das operações de 22 de setembro porque ocorreu em novas datas e incluiu setores e infraestrutura distintos. Como a fonte primária oficial específica ainda não foi localizada, o status é VALIDATED. O marcador usa Inambari como referência distrital aproximada.",
+        "en": "The local source describes two consecutive operational days and attributes the figures to participating institutions: the Second Amazon Protection Jungle Brigade, National Police, Sernanp and Public Prosecutor's Office. The event is kept separate from the September 22 operations because it occurred on different dates and included distinct sectors and infrastructure. Because the specific primary official release has not yet been located, the status is VALIDATED. The marker uses Inambari as an approximate district reference.",
+        "es": "La fuente local describe dos jornadas operativas consecutivas y atribuye las cifras a las instituciones participantes: Segunda Brigada de Selva de Protección de la Amazonía, Policía Nacional, Sernanp y Ministerio Público. El evento se mantiene separado de las operaciones del 22 de septiembre porque ocurrió en fechas distintas e incluyó sectores e infraestructura diferentes. Como aún no se localizó la publicación oficial primaria específica, el estado es VALIDATED. El marcador utiliza Inambari como referencia distrital aproximada."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": null,
+      "agencies": [
+        "2.ª Brigada de Selva de Protección de la Amazonía",
+        "Policía Nacional del Perú",
+        "SERNANP",
+        "Ministerio Público del Perú"
+      ],
+      "occurred_at": "2026-09-24T23:59:00-05:00",
+      "published_at": "2026-09-26T12:00:00-05:00",
+      "added_at": "2026-09-27T04:44:00-03:00",
+      "updated_at": "2026-09-27T04:44:00-03:00",
+      "backfill": false,
+      "validation_status": "VALIDATED",
+      "legal_status_note": "Validated through recent local reporting that attributes the figures to participating public institutions. The Observatory has not yet located the specific primary official release for these September 23–24 operations.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Valle Dorado, Aquiles, Balata, Manuani, Malinowski e Mangote — Inambari",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.9767,
+        "lon": -69.9388,
+        "precision": "multi_site_regional_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "Zona de amortiguamiento Manuani / entorno de áreas protegidas"
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Inambari",
+        "Valle Dorado",
+        "Aquiles",
+        "Balata",
+        "Manuani",
+        "Malinowski",
+        "Mangote",
+        "minería ilegal",
+        "S/ 50,36 millones"
+      ],
+      "sources": [
+        {
+          "publisher": "Evidencia.pe",
+          "url": "https://evidencia.pe/madre-de-dios-operativos-mineria-ilegal-inambari-50-millones/",
+          "published_at": "2026-09-26T12:00:00-05:00",
+          "source_type": "reliable_local_media_with_official_attribution"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "CO-PUT-2026-0914-PUERTO-CAICEDO-INDEPENDENCIA",
+      "title": {
+        "pt": "Exército colombiano desativa três unidades de mineração ilegal em Puerto Caicedo",
+        "en": "Colombian Army disables three illegal-mining units in Puerto Caicedo",
+        "es": "Ejército colombiano neutraliza tres unidades de minería ilegal en Puerto Caicedo"
+      },
+      "summary": {
+        "pt": "Na vereda Independencia, em Puerto Caicedo, Putumayo, tropas do Batalhão de Artilharia de Campanha nº 27 localizaram e destruíram três unidades de produção mineral usadas para exploração ilegal de ouro. Foram encontrados duas dragas artesanais, quatro motores industriais, duas classificadoras, tubulações, mangueiras e 520 galões de combustíveis.",
+        "en": "In the Independencia rural settlement of Puerto Caicedo, Putumayo, troops from Field Artillery Battalion No. 27 located and destroyed three mining production units used for illegal gold extraction. Two artisanal dredges, four industrial engines, two classifiers, pipes, hoses and 520 gallons of fuel were found.",
+        "es": "En la vereda Independencia de Puerto Caicedo, Putumayo, tropas del Batallón de Artillería de Campaña N.° 27 localizaron y destruyeron tres unidades de producción minera utilizadas para la extracción ilegal de oro. Se encontraron dos dragas artesanales, cuatro motores industriales, dos clasificadoras, tuberías, mangueras y 520 galones de combustibles."
+      },
+      "case_context": {
+        "pt": "A página oficial do Exército foi atualizada em 25 de setembro, enquanto cobertura local de 14 de setembro descreve a mesma intervenção; por isso, 14 de setembro é mantido como a melhor referência pública para occurred_at e o caso entra como backfill descoberto agora. O Exército afirma que as estruturas estariam a serviço da Segunda Marquetalia – Comandos de Frontera; essa relação é mantida como alegação atribuída à fonte militar, não como conclusão independente do Observatório. A fonte não divulga coordenadas da vereda; o marcador usa Puerto Caicedo como referência municipal aproximada.",
+        "en": "The Army's official page was updated on September 25, while local coverage from September 14 describes the same intervention; September 14 is therefore retained as the best public reference for occurred_at and the case is added as a newly discovered backfill. The Army states that the structures were allegedly serving Segunda Marquetalia – Comandos de Frontera; this link is retained as an allegation attributed to the military source, not as an independent Observatory conclusion. The source does not disclose coordinates for the rural settlement; the marker uses Puerto Caicedo as an approximate municipal reference.",
+        "es": "La página oficial del Ejército fue actualizada el 25 de septiembre, mientras que cobertura local del 14 de septiembre describe la misma intervención; por ello, se mantiene el 14 de septiembre como la mejor referencia pública para occurred_at y el caso se incorpora como backfill descubierto ahora. El Ejército afirma que las estructuras estarían al servicio de la Segunda Marquetalia – Comandos de Frontera; esta relación se mantiene como alegación atribuida a la fuente militar y no como conclusión independiente del Observatorio. La fuente no divulga coordenadas de la vereda; el marcador utiliza Puerto Caicedo como referencia municipal aproximada."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Plan de Campaña Ayacucho Plus",
+      "agencies": [
+        "Ejército Nacional de Colombia",
+        "Batallón de Artillería de Campaña N.° 27",
+        "Vigésima Séptima Brigada"
+      ],
+      "occurred_at": "2026-09-14T00:00:00-05:00",
+      "published_at": "2026-09-14T12:00:00-05:00",
+      "added_at": "2026-09-27T04:44:00-03:00",
+      "updated_at": "2026-09-27T04:44:00-03:00",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official military enforcement record. The alleged link to Segunda Marquetalia – Comandos de Frontera is attributed solely to the Colombian Army and is not independently inferred by the Observatory.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Vereda Independencia — Puerto Caicedo reference",
+        "admin1": "Putumayo",
+        "country": "Colombia",
+        "lat": 0.6842,
+        "lon": -76.6044,
+        "precision": "municipality_centroid_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Puerto Caicedo",
+        "Putumayo",
+        "vereda Independencia",
+        "minería ilegal",
+        "oro",
+        "dragas",
+        "Ayacucho Plus",
+        "Segunda Marquetalia",
+        "Comandos de Frontera"
+      ],
+      "sources": [
+        {
+          "publisher": "Ejército Nacional de Colombia",
+          "url": "https://www.ejercito.mil.co/ejercito-nacional-propina-golpe-a-la-explotacion-minera-ilegal-en-puerto-caicedo-putumayo",
+          "published_at": "2026-09-25T22:51:00-05:00",
+          "source_type": "official"
+        },
+        {
+          "publisher": "La Noticia Putumayo",
+          "url": "https://lanoticiaputumayo.com/en-la-vereda-la-independencia-del-municipio-de-puerto-caicedo-putumayo-el-ejercito-localizo-dos-dragas-y-abundante-material-que-estaban-siendo-utilizados-para-la-extraccion-de-oro-afectando-el-medi/",
+          "published_at": "2026-09-14T12:00:00-05:00",
+          "source_type": "reliable_local_media_with_official_source"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "SR-BROK-2026-0919-PELINBERGI",
+      "title": {
+        "pt": "Mineração não autorizada em Pelinbergi volta ao foco após vistoria e manifestação da Rosebel",
+        "en": "Unauthorized mining at Pelinbergi comes under renewed scrutiny after site visit and Rosebel statement",
+        "es": "Minería no autorizada en Pelinbergi vuelve al foco tras visita y pronunciamiento de Rosebel"
+      },
+      "summary": {
+        "pt": "A Rosebel Gold Mines informou em 23 de setembro que há atividades de mineração não autorizadas na área de Overman, incluindo Pelinbergi, perto de Kwakoegron, onde a empresa possui direitos de exploração, mas não de lavra comercial. A empresa afirmou que não executa nem autorizou terceiros a realizar a extração reportada. Parlamentares que visitaram o local em 19 de setembro relataram atividade em grande escala e pediram suspensão temporária e investigação.",
+        "en": "Rosebel Gold Mines stated on September 23 that unauthorized mining is taking place in the Overman area, including Pelinbergi near Kwakoegron, where the company holds exploration rights but not commercial exploitation rights. The company said it neither conducts nor authorized third parties to carry out the reported extraction. Members of parliament who visited the site on September 19 reported large-scale activity and requested a temporary halt and investigation.",
+        "es": "Rosebel Gold Mines informó el 23 de septiembre que existen actividades mineras no autorizadas en el área de Overman, incluida Pelinbergi cerca de Kwakoegron, donde la empresa posee derechos de exploración pero no de explotación comercial. La empresa afirmó que no realiza ni autorizó a terceros a efectuar la extracción reportada. Parlamentarios que visitaron el lugar el 19 de septiembre reportaron actividad a gran escala y solicitaron una suspensión temporal y una investigación."
+      },
+      "case_context": {
+        "pt": "O registro é VALIDATED, e não CONFIRMED por autoridade pública, porque a base factual combina uma declaração da detentora dos direitos de exploração com cobertura local convergente. A Rosebel qualifica a extração como não autorizada e afirma não possuir direito de exploração comercial na área nem ter autorizado terceiros. Relatos sobre uso de químicos e contaminação permanecem não confirmados; a própria empresa pede coleta de amostras e investigação. O marcador usa Kwakoegron como referência e não a posição exata de Pelinbergi.",
+        "en": "The record is VALIDATED rather than CONFIRMED by a public authority because the factual basis combines a statement by the exploration-rights holder with convergent local reporting. Rosebel characterizes the extraction as unauthorized and says it has no commercial exploitation right in the area and authorized no third party. Reports of chemical use and contamination remain unconfirmed; the company itself calls for sampling and investigation. The marker uses Kwakoegron as a reference rather than the exact Pelinbergi worksite.",
+        "es": "El registro se clasifica como VALIDATED y no como CONFIRMED por una autoridad pública, porque la base factual combina una declaración de la titular de los derechos de exploración con cobertura local convergente. Rosebel califica la extracción como no autorizada y afirma que no posee derecho de explotación comercial en el área ni autorizó a terceros. Los reportes sobre uso de químicos y contaminación siguen sin confirmarse; la propia empresa solicita muestreos e investigación. El marcador utiliza Kwakoegron como referencia y no la posición exacta de Pelinbergi."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": null,
+      "agencies": [],
+      "occurred_at": "2026-09-19T12:00:00-03:00",
+      "published_at": "2026-09-23T12:00:00-03:00",
+      "added_at": "2026-09-27T04:44:00-03:00",
+      "updated_at": "2026-09-27T04:44:00-03:00",
+      "backfill": false,
+      "validation_status": "VALIDATED",
+      "legal_status_note": "Unauthorized-mining characterization is based on Rosebel Gold Mines' statement and convergent local reporting. Chemical use and environmental contamination remain unconfirmed.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Pelinbergi / Kwakoegron reference",
+        "admin1": "Brokopondo",
+        "country": "Suriname",
+        "lat": 5.24796,
+        "lon": -55.34318,
+        "precision": "locality_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Pelinbergi",
+        "Pelin Bergi",
+        "Overman",
+        "Kwakoegron",
+        "Brokopondo",
+        "ongeoorloofde mijnbouw",
+        "unauthorized mining",
+        "goudwinning",
+        "Rosebel Gold Mines"
+      ],
+      "sources": [
+        {
+          "publisher": "Rosebel Gold Mines",
+          "url": "https://www.rosebelgoldmines.sr/rosebel-gold-mines-statement-on-unauthorized-mining-activities-in-the-overman-pelinbergi-area/",
+          "published_at": "2026-09-23T12:00:00-03:00",
+          "source_type": "rights_holder_primary_statement"
+        },
+        {
+          "publisher": "Key News Suriname",
+          "url": "https://keynews.sr/en/rosebel-reported-mining-at-pelin-bergi-as-early-as-2020-dna-members-now-demand-intervention/",
+          "published_at": "2026-09-26T01:23:00-03:00",
+          "source_type": "reliable_local_media"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "BR-RR-2026-0925-CUNHAMBEBE",
+      "title": {
+        "pt": "Operação Cunhambebe apura suspeita de embaraço à fiscalização ambiental na TI Raposa Serra do Sol",
+        "en": "Operation Cunhambebe investigates suspected obstruction of environmental enforcement in Raposa Serra do Sol Indigenous Land",
+        "es": "Operación Cunhambebe investiga sospecha de obstaculización de fiscalización ambiental en la TI Raposa Serra do Sol"
+      },
+      "summary": {
+        "pt": "A Polícia Federal cumpriu três mandados de busca e apreensão na Operação Cunhambebe, em investigação sobre cursos clandestinos de segurança privada e possível formação de grupo organizado destinado a dificultar a atuação de órgãos públicos na Terra Indígena Raposa Serra do Sol. Segundo a PF, a apuração começou após episódios de hostilidade durante fiscalização ambiental, incluindo relatos de perseguições, bloqueios de vias e ataques contra agentes públicos.",
+        "en": "Brazil's Federal Police executed three search warrants in Operation Cunhambebe, an investigation into clandestine private-security courses and the possible formation of an organized group intended to hinder public agencies operating in Raposa Serra do Sol Indigenous Land. According to Federal Police, the inquiry began after incidents of hostility during environmental enforcement, including reports of pursuits, road blockades and attacks against public agents.",
+        "es": "La Policía Federal de Brasil cumplió tres órdenes de allanamiento en la Operación Cunhambebe, una investigación sobre cursos clandestinos de seguridad privada y la posible formación de un grupo organizado destinado a dificultar la actuación de organismos públicos en la Tierra Indígena Raposa Serra do Sol. Según la PF, la investigación comenzó tras episodios de hostilidad durante una fiscalización ambiental, con reportes de persecuciones, bloqueos de vías y ataques contra agentes públicos."
+      },
+      "case_context": {
+        "pt": "Este registro documenta uma investigação sobre possível embaraço à fiscalização ambiental e delitos correlatos, e não uma condenação nem uma conclusão sobre a existência de milícia. A própria PF usa linguagem de suspeita e informa que a operação busca esclarecer a extensão dos fatos e identificar eventuais participantes. O marcador é apenas uma referência territorial da Terra Indígena Raposa Serra do Sol; a fonte não informa a localização exata dos episódios nem dos alvos dos mandados.",
+        "en": "This record documents an investigation into possible obstruction of environmental enforcement and related offenses, not a conviction or a conclusion that a militia exists. Federal Police itself uses suspicion-based language and states that the operation seeks to clarify the extent of the events and identify possible participants. The marker is only a territorial reference for Raposa Serra do Sol Indigenous Land; the source does not disclose the exact location of the incidents or warrant targets.",
+        "es": "Este registro documenta una investigación sobre posible obstrucción de la fiscalización ambiental y delitos relacionados, no una condena ni una conclusión sobre la existencia de una milicia. La propia Policía Federal utiliza lenguaje de sospecha e informa que la operación busca aclarar la extensión de los hechos e identificar eventuales participantes. El marcador es solo una referencia territorial de la Tierra Indígena Raposa Serra do Sol; la fuente no informa la ubicación exacta de los episodios ni de los objetivos de las órdenes."
+      },
+      "primary_crime_type": "OTHER_ENVIRONMENTAL_CRIME",
+      "crime_types": [
+        "OTHER_ENVIRONMENTAL_CRIME"
+      ],
+      "operation_name": "Operação Cunhambebe",
+      "agencies": [
+        "Polícia Federal",
+        "Justiça Federal"
+      ],
+      "occurred_at": "2026-09-25T00:00:00-04:00",
+      "published_at": "2026-09-25T09:57:00-03:00",
+      "added_at": "2026-09-27T04:44:00-03:00",
+      "updated_at": "2026-09-27T04:44:00-03:00",
+      "backfill": false,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official investigative action. Allegations of organized-group formation, attacks and obstruction remain under investigation; no guilt or organizational status is inferred beyond the Federal Police statement.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Terra Indígena Raposa Serra do Sol — territorial reference",
+        "admin1": "Roraima",
+        "country": "Brazil",
+        "lat": 3.846,
+        "lon": -59.781,
+        "precision": "indigenous_territory_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "Terra Indígena Raposa Serra do Sol"
+      },
+      "impacts": {
+        "indigenous_or_local_communities": true
+      },
+      "cross_border": false,
+      "keywords": [
+        "Operação Cunhambebe",
+        "Raposa Serra do Sol",
+        "Roraima",
+        "fiscalização ambiental",
+        "embaraço à fiscalização ambiental",
+        "segurança privada clandestina"
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-investiga-grupo-suspeito-de-promover-treinamentos-clandestinos-em-terra-indigena/",
+          "published_at": "2026-09-25T09:57:00-03:00",
+          "source_type": "official"
         }
       ],
       "source_media": []
