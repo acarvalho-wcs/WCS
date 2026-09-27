@@ -101,24 +101,24 @@ function extractCameraMedia(html, pageUrl) {
     candidates.push({ url, kind });
   };
 
-  for (const match of normalizedHtml.matchAll(/(?:https?:)?\\/\\/[^"'\\s<>]+\\.m3u8[^"'\\s<>]*/gi)) {
+  for (const match of normalizedHtml.matchAll(/(?:https?:)?\/\/[^"'\s<>]+\.m3u8[^"'\s<>]*/gi)) {
     push(match[0], 'stream');
   }
 
-  for (const tag of normalizedHtml.match(/<iframe\\b[^>]*>/gi) || []) {
-    const src = tag.match(/\\bsrc\\s*=\\s*["']([^"']+)["']/i)?.[1];
-    if (src && /skylinewebcams\\.com/i.test(src)) push(src, 'embed');
+  for (const tag of normalizedHtml.match(/<iframe\b[^>]*>/gi) || []) {
+    const src = tag.match(/\bsrc\s*=\s*["']([^"']+)["']/i)?.[1];
+    if (src && /skylinewebcams\.com/i.test(src)) push(src, 'embed');
   }
 
-  for (const match of normalizedHtml.matchAll(/https?:\\/\\/embed\\.skylinewebcams\\.com\\/[^"'\\s<>]+/gi)) {
+  for (const match of normalizedHtml.matchAll(/https?:\/\/embed\.skylinewebcams\.com\/[^"'\s<>]+/gi)) {
     const url = match[0];
-    if (/\\/img\\/\\d+\\.jpg/i.test(url) || /media\\.php\\?/i.test(url)) push(url, 'snapshot');
+    if (/\/img\/\d+\.jpg/i.test(url) || /media\.php\?/i.test(url)) push(url, 'snapshot');
     else push(url, 'embed');
   }
 
-  for (const match of normalizedHtml.matchAll(/(?:src|data-src)\\s*=\\s*["']([^"']*embed\\.skylinewebcams\\.com[^"']+)["']/gi)) {
+  for (const match of normalizedHtml.matchAll(/(?:src|data-src)\s*=\s*["']([^"']*embed\.skylinewebcams\.com[^"']+)["']/gi)) {
     const url = match[1];
-    if (/\\/img\\/\\d+\\.jpg/i.test(url) || /media\\.php\\?/i.test(url)) push(url, 'snapshot');
+    if (/\/img\/\d+\.jpg/i.test(url) || /media\.php\?/i.test(url)) push(url, 'snapshot');
     else push(url, 'embed');
   }
 
