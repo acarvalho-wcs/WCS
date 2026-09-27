@@ -101,6 +101,30 @@ function extractCameraMedia(html, pageUrl) {
     candidates.push({ url, kind });
   };
 
+  for (const match of normalizedHtml.matchAll(/source\s*:\s*["']([^"']*\.m3u8\?a=[^"']+)["']/gi)) {
+    let streamPath = match[1];
+    if (streamPath.includes('livee.m3u8')) streamPath = streamPath.replace('livee.m3u8', 'live.m3u8');
+    const streamUrl = /^https?:\/\//i.test(streamPath)
+      ? streamPath
+      : `https://hd-auth.skylinewebcams.com/${streamPath.replace(/^\/+/, '')}`;
+    push(streamUrl, 'stream');
+  }
+
+  for (const match of normalizedHtml.matchAll(/["']([^"']*live[^"']*\.m3u8\?a=[^"']+)["']/gi)) {
+    let streamPath = match[1];
+    if (streamPath.includes('livee.m3u8')) streamPath = streamPath.replace('livee.m3u8', 'live.m3u8');
+    const streamUrl = /^https?:\/\//i.test(streamPath)
+      ? streamPath
+      : `https://hd-auth.skylinewebcams.com/${streamPath.replace(/^\/+/, '')}`;
+    push(streamUrl, 'stream');
+  }
+
+  for (const tag of normalizedHtml.match(/<meta\b[^>]*>/gi) || []) {
+    const property = tag.match(/\bproperty\s*=\s*["']([^"']+)["']/i)?.[1]?.toLowerCase();
+    const content = tag.match(/\bcontent\s*=\s*["']([^"']+)["']/i)?.[1];
+    if (property === 'og:image' && content) push(content, 'snapshot');
+  }
+
   for (const match of normalizedHtml.matchAll(/(?:https?:)?\/\/[^"'\s<>]+\.m3u8[^"'\s<>]*/gi)) {
     push(match[0], 'stream');
   }
