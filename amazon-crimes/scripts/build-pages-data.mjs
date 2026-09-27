@@ -158,35 +158,52 @@ function extractCameraMedia(html, pageUrl) {
   };
 }
 
+async function resolveCamera(camera) {
+  const copy = { ...camera };
+  if (!camera.original_url || !/skylinewebcams\.com/i.test(camera.original_url)) return copy;
+  try {
+    const response = await withTimeout(fetch(camera.original_url, {
+      headers: {
+        accept: 'text/html,application/xhtml+xml',
+        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/136 Safari/537.36'
+      }
+    }), 8000, `camera ${camera.id}`);
+    if (response.ok) {
+      const html = await response.text();
+      const media = extractCameraMedia(html, camera.original_url);
+      copy.stream_url = media.stream_url;
+      copy.embed_url = media.embed_url;
+      copy.snapshot_url = media.snapshot_url;
+      copy.media_resolved_at = new Date().toISOString();
+      copy.media_resolution_status = (media.stream_url || media.embed_url || media.snapshot_url) ? 'resolved' : 'no_embeddable_media_found';
+    } else {
+      copy.media_resolution_status = `http_${response.status}`;
+    }
+  } catch (error) {
+    copy.media_resolution_status = 'resolution_failed';
+    console.warn(`warning: camera ${camera.id} media unresolved: ${error.message}`);
+  }
+  return copy;
+}
+
 async function refreshCameras() {
   const source = await readJson('cameras.json');
+  const input = source.cameras || [];
   const cameras = [];
-  for (const camera of source.cameras || []) {
-    const copy = { ...camera };
-    if (camera.amazon_scope === 'within_amazon_region' && camera.original_url) {
-      try {
-        const response = await withTimeout(fetch(camera.original_url, {
-          headers: {
-            accept: 'text/html,application/xhtml+xml',
-            'user-agent': 'Amazon-Environmental-Crime-Observatory/0.7.0'
-          }
-        }), 8000, `camera ${camera.id}`);
-        if (response.ok) {
-          const html = await response.text();
-          const media = extractCameraMedia(html, camera.original_url);
-          copy.stream_url = media.stream_url;
-          copy.embed_url = media.embed_url;
-          copy.snapshot_url = media.snapshot_url;
-          copy.media_resolved_at = new Date().toISOString();
-        }
-      } catch (error) {
-        console.warn(`warning: camera ${camera.id} media unresolved: ${error.message}`);
-      }
-    }
-    cameras.push(copy);
+  const concurrency = 8;
+
+  for (let i = 0; i < input.length; i += concurrency) {
+    const batch = input.slice(i, i + concurrency);
+    const resolved = await Promise.all(batch.map(resolveCamera));
+    cameras.push(...resolved);
   }
+
   await writeJson('cameras.json', { ...source, updated_at: new Date().toISOString(), cameras });
-  console.log(`resolved ${cameras.filter(c => c.stream_url).length} camera streams, ${cameras.filter(c => c.embed_url).length} embeds and ${cameras.filter(c => c.snapshot_url).length} snapshots`);
+  console.log(
+    `resolved ${cameras.filter(c => c.stream_url).length} camera streams, ` +
+    `${cameras.filter(c => c.embed_url).length} embeds and ` +
+    `${cameras.filter(c => c.snapshot_url).length} snapshots across ${cameras.length} catalogued cameras`
+  );
 }
 
 await refreshLayer(
