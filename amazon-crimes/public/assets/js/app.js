@@ -720,6 +720,11 @@ async function hydrateEventMedia(event, popupEl) {
 }
 
 function openRadioPopup(radio, lngLat) {
+  if (window.AmazonMediaDock?.openRadio) {
+    closePopup();
+    window.AmazonMediaDock.openRadio(radio);
+    return;
+  }
   closePopup();
   const html = `<article class="sensor-popup radio-popup">
     <div class="sensor-title-row">${iconSvg('radio')}<div><span class="sensor-kicker">${escapeHtml(t('liveRadio'))}</span><h3>${escapeHtml(radio.name)}</h3></div></div>
@@ -796,6 +801,11 @@ function hydrateRadioPlayer(radio, popupEl) {
 }
 
 function openCameraPopup(camera, lngLat) {
+  if (window.AmazonMediaDock?.openCamera) {
+    closePopup();
+    window.AmazonMediaDock.openCamera(camera);
+    return;
+  }
   closePopup();
   const canEmbed = Boolean(camera.embed_url);
   const html = `<article class="sensor-popup camera-popup">
