@@ -187,7 +187,7 @@ async function playRadio(radio) {
   await tryStream(0);
 }
 
-function showCamera(camera) {
+async function showCamera(camera) {
   stopCurrentMedia();
   mode = 'camera';
   currentId = camera.id || null;
@@ -202,6 +202,37 @@ function showCamera(camera) {
   if (!body) return;
 
   const original = camera.original_url || camera.public_url || camera.url || '';
+
+  if (camera.stream_url) {
+    body.innerHTML = '<div class="media-camera-frame"><video id="media-camera-video" controls autoplay muted playsinline></video></div><div class="media-dock-note">' + esc(l().embedNotice) + '</div>' + sourceLink(original);
+    const video = $('#media-camera-video');
+    if (video) {
+      const stream = camera.stream_url;
+      if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = stream;
+        try { await video.play(); } catch {}
+      } else {
+        try {
+          const mod = await import('https://cdn.jsdelivr.net/npm/hls.js@1.5.18/+esm');
+          const Hls = mod.default || mod.Hls;
+          if (Hls?.isSupported?.()) {
+            const hls = new Hls({ enableWorker: true, lowLatencyMode: true });
+            hls.loadSource(stream);
+            hls.attachMedia(video);
+            hls.on(Hls.Events.MANIFEST_PARSED, async () => {
+              try { await video.play(); } catch {}
+            });
+          } else {
+            body.innerHTML = '<div class="media-dock-empty">' + esc(l().noCameraEmbed) + '</div>' + sourceLink(original);
+          }
+        } catch {
+          body.innerHTML = '<div class="media-dock-empty">' + esc(l().noCameraEmbed) + '</div>' + sourceLink(original);
+        }
+      }
+    }
+    return;
+  }
+
   if (camera.embed_url) {
     body.innerHTML = '<div class="media-camera-frame"><iframe src="' + esc(camera.embed_url) + '" title="' + esc(name) + '" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="eager" referrerpolicy="strict-origin-when-cross-origin"></iframe></div><div class="media-dock-note">' + esc(l().embedNotice) + '</div>' + sourceLink(original);
     return;
