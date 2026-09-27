@@ -1,5 +1,20 @@
-const RAISG_QUERY = 'https://geo2.socioambiental.org/raisg/rest/services/raisg/raisg_base/MapServer/8/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&f=geojson';
-const RAISG_LAYER = 'https://geo2.socioambiental.org/raisg/rest/services/raisg/raisg_base/MapServer/8';
+const RAISG_ENDPOINTS = [
+  {
+    query: 'https://services2.arcgis.com/dJOijx2lWTlGQBDJ/arcgis/rest/services/RAISG_Limits/FeatureServer/24/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&f=geojson',
+    layer: 'https://services2.arcgis.com/dJOijx2lWTlGQBDJ/arcgis/rest/services/RAISG_Limits/FeatureServer/24',
+    label: 'RAISG ArcGIS FeatureServer/24'
+  },
+  {
+    query: 'https://geo2.socioambiental.org/raisg/rest/services/raisg/raisg_base_N/MapServer/7/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&f=geojson',
+    layer: 'https://geo2.socioambiental.org/raisg/rest/services/raisg/raisg_base_N/MapServer/7',
+    label: 'RAISG raisg_base_N/7'
+  },
+  {
+    query: 'https://geo2.socioambiental.org/raisg/rest/services/raisg/raisg_base/MapServer/8/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&f=geojson',
+    layer: 'https://geo2.socioambiental.org/raisg/rest/services/raisg/raisg_base/MapServer/8',
+    label: 'RAISG raisg_base/8'
+  }
+];
 
 const json = (status, body) => new Response(JSON.stringify(body), {
   status,
@@ -9,22 +24,43 @@ const json = (status, body) => new Response(JSON.stringify(body), {
   }
 });
 
-export default async () => {
-  try {
-    const response = await fetch(RAISG_QUERY, {
-      headers: { accept: 'application/geo+json, application/json', 'user-agent': 'Amazon-Environmental-Crime-Observatory/0.6.4' }
-    });
-    if (!response.ok) throw new Error(`RAISG HTTP ${response.status}`);
-    const data = await response.json();
-    if (data?.type !== 'FeatureCollection' || !Array.isArray(data.features)) throw new Error('Unexpected RAISG response');
-    data.source = 'RAISG - Rede Amazônica de Informação Socioambiental Georreferenciada';
-    data.source_url = RAISG_LAYER;
-    data.layer_name = 'Amazonía: límite utilizado por RAISG';
-    data.generated_at = new Date().toISOString();
-    return json(200, data);
-  } catch (error) {
-    return json(502, { type: 'FeatureCollection', features: [], error: 'amazon_boundary_unavailable', message: error.message, source_url: RAISG_LAYER });
+async function fetchEndpoint(endpoint) {
+  const response = await fetch(endpoint.query, {
+    headers: {
+      accept: 'application/geo+json, application/json',
+      'user-agent': 'Amazon-Environmental-Crime-Observatory/0.7.0'
+    },
+    signal: AbortSignal.timeout(12000)
+  });
+  if (!response.ok) throw new Error(`${endpoint.label} HTTP ${response.status}`);
+  const data = await response.json();
+  if (data?.type !== 'FeatureCollection' || !Array.isArray(data.features) || data.features.length === 0) {
+    throw new Error(`${endpoint.label}: empty or unexpected GeoJSON`);
   }
+  data.source = 'RAISG - Rede Amazônica de Informação Socioambiental Georreferenciada';
+  data.source_url = endpoint.layer;
+  data.layer_name = 'Amazonía: límite utilizado por RAISG';
+  data.generated_at = new Date().toISOString();
+  data.endpoint_used = endpoint.label;
+  return data;
+}
+
+export default async () => {
+  const failures = [];
+  for (const endpoint of RAISG_ENDPOINTS) {
+    try {
+      return json(200, await fetchEndpoint(endpoint));
+    } catch (error) {
+      failures.push(error.message);
+    }
+  }
+  return json(502, {
+    type: 'FeatureCollection',
+    features: [],
+    error: 'amazon_boundary_unavailable',
+    message: failures.join(' | '),
+    source_url: RAISG_ENDPOINTS[0].layer
+  });
 };
 
 export const config = { path: '/api/amazon-boundary' };
