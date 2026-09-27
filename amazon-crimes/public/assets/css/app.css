@@ -491,7 +491,8 @@ body.how-it-works-open { overflow: hidden; }
 .media-dock {
   position: fixed;
   z-index: 950;
-  right: 18px;
+  left: 18px;
+  right: auto;
   bottom: 18px;
   width: min(420px, calc(100vw - 36px));
   border: 1px solid var(--line);
