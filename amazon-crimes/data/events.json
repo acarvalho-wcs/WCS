@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-09-27T04:44:00-03:00",
+  "generated_at": "2026-10-11T14:08:00Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -5523,6 +5523,166 @@
         }
       ],
       "source_media": []
+    },
+    {
+      "added_at": "2026-10-11T14:08:00Z",
+      "updated_at": "2026-10-11T14:08:00Z",
+      "backfill": false,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official enforcement action; no criminal guilt inferred beyond the cited source.",
+      "priority": "HIGH",
+      "cross_border": false,
+      "source_media": [],
+      "id": "BR-AM-2026-0925-HIDRA-DOURADA",
+      "title": {
+        "pt": "Operação Hidra Dourada destrói 22 dragas de garimpo ilegal no Rio Madeira",
+        "en": "Operation Hidra Dourada destroys 22 illegal mining dredges on Madeira River",
+        "es": "Operación Hidra Dourada destruye 22 dragas de minería ilegal en el río Madeira"
+      },
+      "summary": {
+        "pt": "PF e Ibama realizaram 18 ações entre 21 e 25 de setembro de 2026, destruindo 22 dragas e cinco embarcações. Foram lavrados 17 termos de apreensão e 18 termos de destruição.",
+        "en": "Federal Police and Ibama conducted 18 actions from September 21 to 25, 2026, destroying 22 dredges and five vessels. They issued 17 seizure records and 18 destruction records.",
+        "es": "La Policía Federal e Ibama realizaron 18 acciones del 21 al 25 de septiembre de 2026, destruyendo 22 dragas y cinco embarcaciones. Se emitieron 17 actas de incautación y 18 actas de destrucción."
+      },
+      "case_context": {
+        "pt": "[O] Operação documentada no trecho do Rio Madeira entre Autazes e Novo Aripuanã; também houve apreensão de arma, munições e três celulares. [S] Comunicado oficial da PF de 28/09/2026. [N] Nenhuma fonte jornalística independente validada neste registro. [I] A PF investiga a cadeia logística e econômica da mineração; a publicação não comprova rotas específicas, identidade de financiadores ou conexões com outras operações. Coordenada meramente regional.",
+        "en": "[O] Operation documented on the Madeira River between Autazes and Novo Aripuanã; a firearm, ammunition and three phones were also seized. [S] Federal Police official release, September 28, 2026. [N] No independently validated news source attached. [I] Police are investigating the mining supply and financial chain; no specific route, financier or link to another operation is established. Coordinates are regional reference only.",
+        "es": "[O] Operación documentada en el río Madeira entre Autazes y Novo Aripuanã; también se incautaron un arma, municiones y tres teléfonos. [S] Comunicado oficial de la Policía Federal del 28/09/2026. [N] Sin noticia independiente validada en este registro. [I] Se investiga la cadena logística y económica minera; no hay ruta, financiador ni vínculo con otras operaciones demostrados. Coordenadas solo referenciales."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Hidra Dourada",
+      "agencies": [
+        "Polícia Federal",
+        "Ibama"
+      ],
+      "occurred_at": "2026-09-25T23:59:00-04:00",
+      "published_at": "2026-09-28T10:32:00-03:00",
+      "location": {
+        "name": "Rio Madeira — trecho Autazes–Novo Aripuanã (referência regional)",
+        "admin1": "Amazonas",
+        "country": "Brazil",
+        "lat": -4.85,
+        "lon": -60.48,
+        "precision": "regional_approximate",
+        "geo_source": "Regional reference; PF describes river stretch, not a single operation coordinate"
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null,
+        "category": null
+      },
+      "impacts": {
+        "water": true,
+        "forest": false,
+        "biodiversity": true
+      },
+      "quantities": [
+        {
+          "item": "dredges destroyed",
+          "value": 22,
+          "unit": "units"
+        },
+        {
+          "item": "support vessels destroyed",
+          "value": 5,
+          "unit": "units"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-e-ibama-combatem-garimpo-ilegal-e-destroem-22-dragas-no-amazonas",
+          "published_at": "2026-09-28T10:32:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "keywords": [
+        "garimpo ilegal",
+        "Rio Madeira",
+        "Autazes",
+        "Novo Aripuanã",
+        "Hidra Dourada"
+      ]
+    },
+    {
+      "added_at": "2026-10-11T14:08:00Z",
+      "updated_at": "2026-10-11T14:08:00Z",
+      "backfill": false,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official enforcement action; no criminal guilt inferred beyond the cited source.",
+      "priority": "HIGH",
+      "cross_border": false,
+      "source_media": [],
+      "id": "BR-RO-2026-0929-RAMAL-FECHADO",
+      "title": {
+        "pt": "Operação Ramal Fechado combate extração ilegal de madeira na TI Igarapé Lage",
+        "en": "Operation Ramal Fechado targets illegal logging in Igarapé Lage Indigenous Territory",
+        "es": "Operación Ramal Fechado combate la tala ilegal en el Territorio Indígena Igarapé Lage"
+      },
+      "summary": {
+        "pt": "Em 29 de setembro, a PF, com apoio do BPFron e Funai, destruiu madeira, estruturas e materiais usados na extração ilegal de madeira na TI Igarapé Lage, em Nova Mamoré (RO). Quantidades não foram divulgadas.",
+        "en": "On September 29, Federal Police, supported by BPFron and Funai, destroyed timber, structures and equipment used for illegal logging in Igarapé Lage Indigenous Territory, Nova Mamoré, Rondônia. Quantities were not disclosed.",
+        "es": "El 29 de septiembre, la Policía Federal, con apoyo de BPFron y Funai, destruyó madera, estructuras y materiales utilizados en la tala ilegal en el Territorio Indígena Igarapé Lage, Nova Mamoré, Rondônia. No se informaron cantidades."
+      },
+      "case_context": {
+        "pt": "[O] A PF informa que a operação ocorreu após denúncias de retirada ilegal de madeira na região da Linha 8-C, dentro da TI Igarapé Lage. [S] Comunicado oficial da PF publicado em 30/09/2026. [N] Nenhuma fonte jornalística independente validada neste registro. [I] A destruição de estruturas buscou impedir continuidade e escoamento; o comunicado não estabelece destino, rota comercial ou autores identificados. Marcador no centro aproximado municipal, não no ponto fiscalizado.",
+        "en": "[O] Federal Police reported complaints of illegal timber removal around Linha 8-C in Igarapé Lage Indigenous Territory. [S] Official Police release published September 30, 2026. [N] No independently validated news source attached. [I] Structures were destroyed to hinder further extraction and transport; no destination, trade route or identified perpetrator is established. Marker approximates the municipality, not the enforcement site.",
+        "es": "[O] La Policía Federal informó denuncias de extracción ilegal de madera en la zona Linha 8-C del Territorio Indígena Igarapé Lage. [S] Comunicado oficial publicado el 30/09/2026. [N] Sin noticia independiente validada en este registro. [I] La destrucción buscó impedir extracción y salida de madera; no se documenta destino, ruta comercial ni responsable identificado. El marcador representa aproximadamente el municipio."
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING",
+        "PROTECTED_AREA_INVASION"
+      ],
+      "operation_name": "Ramal Fechado",
+      "agencies": [
+        "Polícia Federal",
+        "BPFron/PMRO",
+        "Funai"
+      ],
+      "occurred_at": "2026-09-29T12:00:00-04:00",
+      "published_at": "2026-09-30T11:07:00-03:00",
+      "location": {
+        "name": "Nova Mamoré — TI Igarapé Lage (referência municipal)",
+        "admin1": "Rondônia",
+        "country": "Brazil",
+        "lat": -10.4093,
+        "lon": -65.3268,
+        "precision": "municipality_centroid_approximate",
+        "geo_source": "Approximate municipal reference, not geolocated enforcement point"
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "Terra Indígena Igarapé Lage",
+        "category": "Indigenous Territory"
+      },
+      "indigenous_territory": {
+        "is_indigenous_territory": true,
+        "name": "Igarapé Lage"
+      },
+      "impacts": {
+        "indigenous_or_local_communities": true,
+        "forest": true,
+        "biodiversity": true
+      },
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-combate-extracao-ilegal-de-madeira-em-terra-indigena-de-rondonia/",
+          "published_at": "2026-09-30T11:07:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "keywords": [
+        "madeira ilegal",
+        "Nova Mamoré",
+        "Igarapé Lage",
+        "Linha 8-C",
+        "Ramal Fechado"
+      ]
     }
   ]
 }
