@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-10-22T13:08:56.165Z",
+  "generated_at": "2026-10-22T13:09:57.785Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -6141,6 +6141,218 @@
         "Madre de Dios",
         "minería ilegal",
         "Los Azules de la Minería — Punto Azul"
+      ]
+    },
+    {
+      "id": "PE-MDD-2026-1008-AGUAJAL-BALATA-MALINOWSKI",
+      "title": {
+        "pt": "Operação conjunta destrói nove balsas-dragas em Aguajal, Balata e Malinowski",
+        "en": "Joint operation destroys nine dredging rafts in Aguajal, Balata and Malinowski",
+        "es": "Operación conjunta destruye nueve balsas dragas en Aguajal, Balata y Malinowski"
+      },
+      "summary": {
+        "pt": "Em 08/10, uma única operação nos três setores inutilizou nove balsas-dragas, três motores submersos, outros quatro motores e três acampamentos, além de 2.450 galões de combustível; bens avaliados em S/ 8.926.415.",
+        "en": "On October 8, one multi-sector operation disabled nine dredging rafts, three submerged engines, four other engines, three camps and 2,450 gallons of fuel; reported asset value PEN 8,926,415.",
+        "es": "El 8 de octubre, una sola operación en tres sectores inutilizó nueve balsas dragas, tres motores sumergidos, otros cuatro motores, tres campamentos y 2.450 galones de combustible; bienes valorizados en S/ 8.926.415."
+      },
+      "case_context": {
+        "pt": "As forças peruanas confirmam Aguajal, Balata e Malinowski como setores da mesma operação de 08/10, portanto apenas um registro. Diferenciar da ação no rio Malinowski publicada em 16/10 e da ação em Balata em 17/10. Não há georreferenciamento de cada instalação.",
+        "en": "Peruvian authorities identified Aguajal, Balata and Malinowski as locations of one October 8 operation, so this is one record. Distinct from the Malinowski River event reported on October 16 and the October 17 Balata action. Exact sites are not geolocated.",
+        "es": "Las autoridades confirman Aguajal, Balata y Malinowski como sectores de una sola operación del 8 de octubre, registrada una vez. Es distinta del hecho del río Malinowski publicado el 16/10 y de Balata el 17/10. No se geolocalizan los puntos exactos."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Interdicción Aguajal–Balata–Malinowski",
+      "agencies": [
+        "Comando Conjunto de las Fuerzas Armadas del Perú",
+        "Policía Nacional del Perú",
+        "Sernanp",
+        "Fiscalía Especializada en Materia Ambiental"
+      ],
+      "occurred_at": "2026-10-08T12:00:00-05:00",
+      "occurred_at_precision": "day_confirmed_time_unknown_midday_placeholder",
+      "published_at": "2026-10-10T17:33:00-05:00",
+      "added_at": "2026-10-22T13:09:57.785Z",
+      "updated_at": "2026-10-22T13:09:57.785Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Enforcement event; no inference of individual criminal guilt beyond the cited sources.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Aguajal, Balata e Malinowski — Inambari (referência multissetorial)",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.9767,
+        "lon": -69.9388,
+        "precision": "district_reference_approximate",
+        "geo_source": "District-level Inambari reference used in existing canonical records; not intervention-site coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "impacts": {
+        "water": true
+      },
+      "quantities": [
+        {
+          "item": "dredging rafts destroyed",
+          "value": 9,
+          "unit": "units"
+        },
+        {
+          "item": "submerged engines destroyed",
+          "value": 3,
+          "unit": "units"
+        },
+        {
+          "item": "other engines destroyed",
+          "value": 4,
+          "unit": "units"
+        },
+        {
+          "item": "camps destroyed",
+          "value": 3,
+          "unit": "units"
+        },
+        {
+          "item": "fuel disabled",
+          "value": 2450,
+          "unit": "gallons"
+        },
+        {
+          "item": "asset value estimated",
+          "value": 8926415,
+          "unit": "PEN"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Comando Conjunto de las Fuerzas Armadas del Perú",
+          "url": "https://www.gob.pe/institucion/ccffaa/noticias/1454852-ff-aa-y-pnp-afectan-en-mas-de-s-8-9-millones-a-la-mineria-ilegal-en-madre-de-dios",
+          "published_at": "2026-10-10T17:33:00-05:00",
+          "language": "es",
+          "source_type": "official",
+          "is_primary": true
+        },
+        {
+          "publisher": "Diario Oficial El Peruano",
+          "url": "https://elperuano.pe/noticia/306554-operativo-contra-la-mineria-ilegal-afecta-con-mas-de-s-89-millones-a-estas-organizaciones",
+          "published_at": "2026-10-10T20:33:00-05:00",
+          "language": "es",
+          "source_type": "official",
+          "is_primary": true
+        }
+      ],
+      "source_media": [],
+      "evidence_notes": "Official CCFFAA release clearly says operation occurred October 8; consolidated 3 locations as one.",
+      "limitations": "Administrative coordinate only; no transport route inferred. Event day known, clock time not reported.",
+      "keywords": [
+        "Madre de Dios",
+        "Inambari",
+        "Interdicción Aguajal–Balata–Malinowski",
+        "minería ilegal"
+      ]
+    },
+    {
+      "id": "PE-MDD-2026-1017-BALATA",
+      "title": {
+        "pt": "Ação policial em Balata inutiliza seis balsas e quinze acampamentos",
+        "en": "Police in Balata disable six mining rafts and fifteen camps",
+        "es": "Operativo policial en Balata inutiliza seis balsas y quince campamentos"
+      },
+      "summary": {
+        "pt": "Em 17/10/2026, a PNP inutilizou seis balsas de mineração, cinco motores submersos, seis tolvas e quinze acampamentos em Balata (Inambari), além de 650 galões de diesel. Valor reportado superior a S/ 1,3 milhão.",
+        "en": "On October 17, police disabled six mining rafts, five submerged engines, six sluice hoppers, fifteen camps and 650 gallons of diesel at Balata, Inambari. Reported asset value exceeded PEN 1.3 million.",
+        "es": "El 17 de octubre, la PNP inutilizó seis balsas mineras, cinco motores sumergidos, seis tolvas, quince campamentos y 650 galones de diésel en Balata, Inambari. Valor reportado superior a S/1,3 millones."
+      },
+      "case_context": {
+        "pt": "A fonte oficial identifica expressamente 17/10 como data da intervenção. A presença de Balata na operação multissetorial de 08/10 não torna a ação de 17/10 duplicada: são apreensões de datas distintas. Não inferir conexão entre investigados ou equipamentos.",
+        "en": "The state outlet expressly dates this Balata operation to October 17. Balata also featured in a separate October 8 multi-site action, but these are dated, distinct seizures. Links between alleged participants or equipment are not established.",
+        "es": "La fuente estatal sitúa el operativo el 17/10. Balata también integró la operación del 8/10, pero son acciones distintas en fechas diferentes. No se presume conexión entre implicados o equipos."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Interdicción policial Balata — 17/10",
+      "agencies": [
+        "Policía Nacional del Perú",
+        "Fiscalía Especializada en Materia Ambiental",
+        "Sernanp"
+      ],
+      "occurred_at": "2026-10-17T12:00:00-05:00",
+      "occurred_at_precision": "day_confirmed_time_unknown_midday_placeholder",
+      "published_at": "2026-10-18T16:36:00-05:00",
+      "added_at": "2026-10-22T13:09:57.785Z",
+      "updated_at": "2026-10-22T13:09:57.785Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Enforcement event; no inference of individual criminal guilt beyond the cited sources.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Balata — Inambari (referência distrital)",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.9767,
+        "lon": -69.9388,
+        "precision": "district_reference_approximate",
+        "geo_source": "District-level Inambari reference used in existing canonical records; not intervention-site coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "impacts": {
+        "water": true
+      },
+      "quantities": [
+        {
+          "item": "mining rafts disabled",
+          "value": 6,
+          "unit": "units"
+        },
+        {
+          "item": "submerged engines disabled",
+          "value": 5,
+          "unit": "units"
+        },
+        {
+          "item": "sluice hoppers disabled",
+          "value": 6,
+          "unit": "units"
+        },
+        {
+          "item": "camps disabled",
+          "value": 15,
+          "unit": "units"
+        },
+        {
+          "item": "diesel disabled",
+          "value": 650,
+          "unit": "gallons"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Diario Oficial El Peruano",
+          "url": "https://elperuano.pe/noticia/307068-pnp-golpea-logistica-de-la-mineria-ilegal-valorizada-en-s13-millones-en-madre-de-dios",
+          "published_at": "2026-10-18T16:36:00-05:00",
+          "language": "es",
+          "source_type": "official",
+          "is_primary": true
+        }
+      ],
+      "source_media": [],
+      "evidence_notes": "Official Peru state outlet dated October 18 specifies actual intervention October 17, with quantities.",
+      "limitations": "Administrative coordinate only; no transport route inferred. Event day known, clock time not reported.",
+      "keywords": [
+        "Madre de Dios",
+        "Inambari",
+        "Interdicción policial Balata — 17/10",
+        "minería ilegal"
       ]
     }
   ]
