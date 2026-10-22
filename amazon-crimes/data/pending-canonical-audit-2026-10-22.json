@@ -1,0 +1,120 @@
+{
+  "audit_date": "2026-10-22",
+  "repository": "acarvalho-wcs/WCS",
+  "branch": "amazon-crimes-pages",
+  "publication_effect": "none",
+  "purpose": "Candidate events withheld from canonical events.json because actual occurrence day cannot be distinguished from source publication day.",
+  "source_of_truth": "amazon-crimes/data/events.json",
+  "status": "PENDING_DATE_VALIDATION",
+  "count": 3,
+  "candidates": [
+    {
+      "id_proposed": "GY-POTARO-2026-0929-SIPARUNI",
+      "country": "Guyana",
+      "place": "Siparuni riverbank, Potaro-Siparuni (Region Eight)",
+      "crime_type": "ILLEGAL_MINING",
+      "operation_date": null,
+      "date_precision": "exact event date not stated",
+      "reported_on": "2026-09-29",
+      "title": {
+        "pt": "GGMC apreende draga no rio Siparuni e detém três mineiros",
+        "en": "GGMC seizes dredge on Siparuni River and detains three miners",
+        "es": "GGMC incauta draga en río Siparuni y detiene a tres mineros"
+      },
+      "summary": {
+        "pt": "O Ministério dos Recursos Naturais da Guiana informou a apreensão de uma draga fluvial, equipamentos e veículo e a detenção de três mineiros, dois estrangeiros, por suposta mineração ilegal às margens do Siparuni. A data da operação não foi divulgada.",
+        "en": "Guyana's Ministry of Natural Resources reported a river dredge, equipment and vehicle seized and three miners detained, two of them foreign nationals, for alleged illegal mining on the Siparuni riverbank. The operation date was not disclosed.",
+        "es": "El Ministerio de Recursos Naturales de Guyana informó la incautación de una draga fluvial, equipos y vehículo y la detención de tres mineros, dos extranjeros, por presunta minería ilegal en la ribera del Siparuni. No se comunicó la fecha de intervención."
+      },
+      "sources": [
+        {
+          "publisher": "Ministry of Natural Resources — Guyana",
+          "type": "official",
+          "url": "https://mnr.gov.gy/2026/09/29/three-detained-for-illegal-mining-along-siparuni-riverbank/",
+          "published_at": "2026-09-29"
+        },
+        {
+          "publisher": "Guyana Chronicle",
+          "type": "news",
+          "url": "https://guyanachronicle.com/2026/09/30/three-detained-over-illegal-mining-along-siparuni-riverbank/",
+          "published_at": "2026-09-30"
+        }
+      ],
+      "crosscheck": "Distinct from Puruni River September 17 and Potaro mining district September 12. Do not infer nationality of two non-nationals or route.",
+      "blocking": [
+        "event date",
+        "geographic reference verified for precise locality"
+      ]
+    },
+    {
+      "id_proposed": "PE-MDD-2026-10XX-MALINOWSKI-FILADELFIA-YARINAL",
+      "country": "Peru",
+      "place": "Río Malinowski, tramo Filadelfia–Yarinal, Inambari, Madre de Dios",
+      "crime_type": "ILLEGAL_MINING",
+      "operation_date": null,
+      "date_precision": "performed on or before 2026-10-16; precise day not stated",
+      "reported_on": "2026-10-16",
+      "title": {
+        "pt": "Polícia inutiliza 15 balsas-dragas no rio Malinowski",
+        "en": "Police disable 15 dredging rafts on the Malinowski River",
+        "es": "Policía inutiliza 15 balsas dragas en el río Malinowski"
+      },
+      "summary": {
+        "pt": "A Polícia peruana informou a inutilização de 15 balsas-dragas, 15 tolvas, 15 acampamentos e motores entre Filadelfia e Yarinal, com prejuízo estimado em S/ 9 milhões; reportagem de 16/10 não informa o dia da intervenção.",
+        "en": "Peruvian police reported 15 dredging rafts, 15 hoppers, 15 camps and engines disabled between Filadelfia and Yarinal, assets valued at around PEN 9 million; October 16 report does not state the intervention day.",
+        "es": "La PNP informó la inutilización de 15 balsas dragas, 15 tolvas, 15 campamentos y motores entre Filadelfia y Yarinal, por cerca de S/ 9 millones; la publicación del 16/10 no precisa día del operativo."
+      },
+      "sources": [
+        {
+          "publisher": "Diario Oficial El Peruano",
+          "type": "official",
+          "url": "https://elperuano.pe/noticia/306991-madre-de-dios-policia-destruye-equipos-e-infraestructura-a-la-mineria-ilegal-valorizada-en-s-9-millones",
+          "published_at": "2026-10-16"
+        }
+      ],
+      "crosscheck": "Different reported quantity and sectors from the October 8 multisite operation; evidence supports a distinct action, but verify actual day before canonical submission.",
+      "blocking": [
+        "event date",
+        "site coordinate"
+      ]
+    },
+    {
+      "id_proposed": "PE-MDD-2026-10XX-TAMBOPATA-FEMA-FIVE-DETAINED",
+      "country": "Peru",
+      "place": "Río Madre de Dios, Reserva Nacional Tambopata (exact sector not published)",
+      "crime_type": "ILLEGAL_MINING",
+      "operation_date": null,
+      "date_precision": "performed on or before 2026-10-19; precise day not stated",
+      "reported_on": "2026-10-19",
+      "title": {
+        "pt": "Fiscalía detém cinco suspeitos de mineração ilegal na Reserva Tambopata",
+        "en": "Prosecutors detain five suspects in Tambopata illegal-mining operation",
+        "es": "Fiscalía detiene a cinco sospechosos de minería ilegal en la Reserva Tambopata"
+      },
+      "summary": {
+        "pt": "Fiscalía, PNP, Sernanp e Exército atuaram na Reserva Nacional Tambopata, às margens do rio Madre de Dios, detendo cinco suspeitos e inutilizando duas balsas, dois motores e dois acampamentos. Fonte publicada em 19/10 não informa data exata da ação.",
+        "en": "Prosecutors, police, Sernanp and military detained five suspects and disabled two rafts, two motors and two camps in Tambopata National Reserve along the Madre de Dios River. Reports dated October 19 do not identify the actual intervention day.",
+        "es": "Fiscalía, PNP, Sernanp y Ejército detuvieron a cinco investigados e inutilizaron dos balsas, dos motores y dos campamentos en la Reserva Tambopata junto al río Madre de Dios. Las noticias del 19/10 no indican el día exacto del operativo."
+      },
+      "sources": [
+        {
+          "publisher": "Agencia Andina",
+          "type": "news",
+          "url": "https://andina.pe/agencia/noticia-tambopata-fiscalia-pnp-y-ejercito-detienen-a-cinco-implicados-presunta-mineria-ilegal-1096697.aspx",
+          "published_at": "2026-10-20"
+        },
+        {
+          "publisher": "Desde Adentro",
+          "type": "news",
+          "url": "https://www.desdeadentro.pe/2026/10/detienen-a-cinco-involucrados-en-presunta-mineria-ilegal-en-la-reserva-nacional-de-tambopata/",
+          "published_at": "2026-10-19"
+        }
+      ],
+      "crosscheck": "Distinct from Punto Azul, Balata, and river Malinowski events. Andina reports five detainees but lists four initials: do not infer missing identity.",
+      "blocking": [
+        "event date",
+        "exact intervention site"
+      ]
+    }
+  ]
+}
