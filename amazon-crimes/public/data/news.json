@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-10-22",
-  "count": 9,
+  "count": 49,
   "editorial_criterion": {
     "pt": "Reportagens aprofundadas sobre redes, mercados, métodos, causas e impactos de crimes ambientais na Amazônia. Notas isoladas de apreensão pertencem à base de eventos canônicos.",
     "en": "In-depth reporting on networks, markets, drivers and impacts of Amazon environmental crime. Isolated seizure reports belong to canonical event records.",
@@ -118,6 +118,90 @@
       "added_at": "2026-10-22"
     },
     {
+      "id": "AMZ-N-010",
+      "publication_date": "2026-10-07",
+      "outlet": "Amazon Underworld",
+      "authors": [
+        "Pamela Huerta"
+      ],
+      "original_language": "en",
+      "original_title": "Peruvian minors recruited by a Colombian armed group in the Amazon",
+      "title_pt": "Grupo armado recruta adolescentes na Amazônia peruana",
+      "title_en": "Peruvian minors recruited by an armed group in the Amazon",
+      "title_es": "Grupo armado recluta menores en la Amazonía peruana",
+      "description_pt": "Investiga recrutamento juvenil no Putumayo e vínculos com garimpo e economias ilícitas.",
+      "description_en": "Examines child recruitment and its links to mining and illicit economies in Putumayo.",
+      "description_es": "Investiga reclutamiento de menores y vínculos con minería y economías ilícitas en Putumayo.",
+      "topic_code": "networks",
+      "countries": [
+        "Peru",
+        "Colômbia"
+      ],
+      "territories": [
+        "Putumayo",
+        "Loreto"
+      ],
+      "source_url": "https://amazonunderworld.org/peruvian-minors-recruited-colombian-armed-group/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-049",
+      "publication_date": "2026-10-05",
+      "outlet": "Mongabay",
+      "authors": [
+        "Maxwell Radwin"
+      ],
+      "original_language": "en",
+      "original_title": "Uncertainty mounts as Suriname struggles to evict illegal settlers in the Amazon",
+      "title_pt": "Suriname enfrenta ocupações irregulares da floresta",
+      "title_en": "Suriname struggles with illegal forest settlements",
+      "title_es": "Surinam enfrenta asentamientos ilegales en la selva",
+      "description_pt": "Examina ocupações e desmatamento por colonos, além de dificuldades de remoção.",
+      "description_en": "Investigates illegal settlement and deforestation and barriers to eviction.",
+      "description_es": "Investiga asentamientos y deforestación, además de dificultades para el desalojo.",
+      "topic_code": "land",
+      "countries": [
+        "Suriname",
+        "Belize"
+      ],
+      "territories": [
+        "Amazônia surinamesa"
+      ],
+      "source_url": "https://news.mongabay.com/2026/10/uncertainty-mounts-as-suriname-struggles-to-evict-illegal-settlers-in-the-amazon/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-044",
+      "publication_date": "2026-09-13",
+      "outlet": "Armando.info",
+      "authors": [
+        "Lisseth Boon",
+        "Marcos David Valverde"
+      ],
+      "original_language": "es",
+      "original_title": "Con la muerte del ‘Niño’ Guerrero, todo cambió para seguir igual en las minas",
+      "title_pt": "Garimpos persistem após operações no sul da Venezuela",
+      "title_en": "Mining persists after raids in southern Venezuela",
+      "title_es": "Las minas siguen activas tras cambio de jefaturas criminales",
+      "description_pt": "Apura continuidade da extração aurífera em Las Claritas e Kilómetro 88.",
+      "description_en": "Investigates ongoing gold mining in Las Claritas and Kilómetro 88.",
+      "description_es": "Investiga la continuidad de minería aurífera en Las Claritas y Kilómetro 88.",
+      "topic_code": "mining",
+      "countries": [
+        "Venezuela"
+      ],
+      "territories": [
+        "Bolívar",
+        "Las Claritas",
+        "Kilómetro 88"
+      ],
+      "source_url": "https://armando.info/con-la-muerte-del-nino-guerrero-todo-cambio-para-seguir-igual-en-las-minas/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
       "id": "AMZ-N-005",
       "publication_date": "2026-09-01",
       "outlet": "Mongabay",
@@ -144,6 +228,60 @@
       "added_at": "2026-10-22"
     },
     {
+      "id": "AMZ-N-039",
+      "publication_date": "2026-08-24",
+      "outlet": "((o))eco",
+      "authors": [
+        "Marcio Isensee e Sá"
+      ],
+      "original_language": "pt",
+      "original_title": "Garimpo dispara no Parque Nacional do Juruena e levanta alerta sobre avanço de facções",
+      "title_pt": "Garimpo e facções ameaçam o Parque do Juruena",
+      "title_en": "Gold mining and criminal factions threaten Juruena Park",
+      "title_es": "Minería ilegal y facciones amenazan el Parque Juruena",
+      "description_pt": "Investiga desmatamento minerário e suspeita de atuação de facções criminosas.",
+      "description_en": "Investigates mining-driven forest loss and possible criminal-faction involvement.",
+      "description_es": "Investiga deforestación minera y presunta actividad de facciones criminales.",
+      "topic_code": "mining",
+      "countries": [
+        "Brasil"
+      ],
+      "territories": [
+        "Mato Grosso",
+        "Parque Nacional do Juruena"
+      ],
+      "source_url": "https://oeco.org.br/reportagens/garimpo-dispara-no-parque-nacional-do-juruena-e-levanta-alerta-sobre-avanco-de-faccoes/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-027",
+      "publication_date": "2026-08-23",
+      "outlet": "OjoPúblico",
+      "authors": [
+        "Milagros Berríos"
+      ],
+      "original_language": "es",
+      "original_title": "El costo humano de la minería ilegal en la Amazonía: redes de explotación sexual cobran en gramos de oro",
+      "title_pt": "Garimpo no Nanay sustenta redes de exploração sexual",
+      "title_en": "Illegal gold mining fuels exploitation on Peru's Nanay River",
+      "title_es": "Minería ilegal fomenta explotación sexual en el río Nanay",
+      "description_pt": "Investiga redes de exploração e tráfico humano próximas aos garimpos de Loreto.",
+      "description_en": "Investigates trafficking and exploitation networks around illegal mines in Loreto.",
+      "description_es": "Investiga redes de trata y explotación cerca de las minas ilegales de Loreto.",
+      "topic_code": "mining",
+      "countries": [
+        "Peru"
+      ],
+      "territories": [
+        "Loreto",
+        "Rio Nanay"
+      ],
+      "source_url": "https://ojo-publico.com/6487/redes-internacionales-trata-cobran-gramos-oro-amazonico",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
       "id": "AMZ-N-006",
       "publication_date": "2026-08-04",
       "outlet": "Mongabay",
@@ -166,6 +304,63 @@
       "description_en": "Investigates alleged oversight failures, legal actions and suspected irregularities in gold-mining regulation.",
       "description_es": "Investiga presuntas fallas de control, acciones judiciales e irregularidades en la regulación del oro.",
       "source_url": "https://news.mongabay.com/2026/08/brazils-mining-agency-under-fire-over-corruption-and-omission-probes/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-011",
+      "publication_date": "2026-07-30",
+      "outlet": "Amazon Underworld",
+      "authors": [
+        "Juanita Vélez",
+        "Bram Ebus"
+      ],
+      "original_language": "en",
+      "original_title": "The business of addiction in the Amazon’s triple frontier",
+      "title_pt": "Narcotráfico e dependência na tríplice fronteira",
+      "title_en": "Drug markets and addiction in the Amazon triple frontier",
+      "title_es": "Narcotráfico y adicción en la triple frontera",
+      "description_pt": "Investiga mercados de coca e impactos em comunidades indígenas da tríplice fronteira.",
+      "description_en": "Investigates illicit coca markets and their impact on Indigenous tri-border communities.",
+      "description_es": "Investiga mercados de coca e impactos en comunidades indígenas de la triple frontera.",
+      "topic_code": "networks",
+      "countries": [
+        "Brasil",
+        "Colômbia",
+        "Peru"
+      ],
+      "territories": [
+        "Leticia",
+        "Amazonas",
+        "Loreto"
+      ],
+      "source_url": "https://amazonunderworld.org/the-business-of-addiction-in-the-amazons-triple-frontier/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-043",
+      "publication_date": "2026-07-30",
+      "outlet": "Conexão Planeta",
+      "authors": [
+        "Karla Mendes"
+      ],
+      "original_language": "pt",
+      "original_title": "Declínio de mais de 50% da população leva tracajá da Amazônia à lista de espécies ameaçadas pela 1ª vez",
+      "title_pt": "Pressões sobre quelônios incluem tráfico de animais",
+      "title_en": "Wildlife trade among threats to Amazon turtles",
+      "title_es": "El tráfico figura entre amenazas a tortugas amazónicas",
+      "description_pt": "Reproduz reportagem da Mongabay sobre ameaças a quelônios e lacunas de dados do tráfico.",
+      "description_en": "Syndicates Mongabay reporting on turtle threats and wildlife-trafficking data gaps.",
+      "description_es": "Reproduce reportaje de Mongabay sobre amenazas a tortugas y datos de tráfico.",
+      "topic_code": "wildlife",
+      "countries": [
+        "Brasil"
+      ],
+      "territories": [
+        "Amazônia brasileira"
+      ],
+      "source_url": "https://conexaoplaneta.com.br/blog/declinio-de-mais-de-50-da-populacao-leva-tracaja-da-amazonia-a-lista-de-especies-ameacadas-pela-1a-vez/",
       "related_event_ids": [],
       "added_at": "2026-10-22"
     },
@@ -197,6 +392,119 @@
       "added_at": "2026-10-22"
     },
     {
+      "id": "AMZ-N-012",
+      "publication_date": "2026-06-18",
+      "outlet": "Amazon Underworld",
+      "authors": [
+        "Carlos Suniaga",
+        "Enner Agreda Fajardo"
+      ],
+      "original_language": "en",
+      "original_title": "Las Claritas and the Battle for Gold in the New U.S.–Venezuela Era",
+      "title_pt": "A disputa pelo ouro em Las Claritas",
+      "title_en": "Gold, criminal networks and power in Las Claritas",
+      "title_es": "La disputa por el oro en Las Claritas",
+      "description_pt": "Examina relações entre garimpo, autoridades e grupos armados no sul venezuelano.",
+      "description_en": "Examines relationships between gold mining, state actors and armed groups in Venezuela.",
+      "description_es": "Examina relaciones entre minería aurífera, Estado y grupos armados en Venezuela.",
+      "topic_code": "mining",
+      "countries": [
+        "Venezuela"
+      ],
+      "territories": [
+        "Bolívar",
+        "Las Claritas"
+      ],
+      "source_url": "https://amazonunderworld.org/las-claritas-battle-for-gold-venezuela-united-states/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-040",
+      "publication_date": "2026-06-18",
+      "outlet": "((o))eco",
+      "authors": [
+        "Gabriel Tussini"
+      ],
+      "original_language": "pt",
+      "original_title": "Parado no Senado, PL da Grilagem facilita regularização de áreas invadidas em todo o país",
+      "title_pt": "Projeto de regularização pode favorecer grilagem na Amazônia",
+      "title_en": "Land bill could affect occupied Amazon public lands",
+      "title_es": "Proyecto de tierras podría favorecer invasiones en Amazonía",
+      "description_pt": "Analisa efeitos potenciais de leis fundiárias sobre terras públicas.",
+      "description_en": "Examines possible impacts of land policy bills on public territories.",
+      "description_es": "Analiza posibles efectos de leyes de tierras en áreas públicas.",
+      "topic_code": "land",
+      "countries": [
+        "Brasil"
+      ],
+      "territories": [
+        "Amazônia Legal",
+        "Pará"
+      ],
+      "source_url": "https://oeco.org.br/reportagens/parado-no-senado-pl-da-grilagem-facilita-regularizacao-de-areas-invadidas-em-todo-o-pais/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-047",
+      "publication_date": "2026-06-17",
+      "outlet": "Mongabay",
+      "authors": [
+        "Rubens Valente"
+      ],
+      "original_language": "en",
+      "original_title": "Illegal miners adapt their strategies in Yanomami Amazon territory",
+      "title_pt": "Garimpeiros mudam estratégias na Terra Yanomami",
+      "title_en": "Illegal miners adapt strategies in Yanomami land",
+      "title_es": "Mineros ilegales adaptan tácticas en tierra yanomami",
+      "description_pt": "Analisa dispersão dos garimpos em grupos menores e movimentação fronteiriça.",
+      "description_en": "Examines fragmentation of miners into smaller groups and cross-border shifts.",
+      "description_es": "Analiza fragmentación de mineros en grupos menores y desplazamientos fronterizos.",
+      "topic_code": "mining",
+      "countries": [
+        "Brasil",
+        "Venezuela",
+        "Guiana"
+      ],
+      "territories": [
+        "Roraima",
+        "Amazonas",
+        "Yanomami"
+      ],
+      "source_url": "https://news.mongabay.com/2026/06/illegal-miners-adapt-their-strategies-in-yanomami-amazon-territory/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-022",
+      "publication_date": "2026-06-09",
+      "outlet": "InfoAmazonia",
+      "authors": [
+        "Bruno Abbud"
+      ],
+      "original_language": "pt",
+      "original_title": "Ouro, escavadeiras e fuzis: como facções e milícias dominam garimpos clandestinos na Terra Indígena Sararé",
+      "title_pt": "Facções e milícias em garimpos na Terra Sararé",
+      "title_en": "Armed factions and illegal mining in Sararé",
+      "title_es": "Facciones armadas y minería ilegal en Sararé",
+      "description_pt": "Investiga garimpo armado em território Nambikwara na fronteira do Mato Grosso.",
+      "description_en": "Investigates armed illegal mining in Nambikwara territory in Mato Grosso.",
+      "description_es": "Investiga minería ilegal armada en territorio nambikwara de Mato Grosso.",
+      "topic_code": "mining",
+      "countries": [
+        "Brasil",
+        "Bolívia"
+      ],
+      "territories": [
+        "Mato Grosso",
+        "Terra Indígena Sararé"
+      ],
+      "source_url": "https://infoamazonia.org/2026/06/09/ouro-escavadeiras-e-fuzis-como-faccoes-e-milicias-dominam-garimpos-clandestinos-na-terra-indigena-sarare/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
       "id": "AMZ-N-008",
       "publication_date": "2026-05-14",
       "outlet": "InfoAmazonia",
@@ -223,6 +531,68 @@
       "added_at": "2026-10-22"
     },
     {
+      "id": "AMZ-N-028",
+      "publication_date": "2026-04-26",
+      "outlet": "OjoPúblico",
+      "authors": [
+        "Jackeline Cárdenas"
+      ],
+      "original_language": "es",
+      "original_title": "Vacío legal favorece a la minería ilegal en la Amazonía: motores para dragas se venden en redes sociales",
+      "title_pt": "Mercado de motores nas redes abastece dragas ilegais",
+      "title_en": "Online engine sales supply illegal gold dredges",
+      "title_es": "Motores para dragas ilegales se venden sin control",
+      "description_pt": "Investiga comércio de equipamentos essenciais a dragas em áreas de mineração ilegal.",
+      "description_en": "Investigates sales of engines used by illegal gold dredges.",
+      "description_es": "Investiga venta de motores utilizados por dragas de oro ilegales.",
+      "topic_code": "mining",
+      "countries": [
+        "Peru"
+      ],
+      "territories": [
+        "Loreto",
+        "Amazônia peruana"
+      ],
+      "source_url": "https://ojo-publico.com/6276/venta-motores-para-la-mineria-ilegal-sin-control-la-amazonia",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-046",
+      "publication_date": "2026-04-24",
+      "outlet": "Mongabay",
+      "authors": [
+        "Constance Malleret"
+      ],
+      "original_language": "en",
+      "original_title": "AI tool tracks spread of illegal gold mining in Amazon protected areas",
+      "title_pt": "Mineração ilegal avança em áreas protegidas amazônicas",
+      "title_en": "AI monitors gold mining in Amazon protected areas",
+      "title_es": "IA monitorea minería ilegal en áreas protegidas amazónicas",
+      "description_pt": "Analisa mineração em áreas protegidas em todos os países amazônicos.",
+      "description_en": "Examines mining in protected areas throughout the Amazon countries.",
+      "description_es": "Analiza minería en zonas protegidas de todos los países amazónicos.",
+      "topic_code": "mining",
+      "countries": [
+        "Brasil",
+        "Peru",
+        "Guiana",
+        "Suriname",
+        "Venezuela",
+        "Bolívia",
+        "Colômbia",
+        "Equador",
+        "Guiana Francesa"
+      ],
+      "territories": [
+        "Escudo das Guianas",
+        "Amazônia"
+      ],
+      "source_url": "https://news.mongabay.com/2026/04/ai-tool-tracks-spread-of-illegal-gold-mining-in-amazon-protected-areas/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
       "id": "AMZ-N-009",
       "publication_date": "2026-03-30",
       "outlet": "Mongabay",
@@ -245,6 +615,770 @@
       "description_en": "Investigates misuse of forest permits to legalize timber harvested elsewhere amid pressures on Indigenous governance.",
       "description_es": "Investiga el uso de permisos forestales para aparentar legalidad de madera extraída en otras zonas, en un contexto de presión sobre la gobernanza indígena.",
       "source_url": "https://news.mongabay.com/2026/03/as-traditional-forest-governance-erodes-in-peru-ghost-permits-fill-the-vacuum/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-013",
+      "publication_date": "2026-02-12",
+      "outlet": "Amazon Underworld",
+      "authors": [
+        "Diego Cazar Baquero"
+      ],
+      "original_language": "en",
+      "original_title": "Stateless and Lawless: After Two Years of Noboa, Armed Groups Control Ecuador’s Amazon",
+      "title_pt": "Grupos armados disputam a Amazônia equatoriana",
+      "title_en": "Armed groups exert control in Ecuador's Amazon",
+      "title_es": "Grupos armados disputan la Amazonía ecuatoriana",
+      "description_pt": "Analisa redes criminosas associadas ao garimpo e ao tráfico nas fronteiras amazônicas.",
+      "description_en": "Analyzes criminal networks tied to illegal mining and trafficking on Amazon borders.",
+      "description_es": "Analiza redes criminales ligadas a minería y tráfico en fronteras amazónicas.",
+      "topic_code": "networks",
+      "countries": [
+        "Equador",
+        "Colômbia"
+      ],
+      "territories": [
+        "Sucumbíos",
+        "Orellana",
+        "Napo"
+      ],
+      "source_url": "https://amazonunderworld.org/ni-estado-ni-ley-a-dos-anos-de-noboa-la-amazonia-de-ecuador-es-controlada-y-negociada-entre-grupos-armados/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-023",
+      "publication_date": "2026-02-05",
+      "outlet": "InfoAmazonia",
+      "authors": [
+        "Izabel Santos"
+      ],
+      "original_language": "pt",
+      "original_title": "Criadoras do primeiro Território de Uso Comum, mulheres do rio Manicoré resistem em meio à destruição no Amazonas",
+      "title_pt": "Mulheres do Manicoré resistem à invasão e ao desmatamento",
+      "title_en": "Women in Manicoré resist invasions and forest destruction",
+      "title_es": "Mujeres de Manicoré resisten invasiones y deforestación",
+      "description_pt": "Investiga ameaças, exploração madeireira e desmatamento no território comunitário.",
+      "description_en": "Investigates threats, logging and deforestation in a communal-use territory.",
+      "description_es": "Investiga amenazas, tala y deforestación en territorio comunitario.",
+      "topic_code": "land",
+      "countries": [
+        "Brasil"
+      ],
+      "territories": [
+        "Amazonas",
+        "Rio Manicoré"
+      ],
+      "source_url": "https://infoamazonia.org/2026/02/05/criadoras-do-primeiro-territorio-de-uso-comum-mulheres-do-rio-manicore-resistem-em-meio-a-destruicao-no-amazonas/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-033",
+      "publication_date": "2026-02-04",
+      "outlet": "Primicias",
+      "authors": [
+        "Redacción Primicias"
+      ],
+      "original_language": "es",
+      "original_title": "Peces deformes, niños con ronchas y muertes, así cambió la vida en Capirona, por la minería ilegal en Napo",
+      "title_pt": "Capirona relata danos de garimpo no rio Puní",
+      "title_en": "Capirona residents report mining damage to the Puní River",
+      "title_es": "Capirona denuncia contaminación por minería en el Puní",
+      "description_pt": "Relatos comunitários sobre contaminação e possíveis problemas de saúde.",
+      "description_en": "Community accounts of contamination and suspected health problems.",
+      "description_es": "Testimonios comunitarios sobre contaminación y posibles problemas de salud.",
+      "topic_code": "mining",
+      "countries": [
+        "Equador"
+      ],
+      "territories": [
+        "Napo",
+        "Capirona",
+        "Rio Puní"
+      ],
+      "source_url": "https://www.primicias.ec/economia/mineria-ilegal-napo-capirona-peces-deformidades-agua-contaminada-rio-puni-115259/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-029",
+      "publication_date": "2026-02-01",
+      "outlet": "OjoPúblico",
+      "authors": [
+        "Xilena Pinedo"
+      ],
+      "original_language": "es",
+      "original_title": "Mercurio sin rastro: empresas sin autorización venden insumo clave para la minería ilegal",
+      "title_pt": "Empresas oferecem mercúrio sem autorização no Peru",
+      "title_en": "Unlicensed mercury trading supplies illegal mining",
+      "title_es": "Mercurio sin permiso abastece la minería ilegal",
+      "description_pt": "Investiga fornecedores de mercúrio e vendas feitas por redes sociais.",
+      "description_en": "Investigates mercury suppliers and social-media sales channels.",
+      "description_es": "Investiga vendedores de mercurio y canales de venta en redes sociales.",
+      "topic_code": "mining",
+      "countries": [
+        "Peru"
+      ],
+      "territories": [
+        "Amazônia peruana"
+      ],
+      "source_url": "https://ojo-publico.com/6075/empresas-peruanas-sin-autorizacion-venden-mercurio-redes-sociales",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-030",
+      "publication_date": "2026-01-18",
+      "outlet": "OjoPúblico",
+      "authors": [
+        "Xilena Pinedo",
+        "Gianfranco Huamán"
+      ],
+      "original_language": "es",
+      "original_title": "Amazonía en riesgo: 310 concesiones mineras se superponen con áreas sensibles de San Martín y Amazonas",
+      "title_pt": "Concessões minerárias pressionam zonas sensíveis no Peru",
+      "title_en": "Mining concessions overlap sensitive areas in Peru",
+      "title_es": "Concesiones mineras afectan áreas sensibles en Perú",
+      "description_pt": "Cruza concessões minerárias e zonas restritas na Amazônia peruana.",
+      "description_en": "Compares mining claims with restricted areas in the Peruvian Amazon.",
+      "description_es": "Cruza derechos mineros y zonas restringidas de la Amazonía peruana.",
+      "topic_code": "governance",
+      "countries": [
+        "Peru"
+      ],
+      "territories": [
+        "San Martín",
+        "Amazonas"
+      ],
+      "source_url": "https://ojo-publico.com/6053/concesiones-mineras-avanzan-sobre-areas-sensibles-la-amazonia",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-014",
+      "publication_date": "2025-11-06",
+      "outlet": "Amazon Underworld",
+      "authors": [
+        "Amazon Underworld"
+      ],
+      "original_language": "en",
+      "original_title": "The Critical Minerals Trade: The Illegal Route Connecting the Amazon with China",
+      "title_pt": "Rota ilegal de minerais críticos liga a Amazônia à China",
+      "title_en": "Illegal Amazon mineral routes connect to China",
+      "title_es": "Ruta ilegal de minerales críticos entre Amazonía y China",
+      "description_pt": "Rastreia redes de transporte e comercialização internacional de minerais estratégicos.",
+      "description_en": "Traces transnational networks trading and transporting strategic minerals.",
+      "description_es": "Rastrea redes transnacionales que comercializan minerales estratégicos.",
+      "topic_code": "mining",
+      "countries": [
+        "Venezuela",
+        "Colômbia",
+        "China"
+      ],
+      "territories": [
+        "Bolívar",
+        "Guainía",
+        "Orinoco"
+      ],
+      "source_url": "https://amazonunderworld.org/el-comercio-de-minerales-criticos-la-ruta-ilegal-que-conecta-la-amazonia-con-china/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-015",
+      "publication_date": "2025-11-06",
+      "outlet": "Amazon Underworld",
+      "authors": [
+        "Amazon Underworld"
+      ],
+      "original_language": "en",
+      "original_title": "Illegal Minerals: The Business That Slips Through the State’s Cracks",
+      "title_pt": "Lacunas legais favorecem o tráfico de minerais amazônicos",
+      "title_en": "Regulatory gaps aid trafficking in critical minerals",
+      "title_es": "Vacíos legales facilitan el tráfico de minerales críticos",
+      "description_pt": "Investiga brechas legais e comércio clandestino na fronteira Colômbia–Venezuela.",
+      "description_en": "Investigates legal gaps and illicit mineral trading across Colombia and Venezuela.",
+      "description_es": "Investiga vacíos legales y comercio ilícito entre Colombia y Venezuela.",
+      "topic_code": "mining",
+      "countries": [
+        "Colômbia",
+        "Venezuela"
+      ],
+      "territories": [
+        "Guainía",
+        "Vichada"
+      ],
+      "source_url": "https://amazonunderworld.org/minerales-ilegales-el-negocio-que-se-cuela-por-las-grietas-del-estado/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-016",
+      "publication_date": "2025-11-06",
+      "outlet": "Amazon Underworld",
+      "authors": [
+        "Amazon Underworld"
+      ],
+      "original_language": "en",
+      "original_title": "Invasion, Violence and Plunder in Southern Venezuela: The Price of Global Defense and ‘Clean Technology’",
+      "title_pt": "Minerais críticos e violência no sul venezuelano",
+      "title_en": "Critical minerals and violence in southern Venezuela",
+      "title_es": "Minerales críticos y violencia en el sur venezolano",
+      "description_pt": "Examina extração mineral e violações dos direitos de comunidades indígenas.",
+      "description_en": "Examines mineral extraction and violations of Indigenous community rights.",
+      "description_es": "Examina extracción mineral y violaciones de derechos de comunidades indígenas.",
+      "topic_code": "mining",
+      "countries": [
+        "Venezuela",
+        "Colômbia"
+      ],
+      "territories": [
+        "Amazonas",
+        "Bolívar"
+      ],
+      "source_url": "https://amazonunderworld.org/invasion-violencia-y-saqueo-en-el-sur-de-venezuela-el-precio-de-la-defensa-global-y-la-tecnologia-limpia/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-017",
+      "publication_date": "2025-11-06",
+      "outlet": "Amazon Underworld",
+      "authors": [
+        "Amazon Underworld"
+      ],
+      "original_language": "en",
+      "original_title": "Chorrobocón’s Gamble: Betting on Critical Minerals",
+      "title_pt": "Minerais críticos ameaçam território de Chorrobocón",
+      "title_en": "Critical minerals pose challenges in Chorrobocón",
+      "title_es": "Minerales críticos amenazan el territorio de Chorrobocón",
+      "description_pt": "Analisa riscos ambientais e sociais da extração mineral no território Puinave.",
+      "description_en": "Examines social and environmental risks of mining in Puinave territory.",
+      "description_es": "Analiza riesgos sociales y ambientales de minería en territorio puinave.",
+      "topic_code": "mining",
+      "countries": [
+        "Colômbia",
+        "Venezuela"
+      ],
+      "territories": [
+        "Guainía",
+        "Chorrobocón"
+      ],
+      "source_url": "https://amazonunderworld.org/el-chance-de-chorrobocon-la-apuesta-a-los-minerales-criticos/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-018",
+      "publication_date": "2025-11-06",
+      "outlet": "Amazon Underworld",
+      "authors": [
+        "Amazon Underworld"
+      ],
+      "original_language": "en",
+      "original_title": "Minastyc, a Unicorn on the Orinoco",
+      "title_pt": "Disputas legais cercam projeto Minastyc no Orinoco",
+      "title_en": "Legal disputes around Minastyc on the Orinoco",
+      "title_es": "Disputas legales por proyecto Minastyc en el Orinoco",
+      "description_pt": "Investiga conflitos territoriais e jurídicos associados à exploração mineral.",
+      "description_en": "Investigates legal and land conflicts associated with mineral extraction.",
+      "description_es": "Investiga conflictos territoriales y legales asociados con minería.",
+      "topic_code": "governance",
+      "countries": [
+        "Colômbia",
+        "Venezuela"
+      ],
+      "territories": [
+        "Vichada",
+        "Puerto Carreño"
+      ],
+      "source_url": "https://amazonunderworld.org/mynastic-un-unicornio-en-el-orinoco/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-024",
+      "publication_date": "2025-10-30",
+      "outlet": "InfoAmazonia",
+      "authors": [
+        "Bruna Obadowski",
+        "Ahmad Jarrah"
+      ],
+      "original_language": "pt",
+      "original_title": "Entre a floresta e o garimpo: quilombolas de Mato Grosso resistem sem terras tituladas",
+      "title_pt": "Quilombolas enfrentam garimpo e desmatamento em Mato Grosso",
+      "title_en": "Quilombola communities face mining and forest loss",
+      "title_es": "Comunidades quilombolas enfrentan minería y deforestación",
+      "description_pt": "Reporta perda florestal e pressão minerária em territórios quilombolas.",
+      "description_en": "Reports forest loss and mining pressures in Quilombola territories.",
+      "description_es": "Documenta pérdida forestal y presión minera en territorios quilombolas.",
+      "topic_code": "land",
+      "countries": [
+        "Brasil"
+      ],
+      "territories": [
+        "Mato Grosso",
+        "Mata Cavalo"
+      ],
+      "source_url": "https://infoamazonia.org/2025/10/30/entre-a-floresta-e-o-garimpo-quilombolas-de-mato-grosso-resistem-sem-terras-tituladas/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-019",
+      "publication_date": "2025-10-28",
+      "outlet": "Amazon Underworld",
+      "authors": [
+        "Pamela Huerta"
+      ],
+      "original_language": "en",
+      "original_title": "When Gold Rules: Politicians and Criminals Fight Over Resources in the Peruvian Amazon",
+      "title_pt": "Política e ouro ilegal em Madre de Dios",
+      "title_en": "Political power and illicit gold in Madre de Dios",
+      "title_es": "Poder político y oro ilegal en Madre de Dios",
+      "description_pt": "Investiga relações entre autoridades, garimpo, permissões e redes criminosas.",
+      "description_en": "Investigates links among officials, mining permits and criminal networks.",
+      "description_es": "Investiga vínculos entre autoridades, permisos y redes criminales.",
+      "topic_code": "governance",
+      "countries": [
+        "Peru"
+      ],
+      "territories": [
+        "Madre de Dios",
+        "Puerto Maldonado"
+      ],
+      "source_url": "https://amazonunderworld.org/when-gold-rules-politicians-and-criminals-fight-over-resources-in-the-peruvian-amazon/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-020",
+      "publication_date": "2025-08-06",
+      "outlet": "Amazon Underworld",
+      "authors": [
+        "Sinar Alvarado"
+      ],
+      "original_language": "pt",
+      "original_title": "Tudo pelo ouro: migração e violência na fronteira Brasil-Colômbia-Venezuela",
+      "title_pt": "Garimpo e violência no Alto Rio Negro",
+      "title_en": "Mining and violence on the upper Negro River",
+      "title_es": "Minería y violencia en el alto río Negro",
+      "description_pt": "Investiga disputas territoriais e economias ilícitas na fronteira trinacional.",
+      "description_en": "Investigates armed territorial disputes and illicit tri-border economies.",
+      "description_es": "Investiga disputas armadas y economías ilícitas en la frontera triple.",
+      "topic_code": "networks",
+      "countries": [
+        "Brasil",
+        "Colômbia",
+        "Venezuela"
+      ],
+      "territories": [
+        "Alto Rio Negro",
+        "Maroa"
+      ],
+      "source_url": "https://amazonunderworld.org/pt-br/tudo-pelo-ouro-migracao-e-violencia-na-fronteira-brasil-colombia-venezuela/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-042",
+      "publication_date": "2025-08-01",
+      "outlet": "Conexão Planeta",
+      "authors": [
+        "Camila Garcez"
+      ],
+      "original_language": "pt",
+      "original_title": "Mais de 500 balsas do garimpo ilegal são flagradas no Rio Madeira",
+      "title_pt": "Sobrevoo identifica balsas de garimpo no Madeira",
+      "title_en": "Aerial survey identifies illegal dredges on the Madeira",
+      "title_es": "Sobrevuelo detecta dragas ilegales en el río Madeira",
+      "description_pt": "Reporta registro aéreo do Greenpeace de garimpo em áreas protegidas.",
+      "description_en": "Reports a Greenpeace aerial survey of illegal mining near protected areas.",
+      "description_es": "Presenta un estudio aéreo de Greenpeace sobre minería ilegal cerca de áreas protegidas.",
+      "topic_code": "mining",
+      "countries": [
+        "Brasil"
+      ],
+      "territories": [
+        "Amazonas",
+        "Rondônia",
+        "Rio Madeira"
+      ],
+      "source_url": "https://conexaoplaneta.com.br/blog/mais-de-500-balsas-do-garimpo-ilegal-sao-flagradas-no-rio-madeira/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-034",
+      "publication_date": "2025-07-14",
+      "outlet": "Primicias",
+      "authors": [
+        "Jackeline Beltrán"
+      ],
+      "original_language": "es",
+      "original_title": "Un diagnóstico de la minería ilegal Ecuador: cuatro enclaves productivos, violencia y pérdidas millonarias",
+      "title_pt": "Diagnóstico da mineração ilegal no Equador",
+      "title_en": "Report maps Ecuador's illegal mining hubs",
+      "title_es": "Diagnóstico de enclaves de minería ilegal en Ecuador",
+      "description_pt": "Mapeia focos de mineração e violência em províncias amazônicas equatorianas.",
+      "description_en": "Maps mining hotspots and violence in Ecuadorian Amazon provinces.",
+      "description_es": "Mapea focos de minería y violencia en provincias amazónicas de Ecuador.",
+      "topic_code": "mining",
+      "countries": [
+        "Equador"
+      ],
+      "territories": [
+        "Napo",
+        "Orellana",
+        "Zamora Chinchipe"
+      ],
+      "source_url": "https://www.primicias.ec/seguridad/diagnostico-mineria-ilegal-ecuador-cuatro-enclaves-productivos-violencia-perdidas-millonarias-100377/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-025",
+      "publication_date": "2025-07-08",
+      "outlet": "InfoAmazonia",
+      "authors": [
+        "Fábio Bispo",
+        "Renata Hirota"
+      ],
+      "original_language": "pt",
+      "original_title": "Como investigamos a sobreposição entre projetos de carbono e mineração na Amazônia",
+      "title_pt": "Projetos de carbono e mineração se sobrepõem na Amazônia",
+      "title_en": "Amazon carbon projects overlap mining areas",
+      "title_es": "Proyectos de carbono y minería se superponen en la Amazonía",
+      "description_pt": "Analisa sobreposições territoriais entre carbono florestal e pedidos de mineração.",
+      "description_en": "Analyzes overlaps between forest-carbon projects and mining claims.",
+      "description_es": "Analiza superposiciones entre proyectos de carbono forestal y solicitudes mineras.",
+      "topic_code": "governance",
+      "countries": [
+        "Brasil"
+      ],
+      "territories": [
+        "Amazônia Legal"
+      ],
+      "source_url": "https://infoamazonia.org/2025/07/08/como-investigamos-a-sobreposicao-entre-projetos-de-carbono-e-mineracao-na-amazonia/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-026",
+      "publication_date": "2025-06-16",
+      "outlet": "InfoAmazonia",
+      "authors": [
+        "Fábio Bispo"
+      ],
+      "original_language": "pt",
+      "original_title": "Secretário ambiental de Rondônia intermediou venda de área em unidade de conservação para própria esposa",
+      "title_pt": "Investigação identifica suspeitas fundiárias na Resex Rio Cautário",
+      "title_en": "Investigation raises land-title concerns in Rio Cautário",
+      "title_es": "Investigación señala sospechas sobre tierras en Rio Cautário",
+      "description_pt": "Investiga registros de imóveis em unidade de conservação e possíveis conflitos de interesse.",
+      "description_en": "Investigates land records within a reserve and potential conflicts of interest.",
+      "description_es": "Investiga registros de tierras en una reserva y posibles conflictos de interés.",
+      "topic_code": "land",
+      "countries": [
+        "Brasil"
+      ],
+      "territories": [
+        "Rondônia",
+        "Rio Cautário"
+      ],
+      "source_url": "https://infoamazonia.org/2025/06/16/secretario-ambiental-de-rondonia-intermediou-venda-de-area-em-unidade-de-conservacao-para-propria-esposa/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-021",
+      "publication_date": "2025-06-05",
+      "outlet": "Amazon Underworld",
+      "authors": [
+        "Bram Ebus",
+        "Rodrigo Pedroso"
+      ],
+      "original_language": "en",
+      "original_title": "Dredges: Gold mining spurs crime & corruption on Brazil-Colombia border",
+      "title_pt": "Dragas alimentam economias ilegais na fronteira Brasil–Colômbia",
+      "title_en": "Gold dredges fuel crime on the Brazil–Colombia border",
+      "title_es": "Dragas alimentan delitos en la frontera Brasil–Colombia",
+      "description_pt": "Investiga mineração fluvial e corrupção em corredores fronteiriços amazônicos.",
+      "description_en": "Investigates river mining and corruption along Amazon border corridors.",
+      "description_es": "Investiga minería fluvial y corrupción en corredores fronterizos.",
+      "topic_code": "mining",
+      "countries": [
+        "Brasil",
+        "Colômbia"
+      ],
+      "territories": [
+        "Amazonas",
+        "Alto Solimões"
+      ],
+      "source_url": "https://amazonunderworld.org/dredges-gold-mining-spurs-crime-corruption-on-brazil-colombia-border/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-038",
+      "publication_date": "2025-05-29",
+      "outlet": "La Silla Vacía",
+      "authors": [
+        "La Silla Vacía"
+      ],
+      "original_language": "es",
+      "original_title": "Minería ilegal en ríos Puré y Cotuhé en zonas protegidas de la Amazonía",
+      "title_pt": "Garimpo ameaça rios Puré e Cotuhé",
+      "title_en": "Illegal mining threatens Puré and Cotuhé rivers",
+      "title_es": "Minería ilegal afecta los ríos Puré y Cotuhé",
+      "description_pt": "Examina garimpo em áreas protegidas de tríplice fronteira amazônica.",
+      "description_en": "Examines gold mining in protected zones of the Amazon tri-border.",
+      "description_es": "Examina minería en áreas protegidas de la triple frontera amazónica.",
+      "topic_code": "mining",
+      "countries": [
+        "Colômbia",
+        "Brasil",
+        "Peru"
+      ],
+      "territories": [
+        "Amazonas",
+        "Puré",
+        "Cotuhé"
+      ],
+      "source_url": "https://www.lasillavacia.com/silla-amazonia/mineria-ilegal-en-rios-pure-y-cotuhe-en-zonas-protegidas-de-la-amazonia/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-048",
+      "publication_date": "2025-05-29",
+      "outlet": "Mongabay",
+      "authors": [
+        "Elizabeth Oliveira"
+      ],
+      "original_language": "en",
+      "original_title": "Amazon illegal gold mines drive sex trafficking in the Brazil-Guyana border",
+      "title_pt": "Garimpo alimenta tráfico de pessoas na fronteira Brasil–Guiana",
+      "title_en": "Gold mines fuel trafficking at the Brazil–Guyana border",
+      "title_es": "Minería de oro alimenta trata en frontera Brasil–Guyana",
+      "description_pt": "Investiga exploração associada a garimpos e travessias entre Roraima e Lethem.",
+      "description_en": "Investigates trafficking linked to gold mining between Roraima and Lethem.",
+      "description_es": "Investiga trata relacionada con minas de oro entre Roraima y Lethem.",
+      "topic_code": "networks",
+      "countries": [
+        "Brasil",
+        "Guiana",
+        "Venezuela"
+      ],
+      "territories": [
+        "Roraima",
+        "Lethem"
+      ],
+      "source_url": "https://news.mongabay.com/2025/05/amazon-illegal-gold-mines-drive-sex-trafficking-in-the-brazil-guyana-border/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-035",
+      "publication_date": "2025-05-13",
+      "outlet": "Primicias",
+      "authors": [
+        "Mónica Orozco"
+      ],
+      "original_language": "es",
+      "original_title": "En la zona del alto Punino, donde asesinaron a 11 militares, está en auge el negocio millonario de la minería ilegal",
+      "title_pt": "Garimpo ilegal cresce no Alto Punino",
+      "title_en": "Illegal gold mining expands in Alto Punino",
+      "title_es": "Minería ilegal se expande en Alto Punino",
+      "description_pt": "Examina mineração e conflito armado no corredor Napo–Orellana.",
+      "description_en": "Examines mining expansion and armed conflict around Napo–Orellana.",
+      "description_es": "Examina minería y conflicto armado entre Napo y Orellana.",
+      "topic_code": "mining",
+      "countries": [
+        "Equador"
+      ],
+      "territories": [
+        "Orellana",
+        "Napo",
+        "Alto Punino"
+      ],
+      "source_url": "https://www.primicias.ec/economia/mineria-ilegal-punino-asesinatos-militares-oro-precio-narcotrafico-96065/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-037",
+      "publication_date": "2025-05-13",
+      "outlet": "Plan V",
+      "authors": [
+        "Franklin Vega"
+      ],
+      "original_language": "es",
+      "original_title": "Sin ley ni bosques: el paraíso de las excavadoras de la minería ilegal en la Amazonía",
+      "title_pt": "Escavadeiras sustentam garimpo ilegal em Napo",
+      "title_en": "Heavy machinery powers illegal mining in Ecuador's Napo",
+      "title_es": "Excavadoras sostienen minería ilegal en Napo",
+      "description_pt": "Investiga origem de equipamentos pesados e falta de fiscalização em Napo.",
+      "description_en": "Investigates heavy-equipment supply and enforcement gaps in Napo.",
+      "description_es": "Investiga el origen de maquinaria y la falta de control en Napo.",
+      "topic_code": "mining",
+      "countries": [
+        "Equador",
+        "Colômbia",
+        "Peru"
+      ],
+      "territories": [
+        "Napo",
+        "Tena"
+      ],
+      "source_url": "https://planv.com.ec/historias/crimen-organizado/sin-ley-ni-bosques-el-paraiso-de-las-excavadoras-de-la-mineria-ilegal-en-la-amazonia/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-036",
+      "publication_date": "2025-05-12",
+      "outlet": "Primicias",
+      "authors": [
+        "Redacción Primicias"
+      ],
+      "original_language": "es",
+      "original_title": "Comandos de la Frontera y Los Lobos: la alianza que atemoriza a Orellana y se enriquece con la minería ilegal",
+      "title_pt": "Grupos armados lucram com garimpo em Orellana",
+      "title_en": "Armed-group alliance profits from illegal mining in Orellana",
+      "title_es": "Alianza criminal controla minería ilegal en Orellana",
+      "description_pt": "Investiga suposta aliança transfronteiriça ligada ao negócio do ouro.",
+      "description_en": "Investigates a reported cross-border alliance linked to gold extraction.",
+      "description_es": "Investiga una presunta alianza fronteriza vinculada al negocio del oro.",
+      "topic_code": "networks",
+      "countries": [
+        "Equador",
+        "Colômbia"
+      ],
+      "territories": [
+        "Orellana",
+        "Joya de los Sachas"
+      ],
+      "source_url": "https://www.primicias.ec/seguridad/comandos-frontera-lobos-alianza-orellana-mineria-ilegal-96099/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-031",
+      "publication_date": "2025-03-30",
+      "outlet": "OjoPúblico",
+      "authors": [
+        "Aaron Wörz",
+        "Jonathan Hurtado"
+      ],
+      "original_language": "es",
+      "original_title": "Oro sin ley: minería ilegal toma el río Santiago en la Amazonía peruana",
+      "title_pt": "Garimpo ilegal ocupa o rio Santiago no Peru",
+      "title_en": "Illegal mining takes over Peru's Santiago River",
+      "title_es": "Minería ilegal toma el río Santiago",
+      "description_pt": "Investiga dragas e impactos em comunidades próximas da fronteira Equador–Peru.",
+      "description_en": "Investigates dredges and community impacts on the Ecuador–Peru border.",
+      "description_es": "Investiga dragas e impactos comunitarios en la frontera Ecuador–Perú.",
+      "topic_code": "mining",
+      "countries": [
+        "Peru",
+        "Equador"
+      ],
+      "territories": [
+        "Amazonas",
+        "Rio Santiago"
+      ],
+      "source_url": "https://ojo-publico.com/5563/oro-sin-ley-mineria-ilegal-toma-rio-santiago-la-amazonia-peruana",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-041",
+      "publication_date": "2025-02-13",
+      "outlet": "((o))eco",
+      "authors": [
+        "Alice Martins Morais"
+      ],
+      "original_language": "pt",
+      "original_title": "Pesca ilegal já virou rotina na maior área marinha protegida da Amazônia",
+      "title_pt": "Pesca ilegal pressiona o Parque Cabo Orange",
+      "title_en": "Illegal fishing pressures Cabo Orange National Park",
+      "title_es": "Pesca ilegal amenaza el Parque Cabo Orange",
+      "description_pt": "Investiga pesca não autorizada e falhas de fiscalização na costa amazônica.",
+      "description_en": "Investigates unauthorized fishing and enforcement gaps along the Amazon coast.",
+      "description_es": "Investiga pesca no autorizada y fallas de fiscalización en la costa amazónica.",
+      "topic_code": "fishing",
+      "countries": [
+        "Brasil",
+        "Guiana Francesa"
+      ],
+      "territories": [
+        "Amapá",
+        "Cabo Orange"
+      ],
+      "source_url": "https://oeco.org.br/reportagens/pesca-ilegal-ja-virou-rotina-na-maior-area-marinha-protegida-da-amazonia/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-032",
+      "publication_date": "2024-04-14",
+      "outlet": "OjoPúblico",
+      "authors": [
+        "Daniela Quintero",
+        "David Riaño Valencia",
+        "David Escobar",
+        "Sergio Silva"
+      ],
+      "original_language": "es",
+      "original_title": "Los vínculos de las empresas de oro y la minería ilegal en la Amazonía de Colombia",
+      "title_pt": "Redes de ouro e garimpo ilegal em Guainía",
+      "title_en": "Gold firms and illicit mining links in Colombia",
+      "title_es": "Empresas auríferas y minería ilegal en Guainía",
+      "description_pt": "Analisa comerciantes e exportadores conectados à produção de ouro em Guainía.",
+      "description_en": "Examines traders and exporters connected with gold from Guainía.",
+      "description_es": "Analiza comercializadores y exportadores relacionados con oro de Guainía.",
+      "topic_code": "mining",
+      "countries": [
+        "Colômbia",
+        "Venezuela",
+        "Brasil"
+      ],
+      "territories": [
+        "Guainía",
+        "Puerto Inírida"
+      ],
+      "source_url": "https://ojo-publico.com/5030/las-empresas-oro-y-la-mineria-ilegal-la-amazonia-colombia",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-045",
+      "publication_date": "2018-01-15",
+      "outlet": "Armando.info",
+      "authors": [
+        "Bram Ebus"
+      ],
+      "original_language": "es",
+      "original_title": "El Estado venezolano compra oro a los mineros ilegales",
+      "title_pt": "Reportagem histórica investiga compras de ouro na Venezuela",
+      "title_en": "Historical report investigates illegal gold buying in Venezuela",
+      "title_es": "Investigación histórica sobre compras de oro ilegal en Venezuela",
+      "description_pt": "Investiga historicamente redes de ouro clandestino e grupos armados em Guayana.",
+      "description_en": "Historical investigation of illicit gold networks and armed groups in Guayana.",
+      "description_es": "Investiga históricamente redes de oro ilícito y grupos armados en Guayana.",
+      "topic_code": "mining",
+      "countries": [
+        "Venezuela"
+      ],
+      "territories": [
+        "Amazonas",
+        "Bolívar",
+        "Guayana"
+      ],
+      "source_url": "https://armando.info/el-estado-venezolano-compra-oro-a-los-mineros-ilegales/",
       "related_event_ids": [],
       "added_at": "2026-10-22"
     }
