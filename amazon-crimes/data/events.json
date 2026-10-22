@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-10-22T13:02:02.462Z",
+  "generated_at": "2026-10-22T13:08:56.165Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -5941,6 +5941,207 @@
       "evidence_notes": "Possible labor exploitation is under investigation and should not be classified as proven; mining reported near, not inside, TI Kayapó.",
       "limitations": "The geographical marker is approximate, not a verified inspection-site coordinate. No unreported trafficking route is inferred.",
       "keywords": []
+    },
+    {
+      "id": "PE-MDD-2026-1002-AGUAS-NEGRAS-AURIFEROS-29",
+      "title": {
+        "pt": "Fiscalía intervém em Aguas Negras e inutiliza 12 dragas",
+        "en": "Prosecutors raid Aguas Negras and disable 12 dredges",
+        "es": "Fiscalía interviene Aguas Negras e inutiliza 12 dragas"
+      },
+      "summary": {
+        "pt": "Em 02/10/2026, a Fiscalía, PNP e Exército destruíram 12 dragas e 12 motores e detiveram três suspeitos ligados à suposta organização Los Auríferos del 29, em Aguas Negras, Inambari.",
+        "en": "On October 2, prosecutors, police and military destroyed 12 dredges and 12 engines and detained three suspects allegedly linked to Los Auríferos del 29, at Aguas Negras, Inambari.",
+        "es": "El 2 de octubre la Fiscalía, la PNP y el Ejército destruyeron 12 dragas y 12 motores y detuvieron a tres sospechosos presuntamente vinculados con Los Auríferos del 29 en Aguas Negras, Inambari."
+      },
+      "case_context": {
+        "pt": "A fonte oficial registra uma ação em 02/10 distinta da operação de setembro em Aguas Negras. As quantidades são as divulgadas pela Fiscalía, sem agregar números de reportagens sobre a mesma ação.",
+        "en": "The official prosecutor's report establishes a distinct October 2 action from September's Aguas Negras enforcement. Quantities follow the official report without adding reports of the same event.",
+        "es": "La fuente fiscal acredita un evento del 2 de octubre distinto de la operación de septiembre en Aguas Negras. Las cifras siguen el comunicado oficial, sin sumar coberturas del mismo hecho."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Los Auríferos del 29",
+      "agencies": [
+        "Fiscalía Especializada en Materia Ambiental de Madre de Dios",
+        "Policía Nacional del Perú",
+        "Ejército del Perú"
+      ],
+      "occurred_at": "2026-10-02T12:00:00-05:00",
+      "occurred_at_precision": "day_confirmed_time_unknown_midday_placeholder",
+      "published_at": "2026-10-02T18:31:00-05:00",
+      "added_at": "2026-10-22T13:08:56.165Z",
+      "updated_at": "2026-10-22T13:08:56.165Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Arrests concern allegations under investigation and do not establish guilt.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Aguas Negras, Inambari (referência distrital)",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.9767,
+        "lon": -69.9388,
+        "precision": "district_reference_approximate",
+        "geo_source": "Inambari district administrative reference; NOT the enforcement site"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "impacts": {
+        "water": true
+      },
+      "quantities": [
+        {
+          "item": "dredges destroyed",
+          "value": 12,
+          "unit": "units"
+        },
+        {
+          "item": "engines destroyed",
+          "value": 12,
+          "unit": "units"
+        },
+        {
+          "item": "suspects detained",
+          "value": 3,
+          "unit": "persons"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Ministerio Público — Fiscalía de la Nación",
+          "url": "https://www.gob.pe/institucion/mpfn/noticias/1452373-fema-logra-neutralizar-banda-los-auriferos-del-29-de-madre-de-dios-por-presunta-mineria-ilegal",
+          "published_at": "2026-10-02T18:31:00-05:00",
+          "source_type": "official",
+          "language": "es",
+          "is_primary": true
+        }
+      ],
+      "source_media": [],
+      "evidence_notes": "Fiscalía official press release expressly confirms October 2, 12 dredges, 12 engines and 3 detained.",
+      "limitations": "District-level location proxy; event time is unknown and noon is a convention only. No documented transport route.",
+      "keywords": [
+        "Inambari",
+        "Madre de Dios",
+        "minería ilegal",
+        "Los Auríferos del 29"
+      ]
+    },
+    {
+      "id": "PE-MDD-2026-1005-PUNTO-AZUL",
+      "title": {
+        "pt": "Operação em Punto Azul destrói oito balsas e detém dois suspeitos",
+        "en": "Punto Azul operation destroys eight mining rafts and detains two",
+        "es": "Operativo en Punto Azul destruye ocho balsas y detiene a dos"
+      },
+      "summary": {
+        "pt": "Na intervenção de 05/10 em Punto Azul, oito balsas, oito tolvas, sete motores submersos e sete acampamentos foram inutilizados; dois suspeitos foram detidos. Bens avaliados em S/ 1.384.795.",
+        "en": "On October 5 at Punto Azul, eight rafts, eight sluice hoppers, seven submerged engines and seven camps were disabled; two suspects were detained. Assets valued at PEN 1,384,795.",
+        "es": "En la intervención del 5 de octubre en Punto Azul se inutilizaron ocho balsas, ocho tolvas, siete motores sumergidos y siete campamentos; dos personas fueron detenidas. Bienes valorados en S/ 1.384.795."
+      },
+      "case_context": {
+        "pt": "O Mininter publicou os resultados em 06/10; Evidencia.pe confirma que os dois investigados foram detidos em 05/10. É ação diferente daquela de Aguas Negras em 02/10. A prisão preventiva posterior não corresponde a nova apreensão.",
+        "en": "Mininter reported the results on October 6; Evidencia.pe places the arrests on October 5. This is separate from Aguas Negras (October 2). Subsequent pre-trial detention is not another seizure.",
+        "es": "El Mininter publicó el 6 de octubre; Evidencia.pe confirma detenciones el 5. Es distinto de Aguas Negras (2 de octubre). La prisión preventiva posterior no constituye otra incautación."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Los Azules de la Minería — Punto Azul",
+      "agencies": [
+        "Policía Nacional del Perú",
+        "Ejército del Perú",
+        "Fiscalía Especializada en Materia Ambiental"
+      ],
+      "occurred_at": "2026-10-05T12:00:00-05:00",
+      "occurred_at_precision": "day_confirmed_time_unknown_midday_placeholder",
+      "published_at": "2026-10-06T13:02:00-05:00",
+      "added_at": "2026-10-22T13:08:56.165Z",
+      "updated_at": "2026-10-22T13:08:56.165Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Arrests concern allegations under investigation and do not establish guilt.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Punto Azul, Inambari (referência distrital)",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.9767,
+        "lon": -69.9388,
+        "precision": "district_reference_approximate",
+        "geo_source": "Inambari district administrative reference; NOT the enforcement site"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "impacts": {
+        "water": true
+      },
+      "quantities": [
+        {
+          "item": "mining rafts disabled",
+          "value": 8,
+          "unit": "units"
+        },
+        {
+          "item": "sluice hoppers disabled",
+          "value": 8,
+          "unit": "units"
+        },
+        {
+          "item": "submerged motors disabled",
+          "value": 7,
+          "unit": "units"
+        },
+        {
+          "item": "camps disabled",
+          "value": 7,
+          "unit": "units"
+        },
+        {
+          "item": "persons detained",
+          "value": 2,
+          "unit": "persons"
+        },
+        {
+          "item": "reported asset value",
+          "value": 1384795,
+          "unit": "PEN"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Ministerio del Interior del Perú",
+          "url": "https://www.gob.pe/institucion/mininter/noticias/1453413-mininter-le-corta-el-paso-a-la-mineria-ilegal-en-madre-de-dios-destruye-bienes-por-mas-de-s-1-3-millones",
+          "published_at": "2026-10-06T13:02:00-05:00",
+          "source_type": "official",
+          "language": "es",
+          "is_primary": true
+        },
+        {
+          "publisher": "Evidencia.pe",
+          "url": "https://evidencia.pe/madre-de-dios-prision-preventiva-azules-mineria-ilegal/",
+          "published_at": "2026-10-16T12:00:00-05:00",
+          "source_type": "news",
+          "language": "es",
+          "is_primary": false
+        }
+      ],
+      "source_media": [],
+      "evidence_notes": "Date confirmed by Evidencia.pe on October 16; quantities from Mininter release on October 6.",
+      "limitations": "District-level location proxy; event time is unknown and noon is a convention only. No documented transport route.",
+      "keywords": [
+        "Inambari",
+        "Madre de Dios",
+        "minería ilegal",
+        "Los Azules de la Minería — Punto Azul"
+      ]
     }
   ]
 }
