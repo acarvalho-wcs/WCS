@@ -701,8 +701,7 @@ function eventPopupHtml(event) {
     ${images}
     <div class="popup-section"><span class="popup-label">${escapeHtml(t('caseContext'))}</span><p>${escapeHtml(localized(event.case_context))}</p></div>
     <dl class="popup-facts">
-      <div><dt>${escapeHtml(t('eventDate'))}</dt><dd>${escapeHtml(formatDateTime(event.occurred_at))}</dd></div>
-      <div><dt>${escapeHtml(t('publishedDate'))}</dt><dd>${escapeHtml(formatDateTime(event.published_at))}</dd></div>
+      ${event.date_basis === 'publication',        ? `<div><dt>${escapeHtml(localized(event.date_display_label) || t('publishedDate'))}</dt><dd>${escapeHtml(formatDate(eventDate(event)))}</dd></div>`,        : `<div><dt>${escapeHtml(t('eventDate'))}</dt><dd>${escapeHtml(formatDateTime(event.occurred_at))}</dd></div><div><dt>${escapeHtml(t('publishedDate'))}</dt><dd>${escapeHtml(formatDateTime(event.published_at))}</dd></div>`},      ${event.date_basis === 'publication' && localized(event.date_note) ? `<div class="legal-note">${escapeHtml(localized(event.date_note))}</div>` : ''}
       <div><dt>${escapeHtml(t('mapPrecision'))}</dt><dd>${escapeHtml(event.location?.precision || '—')}</dd></div>
     </dl>
     ${event.legal_status_note ? `<div class="legal-note"><strong>${escapeHtml(t('legalNote'))}:</strong> ${escapeHtml(event.legal_status_note)}</div>` : ''}
@@ -965,7 +964,7 @@ function renderFeed() {
     return `<article class="event-item ${hasMedia ? 'has-thumb' : ''}" data-event-id="${escapeAttr(event.id)}" tabindex="0" role="button">
       ${imageHtml}
       <div class="event-item-body">
-        <div class="event-meta"><span>${escapeHtml(location)}</span><span>${escapeHtml(formatDate(eventDate(event)))}</span></div>
+        <div class="event-meta"><span>${escapeHtml(location)}</span><span>${escapeHtml(event.date_basis === 'publication' ? (localized(event.date_display_label) || t('publishedDate')) + ': ' : '')}${escapeHtml(formatDate(eventDate(event)))}</span></div>
         <div class="event-title-row"><span class="event-dot-marker" style="--icon-bg:${escapeAttr(crimeTypeMeta[primary]?.color || '#777')}"></span><h3>${escapeHtml(localized(event.title))}</h3></div>
         <p>${escapeHtml(localized(event.summary))}</p>
         <div class="event-tags">${recent ? `<span class="tag recent">${escapeHtml(t('recent'))}</span>` : ''}<span class="tag crime" style="--tag-color:${escapeAttr(crimeTypeMeta[primary]?.color || '#777')}">${escapeHtml(crimeLabel(primary))}</span>${hasMedia ? `<span class="tag">▧ ${escapeHtml(t('sourceImages'))}</span>` : ''}</div>
