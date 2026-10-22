@@ -1,0 +1,252 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-10-22",
+  "count": 9,
+  "editorial_criterion": {
+    "pt": "Reportagens aprofundadas sobre redes, mercados, métodos, causas e impactos de crimes ambientais na Amazônia. Notas isoladas de apreensão pertencem à base de eventos canônicos.",
+    "en": "In-depth reporting on networks, markets, drivers and impacts of Amazon environmental crime. Isolated seizure reports belong to canonical event records.",
+    "es": "Reportajes profundos sobre redes, mercados, modalidades, causas e impactos de delitos ambientales en la Amazonía. Notas breves de decomisos corresponden a eventos canónicos."
+  },
+  "news": [
+    {
+      "id": "AMZ-N-001",
+      "publication_date": "2026-10-19",
+      "outlet": "Mongabay",
+      "authors": [
+        "Aimee Gabay",
+        "Elisângela Mendonça"
+      ],
+      "original_language": "en",
+      "topic_code": "land",
+      "countries": [
+        "Brasil"
+      ],
+      "territories": [
+        "Pará / Ituna-Itatá"
+      ],
+      "original_title": "Anatomy of a land grab: the law, likes, and legislator behind an Indigenous land invasion in Brazil",
+      "title_pt": "Grilagem e mobilização política em torno de Ituna/Itatá",
+      "title_en": "How politics and social media fueled an Indigenous land invasion",
+      "title_es": "Grilaje y movilización política alrededor de Ituna/Itatá",
+      "description_pt": "Investiga como legislação estadual, campanhas digitais e interesses fundiários se relacionam às invasões de Ituna/Itatá, no Pará.",
+      "description_en": "Investigates how state legislation, online mobilization and land claims relate to incursions into Ituna/Itatá in Pará.",
+      "description_es": "Examina cómo leyes estatales, redes sociales e intereses agrarios se vinculan a invasiones en Ituna/Itatá.",
+      "source_url": "https://news.mongabay.com/2026/10/anatomy-of-a-land-grab-the-law-likes-and-legislator-behind-an-indigenous-land-invasion-in-brazil/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-002",
+      "publication_date": "2026-10-15",
+      "outlet": "Mongabay",
+      "authors": [
+        "Nelfi Fernández Reyes"
+      ],
+      "original_language": "en",
+      "topic_code": "land",
+      "countries": [
+        "Bolívia"
+      ],
+      "territories": [
+        "Amazônia boliviana"
+      ],
+      "original_title": "New tool reveals siege on Indigenous lands in Bolivia’s Amazon",
+      "title_pt": "Investigação revela pressões e desmatamento irregular em territórios indígenas da Bolívia",
+      "title_en": "Investigation maps illegal clearing and land pressures in Bolivia's Amazon",
+      "title_es": "Investigación revela desmontes ilegales y presiones sobre territorios indígenas bolivianos",
+      "description_pt": "Reportagem baseada em dados geoespaciais e relatos de invasões, analisando desmatamento sem autorização em territórios indígenas da Amazônia boliviana.",
+      "description_en": "Data-driven reporting explores unauthorized forest clearing and encroachment in Indigenous territories of the Bolivian Amazon.",
+      "description_es": "Reportaje basado en datos examina desmontes no autorizados e invasiones en territorios indígenas de la Amazonía boliviana.",
+      "source_url": "https://news.mongabay.com/2026/10/new-tool-reveals-siege-on-indigenous-lands-in-bolivias-amazon/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-003",
+      "publication_date": "2026-10-14",
+      "outlet": "Mongabay",
+      "authors": [
+        "Fernanda Wenzel"
+      ],
+      "original_language": "en",
+      "topic_code": "wildlife",
+      "countries": [
+        "Brasil",
+        "Colômbia",
+        "Peru"
+      ],
+      "territories": [
+        "Amazônia",
+        "Xingu",
+        "Tríplice fronteira"
+      ],
+      "original_title": "Researchers uncover hidden routes and patterns of Amazon wildlife trade",
+      "title_pt": "Estudo revela rotas e padrões do tráfico de fauna na Amazônia",
+      "title_en": "Research reveals Amazon wildlife trade routes and patterns",
+      "title_es": "Estudio revela rutas y patrones del tráfico de fauna amazónica",
+      "description_pt": "Analisa revisão científica sobre espécies afetadas, motivações do comércio e corredores transfronteiriços envolvendo fauna amazônica.",
+      "description_en": "Reviews research on targeted species, drivers and cross-border corridors of Amazonian wildlife trafficking.",
+      "description_es": "Analiza estudios sobre especies afectadas, mercados y corredores transfronterizos del tráfico de fauna amazónica.",
+      "source_url": "https://news.mongabay.com/2026/10/researchers-uncover-hidden-routes-and-patterns-of-amazon-wildlife-trade/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-004",
+      "publication_date": "2026-10-09",
+      "outlet": "Mongabay",
+      "authors": [
+        "Maxwell Radwin"
+      ],
+      "original_language": "en",
+      "topic_code": "mining",
+      "countries": [
+        "Suriname"
+      ],
+      "territories": [
+        "Pelin Bergi / Kwakoegron"
+      ],
+      "original_title": "Lawmakers in Suriname call for investigation, stricter oversight amid new mining activity",
+      "title_pt": "Parlamentares questionam atividade minerária e fiscalização no Suriname",
+      "title_en": "Lawmakers question mining oversight in Suriname",
+      "title_es": "Legisladores cuestionan la fiscalización minera en Surinam",
+      "description_pt": "Relata pedidos de investigação sobre atividade minerária em Pelin Bergi e preocupações com licenças, produtos químicos e contaminação; alegações ainda sujeitas à apuração.",
+      "description_en": "Reports calls for scrutiny of mining in Pelin Bergi over permits, possible chemicals and pollution; allegations remain under investigation.",
+      "description_es": "Aborda solicitudes de investigación sobre minería en Pelin Bergi, permisos y posible contaminación; se trata de denuncias pendientes de esclarecimiento.",
+      "source_url": "https://news.mongabay.com/2026/10/lawmakers-in-suriname-call-for-investigation-stricter-oversight-amid-new-mining-activity/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-005",
+      "publication_date": "2026-09-01",
+      "outlet": "Mongabay",
+      "authors": [
+        "Fernanda Wenzel"
+      ],
+      "original_language": "en",
+      "topic_code": "mining",
+      "countries": [
+        "Brasil"
+      ],
+      "territories": [
+        "Roraima / Terra Indígena Yanomami"
+      ],
+      "original_title": "Scientists use mining data to build malaria alert system in Amazon",
+      "title_pt": "Dados de garimpo ajudam a antecipar risco de malária na Terra Yanomami",
+      "title_en": "Mining data support malaria early warnings in Yanomami territory",
+      "title_es": "Datos mineros ayudan a anticipar la malaria en territorio yanomami",
+      "description_pt": "Examina a relação entre garimpo ilegal, deslocamentos de garimpeiros e ocorrência de malária no território Yanomami.",
+      "description_en": "Explores links among illegal mining, miners' routes and malaria to inform an early-warning system.",
+      "description_es": "Examina relaciones entre minería ilegal, rutas mineras y malaria para orientar alertas tempranas.",
+      "source_url": "https://news.mongabay.com/2026/09/scientists-use-mining-data-to-build-malaria-alert-system-in-amazon/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-006",
+      "publication_date": "2026-08-04",
+      "outlet": "Mongabay",
+      "authors": [
+        "Fernanda Wenzel"
+      ],
+      "original_language": "en",
+      "topic_code": "governance",
+      "countries": [
+        "Brasil"
+      ],
+      "territories": [
+        "Amazonas"
+      ],
+      "original_title": "Brazil’s mining agency under fire over corruption and omission probes",
+      "title_pt": "Agência mineral enfrenta questionamentos sobre fiscalização do ouro amazônico",
+      "title_en": "Brazil's mining regulator faces scrutiny over Amazon gold oversight",
+      "title_es": "Cuestionan a la agencia minera por su control del oro amazónico",
+      "description_pt": "Investiga críticas à fiscalização da origem do ouro, processos judiciais e suspeitas de irregularidades na regulação da mineração.",
+      "description_en": "Investigates alleged oversight failures, legal actions and suspected irregularities in gold-mining regulation.",
+      "description_es": "Investiga presuntas fallas de control, acciones judiciales e irregularidades en la regulación del oro.",
+      "source_url": "https://news.mongabay.com/2026/08/brazils-mining-agency-under-fire-over-corruption-and-omission-probes/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-007",
+      "publication_date": "2026-07-02",
+      "outlet": "Mongabay",
+      "authors": [
+        "Maxwell Radwin"
+      ],
+      "original_language": "en",
+      "topic_code": "logging",
+      "countries": [
+        "Brasil",
+        "Países Baixos"
+      ],
+      "territories": [
+        "Pará / Floresta Nacional Saracá-Taquera"
+      ],
+      "original_title": "Dutch importers linked to suspect Amazon timber, investigation finds",
+      "title_pt": "Investigação relaciona importadores europeus a madeira amazônica sob suspeita",
+      "title_en": "Investigation links Dutch importers to suspect Amazon timber",
+      "title_es": "Investigación vincula importadores neerlandeses con madera amazónica sospechosa",
+      "description_pt": "Examina riscos de origem irregular da madeira exportada do Pará e limitações da rastreabilidade e diligência no comércio internacional.",
+      "description_en": "Examines suspected timber-origin irregularities involving exports from Pará and weaknesses in international supply-chain due diligence.",
+      "description_es": "Examina sospechas sobre el origen de madera exportada de Pará y fallas en la diligencia debida de cadenas internacionales.",
+      "source_url": "https://news.mongabay.com/2026/07/dutch-importers-linked-to-suspect-amazon-timber-investigation-finds/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-008",
+      "publication_date": "2026-05-14",
+      "outlet": "InfoAmazonia",
+      "authors": [
+        "Fábio Bispo"
+      ],
+      "original_language": "pt",
+      "topic_code": "mining",
+      "countries": [
+        "Brasil"
+      ],
+      "territories": [
+        "Pará / Tapajós"
+      ],
+      "original_title": "ANM mantém permissões de garimpo no Tapajós mesmo após alertas de ‘esquentamento’ de ouro",
+      "title_pt": "Investigação identifica indícios de lavagem de ouro no Tapajós",
+      "title_en": "Investigation identifies suspected gold laundering in Tapajós",
+      "title_es": "Investigación identifica indicios de blanqueo de oro en Tapajós",
+      "description_pt": "Cruza permissões minerárias e evidências de satélite para analisar discrepâncias entre produção declarada e atividade de extração, com impactos sobre povos indígenas.",
+      "description_en": "Cross-checks mining permits and satellite evidence to examine discrepancies between declared gold output and visible extraction, including Indigenous impacts.",
+      "description_es": "Cruza permisos mineros e imágenes satelitales para examinar diferencias entre producción declarada y extracción visible, con impactos indígenas.",
+      "source_url": "https://infoamazonia.org/2026/05/14/anm-mantem-permissoes-de-garimpo-no-tapajos-mesmo-apos-alertas-de-esquentamento-de-ouro/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    },
+    {
+      "id": "AMZ-N-009",
+      "publication_date": "2026-03-30",
+      "outlet": "Mongabay",
+      "authors": [
+        "Michele Calamaio"
+      ],
+      "original_language": "en",
+      "topic_code": "logging",
+      "countries": [
+        "Peru"
+      ],
+      "territories": [
+        "Ucayali / Amazônia peruana"
+      ],
+      "original_title": "As traditional forest governance erodes in Peru, ‘ghost permits’ fill the vacuum",
+      "title_pt": "Permissões florestais de fachada facilitam lavagem de madeira no Peru",
+      "title_en": "Ghost forest permits enable timber laundering in Peru",
+      "title_es": "Permisos forestales fantasma facilitan el blanqueo de madera en Perú",
+      "description_pt": "Apura uso de autorizações florestais para dar aparência de legalidade à madeira retirada de outras áreas, no contexto da governança indígena.",
+      "description_en": "Investigates misuse of forest permits to legalize timber harvested elsewhere amid pressures on Indigenous governance.",
+      "description_es": "Investiga el uso de permisos forestales para aparentar legalidad de madera extraída en otras zonas, en un contexto de presión sobre la gobernanza indígena.",
+      "source_url": "https://news.mongabay.com/2026/03/as-traditional-forest-governance-erodes-in-peru-ghost-permits-fill-the-vacuum/",
+      "related_event_ids": [],
+      "added_at": "2026-10-22"
+    }
+  ]
+}
