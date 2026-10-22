@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-10-11T14:08:00Z",
+  "generated_at": "2026-10-22T13:02:02.462Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -5683,6 +5683,264 @@
         "Linha 8-C",
         "Ramal Fechado"
       ]
+    },
+    {
+      "id": "BR-RO-2026-1015-ARGOS",
+      "title": {
+        "pt": "Operação Argos inutiliza 15 dragas no rio Madeira (RO)",
+        "en": "Operation Argos disables 15 dredges on Madeira River (Rondônia)",
+        "es": "Operación Argos inutiliza 15 dragas en el río Madeira (Rondônia)"
+      },
+      "summary": {
+        "pt": "PF e Ibama inutilizaram 15 dragas e aproximadamente 1.150 litros de combustível em ação de 15/10/2026 no rio Madeira em Rondônia. Outras 58 dragas localizadas já estavam inutilizadas.",
+        "en": "Federal Police and Ibama disabled 15 dredges and approximately 1,150 litres of fuel on 15 October 2026 in the Madeira River, Rondônia. Another 58 dredges found had already been disabled.",
+        "es": "Policía Federal e Ibama inutilizaron 15 dragas y unos 1.150 litros de combustible el 15/10/2026 en el río Madeira (Rondônia). Otras 58 dragas ya habían sido inutilizadas."
+      },
+      "case_context": {
+        "pt": "Operação distinta da Iterum IV (RO) e Hidra Dourada (AM), ambas em setembro. As 58 dragas já inutilizadas não representam 58 novas apreensões. A PF não divulgou o ponto exato da ação.",
+        "en": "Separate from September's Iterum IV (Rondônia) and Hidra Dourada (Amazonas). The 58 previously disabled dredges must not be counted as new. The exact operation coordinates were not published.",
+        "es": "Distinta de Iterum IV (Rondônia) e Hidra Dourada (Amazonas), en septiembre. Las 58 dragas previamente inutilizadas no son nuevas incautaciones. No se publicaron coordenadas exactas."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Argos",
+      "agencies": [
+        "Polícia Federal",
+        "Ibama"
+      ],
+      "occurred_at": "2026-10-15T12:00:00-04:00",
+      "occurred_at_precision": "day_confirmed;time_not_reported_midday_placeholder",
+      "published_at": "2026-10-16T10:56:00-03:00",
+      "added_at": "2026-10-22T13:02:02.462Z",
+      "updated_at": "2026-10-22T13:02:02.462Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Officially documented enforcement action; no criminal guilt is implied beyond what sources report.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Rio Madeira, Rondônia — Porto Velho como referência regional",
+        "admin1": "Rondônia",
+        "country": "Brazil",
+        "lat": -8.7608,
+        "lon": -63.8999,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate Porto Velho city reference, NOT an operation coordinate."
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "indigenous_territory": {
+        "is_indigenous_territory": false
+      },
+      "cross_border": false,
+      "impacts": {
+        "water": true
+      },
+      "quantities": [
+        {
+          "item": "dredges disabled in operation",
+          "value": 15,
+          "unit": "units"
+        },
+        {
+          "item": "fuel disabled",
+          "value": 1150,
+          "unit": "litres"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-deflagra-operacao-contra-garimpo-ilegal-no-rio-madeira/",
+          "published_at": "2026-10-16T10:56:00-03:00",
+          "source_type": "official",
+          "is_primary": true
+        }
+      ],
+      "source_media": [],
+      "evidence_notes": "58 other dredges had been disabled before the operation; excluded from new seizures.",
+      "limitations": "The geographical marker is approximate, not a verified inspection-site coordinate. No unreported trafficking route is inferred.",
+      "keywords": []
+    },
+    {
+      "id": "BR-RO-2026-1009-MADEIRA-MAMORE-II-LOGGING",
+      "title": {
+        "pt": "Operação Madeira-Mamoré II apreende madeira na TI Igarapé Lage",
+        "en": "Madeira-Mamoré II seizes timber linked to Igarapé Lage Indigenous Territory",
+        "es": "Madeira-Mamoré II incauta madera procedente del Territorio Indígena Igarapé Lage"
+      },
+      "summary": {
+        "pt": "Na noite de 09/10, PF, Funai e BPFRON apreenderam trator, caminhão com cerca de 108 estacas de madeira serrada, motosserra e dois celulares em Nova Mamoré. Um homem foi conduzido à PF.",
+        "en": "On the night of October 9, Federal Police, Funai and border police seized a tractor, a truck carrying about 108 sawn timber posts, a chainsaw and two mobile phones in Nova Mamoré. One man was brought to police.",
+        "es": "La noche del 9 de octubre, PF, Funai y BPFRON incautaron un tractor, un camión con unas 108 estacas de madera aserrada, una motosierra y dos teléfonos en Nova Mamoré. Un hombre fue trasladado a la PF."
+      },
+      "case_context": {
+        "pt": "A PF observou um trator com carreta saindo da TI Igarapé Lage. Trata-se de apreensão diferente da ação Ramal Fechado de 29/09, no mesmo território. Outros crimes investigados na operação mais ampla não integram este registro ambiental.",
+        "en": "Police reported a tractor with a trailer leaving Igarapé Lage Indigenous Territory. This October 9 seizure differs from the September 29 Ramal Fechado operation in the same area. Other crimes under the broader operation are excluded.",
+        "es": "La PF informó un tractor con remolque saliendo del Territorio Indígena Igarapé Lage. Esta incautación del 9 de octubre es distinta de Ramal Fechado (29 de septiembre). Otros delitos de la operación general quedan fuera de este registro."
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING",
+        "PROTECTED_AREA_INVASION"
+      ],
+      "operation_name": "Madeira-Mamoré II",
+      "agencies": [
+        "Polícia Federal",
+        "Funai",
+        "BPFRON"
+      ],
+      "occurred_at": "2026-10-09T12:00:00-04:00",
+      "occurred_at_precision": "day_confirmed;time_not_reported_midday_placeholder",
+      "published_at": "2026-10-10T14:35:00-03:00",
+      "added_at": "2026-10-22T13:02:02.462Z",
+      "updated_at": "2026-10-22T13:02:02.462Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Officially documented enforcement action; no criminal guilt is implied beyond what sources report.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Nova Mamoré — TI Igarapé Lage (referência municipal)",
+        "admin1": "Rondônia",
+        "country": "Brazil",
+        "lat": -10.4093,
+        "lon": -65.3268,
+        "precision": "municipality_centroid_approximate",
+        "geo_source": "Municipality reference matched to prior canonical Ramal Fechado record, not site coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "Terra Indígena Igarapé Lage",
+        "category": "Indigenous territory"
+      },
+      "indigenous_territory": {
+        "is_indigenous_territory": true,
+        "name": "Igarapé Lage"
+      },
+      "cross_border": false,
+      "impacts": {
+        "indigenous_or_local_communities": true,
+        "forest": true
+      },
+      "quantities": [
+        {
+          "item": "sawn timber posts seized",
+          "value": 108,
+          "unit": "approximate units"
+        },
+        {
+          "item": "tractor seized",
+          "value": 1,
+          "unit": "unit"
+        },
+        {
+          "item": "truck seized",
+          "value": 1,
+          "unit": "unit"
+        },
+        {
+          "item": "chainsaw seized",
+          "value": 1,
+          "unit": "unit"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/operacao-integrada-apreende-trator-caminhao-e-madeira-retirados-de-terra-indigena-em-nova-mamore-ro",
+          "published_at": "2026-10-10T14:35:00-03:00",
+          "source_type": "official",
+          "is_primary": true
+        }
+      ],
+      "source_media": [],
+      "evidence_notes": "Distinct physical seizure on 9 October; previous Ramal Fechado on 29 September.",
+      "limitations": "The geographical marker is approximate, not a verified inspection-site coordinate. No unreported trafficking route is inferred.",
+      "keywords": []
+    },
+    {
+      "id": "BR-PA-2026-1005-TUCUMA-GOLD",
+      "title": {
+        "pt": "PF prende seis pessoas em ação contra garimpo ilegal em Tucumã (PA)",
+        "en": "Federal Police arrest six in illegal-mining action in Tucumã, Pará",
+        "es": "Policía Federal detiene a seis personas por minería ilegal en Tucumã, Pará"
+      },
+      "summary": {
+        "pt": "Em 05/10, a PF encontrou garimpo em atividade em imóvel rural vizinho à TI Kayapó, prendeu seis pessoas em flagrante e apreendeu duas escavadeiras hidráulicas, dois motores e dois celulares.",
+        "en": "On October 5, police found mining in progress on rural property adjacent to Kayapó Indigenous Territory, arrested six people and seized two excavators, two motors and two phones.",
+        "es": "El 5 de octubre, la PF halló minería en actividad en un predio vecino al territorio Kayapó, detuvo a seis personas e incautó dos excavadoras, dos motores y dos celulares."
+      },
+      "case_context": {
+        "pt": "A PF também investiga possível trabalho em condição análoga à escravidão após encontrar alojamento degradante. A fonte não informa mineração dentro da TI Kayapó, mas em área vizinha; não classificar invasão indígena. Não há rota de ouro documentada.",
+        "en": "Police are investigating possible labor exploitation after finding degraded accommodation. The mining location is reported as adjacent to Kayapó Indigenous Territory, not inside it. No gold trafficking route is documented.",
+        "es": "La PF investiga posible explotación laboral tras encontrar alojamiento degradante. El predio es vecino, no confirmado dentro, del territorio Kayapó. No se documenta ruta de comercialización de oro."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": null,
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "occurred_at": "2026-10-05T12:00:00-03:00",
+      "occurred_at_precision": "day_confirmed;time_not_reported_midday_placeholder",
+      "published_at": "2026-10-06T07:05:00-03:00",
+      "added_at": "2026-10-22T13:02:02.462Z",
+      "updated_at": "2026-10-22T13:02:02.462Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Officially documented enforcement action; no criminal guilt is implied beyond what sources report.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Tucumã (PA) — referência municipal",
+        "admin1": "Pará",
+        "country": "Brazil",
+        "lat": -6.75,
+        "lon": -51.16,
+        "precision": "municipality_seat_reference_approximate",
+        "geo_source": "Approximate Tucumã municipality seat; rural property not geocoded."
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "indigenous_territory": {
+        "is_indigenous_territory": false
+      },
+      "cross_border": false,
+      "impacts": {},
+      "quantities": [
+        {
+          "item": "persons arrested in flagrante",
+          "value": 6,
+          "unit": "persons"
+        },
+        {
+          "item": "hydraulic excavators seized",
+          "value": 2,
+          "unit": "units"
+        },
+        {
+          "item": "motors seized",
+          "value": 2,
+          "unit": "units"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-combate-extracao-ilegal-de-ouro-em-tucuma-pa",
+          "published_at": "2026-10-06T07:05:00-03:00",
+          "source_type": "official",
+          "is_primary": true
+        }
+      ],
+      "source_media": [],
+      "evidence_notes": "Possible labor exploitation is under investigation and should not be classified as proven; mining reported near, not inside, TI Kayapó.",
+      "limitations": "The geographical marker is approximate, not a verified inspection-site coordinate. No unreported trafficking route is inferred.",
+      "keywords": []
     }
   ]
 }
