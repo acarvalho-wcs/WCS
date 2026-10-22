@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-10-22T13:09:57.785Z",
+  "generated_at": "2026-10-22T13:59:30.650Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -6354,6 +6354,327 @@
         "Interdicción policial Balata — 17/10",
         "minería ilegal"
       ]
+    },
+    {
+      "id": "GY-SIPARUNI-2026-0929-PUBLICATION",
+      "title": {
+        "pt": "GGMC apreende draga no rio Siparuni e detém três mineiros",
+        "en": "GGMC seizes dredge on Siparuni River and detains three miners",
+        "es": "GGMC incauta draga en río Siparuni y detiene a tres mineros"
+      },
+      "summary": {
+        "pt": "O Ministério dos Recursos Naturais da Guiana informou a apreensão de uma draga fluvial, equipamentos e veículo e a detenção de três mineiros, dois estrangeiros, por suposta mineração ilegal às margens do Siparuni. A data da operação não foi divulgada.",
+        "en": "Guyana's Ministry of Natural Resources reported a river dredge, equipment and vehicle seized and three miners detained, two of them foreign nationals, for alleged illegal mining on the Siparuni riverbank. The operation date was not disclosed.",
+        "es": "El Ministerio de Recursos Naturales de Guyana informó la incautación de una draga fluvial, equipos y vehículo y la detención de tres mineros, dos extranjeros, por presunta minería ilegal en la ribera del Siparuni. No se comunicó la fecha de intervención."
+      },
+      "case_context": {
+        "pt": "Registro indexado pela data de publicação (2026-09-29), exclusivamente porque a data de execução da operação não foi informada. Distinct from Puruni River September 17 and Potaro mining district September 12. Do not infer nationality of two non-nationals or route.",
+        "en": "Indexed by publication date (2026-09-29) only because the actual enforcement date was not disclosed. Distinct from Puruni River September 17 and Potaro mining district September 12. Do not infer nationality of two non-nationals or route.",
+        "es": "Registro indexado por fecha de publicación (2026-09-29) únicamente porque no se informó el día de ejecución. Distinct from Puruni River September 17 and Potaro mining district September 12. Do not infer nationality of two non-nationals or route."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": null,
+      "agencies": [
+        "Guyana Geology and Mines Commission",
+        "Ministry of Natural Resources"
+      ],
+      "occurred_at": "2026-09-29T12:00:00-04:00",
+      "occurred_at_precision": "UNKNOWN; surrogate equals publication day for technical filtering only; time is arbitrary",
+      "published_at": "2026-09-29T12:00:00-04:00",
+      "publication_precision": "day_only; noon placeholder",
+      "date_basis": "publication",
+      "date_display_label": {
+        "pt": "Data de publicação",
+        "en": "Publication date",
+        "es": "Fecha de publicación"
+      },
+      "date_note": {
+        "pt": "Data da operação não confirmada. A data exibida corresponde à publicação da fonte, não à execução do fato.",
+        "en": "Operation date unconfirmed. The date shown is the source publication date, not the incident date.",
+        "es": "Fecha del operativo sin confirmar. La fecha mostrada corresponde a la publicación de la fuente, no a la ejecución del hecho."
+      },
+      "added_at": "2026-10-22T13:59:30.650Z",
+      "updated_at": "2026-10-22T13:59:30.650Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "The reported enforcement action is documented, but its exact operation day is not established; no inference of guilt.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Rio Siparuni — referência regional Potaro-Siparuni",
+        "admin1": "Potaro-Siparuni",
+        "country": "Guyana",
+        "lat": 5.27,
+        "lon": -59.15,
+        "precision": "district_reference_approximate",
+        "geo_source": "Mahdia/Potaro district reference, not actual river intervention site"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "impacts": {
+        "water": true
+      },
+      "quantities": [
+        {
+          "item": "dredge seized",
+          "value": 1,
+          "unit": "unit"
+        },
+        {
+          "item": "persons detained",
+          "value": 3,
+          "unit": "persons"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Ministry of Natural Resources — Guyana",
+          "url": "https://mnr.gov.gy/2026/09/29/three-detained-for-illegal-mining-along-siparuni-riverbank/",
+          "source_type": "official",
+          "language": "en",
+          "published_at": "2026-09-29T12:00:00-04:00",
+          "is_primary": true
+        },
+        {
+          "publisher": "Guyana Chronicle",
+          "url": "https://guyanachronicle.com/2026/09/30/three-detained-over-illegal-mining-along-siparuni-riverbank/",
+          "source_type": "news",
+          "language": "en",
+          "published_at": "2026-09-30T12:00:00-04:00",
+          "is_primary": false
+        }
+      ],
+      "source_media": [],
+      "evidence_notes": "Published September 29; operation day not reported.",
+      "limitations": "Exact operation date and intervention-site coordinates not published; no route inferred.",
+      "keywords": [
+        "Guyana",
+        "Siparuni riverbank, Potaro-Siparuni (Region Eight)",
+        "publication-date-only"
+      ],
+      "review": {
+        "reviewer": "Source cross-check; publication-only exception",
+        "validated_at": "2026-10-22T13:59:30.650Z",
+        "context_updated_at": "2026-10-22T13:59:30.650Z"
+      }
+    },
+    {
+      "id": "PE-MDD-2026-1016-MALINOWSKI-PUBLICATION",
+      "title": {
+        "pt": "Polícia inutiliza 15 balsas-dragas no rio Malinowski",
+        "en": "Police disable 15 dredging rafts on the Malinowski River",
+        "es": "Policía inutiliza 15 balsas dragas en el río Malinowski"
+      },
+      "summary": {
+        "pt": "A Polícia peruana informou a inutilização de 15 balsas-dragas, 15 tolvas, 15 acampamentos e motores entre Filadelfia e Yarinal, com prejuízo estimado em S/ 9 milhões; reportagem de 16/10 não informa o dia da intervenção.",
+        "en": "Peruvian police reported 15 dredging rafts, 15 hoppers, 15 camps and engines disabled between Filadelfia and Yarinal, assets valued at around PEN 9 million; October 16 report does not state the intervention day.",
+        "es": "La PNP informó la inutilización de 15 balsas dragas, 15 tolvas, 15 campamentos y motores entre Filadelfia y Yarinal, por cerca de S/ 9 millones; la publicación del 16/10 no precisa día del operativo."
+      },
+      "case_context": {
+        "pt": "Registro indexado pela data de publicação (2026-10-16), exclusivamente porque a data de execução da operação não foi informada. Different reported quantity and sectors from the October 8 multisite operation; evidence supports a distinct action, but verify actual day before canonical submission.",
+        "en": "Indexed by publication date (2026-10-16) only because the actual enforcement date was not disclosed. Different reported quantity and sectors from the October 8 multisite operation; evidence supports a distinct action, but verify actual day before canonical submission.",
+        "es": "Registro indexado por fecha de publicación (2026-10-16) únicamente porque no se informó el día de ejecución. Different reported quantity and sectors from the October 8 multisite operation; evidence supports a distinct action, but verify actual day before canonical submission."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": null,
+      "agencies": [
+        "Policía Nacional del Perú"
+      ],
+      "occurred_at": "2026-10-16T12:00:00-05:00",
+      "occurred_at_precision": "UNKNOWN; surrogate equals publication day for technical filtering only; time is arbitrary",
+      "published_at": "2026-10-16T12:00:00-05:00",
+      "publication_precision": "day_only; noon placeholder",
+      "date_basis": "publication",
+      "date_display_label": {
+        "pt": "Data de publicação",
+        "en": "Publication date",
+        "es": "Fecha de publicación"
+      },
+      "date_note": {
+        "pt": "Data da operação não confirmada. A data exibida corresponde à publicação da fonte, não à execução do fato.",
+        "en": "Operation date unconfirmed. The date shown is the source publication date, not the incident date.",
+        "es": "Fecha del operativo sin confirmar. La fecha mostrada corresponde a la publicación de la fuente, no a la ejecución del hecho."
+      },
+      "added_at": "2026-10-22T13:59:30.650Z",
+      "updated_at": "2026-10-22T13:59:30.650Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "The reported enforcement action is documented, but its exact operation day is not established; no inference of guilt.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Rio Malinowski, trecho Filadelfia–Yarinal (referência distrital Inambari)",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.9767,
+        "lon": -69.9388,
+        "precision": "district_reference_approximate",
+        "geo_source": "District reference; no geocoded intervention site"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "impacts": {
+        "water": true
+      },
+      "quantities": [
+        {
+          "item": "dredging rafts disabled",
+          "value": 15,
+          "unit": "units"
+        },
+        {
+          "item": "camps disabled",
+          "value": 15,
+          "unit": "units"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Diario Oficial El Peruano",
+          "url": "https://elperuano.pe/noticia/306991-madre-de-dios-policia-destruye-equipos-e-infraestructura-a-la-mineria-ilegal-valorizada-en-s-9-millones",
+          "source_type": "official",
+          "language": "es",
+          "published_at": "2026-10-16T12:00:00-05:00",
+          "is_primary": true
+        }
+      ],
+      "source_media": [],
+      "evidence_notes": "Published October 16; operation day not reported.",
+      "limitations": "Exact operation date and intervention-site coordinates not published; no route inferred.",
+      "keywords": [
+        "Peru",
+        "Río Malinowski, tramo Filadelfia–Yarinal, Inambari, Madre de Dios",
+        "publication-date-only"
+      ],
+      "review": {
+        "reviewer": "Source cross-check; publication-only exception",
+        "validated_at": "2026-10-22T13:59:30.650Z",
+        "context_updated_at": "2026-10-22T13:59:30.650Z"
+      }
+    },
+    {
+      "id": "PE-MDD-2026-1019-TAMBOPATA-PUBLICATION",
+      "title": {
+        "pt": "Fiscalía detém cinco suspeitos de mineração ilegal na Reserva Tambopata",
+        "en": "Prosecutors detain five suspects in Tambopata illegal-mining operation",
+        "es": "Fiscalía detiene a cinco sospechosos de minería ilegal en la Reserva Tambopata"
+      },
+      "summary": {
+        "pt": "Fiscalía, PNP, Sernanp e Exército atuaram na Reserva Nacional Tambopata, às margens do rio Madre de Dios, detendo cinco suspeitos e inutilizando duas balsas, dois motores e dois acampamentos. Fonte publicada em 19/10 não informa data exata da ação.",
+        "en": "Prosecutors, police, Sernanp and military detained five suspects and disabled two rafts, two motors and two camps in Tambopata National Reserve along the Madre de Dios River. Reports dated October 19 do not identify the actual intervention day.",
+        "es": "Fiscalía, PNP, Sernanp y Ejército detuvieron a cinco investigados e inutilizaron dos balsas, dos motores y dos campamentos en la Reserva Tambopata junto al río Madre de Dios. Las noticias del 19/10 no indican el día exacto del operativo."
+      },
+      "case_context": {
+        "pt": "Registro indexado pela data de publicação (2026-10-19), exclusivamente porque a data de execução da operação não foi informada. Distinct from Punto Azul, Balata, and river Malinowski events. Andina reports five detainees but lists four initials: do not infer missing identity.",
+        "en": "Indexed by publication date (2026-10-19) only because the actual enforcement date was not disclosed. Distinct from Punto Azul, Balata, and river Malinowski events. Andina reports five detainees but lists four initials: do not infer missing identity.",
+        "es": "Registro indexado por fecha de publicación (2026-10-19) únicamente porque no se informó el día de ejecución. Distinct from Punto Azul, Balata, and river Malinowski events. Andina reports five detainees but lists four initials: do not infer missing identity."
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": null,
+      "agencies": [
+        "Fiscalía Especializada en Materia Ambiental",
+        "Policía Nacional del Perú",
+        "Sernanp",
+        "Ejército del Perú"
+      ],
+      "occurred_at": "2026-10-19T12:00:00-05:00",
+      "occurred_at_precision": "UNKNOWN; surrogate equals publication day for technical filtering only; time is arbitrary",
+      "published_at": "2026-10-19T12:00:00-05:00",
+      "publication_precision": "day_only; noon placeholder",
+      "date_basis": "publication",
+      "date_display_label": {
+        "pt": "Data de publicação",
+        "en": "Publication date",
+        "es": "Fecha de publicación"
+      },
+      "date_note": {
+        "pt": "Data da operação não confirmada. A data exibida corresponde à publicação da fonte, não à execução do fato.",
+        "en": "Operation date unconfirmed. The date shown is the source publication date, not the incident date.",
+        "es": "Fecha del operativo sin confirmar. La fecha mostrada corresponde a la publicación de la fuente, no a la ejecución del hecho."
+      },
+      "added_at": "2026-10-22T13:59:30.650Z",
+      "updated_at": "2026-10-22T13:59:30.650Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "The reported enforcement action is documented, but its exact operation day is not established; no inference of guilt.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Reserva Nacional Tambopata — referência territorial",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.9,
+        "lon": -69.3,
+        "precision": "protected_area_regional_approximate",
+        "geo_source": "Regional protected-area reference from prior canonical case, not intervention site"
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "Reserva Nacional Tambopata",
+        "category": "National reserve"
+      },
+      "cross_border": false,
+      "impacts": {
+        "water": true
+      },
+      "quantities": [
+        {
+          "item": "persons detained",
+          "value": 5,
+          "unit": "persons"
+        },
+        {
+          "item": "mining rafts disabled",
+          "value": 2,
+          "unit": "units"
+        },
+        {
+          "item": "camps disabled",
+          "value": 2,
+          "unit": "units"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Agencia Andina",
+          "url": "https://andina.pe/agencia/noticia-tambopata-fiscalia-pnp-y-ejercito-detienen-a-cinco-implicados-presunta-mineria-ilegal-1096697.aspx",
+          "source_type": "news",
+          "language": "es",
+          "published_at": "2026-10-20T12:00:00-05:00",
+          "is_primary": false
+        },
+        {
+          "publisher": "Desde Adentro",
+          "url": "https://www.desdeadentro.pe/2026/10/detienen-a-cinco-involucrados-en-presunta-mineria-ilegal-en-la-reserva-nacional-de-tambopata/",
+          "source_type": "news",
+          "language": "es",
+          "published_at": "2026-10-19T12:00:00-05:00",
+          "is_primary": true
+        }
+      ],
+      "source_media": [],
+      "evidence_notes": "Published October 19 in Desde Adentro; Agencia Andina follow-up dated October 20; operation day not reported.",
+      "limitations": "Exact operation date and intervention-site coordinates not published; no route inferred.",
+      "keywords": [
+        "Peru",
+        "Río Madre de Dios, Reserva Nacional Tambopata (exact sector not published)",
+        "publication-date-only"
+      ],
+      "review": {
+        "reviewer": "Source cross-check; publication-only exception",
+        "validated_at": "2026-10-22T13:59:30.650Z",
+        "context_updated_at": "2026-10-22T13:59:30.650Z"
+      }
     }
   ]
 }
