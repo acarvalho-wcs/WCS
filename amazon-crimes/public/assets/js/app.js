@@ -701,9 +701,10 @@ function eventPopupHtml(event) {
     ${images}
     <div class="popup-section"><span class="popup-label">${escapeHtml(t('caseContext'))}</span><p>${escapeHtml(localized(event.case_context))}</p></div>
     <dl class="popup-facts">
-      ${event.date_basis === 'publication',        ? `<div><dt>${escapeHtml(localized(event.date_display_label) || t('publishedDate'))}</dt><dd>${escapeHtml(formatDate(eventDate(event)))}</dd></div>`,        : `<div><dt>${escapeHtml(t('eventDate'))}</dt><dd>${escapeHtml(formatDateTime(event.occurred_at))}</dd></div><div><dt>${escapeHtml(t('publishedDate'))}</dt><dd>${escapeHtml(formatDateTime(event.published_at))}</dd></div>`},      ${event.date_basis === 'publication' && localized(event.date_note) ? `<div class="legal-note">${escapeHtml(localized(event.date_note))}</div>` : ''}
+      ${event.date_basis === 'publication' ? `<div><dt>${escapeHtml(localized(event.date_display_label) || t('publishedDate'))}</dt><dd>${escapeHtml(formatDate(eventDate(event)))}</dd></div>` : `<div><dt>${escapeHtml(t('eventDate'))}</dt><dd>${escapeHtml(formatDateTime(event.occurred_at))}</dd></div><div><dt>${escapeHtml(t('publishedDate'))}</dt><dd>${escapeHtml(formatDateTime(event.published_at))}</dd></div>`}
       <div><dt>${escapeHtml(t('mapPrecision'))}</dt><dd>${escapeHtml(event.location?.precision || '—')}</dd></div>
     </dl>
+    ${event.date_basis === 'publication' && localized(event.date_note) ? `<div class="legal-note">${escapeHtml(localized(event.date_note))}</div>` : ''}
     ${event.legal_status_note ? `<div class="legal-note"><strong>${escapeHtml(t('legalNote'))}:</strong> ${escapeHtml(event.legal_status_note)}</div>` : ''}
     ${source?.url ? `<a class="source-button" href="${escapeAttr(source.url)}" target="_blank" rel="noopener noreferrer">↗ ${escapeHtml(t('viewSource'))} · ${escapeHtml(source.publisher || '')}</a>` : ''}
   </article>`;
