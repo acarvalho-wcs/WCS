@@ -17,3 +17,12 @@
 .media-impact-link:hover{color:#153c2b;border-color:#153c2b}
 .media-impact-link .media-arrow{font-size:1.08rem;flex-shrink:0}
 .media-list-heading{padding:14px 0;font-size:.69rem;font-weight:800;letter-spacing:.13em;color:#648269;border-bottom:1px solid #cbd3c5}
+
+/* Multilingual writing portfolio evidence */
+.focus-item--writing{grid-column:1 / -1;grid-template-columns:39px minmax(0,1fr) 24px}
+.focus-item--writing p{max-width:920px;line-height:1.8}
+.evidence-links{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;margin-top:22px}
+.evidence-links a{display:inline-flex;align-items:baseline;gap:7px;border-bottom:1px solid #718f73;padding:0 0 5px;color:#315d43;font-size:.83rem;font-weight:700;line-height:1.6}
+.evidence-links a:hover{color:#173d2e;border-color:#173d2e}
+.evidence-links a span{font-size:1rem}
+@media(max-width:760px){.focus-item--writing{grid-column:auto;grid-template-columns:28px minmax(0,1fr) 20px}.evidence-links{gap:12px 18px}}
