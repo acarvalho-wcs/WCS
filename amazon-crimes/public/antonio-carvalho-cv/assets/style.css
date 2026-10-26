@@ -34,27 +34,57 @@
 @media(max-width:950px){.hero .hero-side{display:flex;flex-direction:column;justify-content:center;align-items:center;min-width:0;min-height:0;height:auto;margin-top:6px;padding:0 0 8px}.hero .hero-coordinate,.hero .current-role{display:none}.hero-portrait{width:min(72vw,318px)}}
 @media(max-width:520px){.hero-portrait{width:min(72vw,280px)}}
 
-/* Observatory reports library */
-.observatory-reports{margin-top:84px;padding-top:55px;border-top:1px solid #cbd2c5;scroll-margin-top:100px}
-.observatory-reports-header{display:flex;justify-content:space-between;align-items:flex-end;gap:28px;margin-bottom:30px}
-.observatory-reports-header>div{max-width:760px}
-.observatory-reports-header h3{font-size:clamp(1.8rem,3vw,2.8rem);margin:14px 0 12px;line-height:1.15}
-.observatory-reports-header p{margin:0;color:var(--muted);font-size:.97rem;line-height:1.7}
-.observatory-reports-repo{flex:0 0 auto;padding-bottom:5px}
-.observatory-report-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-.observatory-report-category{background:var(--paper);border:1px solid var(--line);padding:27px 29px 8px;min-width:0}
-.observatory-report-category-head{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-bottom:16px;border-bottom:1px solid #d2d8c9}
-.observatory-report-category h4{font-family:Manrope,'DM Sans',sans-serif;font-size:1.18rem;line-height:1.3;letter-spacing:-.035em;margin:0}
-.observatory-report-category-head>span{font-size:.78rem;color:var(--muted);font-weight:700}
-.observatory-report-list{list-style:none;padding:0;margin:0}
-.observatory-report{padding:19px 0 20px;border-bottom:1px solid #d2d8c9}
-.observatory-report:last-child{border-bottom:0}
-.observatory-report-date{display:block;font-size:.73rem;color:#718477;font-weight:700;letter-spacing:.02em;margin-bottom:5px}
-.observatory-report h5{font-family:Manrope,'DM Sans',sans-serif;font-size:.96rem;letter-spacing:-.018em;line-height:1.5;margin:0 0 7px;font-weight:750}
-.observatory-report p{font-size:.84rem;line-height:1.65;color:var(--muted);margin:0 0 10px}
-.observatory-report-links{display:flex;flex-wrap:wrap;gap:7px}
-.observatory-report-links a{display:inline-flex;align-items:center;gap:6px;border:1px solid #c9d6c5;padding:5px 9px;color:#315b3c;font-size:.73rem;font-weight:800;line-height:1.3;transition:border-color .2s,background .2s}
-.observatory-report-links a:hover{background:#e9f0df;border-color:#729574}
-.observatory-report-links a:focus-visible{outline:3px solid #719b65;outline-offset:2px}
-@media(max-width:920px){.observatory-reports-header{align-items:flex-start;flex-direction:column;gap:16px}}
-@media(max-width:740px){.observatory-reports{margin-top:58px;padding-top:38px}.observatory-report-grid{grid-template-columns:1fr;gap:14px}.observatory-report-category{padding:22px 22px 5px}}
+/* Observatory technical portfolio — editorial layout */
+.observatory-reports{margin-top:84px;padding-top:57px;border-top:1px solid #cbd2c5;scroll-margin-top:100px}
+.observatory-reports-header{max-width:840px;margin-bottom:27px}
+.observatory-reports-header .eyebrow{color:#66836d}
+.observatory-reports-header h3{font-size:clamp(2rem,3.1vw,3rem);margin:14px 0 13px;line-height:1.15;letter-spacing:-.055em}
+.observatory-reports-header p{max-width:770px;margin:0;color:var(--muted);font-size:.94rem;line-height:1.75}
+.report-weekly-feature{position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center;justify-content:space-between;gap:36px;padding:28px 32px;margin:28px 0 51px;background:#163b32;color:#f2f5ed;border:1px solid #315548;border-radius:10px;transition:background .2s,transform .2s}
+.report-weekly-feature::after{content:'';position:absolute;z-index:-1;right:-85px;top:-130px;width:330px;height:330px;border:1px solid rgba(215,239,158,.18);border-radius:50%;box-shadow:0 0 0 58px rgba(215,239,158,.025),0 0 0 117px rgba(215,239,158,.018);pointer-events:none}
+.report-weekly-feature:hover{background:#1b483b;transform:translateY(-2px)}
+.report-weekly-feature:focus-visible{outline:3px solid #719b65;outline-offset:4px}
+.report-weekly-copy{max-width:730px;position:relative;z-index:1}
+.report-weekly-feature .report-kicker{display:block;font-size:.65rem;letter-spacing:.16em;font-weight:800;color:#bddd91;margin-bottom:7px}
+.report-weekly-feature h4{font-family:Manrope,'DM Sans',sans-serif;font-size:clamp(1.2rem,2vw,1.48rem);line-height:1.3;letter-spacing:-.035em;margin:0 0 6px}
+.report-weekly-feature p{font-size:.86rem;line-height:1.65;color:#c6d7ce;margin:0}
+.report-weekly-action{display:inline-flex;align-items:center;justify-content:space-between;gap:18px;flex:0 0 auto;background:var(--leaf);color:#17342c;padding:13px 17px;border-radius:5px;font-size:.8rem;font-weight:800;line-height:1.4;position:relative;z-index:1}
+.report-weekly-action span{font-size:1rem}
+.report-collection-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:22px}
+.report-collection-heading .eyebrow,.report-institutional-header .eyebrow{color:#67866b;margin-bottom:9px}
+.report-collection-heading h4,.report-institutional-header h4{font-family:Manrope,'DM Sans',sans-serif;font-size:clamp(1.45rem,2.3vw,1.95rem);letter-spacing:-.045em;line-height:1.25;margin:0}
+.report-collection-total{font-size:.75rem;font-weight:800;color:#6e8373;border:1px solid #cbd5c7;border-radius:100px;padding:5px 12px;white-space:nowrap}
+.report-collection-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:17px}
+.report-collection-card{min-width:0;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:23px 23px 5px;box-shadow:0 3px 12px rgba(13,37,36,.025)}
+.report-collection-card-header{padding-bottom:15px;border-bottom:1px solid #d4dbd0}
+.report-category-index{display:block;font-size:.65rem;letter-spacing:.12em;color:#76917a;font-weight:800;margin-bottom:8px}
+.report-category-title{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.report-category-title h5{font-family:Manrope,'DM Sans',sans-serif;font-size:1.05rem;line-height:1.3;letter-spacing:-.035em;margin:0}
+.report-category-count{display:grid;place-items:center;flex:0 0 auto;min-width:29px;height:29px;border-radius:50%;background:#e6efda;color:#456c4c;font-size:.74rem;font-weight:800}
+.report-collection-card .observatory-report-list{list-style:none;margin:0;padding:0}
+.report-collection-card .observatory-report{padding:16px 0 17px;border-bottom:1px solid #e0e4dc}
+.report-collection-card .observatory-report:last-child{border-bottom:0}
+.report-collection-card .observatory-report-date{display:block;font-size:.7rem;color:#7a8d7e;font-weight:800;margin-bottom:5px}
+.report-collection-card .observatory-report h5{font-family:Manrope,'DM Sans',sans-serif;font-size:.88rem;font-weight:750;line-height:1.46;letter-spacing:-.02em;margin:0 0 6px}
+.report-collection-card .observatory-report h5 a:hover{text-decoration:underline;text-decoration-color:#91b088;text-underline-offset:3px}
+.report-collection-card .observatory-report p{font-size:.77rem;color:var(--muted);line-height:1.6;margin:0 0 10px}
+.report-collection-card .observatory-report-links{display:flex;flex-wrap:wrap;gap:7px}
+.report-collection-card .observatory-report-links a{display:inline-flex;align-items:center;gap:5px;padding:4px 8px;border:1px solid #cfdbc9;border-radius:4px;color:#386343;font-size:.68rem;font-weight:800;line-height:1.35;transition:background .2s,border-color .2s}
+.report-collection-card .observatory-report-links a:hover{background:#edf3e7;border-color:#92ae8a}
+.report-institutional{margin-top:52px;padding-top:36px;border-top:1px solid #cbd2c5}
+.report-institutional-header{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:20px}
+.report-institutional-header>div{max-width:760px}
+.report-institutional-header p{font-size:.88rem;line-height:1.7;color:var(--muted);margin:10px 0 0}
+.report-institutional-header .inline-arrow{flex:0 0 auto;max-width:280px;line-height:1.4}
+.report-institutional-grid{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:45px;row-gap:0;margin:0;padding:0}
+.report-institutional-item{min-width:0;padding:20px 0 22px;border-top:1px solid #d2d9ce}
+.report-institutional-role{display:block;color:#6b876d;font-size:.7rem;font-weight:800;letter-spacing:.025em;margin-bottom:7px}
+.report-institutional-item h5{font-family:Manrope,'DM Sans',sans-serif;font-size:1rem;font-weight:750;line-height:1.5;letter-spacing:-.025em;margin:0}
+.report-institutional-item h5 a span{color:#6f9573;white-space:nowrap}
+.report-institutional-item h5 a:hover{text-decoration:underline;text-decoration-color:#8ead84;text-underline-offset:4px}
+.report-library-footer{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;border-top:1px solid #cbd2c5;padding-top:19px;margin-top:17px}
+.report-library-footer p{font-size:.78rem;color:var(--muted);margin:0}
+.report-library-footer .inline-arrow{font-size:.78rem}
+@media(max-width:1040px){.report-collection-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.report-collection-card:last-child{grid-column:1/-1}.report-collection-card:last-child .observatory-report-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.report-collection-card:last-child .observatory-report{border-bottom:0}.report-collection-card:last-child .observatory-report+.observatory-report{border-left:1px solid #e0e4dc;padding-left:16px}}
+@media(max-width:760px){.observatory-reports{margin-top:60px;padding-top:40px}.report-weekly-feature{align-items:flex-start;flex-direction:column;gap:18px;padding:25px 24px;margin-bottom:39px}.report-weekly-action{flex:0 1 auto}.report-collection-grid{grid-template-columns:1fr}.report-collection-card:last-child{grid-column:auto}.report-collection-card:last-child .observatory-report-list{display:block}.report-collection-card:last-child .observatory-report{border-bottom:1px solid #e0e4dc}.report-collection-card:last-child .observatory-report:last-child{border-bottom:0}.report-collection-card:last-child .observatory-report+.observatory-report{border-left:0;padding-left:0}.report-institutional-header{align-items:flex-start;flex-direction:column;gap:14px}.report-institutional-grid{grid-template-columns:1fr}.report-institutional{margin-top:40px;padding-top:30px}}
+@media(max-width:520px){.report-collection-heading{align-items:flex-start;flex-direction:column;gap:12px}.report-collection-card{padding:21px 20px 4px}.report-weekly-action{width:100%}.report-library-footer{align-items:flex-start;flex-direction:column;gap:10px}}
