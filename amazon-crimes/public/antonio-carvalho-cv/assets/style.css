@@ -27,8 +27,3 @@
 .evidence-links a span{font-size:1rem}
 @media(max-width:760px){.focus-item--writing{grid-column:auto;grid-template-columns:28px minmax(0,1fr) 20px}.evidence-links{gap:12px 18px}}
 
-/* Professional portrait beside the hero heading */
-.hero-portrait{align-self:center;margin:0 auto;width:min(100%,318px);aspect-ratio:4/5;border:1px solid rgba(232,244,221,.32);border-radius:16px;overflow:hidden;background:#244034;box-shadow:0 12px 28px rgba(0,0,0,.15)}
-.hero-portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:center center}
-@media(max-width:950px){.hero-side{display:flex;min-width:0;min-height:0;height:auto;align-items:center;gap:0;padding:4px 0 6px}.hero-coordinate,.hero-side .current-role{display:none}.hero-portrait{width:min(70vw,300px)}}
-@media(max-width:520px){.hero-portrait{width:min(72vw,280px)}}
