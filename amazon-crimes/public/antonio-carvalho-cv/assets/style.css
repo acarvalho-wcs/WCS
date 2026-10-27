@@ -95,3 +95,23 @@
 .report-collection-card .observatory-report--title-link h5 a:hover{color:#376a48}
 .report-title-arrow{display:inline-block;margin-left:7px;color:#78977a;font-size:.82em;font-weight:700;white-space:nowrap;transition:transform .2s}
 .report-collection-card .observatory-report--title-link h5 a:hover .report-title-arrow{transform:translate(2px,-2px)}
+
+
+/* Institutional leadership: professional experience and impact */
+.career-leadership{margin-top:78px;padding-top:48px;border-top:1px solid var(--line)}
+.leadership-heading{display:grid;grid-template-columns:1fr .8fr;gap:70px;align-items:end;margin-bottom:33px}
+.leadership-heading h3{font-family:Manrope,'DM Sans',sans-serif;font-size:clamp(1.55rem,3vw,2.5rem);font-weight:650;letter-spacing:-.045em;line-height:1.25;margin:14px 0 0;max-width:700px}
+.leadership-heading>p{color:var(--muted);font-size:.93rem;line-height:1.8;margin:0}
+.leadership-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #cad6c7;border-bottom:1px solid #cad6c7;margin-bottom:22px}
+.leadership-metric{display:flex;flex-direction:column;gap:9px;padding:25px 26px 26px 0;min-width:0}
+.leadership-metric+.leadership-metric{border-left:1px solid #cad6c7;padding-left:26px}
+.leadership-metric strong{font-family:Manrope,sans-serif;font-size:clamp(1.9rem,3.3vw,3rem);font-weight:650;letter-spacing:-.06em;line-height:1.12;color:var(--ink)}
+.leadership-metric span{color:var(--muted);font-size:.81rem;line-height:1.65}
+.leadership-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px}
+.leadership-card{display:grid;grid-template-columns:33px minmax(0,1fr);column-gap:16px;align-content:start;padding:25px 0;border-bottom:1px solid var(--line)}
+.leadership-index{grid-row:1/3;font-size:.72rem;font-weight:800;color:#799478;padding-top:5px}
+.leadership-card h4{font-size:1.05rem;letter-spacing:-.02em;margin:0 0 10px}
+.leadership-card p{grid-column:2;color:var(--muted);font-size:.89rem;line-height:1.75;margin:0}
+.leadership-caveat{color:#718578;font-size:.74rem;line-height:1.65;margin:17px 0 0}
+@media(max-width:950px){.leadership-heading{gap:35px}}
+@media(max-width:760px){.career-leadership{margin-top:48px;padding-top:35px}.leadership-heading{grid-template-columns:1fr;gap:15px}.leadership-metrics{grid-template-columns:1fr}.leadership-metric{padding:18px 0}.leadership-metric+.leadership-metric{border-left:0;border-top:1px solid #cad6c7;padding-left:0}.leadership-grid{grid-template-columns:1fr}}
