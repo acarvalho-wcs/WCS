@@ -115,3 +115,35 @@
 .leadership-caveat{color:#718578;font-size:.74rem;line-height:1.65;margin:17px 0 0}
 @media(max-width:950px){.leadership-heading{gap:35px}}
 @media(max-width:760px){.career-leadership{margin-top:48px;padding-top:35px}.leadership-heading{grid-template-columns:1fr;gap:15px}.leadership-metrics{grid-template-columns:1fr}.leadership-metric{padding:18px 0}.leadership-metric+.leadership-metric{border-left:0;border-top:1px solid #cad6c7;padding-left:0}.leadership-grid{grid-template-columns:1fr}}
+
+
+/* Executive portfolio enhancements — 2026-10-27 */
+.button-resume{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.25);color:#f2f8e7}
+.button-resume:hover{background:rgba(255,255,255,.12);border-color:var(--leaf)}
+.stat-bar strong{font-size:clamp(2rem,4.4vw,3.9rem)}
+.stat-bar span{max-width:235px;line-height:1.5}
+.case-studies{margin-top:83px;padding-top:43px;border-top:1px solid rgba(216,240,219,.28)}
+.case-studies-heading{display:grid;grid-template-columns:1.1fr 1fr;gap:12px 50px;align-items:end;margin-bottom:30px}
+.case-studies-heading .eyebrow{grid-column:1/-1;color:#b9df9a}
+.case-studies-heading h3{font-family:Manrope,sans-serif;font-size:clamp(1.7rem,3vw,2.6rem);letter-spacing:-.05em;margin:0}
+.case-studies-heading p{color:#b5c8be;font-size:.94rem;margin:0}
+.case-studies-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.case-study{display:flex;flex-direction:column;gap:18px;padding:28px 25px;background:rgba(242,252,227,.055);border:1px solid rgba(215,239,158,.22)}
+.case-tag{color:var(--leaf);font-size:.68rem;font-weight:800;letter-spacing:.13em}
+.case-study h4{margin:0;font-family:Manrope,sans-serif;font-size:1.26rem;line-height:1.3;letter-spacing:-.03em}
+.case-study dl{margin:0;display:flex;flex-direction:column;gap:17px;flex:1}
+.case-study dt{font-size:.64rem;letter-spacing:.13em;font-weight:800;text-transform:uppercase;color:#cfe3c9;margin-bottom:4px}
+.case-study dd{margin:0;color:#b8cbc2;line-height:1.65;font-size:.84rem}
+.case-study>a{font-weight:700;font-size:.82rem;color:var(--leaf);align-self:flex-start;border-bottom:1px solid rgba(215,239,158,.35);padding-bottom:4px}
+.case-study>a:hover{border-color:var(--leaf)}
+.featured-research{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:45px 0 35px;padding:24px 0 28px}
+.featured-research-intro{display:flex;justify-content:space-between;gap:25px;align-items:baseline;margin-bottom:16px}
+.featured-research-intro p{font-size:.89rem;color:var(--muted);margin:0;max-width:660px}
+.featured-research-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.featured-paper{display:flex;flex-direction:column;min-height:160px;padding:20px;background:#fff;border:1px solid var(--line)}
+.featured-paper:hover{border-color:#8da389}
+.featured-paper span{font-size:.68rem;color:var(--muted);line-height:1.5}
+.featured-paper strong{font-family:Manrope,sans-serif;font-size:.89rem;line-height:1.48;letter-spacing:-.025em;margin:11px 0;flex:1}
+.featured-paper small{font-size:.75rem;font-weight:700;color:#396e52}
+@media(max-width:950px){.case-studies-grid{grid-template-columns:1fr 1fr}.case-study:last-child{grid-column:1/-1}.featured-research-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.case-studies{margin-top:55px}.case-studies-heading{grid-template-columns:1fr;gap:12px}.case-studies-heading .eyebrow{grid-column:auto}.case-studies-grid,.featured-research-grid{grid-template-columns:1fr}.case-study:last-child{grid-column:auto}.featured-research-intro{display:block}.featured-research-intro p{margin-top:12px}.featured-paper{min-height:0}.stat-bar{gap:22px}}
