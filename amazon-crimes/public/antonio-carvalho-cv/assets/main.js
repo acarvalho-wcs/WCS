@@ -1,5 +1,26 @@
 (() => {
   'use strict';
+  // CV same-page navigation: never request another HTML document for section links.
+  // This is particularly helpful in embedded browsers and email-app webviews.
+  document.addEventListener('click', (event) => {
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const source = event.target;
+    if (!(source instanceof Element)) return;
+    const link = source.closest('a[href^="#"]');
+    if (!link || link.hasAttribute('download')) return;
+    const hash = link.getAttribute('href');
+    if (!hash || hash.length < 2) return;
+    let id;
+    try { id = decodeURIComponent(hash.slice(1)); } catch { return; }
+    const section = document.getElementById(id);
+    if (!section) return;
+    event.preventDefault();
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    section.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'start' });
+    if (window.location.hash !== hash) {
+      window.history.pushState(null, '', hash);
+    }
+  });
   const menuButton = document.querySelector('#menu-toggle');
   const mobileNav = document.querySelector('#mobile-nav');
   if (menuButton && mobileNav) {
