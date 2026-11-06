@@ -1,13 +1,61 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-22",
-  "count": 49,
+  "updated_at": "2026-11-06",
+  "count": 50,
   "editorial_criterion": {
     "pt": "Reportagens aprofundadas sobre redes, mercados, métodos, causas e impactos de crimes ambientais na Amazônia. Notas isoladas de apreensão pertencem à base de eventos canônicos.",
     "en": "In-depth reporting on networks, markets, drivers and impacts of Amazon environmental crime. Isolated seizure reports belong to canonical event records.",
     "es": "Reportajes profundos sobre redes, mercados, modalidades, causas e impactos de delitos ambientales en la Amazonía. Notas breves de decomisos corresponden a eventos canónicos."
   },
   "news": [
+    {
+      "id": "AMZ-N-050",
+      "publication_date": "2026-10-28",
+      "outlet": "Latin America Bureau (LAB)",
+      "authors": [
+        "Aiala Colares"
+      ],
+      "original_language": "en",
+      "original_title": "Brazil: The geopolitics of Amazon crime",
+      "title_pt": "Geopolítica do crime na Amazônia e conexões entre facções, narcotráfico e ilícitos ambientais",
+      "title_en": "Brazil's Amazon criminal geopolitics and the convergence of drug and environmental crime",
+      "title_es": "Geopolítica del crimen amazónico y conexiones entre narcotráfico y delitos ambientales",
+      "description_pt": "Análise sobre a expansão territorial do Comando Vermelho, PCC e facções regionais na Amazônia Legal e sua interação com rotas de drogas, garimpo, madeira e grilagem. Discute riscos da militarização para comunidades tradicionais. Tradução atualizada de texto originalmente publicado pela Amazônia Latitude em 05/11/2025.",
+      "description_en": "Analysis of the territorial expansion of Comando Vermelho, PCC and regional factions in Brazil's Legal Amazon, linking drug corridors to illegal mining, logging and land grabbing. Discusses the risks of militarized responses for traditional communities. Updated translation of an article first published by Amazônia Latitude on 5 November 2025.",
+      "description_es": "Análisis de la expansión del Comando Vermelho, PCC y facciones regionales en la Amazonía Legal brasileña, sus vínculos con rutas de drogas, minería ilegal, tala y apropiación de tierras, y los riesgos de respuestas militarizadas para comunidades tradicionales. Traducción actualizada del artículo publicado originalmente en Amazônia Latitude el 05/11/2025.",
+      "topic_code": "networks",
+      "countries": [
+        "Brasil"
+      ],
+      "territories": [
+        "Amazonas",
+        "Pará",
+        "Acre",
+        "Rondônia",
+        "Mato Grosso",
+        "Amapá",
+        "Fronteiras Brasil–Bolívia–Colômbia–Peru"
+      ],
+      "source_url": "https://lab.org.uk/brazil-the-geopolitics-of-amazon-crime/",
+      "original_publication_url": "https://www.amazonialatitude.com/2025/11/05/geografias-faccoes-criminosas-ameaca-guerra-drogas-amazonia/",
+      "original_publication_date": "2025-11-05",
+      "translated_by": "Stanton Geyer",
+      "keywords": [
+        "Comando Vermelho",
+        "Primeiro Comando da Capital",
+        "Família do Norte",
+        "Comando Classe A",
+        "narcotráfico",
+        "garimpo ilegal",
+        "grilagem",
+        "madeira ilegal",
+        "rotas transfronteiriças",
+        "controle territorial",
+        "segurança pública"
+      ],
+      "related_event_ids": [],
+      "added_at": "2026-11-06"
+    },
     {
       "id": "AMZ-N-001",
       "publication_date": "2026-10-19",
