@@ -147,3 +147,27 @@
 .featured-paper small{font-size:.75rem;font-weight:700;color:#396e52}
 @media(max-width:950px){.case-studies-grid{grid-template-columns:1fr 1fr}.case-study:last-child{grid-column:1/-1}.featured-research-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.case-studies{margin-top:55px}.case-studies-heading{grid-template-columns:1fr;gap:12px}.case-studies-heading .eyebrow{grid-column:auto}.case-studies-grid,.featured-research-grid{grid-template-columns:1fr}.case-study:last-child{grid-column:auto}.featured-research-intro{display:block}.featured-research-intro p{margin-top:12px}.featured-paper{min-height:0}.stat-bar{gap:22px}}
+
+/* Selected events within the existing institutional-leadership section */
+.leadership-events{margin-top:43px;padding-top:34px;border-top:1px solid #cad6c7}
+.leadership-events-header{display:grid;grid-template-columns:minmax(0,1fr) 165px;gap:40px;align-items:start;margin-bottom:32px}
+.leadership-events-header h4{font-family:Manrope,'DM Sans',sans-serif;font-size:clamp(1.45rem,2.5vw,2.1rem);font-weight:700;line-height:1.25;letter-spacing:-.045em;margin:10px 0 13px}
+.leadership-events-header p{max-width:790px;color:var(--muted);font-size:.91rem;line-height:1.75;margin:0}
+.leadership-events-metric{padding:4px 0 0 24px;border-left:1px solid #cad6c7;display:flex;flex-direction:column;gap:5px}
+.leadership-events-metric strong{font-family:Manrope,sans-serif;font-size:clamp(2.7rem,4.5vw,4rem);line-height:1;font-weight:700;letter-spacing:-.08em;color:#315f49}
+.leadership-events-metric span{color:var(--muted);font-size:.77rem;line-height:1.5}
+.leadership-events-label{font-family:Manrope,sans-serif;font-size:.8rem;letter-spacing:.09em;text-transform:uppercase;margin:0 0 15px;color:#4d6f55}
+.leadership-events-selected{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 35px;margin:0 0 27px;padding:0}
+.leadership-events-selected li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:13px;border-top:1px solid var(--line);padding:16px 0 19px;font-size:.88rem;font-weight:650;line-height:1.55}
+.leadership-event-year{font-size:.73rem;color:#56755d;font-weight:800;letter-spacing:.025em;padding-top:3px;white-space:nowrap}
+.leadership-events-details{border-top:1px solid #cbd4ca;border-bottom:1px solid #cbd4ca}
+.leadership-events-details summary{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 0;list-style:none;cursor:pointer;font-size:.86rem;font-weight:700;color:#24523d}
+.leadership-events-details summary::-webkit-details-marker{display:none}
+.leadership-events-details summary span{font-size:1.3rem;transition:transform .2s}
+.leadership-events-details[open] summary span{transform:rotate(180deg)}
+.leadership-events-details summary:focus-visible{outline:3px solid #719b65;outline-offset:3px}
+.leadership-events-list{list-style:none;counter-reset:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 35px;margin:0;padding:0 0 12px}
+.leadership-events-list li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:13px;border-top:1px solid var(--line);padding:13px 0;font-size:.82rem;line-height:1.6;color:var(--ink)}
+.leadership-events-source{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-size:.78rem;font-weight:700;color:#2e6347;text-decoration:underline;text-decoration-color:#a6bfa1;text-underline-offset:5px}
+.leadership-events-source:hover{color:#153e2b;text-decoration-color:#153e2b}
+@media(max-width:760px){.leadership-events{margin-top:36px;padding-top:28px}.leadership-events-header{grid-template-columns:1fr;gap:18px}.leadership-events-metric{padding:0;border-left:0;display:flex;flex-direction:row;align-items:center;gap:14px}.leadership-events-metric strong{font-size:3rem}.leadership-events-metric span{max-width:185px}.leadership-events-selected,.leadership-events-list{grid-template-columns:1fr;gap:0}.leadership-events-selected li{padding:13px 0 15px}}
