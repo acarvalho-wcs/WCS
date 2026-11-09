@@ -171,3 +171,6 @@
 .leadership-events-source{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-size:.78rem;font-weight:700;color:#2e6347;text-decoration:underline;text-decoration-color:#a6bfa1;text-underline-offset:5px}
 .leadership-events-source:hover{color:#153e2b;text-decoration-color:#153e2b}
 @media(max-width:760px){.leadership-events{margin-top:36px;padding-top:28px}.leadership-events-header{grid-template-columns:1fr;gap:18px}.leadership-events-metric{padding:0;border-left:0;display:flex;flex-direction:row;align-items:center;gap:14px}.leadership-events-metric strong{font-size:3rem}.leadership-events-metric span{max-width:185px}.leadership-events-selected,.leadership-events-list{grid-template-columns:1fr;gap:0}.leadership-events-selected li{padding:13px 0 15px}}
+
+/* Highlight the fifth leadership area without changing the existing grid */
+@media(min-width:761px){.leadership-card:nth-child(5):last-child{grid-column:1/-1;grid-template-columns:33px minmax(0,1fr);max-width:100%}}
