@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-11-15T14:27:20.543Z",
+  "generated_at": "2026-11-15T14:28:00.907Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -416,9 +416,9 @@
         "es": "La Policía Federal cumplió ocho órdenes en la Tierra Indígena Cachoeira Seca. La investigación identificó puntos de extracción ilegal, caminos clandestinos y rutas de salida de madera; se incautaron camiones, maquinaria y armas."
       },
       "case_context": {
-        "pt": "[O] A PF cumpriu oito mandados na Terra Indígena Cachoeira Seca.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/08/pf-cumpre-oito-mandados-de-busca-e-apreensao-em-terra-indigena",
-        "en": "[O] Federal Police executed eight warrants in Cachoeira Seca Indigenous Land.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/08/pf-cumpre-oito-mandados-de-busca-e-apreensao-em-terra-indigena",
-        "es": "[O] La Policía Federal cumplió ocho órdenes en la Tierra Indígena Cachoeira Seca.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/08/pf-cumpre-oito-mandados-de-busca-e-apreensao-em-terra-indigena"
+        "pt": "[O] A PF cumpriu oito mandados para investigar extração ilegal de madeira e ramais clandestinos na Terra Indígena Cachoeira Seca.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/08/pf-cumpre-oito-mandados-de-busca-e-apreensao-em-terra-indigena",
+        "en": "[O] Federal Police executed eight warrants investigating illegal logging and clandestine access roads in Cachoeira Seca Indigenous Territory.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/08/pf-cumpre-oito-mandados-de-busca-e-apreensao-em-terra-indigena",
+        "es": "[O] La Policía Federal ejecutó ocho órdenes para investigar tala ilegal y accesos clandestinos en el territorio indígena Cachoeira Seca.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/08/pf-cumpre-oito-mandados-de-busca-e-apreensao-em-terra-indigena"
       },
       "primary_crime_type": "ILLEGAL_LOGGING",
       "crime_types": [
@@ -434,7 +434,7 @@
       "occurred_at": "2026-08-13T16:50:00-03:00",
       "published_at": "2026-08-14T16:50:00-03:00",
       "added_at": "2026-09-16T00:55:00+07:00",
-      "updated_at": "2026-11-15T14:25:54.378Z",
+      "updated_at": "2026-11-15T14:28:00.907Z",
       "backfill": true,
       "validation_status": "CONFIRMED",
       "legal_status_note": "Official investigation and enforcement event; no inference of guilt.",
@@ -1747,9 +1747,9 @@
         "es": "El Comando Operacional del Sur y la Policía Nacional del Perú realizaron operaciones el 5 y 6 de agosto contra infraestructura y logística de minería ilegal en Madre de Dios, con un impacto económico oficial estimado superior a S/56 millones."
       },
       "case_context": {
-        "pt": "[O] O Comando Operacional del Sur e a Polícia Nacional do Peru realizaram operações em 5 e 6 de agosto contra infraestrutura e logística de mineração ilegal em Madre de Dios, com impacto econômico oficial estimado em mais de S/ 56 milhões. [N] Em Madre de Dios, reportagem investiga interesses políticos e econômicos ligados ao comércio de ouro ilegal.\nFontes: [O] https://www.gob.pe/institucion/ccffaa/noticias/1427374-madre-de-dios-comando-operacional-del-sur-y-pnp-afectan-en-mas-de-s-56-millones-las-economias-criminales-de-la-mineria-ilegal | [N] https://amazonunderworld.org/when-gold-rules-politicians-and-criminals-fight-over-resources-in-the-peruvian-amazon/",
-        "en": "[O] Peru’s Southern Operational Command and National Police conducted operations on August 5 and 6 against illegal-mining infrastructure and logistics in Madre de Dios, with an official estimated economic impact above S/56 million. [N] In Madre de Dios, reporting investigates political and economic interests around illegal gold trading.\nSources: [O] https://www.gob.pe/institucion/ccffaa/noticias/1427374-madre-de-dios-comando-operacional-del-sur-y-pnp-afectan-en-mas-de-s-56-millones-las-economias-criminales-de-la-mineria-ilegal | [N] https://amazonunderworld.org/when-gold-rules-politicians-and-criminals-fight-over-resources-in-the-peruvian-amazon/",
-        "es": "[O] El Comando Operacional del Sur y la Policía Nacional del Perú realizaron operaciones el 5 y 6 de agosto contra infraestructura y logística de minería ilegal en Madre de Dios, con un impacto económico oficial estimado superior a S/56 millones. [N] En Madre de Dios, un reportaje investiga intereses políticos y económicos vinculados al comercio ilegal de oro.\nFuentes: [O] https://www.gob.pe/institucion/ccffaa/noticias/1427374-madre-de-dios-comando-operacional-del-sur-y-pnp-afectan-en-mas-de-s-56-millones-las-economias-criminales-de-la-mineria-ilegal | [N] https://amazonunderworld.org/when-gold-rules-politicians-and-criminals-fight-over-resources-in-the-peruvian-amazon/"
+        "pt": "[O] Em 5 e 6 de agosto, forças peruanas combateram mineração ilegal em Madre de Dios, com bens afetados estimados em mais de S/ 56 milhões. [N] Em Madre de Dios, reportagem investiga interesses políticos e econômicos ligados ao comércio de ouro ilegal.\nFontes: [O] https://www.gob.pe/institucion/ccffaa/noticias/1427374-madre-de-dios-comando-operacional-del-sur-y-pnp-afectan-en-mas-de-s-56-millones-las-economias-criminales-de-la-mineria-ilegal | [N] https://amazonunderworld.org/when-gold-rules-politicians-and-criminals-fight-over-resources-in-the-peruvian-amazon/",
+        "en": "[O] On August 5–6, Peruvian forces targeted illegal mining in Madre de Dios, with assets affected valued above PEN 56 million. [N] In Madre de Dios, reporting investigates political and economic interests around illegal gold trading.\nSources: [O] https://www.gob.pe/institucion/ccffaa/noticias/1427374-madre-de-dios-comando-operacional-del-sur-y-pnp-afectan-en-mas-de-s-56-millones-las-economias-criminales-de-la-mineria-ilegal | [N] https://amazonunderworld.org/when-gold-rules-politicians-and-criminals-fight-over-resources-in-the-peruvian-amazon/",
+        "es": "[O] El 5 y 6 de agosto, fuerzas peruanas intervinieron minería ilegal en Madre de Dios, con bienes afectados valorados en más de S/ 56 millones. [N] En Madre de Dios, un reportaje investiga intereses políticos y económicos vinculados al comercio ilegal de oro.\nFuentes: [O] https://www.gob.pe/institucion/ccffaa/noticias/1427374-madre-de-dios-comando-operacional-del-sur-y-pnp-afectan-en-mas-de-s-56-millones-las-economias-criminales-de-la-mineria-ilegal | [N] https://amazonunderworld.org/when-gold-rules-politicians-and-criminals-fight-over-resources-in-the-peruvian-amazon/"
       },
       "primary_crime_type": "ILLEGAL_MINING",
       "crime_types": [
@@ -1763,7 +1763,7 @@
       "occurred_at": "2026-08-06T23:59:00-05:00",
       "published_at": "2026-08-08T14:07:00-05:00",
       "added_at": "2026-09-16T04:10:00+07:00",
-      "updated_at": "2026-11-15T14:25:54.378Z",
+      "updated_at": "2026-11-15T14:28:00.907Z",
       "backfill": true,
       "validation_status": "CONFIRMED",
       "legal_status_note": "Official enforcement or investigation record; no inference of criminal guilt beyond what the cited source states.",
@@ -3602,9 +3602,9 @@
         "es": "La operación, iniciada el 8 de marzo, desplegaba 224 gendarmes diariamente y hasta comienzos de abril había incautado más de 7 toneladas de alimentos, unos 17.000 litros de combustible, armas, drogas y vehículos; cinco personas estaban en prisión preventiva y una había sido condenada."
       },
       "case_context": {
-        "pt": "[O] Operação iniciada em 8 de março empregava 224 gendarmes por dia e, até início de abril, havia apreendido mais de 7 toneladas de alimentos, cerca de 17 mil litros de combustível, armas, drogas e veículos; cinco pessoas estavam em prisão preventiva e uma havia sido condenada.\nFontes: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/actualites/2026/deplacement-du-major-general-de-la-gendarmerie-nationale-en-guyane",
-        "en": "[O] The operation, launched March 8, deployed 224 gendarmes daily and by early April had seized more than 7 tonnes of food, about 17,000 litres of fuel, weapons, drugs and vehicles; five people were in pretrial detention and one had been convicted.\nSources: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/actualites/2026/deplacement-du-major-general-de-la-gendarmerie-nationale-en-guyane",
-        "es": "[O] La operación, iniciada el 8 de marzo, desplegaba 224 gendarmes diariamente y hasta comienzos de abril había incautado más de 7 toneladas de alimentos, unos 17.000 litros de combustible, armas, drogas y vehículos; cinco personas estaban en prisión preventiva y una había sido condenada.\nFuentes: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/actualites/2026/deplacement-du-major-general-de-la-gendarmerie-nationale-en-guyane"
+        "pt": "[O] Até abril, a Operação Doko havia apreendido cerca de 17 mil litros de combustível e mais de sete toneladas de alimentos ligados à logística de garimpos ilegais.\nFontes: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/actualites/2026/deplacement-du-major-general-de-la-gendarmerie-nationale-en-guyane",
+        "en": "[O] By April, Operation Doko had seized around 17,000 liters of fuel and over seven tonnes of food linked to illegal-mining logistics.\nSources: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/actualites/2026/deplacement-du-major-general-de-la-gendarmerie-nationale-en-guyane",
+        "es": "[O] Hasta abril, la Operación Doko había incautado unos 17.000 litros de combustible y más de siete toneladas de alimentos relacionados con la logística minera ilegal.\nFuentes: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/actualites/2026/deplacement-du-major-general-de-la-gendarmerie-nationale-en-guyane"
       },
       "primary_crime_type": "ILLEGAL_MINING",
       "crime_types": [
@@ -3617,7 +3617,7 @@
       "occurred_at": "2026-04-04T23:59:00-03:00",
       "published_at": "2026-04-08T12:00:00-03:00",
       "added_at": "2026-09-16T04:10:00+07:00",
-      "updated_at": "2026-11-15T14:25:54.378Z",
+      "updated_at": "2026-11-15T14:28:00.907Z",
       "backfill": true,
       "validation_status": "CONFIRMED",
       "legal_status_note": "Official enforcement or investigation record; no inference of criminal guilt beyond what the cited source states.",
@@ -3667,9 +3667,9 @@
         "es": "La Gendarmería informó que el EGM 27/1 de Drancy, desplegado del 5 de mayo al 27 de julio, participó en una misión de gran escala contra la minería ilegal y cerró el despliegue con más de 100.000 litros de combustible incautados."
       },
       "case_context": {
-        "pt": "[O] A Gendarmerie informou que o EGM 27/1 de Drancy, destacado de 5 de maio a 27 de julho, participou de uma missão de grande escala contra o garimpo ilegal e encerrou o período com mais de 100 mil litros de combustível apreendidos.\nFontes: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/criminalite-organisee-et-enquetes/2026/guyane-avec-plus-de-100-000-litres-de-carburant-saisis-l-escadron-de-drancy-acheve-une-mission-majeure-contre-l-orpaillage-illegal",
-        "en": "[O] The Gendarmerie reported that the Drancy EGM 27/1, deployed from May 5 to July 27, took part in a major mission against illegal gold mining and ended the deployment with more than 100,000 litres of fuel seized.\nSources: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/criminalite-organisee-et-enquetes/2026/guyane-avec-plus-de-100-000-litres-de-carburant-saisis-l-escadron-de-drancy-acheve-une-mission-majeure-contre-l-orpaillage-illegal",
-        "es": "[O] La Gendarmería informó que el EGM 27/1 de Drancy, desplegado del 5 de mayo al 27 de julio, participó en una misión de gran escala contra la minería ilegal y cerró el despliegue con más de 100.000 litros de combustible incautados.\nFuentes: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/criminalite-organisee-et-enquetes/2026/guyane-avec-plus-de-100-000-litres-de-carburant-saisis-l-escadron-de-drancy-acheve-une-mission-majeure-contre-l-orpaillage-illegal"
+        "pt": "[O] Uma missão da Gendarmerie contra o garimpo ilegal na Guiana Francesa apreendeu mais de 100 mil litros de combustível entre maio e julho.\nFontes: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/criminalite-organisee-et-enquetes/2026/guyane-avec-plus-de-100-000-litres-de-carburant-saisis-l-escadron-de-drancy-acheve-une-mission-majeure-contre-l-orpaillage-illegal",
+        "en": "[O] A Gendarmerie mission against illegal mining in French Guiana seized over 100,000 liters of fuel between May and July.\nSources: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/criminalite-organisee-et-enquetes/2026/guyane-avec-plus-de-100-000-litres-de-carburant-saisis-l-escadron-de-drancy-acheve-une-mission-majeure-contre-l-orpaillage-illegal",
+        "es": "[O] Una misión de la Gendarmería contra la minería ilegal en Guayana Francesa incautó más de 100.000 litros de combustible entre mayo y julio.\nFuentes: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/criminalite-organisee-et-enquetes/2026/guyane-avec-plus-de-100-000-litres-de-carburant-saisis-l-escadron-de-drancy-acheve-une-mission-majeure-contre-l-orpaillage-illegal"
       },
       "primary_crime_type": "ILLEGAL_MINING",
       "crime_types": [
@@ -3682,7 +3682,7 @@
       "occurred_at": "2026-07-27T23:59:00-03:00",
       "published_at": "2026-07-28T12:00:00-03:00",
       "added_at": "2026-09-16T04:10:00+07:00",
-      "updated_at": "2026-11-15T14:25:54.378Z",
+      "updated_at": "2026-11-15T14:28:00.907Z",
       "backfill": true,
       "validation_status": "CONFIRMED",
       "legal_status_note": "Official enforcement or investigation record; no inference of criminal guilt beyond what the cited source states.",
@@ -3875,9 +3875,9 @@
         "es": "El Comando Operacional del Sur y la Policía Nacional del Perú informaron la interdicción y destrucción de infraestructura y logística usadas para la minería ilegal en los sectores Platanal I, Platanal II, Tambopata y Barrial 2, distrito de Inambari, Madre de Dios. Según el balance oficial, se afectaron bienes valorizados en S/ 13 343 670, incluidos 25 campamentos rústicos, 12 balsas draga, 3 balsas traca, 17 motores, 4 tolvas, 7 motocicletas y 190 galones de combustible."
       },
       "case_context": {
-        "pt": "[O] O Comando Operacional do Sul e a Polícia Nacional do Peru informaram a interdição e destruição de infraestrutura e logística usadas na mineração ilegal nos setores Platanal I, Platanal II, Tambopata e Barrial 2, no distrito de Inambari, Madre de Dios. [N] Em Madre de Dios, reportagem investiga interesses políticos e econômicos ligados ao comércio de ouro ilegal.\nFontes: [O] https://www.gob.pe/institucion/ccffaa/noticias/1443219-nueva-afectacion-millonaria-a-la-mineria-ilegal-tras-exitosa-operacion-conjunta-en-inambari | [N] https://amazonunderworld.org/when-gold-rules-politicians-and-criminals-fight-over-resources-in-the-peruvian-amazon/",
-        "en": "[O] Peru's Southern Operational Command and National Police reported the interdiction and destruction of infrastructure and logistics used for illegal mining in the Platanal I, Platanal II, Tambopata and Barrial 2 sectors of Inambari District, Madre de Dios. [N] In Madre de Dios, reporting investigates political and economic interests around illegal gold trading.\nSources: [O] https://www.gob.pe/institucion/ccffaa/noticias/1443219-nueva-afectacion-millonaria-a-la-mineria-ilegal-tras-exitosa-operacion-conjunta-en-inambari | [N] https://amazonunderworld.org/when-gold-rules-politicians-and-criminals-fight-over-resources-in-the-peruvian-amazon/",
-        "es": "[O] El Comando Operacional del Sur y la Policía Nacional del Perú informaron la interdicción y destrucción de infraestructura y logística usadas para la minería ilegal en los sectores Platanal I, Platanal II, Tambopata y Barrial 2, distrito de Inambari, Madre de Dios. [N] En Madre de Dios, un reportaje investiga intereses políticos y económicos vinculados al comercio ilegal de oro.\nFuentes: [O] https://www.gob.pe/institucion/ccffaa/noticias/1443219-nueva-afectacion-millonaria-a-la-mineria-ilegal-tras-exitosa-operacion-conjunta-en-inambari | [N] https://amazonunderworld.org/when-gold-rules-politicians-and-criminals-fight-over-resources-in-the-peruvian-amazon/"
+        "pt": "[O] Forças peruanas inutilizaram estruturas de mineração ilegal nos setores Platanal I e II, Tambopata e Barrial 2, em Inambari. [N] Em Madre de Dios, reportagem investiga interesses políticos e econômicos ligados ao comércio de ouro ilegal.\nFontes: [O] https://www.gob.pe/institucion/ccffaa/noticias/1443219-nueva-afectacion-millonaria-a-la-mineria-ilegal-tras-exitosa-operacion-conjunta-en-inambari | [N] https://amazonunderworld.org/when-gold-rules-politicians-and-criminals-fight-over-resources-in-the-peruvian-amazon/",
+        "en": "[O] Peruvian forces disabled illegal-mining infrastructure in Platanal I and II, Tambopata and Barrial 2 in Inambari. [N] In Madre de Dios, reporting investigates political and economic interests around illegal gold trading.\nSources: [O] https://www.gob.pe/institucion/ccffaa/noticias/1443219-nueva-afectacion-millonaria-a-la-mineria-ilegal-tras-exitosa-operacion-conjunta-en-inambari | [N] https://amazonunderworld.org/when-gold-rules-politicians-and-criminals-fight-over-resources-in-the-peruvian-amazon/",
+        "es": "[O] Fuerzas peruanas inutilizaron infraestructura minera ilegal en Platanal I y II, Tambopata y Barrial 2, en Inambari. [N] En Madre de Dios, un reportaje investiga intereses políticos y económicos vinculados al comercio ilegal de oro.\nFuentes: [O] https://www.gob.pe/institucion/ccffaa/noticias/1443219-nueva-afectacion-millonaria-a-la-mineria-ilegal-tras-exitosa-operacion-conjunta-en-inambari | [N] https://amazonunderworld.org/when-gold-rules-politicians-and-criminals-fight-over-resources-in-the-peruvian-amazon/"
       },
       "primary_crime_type": "ILLEGAL_MINING",
       "crime_types": [
@@ -3894,7 +3894,7 @@
       "occurred_at": "2026-09-10T23:59:00-05:00",
       "published_at": "2026-09-11T16:39:00-05:00",
       "added_at": "2026-09-22T19:19:00+08:00",
-      "updated_at": "2026-11-15T14:25:54.378Z",
+      "updated_at": "2026-11-15T14:28:00.907Z",
       "backfill": true,
       "validation_status": "CONFIRMED",
       "legal_status_note": "Official enforcement record; no inference of criminal guilt beyond what the cited sources state.",
@@ -4175,9 +4175,9 @@
         "es": "La Policía Federal de Brasil cumplió 19 órdenes de allanamiento y registro en residencias y establecimientos empresariales de Espigão d'Oeste y Vilhena, Rondônia, en una investigación sobre extracción, transporte y comercialización ilegal de madera procedente especialmente de las Tierras Indígenas Roosevelt y Parque do Aripuanã."
       },
       "case_context": {
-        "pt": "[O] A Polícia Federal cumpriu 19 mandados de busca e apreensão em residências e estabelecimentos empresariais de Espigão d'Oeste e Vilhena, Rondônia, em investigação sobre extração, transporte e comercialização ilegal de madeira proveniente especialmente das Terras Indígenas Roosevelt e Parque do Aripuanã.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-combate-exploracao-ilegal-de-madeira-em-terras-indigenas-em-rondonia/",
-        "en": "[O] Brazil's Federal Police executed 19 search-and-seizure warrants at homes and businesses in Espigão d'Oeste and Vilhena, Rondônia, in an investigation into the illegal extraction, transport and commercialization of timber originating especially from the Roosevelt and Parque do Aripuanã Indigenous Lands.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-combate-exploracao-ilegal-de-madeira-em-terras-indigenas-em-rondonia/",
-        "es": "[O] La Policía Federal de Brasil cumplió 19 órdenes de allanamiento y registro en residencias y establecimientos empresariales de Espigão d'Oeste y Vilhena, Rondônia, en una investigación sobre extracción, transporte y comercialización ilegal de madera procedente especialmente de las Tierras Indígenas Roosevelt y Parque do Aripuanã.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-combate-exploracao-ilegal-de-madeira-em-terras-indigenas-em-rondonia/"
+        "pt": "[O] A PF cumpriu 19 mandados em Rondônia para investigar extração e comércio ilegais de madeira das terras indígenas Roosevelt e Parque do Aripuanã.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-combate-exploracao-ilegal-de-madeira-em-terras-indigenas-em-rondonia/",
+        "en": "[O] Federal Police executed 19 warrants in Rondônia investigating illegal timber extraction and trade linked to Roosevelt and Parque do Aripuanã Indigenous territories.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-combate-exploracao-ilegal-de-madeira-em-terras-indigenas-em-rondonia/",
+        "es": "[O] La Policía Federal ejecutó 19 órdenes en Rondônia para investigar extracción y comercio ilegales de madera de los territorios indígenas Roosevelt y Parque do Aripuanã.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-combate-exploracao-ilegal-de-madeira-em-terras-indigenas-em-rondonia/"
       },
       "primary_crime_type": "ILLEGAL_LOGGING",
       "crime_types": [
@@ -4190,7 +4190,7 @@
       "occurred_at": "2026-09-16T12:00:00-04:00",
       "published_at": "2026-09-16T11:22:00-03:00",
       "added_at": "2026-09-22T19:37:00+08:00",
-      "updated_at": "2026-11-15T14:25:54.378Z",
+      "updated_at": "2026-11-15T14:28:00.907Z",
       "backfill": true,
       "validation_status": "CONFIRMED",
       "legal_status_note": "Official enforcement or investigation record; no inference of criminal guilt beyond what the cited sources state.",
@@ -5032,9 +5032,9 @@
         "es": "Una operación judicial realizada entre PK6 y la pista de Matiti, en la zona de Les Savanes, identificó varios lugares sospechosos de funcionar como puntos de almacenamiento de equipos y mercancías destinados a abastecer frentes de minería ilegal de oro en el interior de la Guayana Francesa. Según France-Guyane, siete personas fueron puestas bajo custodia policial."
       },
       "case_context": {
-        "pt": "[O] Uma operação judicial realizada entre o PK6 e a pista de Matiti, na região das Savanes, identificou vários locais suspeitos de funcionar como pontos de armazenamento de equipamentos e mercadorias destinados ao abastecimento de frentes de garimpo ilegal no interior da Guiana Francesa.\nFontes: [O] https://www.franceguyane.fr/actualite/economie-consommation/les-savanes-vaste-operation-contre-lorpaillage-illegal-avec-sept-gardes-a-vue-1093955.php",
-        "en": "[O] A judicial operation carried out between PK6 and the Matiti track in the Les Savanes area identified several sites suspected of serving as storage points for equipment and goods intended to supply illegal gold-mining sites in the interior of French Guiana.\nSources: [O] https://www.franceguyane.fr/actualite/economie-consommation/les-savanes-vaste-operation-contre-lorpaillage-illegal-avec-sept-gardes-a-vue-1093955.php",
-        "es": "[O] Una operación judicial realizada entre PK6 y la pista de Matiti, en la zona de Les Savanes, identificó varios lugares sospechosos de funcionar como puntos de almacenamiento de equipos y mercancías destinados a abastecer frentes de minería ilegal de oro en el interior de la Guayana Francesa.\nFuentes: [O] https://www.franceguyane.fr/actualite/economie-consommation/les-savanes-vaste-operation-contre-lorpaillage-illegal-avec-sept-gardes-a-vue-1093955.php"
+        "pt": "[O] Operação judicial nas Savanes identificou pontos suspeitos de armazenar equipamentos e mercadorias destinados a garimpos ilegais na Guiana Francesa.\nFontes: [O] https://www.franceguyane.fr/actualite/economie-consommation/les-savanes-vaste-operation-contre-lorpaillage-illegal-avec-sept-gardes-a-vue-1093955.php",
+        "en": "[O] A judicial operation in Les Savanes identified suspected storage sites supplying equipment and goods to illegal mines in French Guiana.\nSources: [O] https://www.franceguyane.fr/actualite/economie-consommation/les-savanes-vaste-operation-contre-lorpaillage-illegal-avec-sept-gardes-a-vue-1093955.php",
+        "es": "[O] Una operación judicial en Les Savanes identificó posibles depósitos de equipos y bienes destinados a minas ilegales en Guayana Francesa.\nFuentes: [O] https://www.franceguyane.fr/actualite/economie-consommation/les-savanes-vaste-operation-contre-lorpaillage-illegal-avec-sept-gardes-a-vue-1093955.php"
       },
       "primary_crime_type": "ILLEGAL_MINING",
       "crime_types": [
@@ -5049,7 +5049,7 @@
       "occurred_at": "2026-09-23T12:00:00-03:00",
       "published_at": "2026-09-24T00:00:00-03:00",
       "added_at": "2026-09-25T14:44:00+07:00",
-      "updated_at": "2026-11-15T14:25:54.378Z",
+      "updated_at": "2026-11-15T14:28:00.907Z",
       "backfill": false,
       "validation_status": "VALIDATED",
       "legal_status_note": "Judicial investigation reported by a reliable local outlet. Persons in custody are not treated as convicted, and the alleged logistics role of the sites remains attributed to the investigation.",
@@ -5469,9 +5469,9 @@
         "es": "La Policía Federal de Brasil cumplió tres órdenes de allanamiento en la Operación Cunhambebe, una investigación sobre cursos clandestinos de seguridad privada y la posible formación de un grupo organizado destinado a dificultar la actuación de organismos públicos en la Tierra Indígena Raposa Serra do Sol. Según la PF, la investigación comenzó tras episodios de hostilidad durante una fiscalización ambiental, con reportes de persecuciones, bloqueos de vías y ataques contra agentes públicos."
       },
       "case_context": {
-        "pt": "[O] A Polícia Federal cumpriu três mandados de busca e apreensão na Operação Cunhambebe, em investigação sobre cursos clandestinos de segurança privada e possível formação de grupo organizado destinado a dificultar a atuação de órgãos públicos na Terra Indígena Raposa Serra do Sol.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-investiga-grupo-suspeito-de-promover-treinamentos-clandestinos-em-terra-indigena/",
-        "en": "[O] Brazil's Federal Police executed three search warrants in Operation Cunhambebe, an investigation into clandestine private-security courses and the possible formation of an organized group intended to hinder public agencies operating in Raposa Serra do Sol Indigenous Land.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-investiga-grupo-suspeito-de-promover-treinamentos-clandestinos-em-terra-indigena/",
-        "es": "[O] La Policía Federal de Brasil cumplió tres órdenes de allanamiento en la Operación Cunhambebe, una investigación sobre cursos clandestinos de seguridad privada y la posible formación de un grupo organizado destinado a dificultar la actuación de organismos públicos en la Tierra Indígena Raposa Serra do Sol.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-investiga-grupo-suspeito-de-promover-treinamentos-clandestinos-em-terra-indigena/"
+        "pt": "[O] A PF cumpriu três mandados para investigar cursos clandestinos de segurança e possível obstrução da fiscalização na Terra Indígena Raposa Serra do Sol.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-investiga-grupo-suspeito-de-promover-treinamentos-clandestinos-em-terra-indigena/",
+        "en": "[O] Federal Police executed three warrants investigating clandestine security training and possible obstruction of enforcement in Raposa Serra do Sol Indigenous Territory.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-investiga-grupo-suspeito-de-promover-treinamentos-clandestinos-em-terra-indigena/",
+        "es": "[O] La Policía Federal ejecutó tres órdenes para investigar formación clandestina de seguridad y posible obstrucción de la fiscalización en Raposa Serra do Sol.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/09/pf-investiga-grupo-suspeito-de-promover-treinamentos-clandestinos-em-terra-indigena/"
       },
       "primary_crime_type": "OTHER_ENVIRONMENTAL_CRIME",
       "crime_types": [
@@ -5485,7 +5485,7 @@
       "occurred_at": "2026-09-25T00:00:00-04:00",
       "published_at": "2026-09-25T09:57:00-03:00",
       "added_at": "2026-09-27T04:44:00-03:00",
-      "updated_at": "2026-11-15T14:25:54.378Z",
+      "updated_at": "2026-11-15T14:28:00.907Z",
       "backfill": false,
       "validation_status": "CONFIRMED",
       "legal_status_note": "Official investigative action. Allegations of organized-group formation, attacks and obstruction remain under investigation; no guilt or organizational status is inferred beyond the Federal Police statement.",
