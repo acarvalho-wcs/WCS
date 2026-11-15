@@ -697,3 +697,11 @@ body.how-it-works-open { overflow: hidden; }
   .time-dialog .time-date-row { grid-template-columns: minmax(0, 1fr); }
   .time-comparison-head span { margin-left: 0; width: 100%; }
 }
+
+/* Verified reference links for protected-area mosaics. These are not invented polygons. */
+.mosaic-directory { margin: 10px 5px 2px 12px; border-top: 1px solid var(--line); padding-top: 8px; }
+.mosaic-directory > summary { color: var(--text); font-weight: 700; font-size: 10px; cursor: pointer; }
+.mosaic-directory-note { font-size: 10px; line-height: 1.5; color: var(--muted); margin: 8px 0; }
+.mosaic-directory-item { display: flex; gap: 6px; flex-direction: column; padding: 8px 4px; border-bottom: 1px solid var(--line); font-size: 10px; line-height: 1.4; color: var(--text); text-decoration: none; }
+.mosaic-directory-item:hover { color: var(--green-2); }
+.mosaic-directory-item small { font-size: 9px; color: var(--muted); }
