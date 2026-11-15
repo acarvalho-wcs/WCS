@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-11-15T17:30:35.172Z",
+  "generated_at": "2026-11-15T17:30:57.109Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -8051,6 +8051,66 @@
       "source_media": []
     },
     {
+      "id": "VE-AMA-2025-0715-MINA-NUEVA",
+      "title": {
+        "pt": "Operativo GNB Mina Nueva — Mina Nueva / municipio Atabapo",
+        "en": "Operativo GNB Mina Nueva — Mina Nueva / municipio Atabapo",
+        "es": "Operativo GNB Mina Nueva — Mina Nueva / municipio Atabapo"
+      },
+      "summary": {
+        "pt": "A Guarda Nacional Bolivariana informou em 15 de julho que desmontou um acampamento associado a mineração ilegal em Mina Nueva, Atabapo, e apreendeu nove motobombas e 880 litros de gasolina.",
+        "en": "On 15 July, the National Guard reported dismantling a suspected illegal-mining camp in Mina Nueva, Atabapo, seizing nine water pumps and 880 litres of gasoline.",
+        "es": "El 15 de julio, la Guardia Nacional informó que desmanteló un campamento de presunta minería ilegal en Mina Nueva, Atabapo, e incautó nueve motobombas y 880 litros de gasolina."
+      },
+      "case_context": {
+        "pt": "[O] A Guarda Nacional Bolivariana informou em 15 de julho que desmontou um acampamento associado a mineração ilegal em Mina Nueva, Atabapo, e apreendeu nove motobombas e 880 litros de gasolina.\nFontes: [O] https://www.swissinfo.ch/spa/fuerza-armada-de-venezuela-destruye-un-campamento-de-miner%C3%ADa-ilegal-en-el-sur-del-pa%C3%ADs/89685693",
+        "en": "[O] On 15 July, the National Guard reported dismantling a suspected illegal-mining camp in Mina Nueva, Atabapo, seizing nine water pumps and 880 litres of gasoline.\nSources: [O] https://www.swissinfo.ch/spa/fuerza-armada-de-venezuela-destruye-un-campamento-de-miner%C3%ADa-ilegal-en-el-sur-del-pa%C3%ADs/89685693",
+        "es": "[O] El 15 de julio, la Guardia Nacional informó que desmanteló un campamento de presunta minería ilegal en Mina Nueva, Atabapo, e incautó nueve motobombas y 880 litros de gasolina.\nFuentes: [O] https://www.swissinfo.ch/spa/fuerza-armada-de-venezuela-destruye-un-campamento-de-miner%C3%ADa-ilegal-en-el-sur-del-pa%C3%ADs/89685693"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Operativo GNB Mina Nueva",
+      "agencies": [],
+      "occurred_at": "2025-07-15T12:00:00-04:00",
+      "published_at": "2025-07-15T12:00:00-04:00",
+      "added_at": "2026-11-15T17:30:57.109Z",
+      "updated_at": "2026-11-15T17:30:57.109Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Date is the agency's announcement, not an independently specified dismantling day; no arrests stated.",
+      "priority": "MEDIUM",
+      "location": {
+        "name": "Mina Nueva / municipio Atabapo",
+        "admin1": "Amazonas",
+        "country": "Venezuela",
+        "lat": 3.6,
+        "lon": -66.6,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Operativo GNB Mina Nueva",
+        "ILLEGAL_MINING"
+      ],
+      "sources": [
+        {
+          "publisher": "EFE / Swissinfo (GNB statement)",
+          "url": "https://www.swissinfo.ch/spa/fuerza-armada-de-venezuela-destruye-un-campamento-de-miner%C3%ADa-ilegal-en-el-sur-del-pa%C3%ADs/89685693",
+          "published_at": "2025-07-15T12:00:00-04:00",
+          "source_type": "media_with_official_source"
+        }
+      ],
+      "source_media": []
+    },
+    {
       "id": "EC-NAP-2025-0630-RIO-VERDE",
       "title": {
         "pt": "Operación Río Verde — Río Paushiyacu / Tena",
@@ -8913,6 +8973,66 @@
           "url": "https://www.gob.pe/institucion/pcm/noticias/998226-madre-de-dios-operativo-contra-mineria-ilegal-logra-interdiccion-de-materiales-valorizados-en-7-6-millones-de-soles",
           "published_at": "2024-08-03T12:00:00-05:00",
           "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "GF-W-2024-0729-OP-ORPAILLAGE",
+      "title": {
+        "pt": "Opérations gendarmerie contre l'orpaillage — Apatou / Maripasoula / Mana",
+        "en": "Opérations gendarmerie contre l'orpaillage — Apatou / Maripasoula / Mana",
+        "es": "Opérations gendarmerie contre l'orpaillage — Apatou / Maripasoula / Mana"
+      },
+      "summary": {
+        "pt": "De 29 de julho a 1º de agosto, três operações da gendarmaria em Apatou, Maripasoula e Mana resultaram em oito detenções e apreensões de ouro, arma e materiais ligados ao garimpo ilegal.",
+        "en": "From 29 July to 1 August, three gendarmerie operations in Apatou, Maripasoula and Mana resulted in eight arrests and seizures of gold, a firearm and equipment linked to illegal gold mining.",
+        "es": "Del 29 de julio al 1 de agosto, tres operaciones de gendarmería en Apatou, Maripasoula y Mana llevaron a ocho detenciones e incautaciones de oro, un arma y materiales vinculados a la minería aurífera ilegal."
+      },
+      "case_context": {
+        "pt": "[O] De 29 de julho a 1º de agosto, três operações da gendarmaria em Apatou, Maripasoula e Mana resultaram em oito detenções e apreensões de ouro, arma e materiais ligados ao garimpo ilegal.\nFontes: [O] https://www.franceguyane.fr/actualite/faitsdivers/serie-dinterpellations-de-garimpeiros-dans-louest-guyanais-998640.php",
+        "en": "[O] From 29 July to 1 August, three gendarmerie operations in Apatou, Maripasoula and Mana resulted in eight arrests and seizures of gold, a firearm and equipment linked to illegal gold mining.\nSources: [O] https://www.franceguyane.fr/actualite/faitsdivers/serie-dinterpellations-de-garimpeiros-dans-louest-guyanais-998640.php",
+        "es": "[O] Del 29 de julio al 1 de agosto, tres operaciones de gendarmería en Apatou, Maripasoula y Mana llevaron a ocho detenciones e incautaciones de oro, un arma y materiales vinculados a la minería aurífera ilegal.\nFuentes: [O] https://www.franceguyane.fr/actualite/faitsdivers/serie-dinterpellations-de-garimpeiros-dans-louest-guyanais-998640.php"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Opérations gendarmerie contre l'orpaillage",
+      "agencies": [],
+      "occurred_at": "2024-07-29T12:00:00-03:00",
+      "published_at": "2024-08-07T12:00:00-03:00",
+      "added_at": "2026-11-15T17:30:57.109Z",
+      "updated_at": "2026-11-15T17:30:57.109Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "One consolidated series of three explicitly dated enforcement actions; reference coordinate schematic.",
+      "priority": "MEDIUM",
+      "location": {
+        "name": "Apatou / Maripasoula / Mana",
+        "admin1": "Guyane française",
+        "country": "Guiana Francesa",
+        "lat": 5.15,
+        "lon": -54.34,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Opérations gendarmerie contre l'orpaillage",
+        "ILLEGAL_MINING"
+      ],
+      "sources": [
+        {
+          "publisher": "France-Guyane (Gendarmerie statement)",
+          "url": "https://www.franceguyane.fr/actualite/faitsdivers/serie-dinterpellations-de-garimpeiros-dans-louest-guyanais-998640.php",
+          "published_at": "2024-08-07T12:00:00-03:00",
+          "source_type": "reliable_local_media_with_official_source"
         }
       ],
       "source_media": []
