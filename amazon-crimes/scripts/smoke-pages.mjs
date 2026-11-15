@@ -30,7 +30,7 @@ async function load(){
     await page.waitForFunction(()=>{
       const total=Number(document.querySelector('#stat-total')?.textContent.replace(/[^0-9]/g,''));
       const shown=Number(document.querySelector('#feed-count')?.textContent.replace(/[^0-9]/g,''));
-      return total>=147 && shown>0;
+      return total>0 && shown>0;
     },null,{timeout:55000});
   }catch(e){
     console.error('DIAGNOSTICS:',diag.join('\n')||'(none)');
@@ -116,15 +116,22 @@ try {
     map:window.__amazonMapHealth?.()
   }))));
 
-  assert(state.total===147,'Canonical total must be 147');
+  const publishedTotal=await page.evaluate(async()=>{
+    const response=await fetch(new URL('./data/events.json',document.baseURI),{cache:'no-store'});
+    if(!response.ok)throw new Error('Published events.json HTTP '+response.status);
+    const payload=await response.json();
+    return Array.isArray(payload.events)?payload.events.length:0;
+  });
+  assert(publishedTotal>=176,'Expected at least 176 eligible records in public dataset, got '+publishedTotal);
+  assert(state.total===publishedTotal,'Dashboard total '+state.total+' differs from published dataset '+publishedTotal);
   assert(state.filtered>0,'Default 12-month filter has no visible events');
   assert(state.rows>0&&state.firstCardVisible,'Event feed cards are not rendered visibly');
   assert(state.lang==='en','English must be default in a new browser');
   await page.locator('#time-open').click();
   await page.locator('#time-preset').selectOption('all');
   await page.locator('button.time-apply').click();
-  await page.waitForFunction(()=>Number(document.querySelector('#feed-count')?.textContent.replace(/[^0-9]/g,''))===147);
-  console.log('ALL TIME: 147 events displayed in count');
+  await page.waitForFunction(n=>Number(document.querySelector('#feed-count')?.textContent.replace(/[^0-9]/g,''))===n,publishedTotal);
+  console.log('ALL TIME: '+publishedTotal+' events displayed in count');
   await page.locator('button[data-lang="pt"]').first().click();
   assert(await page.locator('html').getAttribute('lang')==='pt-BR','Switch to PT failed in main view');
   await page.goto(new URL('news.html',root).toString(),{waitUntil:'domcontentloaded'});
