@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-11-15T21:30:00Z",
+  "generated_at": "2026-11-15T20:18:48.070Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -11392,8 +11392,8 @@
       "occurred_at": null,
       "occurred_at_precision": "Exact operation day not reported; publication date preserved separately",
       "published_at": "2014-01-09T12:00:00-05:00",
-      "added_at": "2026-11-15T21:00:00Z",
-      "updated_at": "2026-11-15T21:00:00Z",
+      "added_at": "2026-11-15T20:18:48.070Z",
+      "updated_at": "2026-11-15T20:18:48.070Z",
       "backfill": true,
       "location": {
         "name": "Rios Tambopata e Malinowski / RN Tambopata",
@@ -11454,8 +11454,8 @@
       "occurred_at": "2014-01-27T12:00:00-05:00",
       "occurred_at_precision": "Day recorded; time unknown",
       "published_at": "2014-01-28T12:00:00-05:00",
-      "added_at": "2026-11-15T21:00:00Z",
-      "updated_at": "2026-11-15T21:00:00Z",
+      "added_at": "2026-11-15T20:18:48.070Z",
+      "updated_at": "2026-11-15T20:18:48.070Z",
       "backfill": true,
       "location": {
         "name": "Mega Trece / zona de amortecimento de Tambopata",
@@ -11516,8 +11516,8 @@
       "occurred_at": "2014-04-28T12:00:00-05:00",
       "occurred_at_precision": "Day recorded; time unknown",
       "published_at": "2014-04-29T12:00:00-05:00",
-      "added_at": "2026-11-15T21:00:00Z",
-      "updated_at": "2026-11-15T21:00:00Z",
+      "added_at": "2026-11-15T20:18:48.070Z",
+      "updated_at": "2026-11-15T20:18:48.070Z",
       "backfill": true,
       "location": {
         "name": "Rios Madre de Dios e Inambari / Huepetuhe",
@@ -11578,8 +11578,8 @@
       "occurred_at": null,
       "occurred_at_precision": "Exact operation day not reported; publication date preserved separately",
       "published_at": "2014-08-16T12:00:00-05:00",
-      "added_at": "2026-11-15T21:00:00Z",
-      "updated_at": "2026-11-15T21:00:00Z",
+      "added_at": "2026-11-15T20:18:48.070Z",
+      "updated_at": "2026-11-15T20:18:48.070Z",
       "backfill": true,
       "location": {
         "name": "Puerto Arica / rio Putumayo",
@@ -11640,8 +11640,8 @@
       "occurred_at": null,
       "occurred_at_precision": "Exact operation day not reported; publication date preserved separately",
       "published_at": "2014-10-27T12:00:00-05:00",
-      "added_at": "2026-11-15T21:00:00Z",
-      "updated_at": "2026-11-15T21:00:00Z",
+      "added_at": "2026-11-15T20:18:48.070Z",
+      "updated_at": "2026-11-15T20:18:48.070Z",
       "backfill": true,
       "location": {
         "name": "Rio Cotuhe / Tarapaca, entorno PNN Amacayacu",
@@ -11702,8 +11702,8 @@
       "occurred_at": null,
       "occurred_at_precision": "exact operation date not specified; publication day separate",
       "published_at": "2017-03-01T12:00:00-05:00",
-      "added_at": "2026-11-15T21:30:00Z",
-      "updated_at": "2026-11-15T21:30:00Z",
+      "added_at": "2026-11-15T20:18:48.070Z",
+      "updated_at": "2026-11-15T20:18:48.070Z",
       "backfill": true,
       "location": {
         "name": "Puerto Santander / río Caquetá",
@@ -11764,8 +11764,8 @@
       "occurred_at": null,
       "occurred_at_precision": "exact operation date not specified; publication day separate",
       "published_at": "2017-03-04T12:00:00-05:00",
-      "added_at": "2026-11-15T21:30:00Z",
-      "updated_at": "2026-11-15T21:30:00Z",
+      "added_at": "2026-11-15T20:18:48.070Z",
+      "updated_at": "2026-11-15T20:18:48.070Z",
       "backfill": true,
       "location": {
         "name": "Vereda Cerro Azul / San José del Guaviare",
@@ -11826,8 +11826,8 @@
       "occurred_at": null,
       "occurred_at_precision": "exact operation date not specified; publication day separate",
       "published_at": "2017-05-25T12:00:00-05:00",
-      "added_at": "2026-11-15T21:30:00Z",
-      "updated_at": "2026-11-15T21:30:00Z",
+      "added_at": "2026-11-15T20:18:48.070Z",
+      "updated_at": "2026-11-15T20:18:48.070Z",
       "backfill": true,
       "location": {
         "name": "Caño Cifuentes / río Caquetá, Puerto Santander",
@@ -11888,8 +11888,8 @@
       "occurred_at": "2017-07-06T12:00:00-05:00",
       "occurred_at_precision": "verified operation date or closing day; time unknown",
       "published_at": "2017-07-10T12:00:00-05:00",
-      "added_at": "2026-11-15T21:30:00Z",
-      "updated_at": "2026-11-15T21:30:00Z",
+      "added_at": "2026-11-15T20:18:48.070Z",
+      "updated_at": "2026-11-15T20:18:48.070Z",
       "backfill": true,
       "location": {
         "name": "La Pampa / zona de amortiguamiento de Tambopata",
@@ -11950,8 +11950,8 @@
       "occurred_at": "2017-12-15T12:00:00-04:00",
       "occurred_at_precision": "verified operation date or closing day; time unknown",
       "published_at": "2019-04-25T12:00:00-04:00",
-      "added_at": "2026-11-15T21:30:00Z",
-      "updated_at": "2026-11-15T21:30:00Z",
+      "added_at": "2026-11-15T20:18:48.070Z",
+      "updated_at": "2026-11-15T20:18:48.070Z",
       "backfill": true,
       "location": {
         "name": "Porto Chibatão e Superterminais / Manaus",
