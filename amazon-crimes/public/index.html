@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="pt-BR" data-theme="dark">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Observatório OSINT de crimes ambientais na Amazônia em near-real-time" />
-  <title>Observatório de Crimes Ambientais na Amazônia</title>
+  <title>Amazon Environmental Crime Observatory</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@6.9.0/dist/maplibre-gl.css" />
   <link rel="stylesheet" href="./assets/css/app.css?v=20261115-temporal-v1" />
@@ -22,16 +22,16 @@
       </div>
       <div class="topbar-actions">
         <span class="live-pill"><span class="pulse"></span><span data-i18n="nearRealTime">Near-real-time</span></span>
-        <div class="language-switcher" aria-label="Idioma">
-          <button class="lang active" data-lang="pt">PT</button>
-          <button class="lang" data-lang="en">EN</button>
+        <div class="language-switcher" aria-label="Language">
+          <button class="lang" data-lang="pt">PT</button>
+          <button class="lang active" data-lang="en">EN</button>
           <button class="lang" data-lang="es">ES</button>
         </div>
         <a id="reporting-repository-link" class="how-it-works-button" href="./news.html" aria-label="Repositório de reportagens">
           <span class="how-it-works-icon" aria-hidden="true">N</span>
           <span data-i18n="navNews">Repositório de reportagens</span>
         </a>
-        <a id="how-it-works-link" class="how-it-works-button" href="./how-it-works.html?lang=pt">
+        <a id="how-it-works-link" class="how-it-works-button" href="./how-it-works.html?lang=en">
           <span class="how-it-works-icon" aria-hidden="true">i</span>
           <span id="how-it-works-label">Como funciona</span>
         </a>
@@ -112,8 +112,8 @@
     <footer><span class="footer-program"><span data-i18n="footerProgram">Programa de Inteligência para Conservação | WCS Brasil</span> <span aria-hidden="true">•</span> <a href="https://brasil.wcs.org" target="_blank" rel="noopener noreferrer">brasil.wcs.org</a></span><span id="last-updated">—</span></footer>
   </div>
 
-  <script type="module" src="./assets/js/app.js?v=20261115-temporal-lastyear"></script>
-  <script type="module" src="./assets/js/how-it-works-link.js"></script>
+  <script type="module" src="./assets/js/app.js?v=20261115-language-v1"></script>
+  <script type="module" src="./assets/js/how-it-works-link.js?v=20261115-language-v1"></script>
   <script type="module" src="./assets/js/media-dock.js?v=20260927-3"></script>
 </body>
 </html>
