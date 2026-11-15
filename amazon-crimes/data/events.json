@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-11-15T17:59:27.511Z",
+  "generated_at": "2026-11-15T17:59:59.606Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -7923,6 +7923,67 @@
       "source_media": []
     },
     {
+      "id": "BR-RR-2025-1111-FOX-TRES",
+      "title": {
+        "pt": "Operação Fox Três — TI Raposa Serra do Sol / Uiramutã",
+        "en": "Operação Fox Três — TI Raposa Serra do Sol / Uiramutã",
+        "es": "Operação Fox Três — TI Raposa Serra do Sol / Uiramutã"
+      },
+      "summary": {
+        "pt": "Em 11 e 12 de novembro, PF e órgãos parceiros destruíram acampamentos e equipamentos usados no garimpo ilegal na TI Raposa Serra do Sol, em Água Fria, Cachoeira do Urucá e rio Maú; forças da Guiana também atuaram em sua margem.",
+        "en": "On 11–12 November, Federal Police and partner agencies destroyed illegal mining camps and equipment in Raposa Serra do Sol Indigenous Land, at Água Fria, Cachoeira do Urucá and the Maú River; Guyanese forces acted on their riverbank.",
+        "es": "El 11 y 12 de noviembre, la Policía Federal y entidades asociadas destruyeron campamentos y equipos de minería ilegal en la Tierra Indígena Raposa Serra do Sol, en Água Fria, Cachoeira do Urucá y río Maú; fuerzas guyanesas actuaron en su margen."
+      },
+      "case_context": {
+        "pt": "[O] Em 11 e 12 de novembro, PF e órgãos parceiros destruíram acampamentos e equipamentos usados no garimpo ilegal na TI Raposa Serra do Sol, em Água Fria, Cachoeira do Urucá e rio Maú; forças da Guiana também atuaram em sua margem.\nFontes: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2025/funai-participa-de-operacao-integrada-contra-o-garimpo-ilegal-na-terra-indigena-raposa-serra-do-sol-em-roraima",
+        "en": "[O] On 11–12 November, Federal Police and partner agencies destroyed illegal mining camps and equipment in Raposa Serra do Sol Indigenous Land, at Água Fria, Cachoeira do Urucá and the Maú River; Guyanese forces acted on their riverbank.\nSources: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2025/funai-participa-de-operacao-integrada-contra-o-garimpo-ilegal-na-terra-indigena-raposa-serra-do-sol-em-roraima",
+        "es": "[O] El 11 y 12 de noviembre, la Policía Federal y entidades asociadas destruyeron campamentos y equipos de minería ilegal en la Tierra Indígena Raposa Serra do Sol, en Água Fria, Cachoeira do Urucá y río Maú; fuerzas guyanesas actuaron en su margen.\nFuentes: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2025/funai-participa-de-operacao-integrada-contra-o-garimpo-ilegal-na-terra-indigena-raposa-serra-do-sol-em-roraima"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Operação Fox Três",
+      "agencies": [
+        "Funai"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "Occurred 11–12 November 2025, publicized 24 November; cross-border collaboration confirmed, not a confirmed illicit transport route.",
+      "occurred_at": "2025-11-11T12:00:00-04:00",
+      "occurred_at_precision": "day",
+      "published_at": "2025-11-24T12:00:00-04:00",
+      "added_at": "2026-11-15T17:59:59.606Z",
+      "updated_at": "2026-11-15T17:59:59.606Z",
+      "backfill": true,
+      "location": {
+        "name": "TI Raposa Serra do Sol / Uiramutã",
+        "admin1": "Roraima",
+        "country": "Brasil",
+        "lat": 4.7,
+        "lon": -60.2,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "Terra Indígena Raposa Serra do Sol"
+      },
+      "cross_border": true,
+      "sources": [
+        {
+          "publisher": "Funai",
+          "url": "https://www.gov.br/funai/pt-br/assuntos/noticias/2025/funai-participa-de-operacao-integrada-contra-o-garimpo-ilegal-na-terra-indigena-raposa-serra-do-sol-em-roraima",
+          "published_at": "2025-11-24T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Operação Fox Três",
+        "ILLEGAL_MINING"
+      ]
+    },
+    {
       "id": "GY-2025-1101-IWOKRAMA",
       "title": {
         "pt": "Operação em Iwokrama detém brasileiro por suspeita de mineração ilegal",
@@ -8859,6 +8920,67 @@
       "source_media": []
     },
     {
+      "id": "PE-LOR-2025-0116-NAUTA-32-LOGS",
+      "title": {
+        "pt": "Interdicción de 32 trozas, Nauta — Rio Marañón / Nauta",
+        "en": "Interdicción de 32 trozas, Nauta — Rio Marañón / Nauta",
+        "es": "Interdicción de 32 trozas, Nauta — Rio Marañón / Nauta"
+      },
+      "summary": {
+        "pt": "A Fiscalía Ambiental de Nauta interditou 32 toras de madeira sem comprovação de origem legal, sendo 15 na margem do rio Marañón e 17 em uma serraria.",
+        "en": "Nauta environmental prosecutors interdicted 32 timber logs without documentation of legal origin, 15 on the Marañón riverbank and 17 at a sawmill.",
+        "es": "La Fiscalía Ambiental de Nauta intervino 32 trozas sin documentos de origen legal: 15 en la ribera del río Marañón y 17 en un aserradero."
+      },
+      "case_context": {
+        "pt": "[O] A Fiscalía Ambiental de Nauta interditou 32 toras de madeira sem comprovação de origem legal, sendo 15 na margem do rio Marañón e 17 em uma serraria.\nFontes: [O] https://www.gob.pe/institucion/mpfn/noticias/1091651-la-fema-nauta-procedio-a-interdictar-32-trozas-de-madera-durante-operativo-contra-presunta-tala-ilegal",
+        "en": "[O] Nauta environmental prosecutors interdicted 32 timber logs without documentation of legal origin, 15 on the Marañón riverbank and 17 at a sawmill.\nSources: [O] https://www.gob.pe/institucion/mpfn/noticias/1091651-la-fema-nauta-procedio-a-interdictar-32-trozas-de-madera-durante-operativo-contra-presunta-tala-ilegal",
+        "es": "[O] La Fiscalía Ambiental de Nauta intervino 32 trozas sin documentos de origen legal: 15 en la ribera del río Marañón y 17 en un aserradero.\nFuentes: [O] https://www.gob.pe/institucion/mpfn/noticias/1091651-la-fema-nauta-procedio-a-interdictar-32-trozas-de-madera-durante-operativo-contra-presunta-tala-ilegal"
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": "Interdicción de 32 trozas, Nauta",
+      "agencies": [
+        "Ministerio Público del Perú"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "Publication date is a reference pending exact intervention date; finding of missing documentation is not a conviction.",
+      "occurred_at": "2025-01-16T12:00:00-05:00",
+      "occurred_at_precision": "publication_date_reference",
+      "published_at": "2025-01-16T12:00:00-05:00",
+      "added_at": "2026-11-15T17:59:59.606Z",
+      "updated_at": "2026-11-15T17:59:59.606Z",
+      "backfill": true,
+      "location": {
+        "name": "Rio Marañón / Nauta",
+        "admin1": "Loreto",
+        "country": "Peru",
+        "lat": -4.5,
+        "lon": -73.6,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Ministerio Público del Perú",
+          "url": "https://www.gob.pe/institucion/mpfn/noticias/1091651-la-fema-nauta-procedio-a-interdictar-32-trozas-de-madera-durante-operativo-contra-presunta-tala-ilegal",
+          "published_at": "2025-01-16T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Interdicción de 32 trozas, Nauta",
+        "ILLEGAL_LOGGING"
+      ]
+    },
+    {
       "id": "CO-GUA-2024-1030-INIRIDA",
       "title": {
         "pt": "Interdicción río Inírida — Río Inírida",
@@ -9097,6 +9219,67 @@
         }
       ],
       "source_media": []
+    },
+    {
+      "id": "PE-LOR-2024-0911-PACAYA-SAMIRIA-TIMBER",
+      "title": {
+        "pt": "Interdicción Pacaya Samiria 62 trozas — Reserva Nacional Pacaya Samiria / Nauta",
+        "en": "Interdicción Pacaya Samiria 62 trozas — Reserva Nacional Pacaya Samiria / Nauta",
+        "es": "Interdicción Pacaya Samiria 62 trozas — Reserva Nacional Pacaya Samiria / Nauta"
+      },
+      "summary": {
+        "pt": "A Fiscalía de Loreto informou a apreensão e interdição de 62 toras de madeira em operação na Reserva Nacional Pacaya Samiria, com dois investigados submetidos à prisão preventiva.",
+        "en": "Loreto prosecutors reported interdiction of 62 timber logs in an operation in Pacaya Samiria National Reserve, with two suspects held in pre-trial detention.",
+        "es": "La Fiscalía de Loreto informó la interdicción de 62 trozas de madera en la Reserva Nacional Pacaya Samiria, con dos investigados en prisión preventiva."
+      },
+      "case_context": {
+        "pt": "[O] A Fiscalía de Loreto informou a apreensão e interdição de 62 toras de madeira em operação na Reserva Nacional Pacaya Samiria, com dois investigados submetidos à prisão preventiva.\nFontes: [O] https://www.gob.pe/institucion/mpfn/noticias/1020723-fema-de-loreto-obtiene-prision-preventiva-para-dos-investigados-por-tala-ilegal-de-madera-en-la-reserva-nacional-pacaya-samiria",
+        "en": "[O] Loreto prosecutors reported interdiction of 62 timber logs in an operation in Pacaya Samiria National Reserve, with two suspects held in pre-trial detention.\nSources: [O] https://www.gob.pe/institucion/mpfn/noticias/1020723-fema-de-loreto-obtiene-prision-preventiva-para-dos-investigados-por-tala-ilegal-de-madera-en-la-reserva-nacional-pacaya-samiria",
+        "es": "[O] La Fiscalía de Loreto informó la interdicción de 62 trozas de madera en la Reserva Nacional Pacaya Samiria, con dos investigados en prisión preventiva.\nFuentes: [O] https://www.gob.pe/institucion/mpfn/noticias/1020723-fema-de-loreto-obtiene-prision-preventiva-para-dos-investigados-por-tala-ilegal-de-madera-en-la-reserva-nacional-pacaya-samiria"
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": "Interdicción Pacaya Samiria 62 trozas",
+      "agencies": [
+        "Ministerio Público del Perú"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "Exact field intervention day not disclosed; 11 September is publication/procedural reference, not verified date of enforcement. Two suspects were held pending trial.",
+      "occurred_at": "2024-09-11T12:00:00-05:00",
+      "occurred_at_precision": "publication_date_reference",
+      "published_at": "2024-09-11T12:00:00-05:00",
+      "added_at": "2026-11-15T17:59:59.606Z",
+      "updated_at": "2026-11-15T17:59:59.606Z",
+      "backfill": true,
+      "location": {
+        "name": "Reserva Nacional Pacaya Samiria / Nauta",
+        "admin1": "Loreto",
+        "country": "Peru",
+        "lat": -4.8,
+        "lon": -74.3,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "Reserva Nacional Pacaya Samiria"
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Ministerio Público del Perú",
+          "url": "https://www.gob.pe/institucion/mpfn/noticias/1020723-fema-de-loreto-obtiene-prision-preventiva-para-dos-investigados-por-tala-ilegal-de-madera-en-la-reserva-nacional-pacaya-samiria",
+          "published_at": "2024-09-11T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Interdicción Pacaya Samiria 62 trozas",
+        "ILLEGAL_LOGGING"
+      ]
     },
     {
       "id": "BO-BENI-2024-0910-TURTLE-EGGS",
