@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-11-15T21:00:00Z",
+  "generated_at": "2026-11-15T21:30:00Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -11670,6 +11670,316 @@
         "Interdicción río Cotuhé"
       ],
       "evidence_notes": "Occurrence/publication dates kept distinct; grouped actions counted once."
+    },
+    {
+      "id": "CO-AMZ-2017-0301-FAISAN",
+      "title": {
+        "pt": "Operación Faisán — Puerto Santander / río Caquetá",
+        "en": "Operación Faisán — Puerto Santander / río Caquetá",
+        "es": "Operación Faisán — Puerto Santander / río Caquetá"
+      },
+      "summary": {
+        "pt": "Polícia, Exército e parceiros inutilizaram sete balsas-dragas, apreenderam quatro espingardas e cerca de 300 g de mercúrio e detiveram quatro pessoas, incluindo um adolescente.",
+        "en": "Police, military and partners disabled seven dredging rafts, seized four shotguns and roughly 300 g of mercury, and apprehended four people including a minor.",
+        "es": "Policía, Ejército y aliados inutilizaron siete balsas dragas, incautaron cuatro escopetas y unos 300 g de mercurio y aprehendieron a cuatro personas, incluido un menor."
+      },
+      "case_context": {
+        "pt": "[O] Polícia, Exército e parceiros inutilizaram sete balsas-dragas, apreenderam quatro espingardas e cerca de 300 g de mercúrio e detiveram quatro pessoas, incluindo um adolescente.\nFontes: [O] https://www.policia.gov.co/noticia/duro-golpe-mineria-criminal-en-amazonas",
+        "en": "[O] Police, military and partners disabled seven dredging rafts, seized four shotguns and roughly 300 g of mercury, and apprehended four people including a minor.\nSources: [O] https://www.policia.gov.co/noticia/duro-golpe-mineria-criminal-en-amazonas",
+        "es": "[O] Policía, Ejército y aliados inutilizaron siete balsas dragas, incautaron cuatro escopetas y unos 300 g de mercurio y aprehendieron a cuatro personas, incluido un menor.\nFuentes: [O] https://www.policia.gov.co/noticia/duro-golpe-mineria-criminal-en-amazonas"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Operación Faisán",
+      "agencies": [
+        "Policía Nacional de Colombia"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "The operation is documented; arrests and allegations do not establish guilt.",
+      "occurred_at": null,
+      "occurred_at_precision": "exact operation date not specified; publication day separate",
+      "published_at": "2017-03-01T12:00:00-05:00",
+      "added_at": "2026-11-15T21:30:00Z",
+      "updated_at": "2026-11-15T21:30:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Puerto Santander / río Caquetá",
+        "admin1": "Amazonas",
+        "country": "Colombia",
+        "lat": -1.1,
+        "lon": -71.94,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate settlement or administrative reference, not exact operation coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Policía Nacional de Colombia",
+          "url": "https://www.policia.gov.co/noticia/duro-golpe-mineria-criminal-en-amazonas",
+          "published_at": "2017-03-01T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Operación Faisán"
+      ],
+      "evidence_notes": "Distinct officially reported action; date uncertainty preserved."
+    },
+    {
+      "id": "CO-GUA-2017-0304-CERRO-AZUL-LOGGING",
+      "title": {
+        "pt": "Fiscalización forestal — vereda Cerro Azul — Vereda Cerro Azul / San José del Guaviare",
+        "en": "Fiscalización forestal — vereda Cerro Azul — Vereda Cerro Azul / San José del Guaviare",
+        "es": "Fiscalización forestal — vereda Cerro Azul — Vereda Cerro Azul / San José del Guaviare"
+      },
+      "summary": {
+        "pt": "Após denúncia, a Polícia e a autoridade ambiental detiveram oito homens encontrados cortando árvores sem licença e apreenderam duas motosserras e outras ferramentas.",
+        "en": "After a community report, police and environmental authorities detained eight men found cutting trees without authorization and seized two chainsaws and other tools.",
+        "es": "Tras una denuncia, Policía y autoridad ambiental capturaron a ocho hombres encontrados talando sin permiso e incautaron dos motosierras y otras herramientas."
+      },
+      "case_context": {
+        "pt": "[O] Após denúncia, a Polícia e a autoridade ambiental detiveram oito homens encontrados cortando árvores sem licença e apreenderam duas motosserras e outras ferramentas.\nFontes: [O] https://www.policia.gov.co/noticia/policia-nacional-vela-por-proteccion-los-recursos-naturales-en-guaviare",
+        "en": "[O] After a community report, police and environmental authorities detained eight men found cutting trees without authorization and seized two chainsaws and other tools.\nSources: [O] https://www.policia.gov.co/noticia/policia-nacional-vela-por-proteccion-los-recursos-naturales-en-guaviare",
+        "es": "[O] Tras una denuncia, Policía y autoridad ambiental capturaron a ocho hombres encontrados talando sin permiso e incautaron dos motosierras y otras herramientas.\nFuentes: [O] https://www.policia.gov.co/noticia/policia-nacional-vela-por-proteccion-los-recursos-naturales-en-guaviare"
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": "Fiscalización forestal — vereda Cerro Azul",
+      "agencies": [
+        "Policía Nacional de Colombia"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "The operation is documented; arrests and allegations do not establish guilt.",
+      "occurred_at": null,
+      "occurred_at_precision": "exact operation date not specified; publication day separate",
+      "published_at": "2017-03-04T12:00:00-05:00",
+      "added_at": "2026-11-15T21:30:00Z",
+      "updated_at": "2026-11-15T21:30:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Vereda Cerro Azul / San José del Guaviare",
+        "admin1": "Guaviare",
+        "country": "Colombia",
+        "lat": 2.54,
+        "lon": -72.84,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate settlement or administrative reference, not exact operation coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Policía Nacional de Colombia",
+          "url": "https://www.policia.gov.co/noticia/policia-nacional-vela-por-proteccion-los-recursos-naturales-en-guaviare",
+          "published_at": "2017-03-04T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Fiscalización forestal — vereda Cerro Azul"
+      ],
+      "evidence_notes": "Distinct officially reported action; date uncertainty preserved."
+    },
+    {
+      "id": "CO-AMZ-2017-0525-PENTECOSTES",
+      "title": {
+        "pt": "Operación Pentecostés — Caño Cifuentes / río Caquetá, Puerto Santander",
+        "en": "Operación Pentecostés — Caño Cifuentes / río Caquetá, Puerto Santander",
+        "es": "Operación Pentecostés — Caño Cifuentes / río Caquetá, Puerto Santander"
+      },
+      "summary": {
+        "pt": "Polícia inutilizou uma draga em balsa usada na extração ilícita de ouro em caño Cifuentes e apreendeu mangueiras, traje de mergulho e ferramentas.",
+        "en": "Police disabled a raft-mounted dredge used in unauthorized gold extraction on Caño Cifuentes and seized hoses, diving gear and tools.",
+        "es": "La Policía inutilizó una draga sobre balsa usada para extraer oro ilegalmente en caño Cifuentes e incautó mangueras, equipo de buceo y herramientas."
+      },
+      "case_context": {
+        "pt": "[O] Polícia inutilizou uma draga em balsa usada na extração ilícita de ouro em caño Cifuentes e apreendeu mangueiras, traje de mergulho e ferramentas.\nFontes: [O] https://chat.policia.gov.co/noticia/operacion-pentecostes-contra-explotacion-ilicita-yacimiento-minero",
+        "en": "[O] Police disabled a raft-mounted dredge used in unauthorized gold extraction on Caño Cifuentes and seized hoses, diving gear and tools.\nSources: [O] https://chat.policia.gov.co/noticia/operacion-pentecostes-contra-explotacion-ilicita-yacimiento-minero",
+        "es": "[O] La Policía inutilizó una draga sobre balsa usada para extraer oro ilegalmente en caño Cifuentes e incautó mangueras, equipo de buceo y herramientas.\nFuentes: [O] https://chat.policia.gov.co/noticia/operacion-pentecostes-contra-explotacion-ilicita-yacimiento-minero"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Operación Pentecostés",
+      "agencies": [
+        "Policía Nacional de Colombia"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "The operation is documented; arrests and allegations do not establish guilt.",
+      "occurred_at": null,
+      "occurred_at_precision": "exact operation date not specified; publication day separate",
+      "published_at": "2017-05-25T12:00:00-05:00",
+      "added_at": "2026-11-15T21:30:00Z",
+      "updated_at": "2026-11-15T21:30:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Caño Cifuentes / río Caquetá, Puerto Santander",
+        "admin1": "Amazonas",
+        "country": "Colombia",
+        "lat": -1.1,
+        "lon": -71.94,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate settlement or administrative reference, not exact operation coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Policía Nacional de Colombia",
+          "url": "https://chat.policia.gov.co/noticia/operacion-pentecostes-contra-explotacion-ilicita-yacimiento-minero",
+          "published_at": "2017-05-25T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Operación Pentecostés"
+      ],
+      "evidence_notes": "Distinct officially reported action; date uncertainty preserved."
+    },
+    {
+      "id": "PE-MDD-2017-0706-MERCURIO-I",
+      "title": {
+        "pt": "Operación Mercurio I 2017 — La Pampa / zona de amortiguamiento de Tambopata",
+        "en": "Operación Mercurio I 2017 — La Pampa / zona de amortiguamiento de Tambopata",
+        "es": "Operación Mercurio I 2017 — La Pampa / zona de amortiguamiento de Tambopata"
+      },
+      "summary": {
+        "pt": "Na operação de 3 a 6 de julho, a polícia destruiu 184 acampamentos de mineração ilegal, deteve 32 pessoas por diferentes delitos e resgatou 17 mulheres e dois menores de possíveis situações de exploração sexual.",
+        "en": "During the July 3–6 operation, police destroyed 184 illegal mining camps, arrested 32 people for several alleged offences, and rescued 17 women and two minors from suspected sexual exploitation.",
+        "es": "En el operativo del 3 al 6 de julio, la Policía destruyó 184 campamentos mineros ilegales, detuvo a 32 personas por diversos presuntos delitos y rescató a 17 mujeres y dos menores de posible explotación sexual."
+      },
+      "case_context": {
+        "pt": "[O] Na operação de 3 a 6 de julho, a polícia destruiu 184 acampamentos de mineração ilegal, deteve 32 pessoas por diferentes delitos e resgatou 17 mulheres e dois menores de possíveis situações de exploração sexual.\n[N] Reportagem posterior sobre Madre de Dios examina a política e as redes do ouro ilegal; não comprova vínculos entre seus atores e as pessoas investigadas nesta operação.\nFontes: [O] https://www.gob.pe/institucion/minam/noticias/1015-mercurio-i-2017-policia-nacional-destruye-184-campamentos-mineros-ilegales-en-madre-de-dios | [N] https://amazonunderworld.org/when-gold-rules-politicians-and-criminals-fight-over-resources-in-the-peruvian-amazon/",
+        "en": "[O] During the July 3–6 operation, police destroyed 184 illegal mining camps, arrested 32 people for several alleged offences, and rescued 17 women and two minors from suspected sexual exploitation.\n[N] Later reporting examines political influence and illegal-gold networks in Madre de Dios; it does not establish links between those actors and suspects in this operation.\nSources: [O] https://www.gob.pe/institucion/minam/noticias/1015-mercurio-i-2017-policia-nacional-destruye-184-campamentos-mineros-ilegales-en-madre-de-dios | [N] https://amazonunderworld.org/when-gold-rules-politicians-and-criminals-fight-over-resources-in-the-peruvian-amazon/",
+        "es": "[O] En el operativo del 3 al 6 de julio, la Policía destruyó 184 campamentos mineros ilegales, detuvo a 32 personas por diversos presuntos delitos y rescató a 17 mujeres y dos menores de posible explotación sexual.\n[N] Un reportaje posterior examina influencias políticas y redes de oro ilegal en Madre de Dios; no establece vínculos entre sus actores y los investigados en esta operación.\nFuentes: [O] https://www.gob.pe/institucion/minam/noticias/1015-mercurio-i-2017-policia-nacional-destruye-184-campamentos-mineros-ilegales-en-madre-de-dios | [N] https://amazonunderworld.org/when-gold-rules-politicians-and-criminals-fight-over-resources-in-the-peruvian-amazon/"
+      },
+      "primary_crime_type": "MULTIPLE_ENVIRONMENTAL_CRIMES",
+      "crime_types": [
+        "MULTIPLE_ENVIRONMENTAL_CRIMES"
+      ],
+      "operation_name": "Operación Mercurio I 2017",
+      "agencies": [
+        "Ministerio del Ambiente del Perú"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "The operation is documented; arrests and allegations do not establish guilt.",
+      "occurred_at": "2017-07-06T12:00:00-05:00",
+      "occurred_at_precision": "verified operation date or closing day; time unknown",
+      "published_at": "2017-07-10T12:00:00-05:00",
+      "added_at": "2026-11-15T21:30:00Z",
+      "updated_at": "2026-11-15T21:30:00Z",
+      "backfill": true,
+      "location": {
+        "name": "La Pampa / zona de amortiguamiento de Tambopata",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.89,
+        "lon": -69.99,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate settlement or administrative reference, not exact operation coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "Reserva Nacional Tambopata (buffer zone)"
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Ministerio del Ambiente del Perú",
+          "url": "https://www.gob.pe/institucion/minam/noticias/1015-mercurio-i-2017-policia-nacional-destruye-184-campamentos-mineros-ilegales-en-madre-de-dios",
+          "published_at": "2017-07-10T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Operación Mercurio I 2017"
+      ],
+      "evidence_notes": "Distinct officially reported action; date uncertainty preserved."
+    },
+    {
+      "id": "BR-AM-2017-1215-ARQUIMEDES-I",
+      "title": {
+        "pt": "Operação Arquimedes — primeira etapa, apreensão portuária — Porto Chibatão e Superterminais / Manaus",
+        "en": "Operação Arquimedes — primeira etapa, apreensão portuária — Porto Chibatão e Superterminais / Manaus",
+        "es": "Operação Arquimedes — primeira etapa, apreensão portuária — Porto Chibatão e Superterminais / Manaus"
+      },
+      "summary": {
+        "pt": "A fase inicial da investigação resultou na apreensão de mais de 400 contêineres com aproximadamente 8 mil m³ de madeira com documentação irregular, em portos de Manaus; os resultados foram divulgados pela PF em 2019.",
+        "en": "The initial investigation phase seized over 400 containers holding approximately 8,000 m³ of timber with irregular documentation at Manaus ports; Federal Police reported the figures in 2019.",
+        "es": "La primera fase investigativa incautó más de 400 contenedores con unos 8.000 m³ de madera con documentación irregular en puertos de Manaos; los resultados fueron divulgados en 2019."
+      },
+      "case_context": {
+        "pt": "[O] A fase inicial da investigação resultou na apreensão de mais de 400 contêineres com aproximadamente 8 mil m³ de madeira com documentação irregular, em portos de Manaus; os resultados foram divulgados pela PF em 2019.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2019/04/pf-deflagra-operacao-contra-a-extracao-e-comercio-ilegal-de-madeira-na-amazonia",
+        "en": "[O] The initial investigation phase seized over 400 containers holding approximately 8,000 m³ of timber with irregular documentation at Manaus ports; Federal Police reported the figures in 2019.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2019/04/pf-deflagra-operacao-contra-a-extracao-e-comercio-ilegal-de-madeira-na-amazonia",
+        "es": "[O] La primera fase investigativa incautó más de 400 contenedores con unos 8.000 m³ de madera con documentación irregular en puertos de Manaos; los resultados fueron divulgados en 2019.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2019/04/pf-deflagra-operacao-contra-a-extracao-e-comercio-ilegal-de-madeira-na-amazonia"
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": "Operação Arquimedes — primeira etapa, apreensão portuária",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "The operation is documented; arrests and allegations do not establish guilt.",
+      "occurred_at": "2017-12-15T12:00:00-04:00",
+      "occurred_at_precision": "verified operation date or closing day; time unknown",
+      "published_at": "2019-04-25T12:00:00-04:00",
+      "added_at": "2026-11-15T21:30:00Z",
+      "updated_at": "2026-11-15T21:30:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Porto Chibatão e Superterminais / Manaus",
+        "admin1": "Amazonas",
+        "country": "Brazil",
+        "lat": -3.12,
+        "lon": -60.02,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate settlement or administrative reference, not exact operation coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2019/04/pf-deflagra-operacao-contra-a-extracao-e-comercio-ilegal-de-madeira-na-amazonia",
+          "published_at": "2019-04-25T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Operação Arquimedes — primeira etapa, apreensão portuária"
+      ],
+      "evidence_notes": "Distinct 2017 seizure phase, retrospectively documented by 2019 official statement; do not treat 2019 release as event date."
     }
   ]
 }
