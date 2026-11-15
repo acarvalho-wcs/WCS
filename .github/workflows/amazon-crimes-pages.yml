@@ -54,6 +54,7 @@ jobs:
       - name: Validate JavaScript
         run: |
           node --check public/assets/js/app.js
+          node --check public/assets/js/temporal-filter.js
           node --check public/assets/js/language-preference.js
           node --check public/assets/js/config.js
           node --check public/assets/js/i18n.js
@@ -74,3 +75,15 @@ jobs:
       - name: Deploy Amazon Crimes
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Browser smoke test - published events and language sync
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          npm install --no-save --no-package-lock --prefix /tmp/amazon-smoke playwright-core
+          CHROME_PATH="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium)"
+          if [ -z "$CHROME_PATH" ]; then
+            echo "No installed Chrome/Chromium browser for live smoke test"
+            exit 1
+          fi
+          CHROME_PATH="$CHROME_PATH" NODE_PATH="/tmp/amazon-smoke/node_modules" node scripts/smoke-pages.mjs
