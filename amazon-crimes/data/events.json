@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-11-15T15:03:57.993Z",
+  "generated_at": "2026-11-15T15:04:16.939Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -7295,6 +7295,192 @@
       "keywords": [
         "Usurpare V"
       ]
+    },
+    {
+      "id": "BR-RO-MT-2026-1106-LENHA-FRIA",
+      "title": {
+        "pt": "Lenha Fria combate extração ilegal de madeira na TI Sete de Setembro",
+        "en": "Lenha Fria targets illegal logging in Sete de Setembro territory",
+        "es": "Lenha Fria combate tala ilegal en Sete de Setembro"
+      },
+      "summary": {
+        "pt": "PF e Ibama prenderam um suspeito e inutilizaram trator, duas motos e 14 toras; agentes relataram disparos contra a equipe.",
+        "en": "Police arrested a suspect and disabled a tractor, two motorcycles and 14 timber logs; officers reported gunfire.",
+        "es": "Policía Federal e Ibama detuvieron a un sospechoso e inutilizaron tractor, dos motocicletas y 14 trozas; reportaron disparos."
+      },
+      "case_context": {
+        "pt": "[O] PF e Ibama prenderam um suspeito e inutilizaram trator, duas motos e 14 toras; agentes relataram disparos contra a equipe.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-ibama-e-funai-combatem-extracao-ilegal-de-madeira-na-terra-indigena-sete-de-setembro-em-ro",
+        "en": "[O] Police arrested a suspect and disabled a tractor, two motorcycles and 14 timber logs; officers reported gunfire.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-ibama-e-funai-combatem-extracao-ilegal-de-madeira-na-terra-indigena-sete-de-setembro-em-ro",
+        "es": "[O] Policía Federal e Ibama detuvieron a un sospechoso e inutilizaron tractor, dos motocicletas y 14 trozas; reportaron disparos.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-ibama-e-funai-combatem-extracao-ilegal-de-madeira-na-terra-indigena-sete-de-setembro-em-ro"
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": "Lenha Fria",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "The operation is documented; allegations are not findings of guilt.",
+      "occurred_at": "2026-11-06T12:00:00-04:00",
+      "occurred_at_precision": "day verified; time unknown",
+      "published_at": "2026-11-07T12:00:00-04:00",
+      "added_at": "2026-11-15T15:04:16.939Z",
+      "updated_at": "2026-11-15T15:04:16.939Z",
+      "backfill": true,
+      "location": {
+        "name": "Terra Indígena Sete de Setembro (territorial reference)",
+        "admin1": "Rondônia / Mato Grosso",
+        "country": "Brazil",
+        "lat": -11.033,
+        "lon": -60.91,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate territorial or city reference, not intervention coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "Terra Indígena Sete de Setembro"
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-ibama-e-funai-combatem-extracao-ilegal-de-madeira-na-terra-indigena-sete-de-setembro-em-ro",
+          "published_at": "2026-11-07T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Lenha Fria"
+      ],
+      "evidence_notes": ""
+    },
+    {
+      "id": "BR-AM-2026-1108-FRONTEIRA-DOURADA-II",
+      "title": {
+        "pt": "Fronteira Dourada II desarticula logística de garimpo em Japurá",
+        "en": "Fronteira Dourada II disrupts mining logistics in Japurá",
+        "es": "Fronteira Dourada II desarticula logística minera en Japurá"
+      },
+      "summary": {
+        "pt": "De 4 a 8/11, forças integradas inutilizaram sete dragas, cinco balsas de carga e dois rebocadores em Japurá, em ação com a Marywa.",
+        "en": "Between Nov 4 and 8, joint forces disabled seven dredges, five cargo barges and two tugboats near Japurá, including Marywa actions.",
+        "es": "Del 4 al 8 de noviembre, fuerzas conjuntas inutilizaron siete dragas, cinco barcazas y dos remolcadores en Japurá, incluyendo acciones Marywa."
+      },
+      "case_context": {
+        "pt": "[O] De 4 a 8/11, forças integradas inutilizaram sete dragas, cinco balsas de carga e dois rebocadores em Japurá, em ação com a Marywa.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-em-acao-integrada-desarticula-estrutura-de-apoio-ao-garimpo-ilegal-no-amazonas",
+        "en": "[O] Between Nov 4 and 8, joint forces disabled seven dredges, five cargo barges and two tugboats near Japurá, including Marywa actions.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-em-acao-integrada-desarticula-estrutura-de-apoio-ao-garimpo-ilegal-no-amazonas",
+        "es": "[O] Del 4 al 8 de noviembre, fuerzas conjuntas inutilizaron siete dragas, cinco barcazas y dos remolcadores en Japurá, incluyendo acciones Marywa.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-em-acao-integrada-desarticula-estrutura-de-apoio-ao-garimpo-ilegal-no-amazonas"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Fronteira Dourada II / Marywa (resultados conjuntos)",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "The operation is documented; allegations are not findings of guilt.",
+      "occurred_at": "2026-11-08T12:00:00-04:00",
+      "occurred_at_precision": "day verified; time unknown",
+      "published_at": "2026-11-09T12:00:00-04:00",
+      "added_at": "2026-11-15T15:04:16.939Z",
+      "updated_at": "2026-11-15T15:04:16.939Z",
+      "backfill": true,
+      "location": {
+        "name": "Rio Puruê, Japurá / ESEC Juami-Japurá (regional reference)",
+        "admin1": "Amazonas",
+        "country": "Brazil",
+        "lat": -2.24222,
+        "lon": -68.34896,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate territorial or city reference, not intervention coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-em-acao-integrada-desarticula-estrutura-de-apoio-ao-garimpo-ilegal-no-amazonas",
+          "published_at": "2026-11-09T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Fronteira Dourada II / Marywa (resultados conjuntos)"
+      ],
+      "evidence_notes": "The cited official total explicitly includes simultaneous Marywa operations; count only one event."
+    },
+    {
+      "id": "BR-RO-2026-1113-OURO-ALHEIO",
+      "title": {
+        "pt": "Ouro Alheio destrói estruturas de garimpo ilegal na fronteira",
+        "en": "Ouro Alheio destroys illegal-mining infrastructure near border",
+        "es": "Ouro Alheio destruye infraestructura minera ilegal en la frontera"
+      },
+      "summary": {
+        "pt": "PF e parceiros destruíram 11 barracos, três barracões, dez motores, três geradores e dois veículos usados em garimpo hidráulico.",
+        "en": "Federal Police and partners destroyed 11 huts, three sheds, ten engines, three generators and two vehicles used for hydraulic gold mining.",
+        "es": "Policía Federal y aliados destruyeron 11 barracas, tres galpones, diez motores, tres generadores y dos vehículos usados en minería hidráulica."
+      },
+      "case_context": {
+        "pt": "[O] PF e parceiros destruíram 11 barracos, três barracões, dez motores, três geradores e dois veículos usados em garimpo hidráulico.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-destroi-estruturas-utilizadas-em-garimpo-ilegal-durante-operacao-na-regiao-de-fronteira",
+        "en": "[O] Federal Police and partners destroyed 11 huts, three sheds, ten engines, three generators and two vehicles used for hydraulic gold mining.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-destroi-estruturas-utilizadas-em-garimpo-ilegal-durante-operacao-na-regiao-de-fronteira",
+        "es": "[O] Policía Federal y aliados destruyeron 11 barracas, tres galpones, diez motores, tres generadores y dos vehículos usados en minería hidráulica.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-destroi-estruturas-utilizadas-em-garimpo-ilegal-durante-operacao-na-regiao-de-fronteira"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Ouro Alheio (Madeira-Mamoré II)",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "The operation is documented; allegations are not findings of guilt.",
+      "occurred_at": "2026-11-13T12:00:00-04:00",
+      "occurred_at_precision": "day verified; time unknown",
+      "published_at": "2026-11-13T12:00:00-04:00",
+      "added_at": "2026-11-15T15:04:16.939Z",
+      "updated_at": "2026-11-15T15:04:16.939Z",
+      "backfill": true,
+      "location": {
+        "name": "Rondônia, região de fronteira (referência Porto Velho)",
+        "admin1": "Rondônia",
+        "country": "Brazil",
+        "lat": -8.76,
+        "lon": -63.9,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate territorial or city reference, not intervention coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-destroi-estruturas-utilizadas-em-garimpo-ilegal-durante-operacao-na-regiao-de-fronteira",
+          "published_at": "2026-11-13T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Ouro Alheio (Madeira-Mamoré II)"
+      ],
+      "evidence_notes": ""
     }
   ]
 }
