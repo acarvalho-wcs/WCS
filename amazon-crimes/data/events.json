@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-11-15T17:24:52.123Z",
+  "generated_at": "2026-11-15T17:29:50.782Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -8123,6 +8123,306 @@
           "url": "https://newsroom.gy/2025/03/04/illegal-miners-arrested-in-iwokrama-forest/",
           "published_at": "2025-03-04T12:00:00-04:00",
           "source_type": "media_with_official_source"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "CO-GUA-2024-1030-INIRIDA",
+      "title": {
+        "pt": "Interdicción río Inírida — Río Inírida",
+        "en": "Interdicción río Inírida — Río Inírida",
+        "es": "Interdicción río Inírida — Río Inírida"
+      },
+      "summary": {
+        "pt": "A Polícia colombiana comunicou quatro prisões em flagrante e a apreensão de uma draga artesanal utilizada na extração mineral sem autorização no rio Inírida.",
+        "en": "Colombian police reported four in-flagrante arrests and the seizure of an artisanal dredge used for unauthorized mineral extraction on the Inírida River.",
+        "es": "La Policía colombiana informó cuatro capturas en flagrancia y la incautación de una draga artesanal usada para la extracción minera no autorizada en el río Inírida."
+      },
+      "case_context": {
+        "pt": "[O] A Polícia colombiana comunicou quatro prisões em flagrante e a apreensão de uma draga artesanal utilizada na extração mineral sem autorização no rio Inírida.\nFontes: [O] https://chat.policia.gov.co/index.php/noticia/cuatro-personas-capturadas-en-flagrancia-por-delito-explotacion-ilicita-yacimiento-minero",
+        "en": "[O] Colombian police reported four in-flagrante arrests and the seizure of an artisanal dredge used for unauthorized mineral extraction on the Inírida River.\nSources: [O] https://chat.policia.gov.co/index.php/noticia/cuatro-personas-capturadas-en-flagrancia-por-delito-explotacion-ilicita-yacimiento-minero",
+        "es": "[O] La Policía colombiana informó cuatro capturas en flagrancia y la incautación de una draga artesanal usada para la extracción minera no autorizada en el río Inírida.\nFuentes: [O] https://chat.policia.gov.co/index.php/noticia/cuatro-personas-capturadas-en-flagrancia-por-delito-explotacion-ilicita-yacimiento-minero"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Interdicción río Inírida",
+      "agencies": [],
+      "occurred_at": "2024-10-30T12:00:00-05:00",
+      "published_at": "2024-10-30T12:00:00-05:00",
+      "added_at": "2026-11-15T17:29:50.782Z",
+      "updated_at": "2026-11-15T17:29:50.782Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Where an exact intervention date is not specified, occurred_at is a reporting-date reference; check the source publication. Arrests are not convictions.",
+      "priority": "MEDIUM",
+      "location": {
+        "name": "Río Inírida",
+        "admin1": "Guainía",
+        "country": "Colombia",
+        "lat": 3.87,
+        "lon": -67.92,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Interdicción río Inírida",
+        "ILLEGAL_MINING"
+      ],
+      "sources": [
+        {
+          "publisher": "Official agency",
+          "url": "https://chat.policia.gov.co/index.php/noticia/cuatro-personas-capturadas-en-flagrancia-por-delito-explotacion-ilicita-yacimiento-minero",
+          "published_at": "2024-10-30T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "BR-PA-2024-1022-ISENGARD",
+      "title": {
+        "pt": "Operação Isengard — Altamira / Anapu / Pacajá",
+        "en": "Operação Isengard — Altamira / Anapu / Pacajá",
+        "es": "Operação Isengard — Altamira / Anapu / Pacajá"
+      },
+      "summary": {
+        "pt": "Em 22 e 23 de outubro, a PF realizou cinco buscas e fechou serrarias investigadas por extração e comércio ilegal de madeira no sudoeste do Pará.",
+        "en": "On 22–23 October, Federal Police executed five searches and shut sawmills investigated for illegal timber extraction and trade in southwest Pará.",
+        "es": "El 22 y 23 de octubre, la Policía Federal realizó cinco registros y cerró aserraderos investigados por extracción y comercio ilegal de madera en el suroeste de Pará."
+      },
+      "case_context": {
+        "pt": "[O] Em 22 e 23 de outubro, a PF realizou cinco buscas e fechou serrarias investigadas por extração e comércio ilegal de madeira no sudoeste do Pará.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2024/10/pf-fecha-serrarias-ilegais-em-operacao-no-sudoeste-paraense",
+        "en": "[O] On 22–23 October, Federal Police executed five searches and shut sawmills investigated for illegal timber extraction and trade in southwest Pará.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2024/10/pf-fecha-serrarias-ilegais-em-operacao-no-sudoeste-paraense",
+        "es": "[O] El 22 y 23 de octubre, la Policía Federal realizó cinco registros y cerró aserraderos investigados por extracción y comercio ilegal de madera en el suroeste de Pará.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2024/10/pf-fecha-serrarias-ilegais-em-operacao-no-sudoeste-paraense"
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": "Operação Isengard",
+      "agencies": [],
+      "occurred_at": "2024-10-22T12:00:00-03:00",
+      "published_at": "2024-10-23T12:00:00-03:00",
+      "added_at": "2026-11-15T17:29:50.782Z",
+      "updated_at": "2026-11-15T17:29:50.782Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Where an exact intervention date is not specified, occurred_at is a reporting-date reference; check the source publication. Arrests are not convictions.",
+      "priority": "MEDIUM",
+      "location": {
+        "name": "Altamira / Anapu / Pacajá",
+        "admin1": "Pará",
+        "country": "Brasil",
+        "lat": -3.2,
+        "lon": -52,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Operação Isengard",
+        "ILLEGAL_LOGGING"
+      ],
+      "sources": [
+        {
+          "publisher": "Official agency",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2024/10/pf-fecha-serrarias-ilegais-em-operacao-no-sudoeste-paraense",
+          "published_at": "2024-10-23T12:00:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "BR-AM-2024-0822-PRENSA-MADEIRA",
+      "title": {
+        "pt": "Operação Prensa — Rio Madeira",
+        "en": "Operação Prensa — Rio Madeira",
+        "es": "Operação Prensa — Rio Madeira"
+      },
+      "summary": {
+        "pt": "A PF informou um balanço acumulado de 223 balsas de garimpo ilegal inutilizadas durante três dias de operação no rio Madeira.",
+        "en": "The Federal Police reported a cumulative total of 223 illegal mining barges disabled during three days of operations on the Madeira River.",
+        "es": "La Policía Federal informó un total acumulado de 223 balsas de minería ilegal inutilizadas durante tres días en el río Madeira."
+      },
+      "case_context": {
+        "pt": "[O] A PF informou um balanço acumulado de 223 balsas de garimpo ilegal inutilizadas durante três dias de operação no rio Madeira.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2024/08/pf-inutiliza-223-balsas-de-garimpo-ilegal-no-amazonas",
+        "en": "[O] The Federal Police reported a cumulative total of 223 illegal mining barges disabled during three days of operations on the Madeira River.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2024/08/pf-inutiliza-223-balsas-de-garimpo-ilegal-no-amazonas",
+        "es": "[O] La Policía Federal informó un total acumulado de 223 balsas de minería ilegal inutilizadas durante tres días en el río Madeira.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2024/08/pf-inutiliza-223-balsas-de-garimpo-ilegal-no-amazonas"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Operação Prensa",
+      "agencies": [],
+      "occurred_at": "2024-08-22T12:00:00-04:00",
+      "published_at": "2024-08-22T12:00:00-04:00",
+      "added_at": "2026-11-15T17:29:50.782Z",
+      "updated_at": "2026-11-15T17:29:50.782Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Where an exact intervention date is not specified, occurred_at is a reporting-date reference; check the source publication. Arrests are not convictions.",
+      "priority": "MEDIUM",
+      "location": {
+        "name": "Rio Madeira",
+        "admin1": "Amazonas / Rondônia",
+        "country": "Brasil",
+        "lat": -5.8,
+        "lon": -61.7,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Operação Prensa",
+        "ILLEGAL_MINING"
+      ],
+      "sources": [
+        {
+          "publisher": "Official agency",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2024/08/pf-inutiliza-223-balsas-de-garimpo-ilegal-no-amazonas",
+          "published_at": "2024-08-22T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "GY-POT-2024-0818-AMATUK",
+      "title": {
+        "pt": "Amatuk illegal mining enforcement — Amatuk / Potaro River",
+        "en": "Amatuk illegal mining enforcement — Amatuk / Potaro River",
+        "es": "Amatuk illegal mining enforcement — Amatuk / Potaro River"
+      },
+      "summary": {
+        "pt": "A polícia e a GGMC detiveram seis brasileiros em uma ação de fiscalização de suposta mineração ilegal na região de Amatuk, rio Potaro.",
+        "en": "Police and the GGMC arrested six Brazilian nationals during enforcement against suspected illegal mining near Amatuk on the Potaro River.",
+        "es": "La policía y la GGMC detuvieron a seis brasileños en una operación contra presunta minería ilegal cerca de Amatuk, río Potaro."
+      },
+      "case_context": {
+        "pt": "[O] A polícia e a GGMC detiveram seis brasileiros em uma ação de fiscalização de suposta mineração ilegal na região de Amatuk, rio Potaro.\nFontes: [O] https://newsroom.gy/2024/08/18/six-brazilians-arrested-at-illegal-mining-site-near-potaro-river/",
+        "en": "[O] Police and the GGMC arrested six Brazilian nationals during enforcement against suspected illegal mining near Amatuk on the Potaro River.\nSources: [O] https://newsroom.gy/2024/08/18/six-brazilians-arrested-at-illegal-mining-site-near-potaro-river/",
+        "es": "[O] La policía y la GGMC detuvieron a seis brasileños en una operación contra presunta minería ilegal cerca de Amatuk, río Potaro.\nFuentes: [O] https://newsroom.gy/2024/08/18/six-brazilians-arrested-at-illegal-mining-site-near-potaro-river/"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Amatuk illegal mining enforcement",
+      "agencies": [],
+      "occurred_at": "2024-08-18T12:00:00-04:00",
+      "published_at": "2024-08-18T12:00:00-04:00",
+      "added_at": "2026-11-15T17:29:50.782Z",
+      "updated_at": "2026-11-15T17:29:50.782Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Where an exact intervention date is not specified, occurred_at is a reporting-date reference; check the source publication. Arrests are not convictions.",
+      "priority": "MEDIUM",
+      "location": {
+        "name": "Amatuk / Potaro River",
+        "admin1": "Potaro-Siparuni",
+        "country": "Guyana",
+        "lat": 5.27,
+        "lon": -59.15,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Amatuk illegal mining enforcement",
+        "ILLEGAL_MINING"
+      ],
+      "sources": [
+        {
+          "publisher": "News Room Guyana (police statement)",
+          "url": "https://newsroom.gy/2024/08/18/six-brazilians-arrested-at-illegal-mining-site-near-potaro-river/",
+          "published_at": "2024-08-18T12:00:00-04:00",
+          "source_type": "media_with_official_source"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "BR-RO-2024-0312-LIMITROFE",
+      "title": {
+        "pt": "Operação Limítrofe — Porto Velho / Alta Floresta d'Oeste",
+        "en": "Operação Limítrofe — Porto Velho / Alta Floresta d'Oeste",
+        "es": "Operação Limítrofe — Porto Velho / Alta Floresta d'Oeste"
+      },
+      "summary": {
+        "pt": "A Polícia Federal cumpriu 12 mandados para investigar extração e comércio ilegais de madeira e falsificação documental em Rondônia.",
+        "en": "Federal Police executed 12 warrants investigating illegal timber trade and document forgery in Rondônia.",
+        "es": "La Policía Federal ejecutó 12 órdenes para investigar el comercio ilegal de madera y la falsificación documental en Rondônia."
+      },
+      "case_context": {
+        "pt": "[O] A Polícia Federal cumpriu 12 mandados para investigar extração e comércio ilegais de madeira e falsificação documental em Rondônia.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2024/03/pf-deflagra-a-operacao-limitrofe-para-combater-desmatamento-ilegal",
+        "en": "[O] Federal Police executed 12 warrants investigating illegal timber trade and document forgery in Rondônia.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2024/03/pf-deflagra-a-operacao-limitrofe-para-combater-desmatamento-ilegal",
+        "es": "[O] La Policía Federal ejecutó 12 órdenes para investigar el comercio ilegal de madera y la falsificación documental en Rondônia.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2024/03/pf-deflagra-a-operacao-limitrofe-para-combater-desmatamento-ilegal"
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": "Operação Limítrofe",
+      "agencies": [],
+      "occurred_at": "2024-03-12T12:00:00-04:00",
+      "published_at": "2024-03-12T12:00:00-04:00",
+      "added_at": "2026-11-15T17:29:50.782Z",
+      "updated_at": "2026-11-15T17:29:50.782Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Where an exact intervention date is not specified, occurred_at is a reporting-date reference; check the source publication. Arrests are not convictions.",
+      "priority": "MEDIUM",
+      "location": {
+        "name": "Porto Velho / Alta Floresta d'Oeste",
+        "admin1": "Rondônia",
+        "country": "Brasil",
+        "lat": -9.4,
+        "lon": -63.9,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Operação Limítrofe",
+        "ILLEGAL_LOGGING"
+      ],
+      "sources": [
+        {
+          "publisher": "Official agency",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2024/03/pf-deflagra-a-operacao-limitrofe-para-combater-desmatamento-ilegal",
+          "published_at": "2024-03-12T12:00:00-04:00",
+          "source_type": "official"
         }
       ],
       "source_media": []
