@@ -646,3 +646,8 @@ body.how-it-works-open { overflow: hidden; }
     width: auto;
   }
 }
+
+/* Linked evidence citations in event-context cards */
+.context-sources { display: flex; flex-wrap: wrap; column-gap: 12px; row-gap: 6px; margin-top: 8px; }
+.context-sources a { color: var(--blue); text-decoration: underline; font-size: 10.5px; line-height: 1.5; overflow-wrap: anywhere; }
+.context-sources a:hover { color: var(--text); }
