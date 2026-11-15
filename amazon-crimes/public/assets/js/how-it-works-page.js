@@ -43,6 +43,11 @@ function escapeHtml(value = '') {
 
 function queryLanguage() {
   const param = new URLSearchParams(window.location.search).get('lang');
+  // An established user selection takes precedence over a stale ?lang= link.
+  try {
+    const stored=localStorage.getItem('amazon-observatory-language');
+    if(validLanguage(stored))return stored;
+  } catch {}
   if(validLanguage(param))return selectLanguage(param);
   return preferredLanguage();
 }
