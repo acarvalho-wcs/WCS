@@ -2,7 +2,7 @@
 // The originals forbid cross-origin access from browser maps (CORS).
 const raisg = 'https://geo2.socioambiental.org/raisg/rest/services/raisg/';
 const anm = 'https://geo.anm.gov.br/arcgis/rest/services/SIGMINE/protecao_conservacao_natureza/MapServer';
-const localTile=(id)=>[new URL('./assets/territory-tiles/'+id+'/{z}/{x}/{y}.png',document.baseURI).toString()];
+const localTile=(id)=>[new URL('./assets/territory-tiles/'+id+'/',document.baseURI).toString()+'{z}/{x}/{y}.png'];
 
 export const territorialOverlays = [
   {
