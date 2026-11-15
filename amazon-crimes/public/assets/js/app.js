@@ -2,6 +2,7 @@ import { translations } from './i18n.js';
 import { preferredLanguage, selectLanguage, listenLanguage } from './language-preference.js?v=20261115-unified';
 import { createTemporalFilter } from './temporal-filter.js?v=20261115-lastyear';
 import { crimeTypes, crimeTypeMeta, mapConfig, futureLayerGroups } from './config.js';
+import { territorialOverlays, territorialOverlayIds, installTerritorialOverlays, setTerritorialVisibility } from './territorial-overlays.js?v=20261115-territories1';
 
 let language = preferredLanguage();
 let mapTheme = localStorage.getItem('amazon-observatory-theme') || 'dark';
@@ -56,7 +57,8 @@ const auxMeta = {
   armed_groups: { color: '#cf5a5a', icon: 'security', source: 'armed-groups', geometry: 'point' },
   clandestine_airstrips: { color: '#d4a14e', icon: 'airstrip', source: 'clandestine-airstrips', geometry: 'point' },
   public_routes: { color: '#9d73df', icon: 'route', source: 'public-routes', geometry: 'line' },
-  amazon_boundary: { color: '#8fd8b0', icon: 'protected', source: 'amazon-boundary', geometry: 'polygon', fixed: true }
+  amazon_boundary: { color: '#8fd8b0', icon: 'protected', source: 'amazon-boundary', geometry: 'polygon', fixed: true },
+  ...Object.fromEntries(territorialOverlays.map((layer) => [layer.id, { color: layer.color, icon: 'protected', source: 'territory-source-' + layer.id, geometry: 'raster' }]))
 };
 
 const iconKindByCrime = {
@@ -421,6 +423,7 @@ function rebuildMapData() {
     console.error('crime-events layer was not created');
   }
 
+  installTerritorialOverlays(map, activeAuxLayers, mapTheme);
   addAuxCircleLayer('fire_hotspots', 'fire-hotspots', auxMeta.fire_hotspots.color, 2.2, 5.2);
   addDeforestationLayer();
   addAuxCircleLayer('radio_stations', 'radios', auxMeta.radio_stations.color, 3.4, 7.2);
@@ -623,6 +626,7 @@ function updateLayerVisibility() {
     if (map.getLayer(layerId)) map.setLayoutProperty(layerId, 'visibility', activeAuxLayers.has(id) ? 'visible' : 'none');
   });
   ['aux-deforestation_alerts', 'aux-outline-deforestation_alerts'].forEach((layerId) => { if (map.getLayer(layerId)) map.setLayoutProperty(layerId, 'visibility', activeAuxLayers.has('deforestation_alerts') ? 'visible' : 'none'); });
+  setTerritorialVisibility(map, activeAuxLayers);
   syncHtmlLayerMarkers();
 }
 
@@ -1013,6 +1017,28 @@ function renderSignals() {
   $('#signal-crossborder').textContent = filteredEvents.filter((e) => e.cross_border === true).length;
 }
 
+// Mosaics are referenced individually, but not drawn as invented legal boundaries.
+// No click on a mosaic should be interpreted as a spatial overlap analysis.
+const amazonMosaics = [
+  { name: 'Baixo Rio Negro', law: 'Portaria MMA 483/2010' },
+  { name: 'Amazônia Meridional', law: 'Portaria MMA 332/2011' },
+  { name: 'Oeste do Amapá e Norte do Pará', law: 'Portaria MMA 4/2013' },
+  { name: 'Baixo Rio Madeira', law: 'Portaria MMA 1.331/2025' },
+  { name: 'Gurupi', law: 'Portaria MMA 1.443/2025' }
+];
+function renderMosaicCatalog() {
+  const label = { pt: 'Mosaicos de áreas protegidas', en: 'Protected-area mosaics', es: 'Mosaicos de áreas protegidas' }[language];
+  const note = {
+    pt: 'Referências oficiais. Os limites cartográficos dos mosaicos ainda não estão disponíveis neste mapa.',
+    en: 'Official references. Mosaic boundaries are not yet available on this map.',
+    es: 'Referencias oficiales. Los límites cartográficos de los mosaicos aún no están disponibles en este mapa.'
+  }[language];
+  const source = 'https://www.gov.br/icmbio/pt-br/assuntos/mosaicos-e-corredores-ecologicos/mosaicos-federais-reconhecidos';
+  return `<details class="mosaic-directory"><summary>${escapeHtml(label)} (5)</summary><p class="mosaic-directory-note">${escapeHtml(note)}</p>
+    ${amazonMosaics.map((item) => `<a href="${escapeAttr(source)}" target="_blank" rel="noopener noreferrer" class="mosaic-directory-item"><span>${escapeHtml(item.name)}</span><small>${escapeHtml(item.law)}</small></a>`).join('')}
+  </details>`;
+}
+
 function renderLayerPanel() {
   const crimeList = $('#crime-layer-list');
   if (!crimeList) return;
@@ -1041,11 +1067,12 @@ function renderLayerPanel() {
       }
       return `<div class="future-layer-row"><span>${escapeHtml(localized(layer.label) || layer.id)}</span><small>${escapeHtml(t('comingSoon'))}</small></div>`;
     }).join('');
-    return `<details class="future-group" ${['environment_realtime', 'extractive_pressure', 'sensors_media'].includes(group.id) ? 'open' : ''}><summary>${escapeHtml(groupLabel)}</summary>${layers}</details>`;
+    const status = group.id === 'territories' ? renderMosaicCatalog() : '';
+    return `<details class="future-group" ${['environment_realtime', 'extractive_pressure', 'sensors_media', 'territories'].includes(group.id) ? 'open' : ''}><summary>${escapeHtml(groupLabel)}</summary>${layers}${status}</details>`;
   }).join('');
 
-  $$('.aux-layer-toggle').forEach((input) => input.addEventListener('change', () => {
-    if (input.checked) { activeAuxLayers.add(input.value); loadDynamicLayer(input.value); } else activeAuxLayers.delete(input.value);
+  $('.aux-layer-toggle').forEach((input) => input.addEventListener('change', () => {
+    if (input.checked) { activeAuxLayers.add(input.value); if (!territorialOverlayIds.has(input.value)) loadDynamicLayer(input.value); } else activeAuxLayers.delete(input.value);
     updateLayerVisibility();
   }));
 }
