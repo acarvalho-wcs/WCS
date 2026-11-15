@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-11-15T15:05:24.433Z",
+  "generated_at": "2026-11-15T15:06:11.625Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -6709,7 +6709,7 @@
       "occurred_at_precision": "day_confirmed_time_unknown_noon_placeholder",
       "published_at": "2026-10-22T12:00:00-04:00",
       "added_at": "2026-11-15T15:02:36.004Z",
-      "updated_at": "2026-11-15T15:02:36.004Z",
+      "updated_at": "2026-11-15T15:06:11.625Z",
       "backfill": true,
       "location": {
         "name": "Anapu, Pará (municipal reference)",
@@ -6770,7 +6770,7 @@
       "occurred_at_precision": "day_confirmed_time_unknown_noon_placeholder",
       "published_at": "2026-10-27T12:00:00-04:00",
       "added_at": "2026-11-15T15:02:36.004Z",
-      "updated_at": "2026-11-15T15:02:36.004Z",
+      "updated_at": "2026-11-15T15:06:11.625Z",
       "backfill": true,
       "location": {
         "name": "Manaus (warrant locations; rural site unlocated)",
@@ -6832,7 +6832,7 @@
       "occurred_at_precision": "day_confirmed_time_unknown_noon_placeholder",
       "published_at": "2026-10-27T12:00:00-04:00",
       "added_at": "2026-11-15T15:02:36.004Z",
-      "updated_at": "2026-11-15T15:02:36.004Z",
+      "updated_at": "2026-11-15T15:06:11.625Z",
       "backfill": true,
       "location": {
         "name": "Rio Madeira, Calama–São Carlos (regional reference)",
@@ -6893,7 +6893,7 @@
       "occurred_at_precision": "day_confirmed_time_unknown_noon_placeholder",
       "published_at": "2026-10-29T12:00:00-04:00",
       "added_at": "2026-11-15T15:02:59.804Z",
-      "updated_at": "2026-11-15T15:02:59.804Z",
+      "updated_at": "2026-11-15T15:06:11.625Z",
       "backfill": true,
       "location": {
         "name": "Manaus (mandados; garimpos investigados sem coordenadas)",
@@ -6956,7 +6956,7 @@
       "occurred_at_precision": "day_confirmed_time_unknown_noon_placeholder",
       "published_at": "2026-10-30T12:00:00-04:00",
       "added_at": "2026-11-15T15:02:59.804Z",
-      "updated_at": "2026-11-15T15:02:59.804Z",
+      "updated_at": "2026-11-15T15:06:11.625Z",
       "backfill": true,
       "location": {
         "name": "Terra Indígena Kayapó (referência Cumaru do Norte)",
@@ -6969,7 +6969,8 @@
       },
       "protected_area": {
         "is_protected_area": true,
-        "name": "Terra Indígena Kayapó"
+        "name": "Terra Indígena Kayapó",
+        "category": "Indigenous territory"
       },
       "cross_border": false,
       "sources": [
@@ -7019,7 +7020,7 @@
       "occurred_at_precision": "day_confirmed_time_unknown_noon_placeholder",
       "published_at": "2026-10-30T12:00:00-04:00",
       "added_at": "2026-11-15T15:02:59.804Z",
-      "updated_at": "2026-11-15T15:02:59.804Z",
+      "updated_at": "2026-11-15T15:06:11.625Z",
       "backfill": true,
       "location": {
         "name": "Rio Madeira, montante de Jirau (referência da usina)",
@@ -7083,7 +7084,7 @@
       "occurred_at_precision": "day_confirmed_time_unknown_noon_placeholder",
       "published_at": "2026-10-30T12:00:00-04:00",
       "added_at": "2026-11-15T15:02:59.804Z",
-      "updated_at": "2026-11-15T15:02:59.804Z",
+      "updated_at": "2026-11-15T15:06:11.625Z",
       "backfill": true,
       "location": {
         "name": "Santa Rita do Weill, Tabatinga (referência municipal)",
@@ -7136,16 +7137,19 @@
       ],
       "operation_name": "Vigília",
       "agencies": [
-        "Polícia Federal"
+        "Polícia Federal",
+        "Funai",
+        "BPFron",
+        "Polícia Militar de Rondônia"
       ],
       "priority": "HIGH",
       "validation_status": "CONFIRMED",
       "legal_status_note": "Officially reported investigation/action; guilt is not inferred.",
       "occurred_at": "2026-11-03T12:00:00-04:00",
-      "occurred_at_precision": "day confirmed, clock time unknown",
+      "occurred_at_precision": "operation conducted Nov 2–3, 2026; end day used as reference",
       "published_at": "2026-11-03T12:00:00-04:00",
       "added_at": "2026-11-15T15:03:57.993Z",
-      "updated_at": "2026-11-15T15:03:57.993Z",
+      "updated_at": "2026-11-15T15:06:11.625Z",
       "backfill": true,
       "location": {
         "name": "TI Igarapé Lage, Nova Mamoré (municipal reference)",
@@ -7172,7 +7176,8 @@
       "source_media": [],
       "keywords": [
         "Vigília"
-      ]
+      ],
+      "evidence_notes": "Separate seizures and arrests from Sep 29 Ramal Fechado and Oct 9 Madeira-Mamoré II."
     },
     {
       "id": "BR-RR-2026-1105-BURUBURU-II",
@@ -7187,9 +7192,9 @@
         "es": "La Policía Federal ejecutó tres registros en Santarém y Goiânia y medidas sobre más de R$ 248 millones por presunta minería y lavado."
       },
       "case_context": {
-        "pt": "[O] PF cumpriu três mandados em Santarém e Goiânia e aplicou medidas patrimoniais superiores a R$ 248 milhões por suspeita de mineração e lavagem.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-deflagra-operacao-contra-garimpo-ilegal-e-lavagem-de-capitais/",
-        "en": "[O] Police executed three warrants in Santarém and Goiânia with asset measures exceeding BRL 248 million in a mining and laundering probe.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-deflagra-operacao-contra-garimpo-ilegal-e-lavagem-de-capitais/",
-        "es": "[O] La Policía Federal ejecutó tres registros en Santarém y Goiânia y medidas sobre más de R$ 248 millones por presunta minería y lavado.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-deflagra-operacao-contra-garimpo-ilegal-e-lavagem-de-capitais/"
+        "pt": "[O] PF cumpriu três mandados em Santarém e Goiânia e aplicou medidas patrimoniais superiores a R$ 248 milhões por suspeita de mineração e lavagem. [N] Reportagem sobre a TI Yanomami registra mudanças no garimpo, sem ligar seus autores aos investigados desta fase.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-deflagra-operacao-contra-garimpo-ilegal-e-lavagem-de-capitais/ | [N] https://news.mongabay.com/2026/06/illegal-miners-adapt-their-strategies-in-yanomami-amazon-territory/",
+        "en": "[O] Police executed three warrants in Santarém and Goiânia with asset measures exceeding BRL 248 million in a mining and laundering probe. [N] Reporting on Yanomami territory documents shifting mining practices without tying its actors to this investigation.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-deflagra-operacao-contra-garimpo-ilegal-e-lavagem-de-capitais/ | [N] https://news.mongabay.com/2026/06/illegal-miners-adapt-their-strategies-in-yanomami-amazon-territory/",
+        "es": "[O] La Policía Federal ejecutó tres registros en Santarém y Goiânia y medidas sobre más de R$ 248 millones por presunta minería y lavado. [N] Un reportaje en territorio Yanomami documenta cambios en la minería sin vincular a sus actores con esta investigación.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-deflagra-operacao-contra-garimpo-ilegal-e-lavagem-de-capitais/ | [N] https://news.mongabay.com/2026/06/illegal-miners-adapt-their-strategies-in-yanomami-amazon-territory/"
       },
       "primary_crime_type": "ILLEGAL_MINING",
       "crime_types": [
@@ -7206,7 +7211,7 @@
       "occurred_at_precision": "day confirmed, clock time unknown",
       "published_at": "2026-11-05T12:00:00-04:00",
       "added_at": "2026-11-15T15:03:57.993Z",
-      "updated_at": "2026-11-15T15:03:57.993Z",
+      "updated_at": "2026-11-15T15:06:11.625Z",
       "backfill": true,
       "location": {
         "name": "Santarém, Pará (site of one warrant; other in Goiânia)",
@@ -7258,7 +7263,13 @@
       ],
       "operation_name": "Usurpare V",
       "agencies": [
-        "Polícia Federal"
+        "Polícia Federal",
+        "Ibama",
+        "Incra",
+        "Imac",
+        "Polícia Militar do Acre",
+        "Exército Brasileiro",
+        "Corpo de Bombeiros do Acre"
       ],
       "priority": "HIGH",
       "validation_status": "CONFIRMED",
@@ -7267,7 +7278,7 @@
       "occurred_at_precision": "day confirmed, clock time unknown",
       "published_at": "2026-11-06T12:00:00-04:00",
       "added_at": "2026-11-15T15:03:57.993Z",
-      "updated_at": "2026-11-15T15:03:57.993Z",
+      "updated_at": "2026-11-15T15:06:11.625Z",
       "backfill": true,
       "location": {
         "name": "PAE Porto Dias, Acrelândia (municipal reference)",
@@ -7319,7 +7330,9 @@
       ],
       "operation_name": "Lenha Fria",
       "agencies": [
-        "Polícia Federal"
+        "Polícia Federal",
+        "Ibama",
+        "Funai"
       ],
       "validation_status": "CONFIRMED",
       "priority": "HIGH",
@@ -7328,7 +7341,7 @@
       "occurred_at_precision": "day verified; time unknown",
       "published_at": "2026-11-07T12:00:00-04:00",
       "added_at": "2026-11-15T15:04:16.939Z",
-      "updated_at": "2026-11-15T15:04:16.939Z",
+      "updated_at": "2026-11-15T15:06:11.625Z",
       "backfill": true,
       "location": {
         "name": "Terra Indígena Sete de Setembro (territorial reference)",
@@ -7341,7 +7354,8 @@
       },
       "protected_area": {
         "is_protected_area": true,
-        "name": "Terra Indígena Sete de Setembro"
+        "name": "Terra Indígena Sete de Setembro",
+        "category": "Indigenous territory"
       },
       "cross_border": false,
       "sources": [
@@ -7381,16 +7395,21 @@
       ],
       "operation_name": "Fronteira Dourada II / Marywa (resultados conjuntos)",
       "agencies": [
-        "Polícia Federal"
+        "Polícia Federal",
+        "Exército Brasileiro",
+        "Ibama",
+        "ICMBio",
+        "Força Nacional",
+        "CCPI-Amazônia"
       ],
       "validation_status": "CONFIRMED",
       "priority": "HIGH",
       "legal_status_note": "The operation is documented; allegations are not findings of guilt.",
       "occurred_at": "2026-11-08T12:00:00-04:00",
-      "occurred_at_precision": "day verified; time unknown",
+      "occurred_at_precision": "operation Nov 4–8, 2026; end day used as reference",
       "published_at": "2026-11-09T12:00:00-04:00",
       "added_at": "2026-11-15T15:04:16.939Z",
-      "updated_at": "2026-11-15T15:04:16.939Z",
+      "updated_at": "2026-11-15T15:06:11.625Z",
       "backfill": true,
       "location": {
         "name": "Rio Puruê, Japurá / ESEC Juami-Japurá (regional reference)",
@@ -7402,8 +7421,9 @@
         "geo_source": "Approximate territorial or city reference, not intervention coordinates."
       },
       "protected_area": {
-        "is_protected_area": false,
-        "name": null
+        "is_protected_area": true,
+        "name": "Estação Ecológica Juami-Japurá",
+        "category": "Ecological Station"
       },
       "cross_border": false,
       "sources": [
@@ -7418,7 +7438,7 @@
       "keywords": [
         "Fronteira Dourada II / Marywa (resultados conjuntos)"
       ],
-      "evidence_notes": "The cited official total explicitly includes simultaneous Marywa operations; count only one event."
+      "evidence_notes": "Marywa joint actions in ESEC Juami-Japurá are already included in official Fronteira Dourada II results and are not counted twice."
     },
     {
       "id": "BR-RO-2026-1113-OURO-ALHEIO",
@@ -7443,7 +7463,10 @@
       ],
       "operation_name": "Ouro Alheio (Madeira-Mamoré II)",
       "agencies": [
-        "Polícia Federal"
+        "Polícia Federal",
+        "Polícia Militar de Rondônia",
+        "Força Nacional",
+        "Ibama"
       ],
       "validation_status": "CONFIRMED",
       "priority": "HIGH",
@@ -7452,7 +7475,7 @@
       "occurred_at_precision": "day verified; time unknown",
       "published_at": "2026-11-13T12:00:00-04:00",
       "added_at": "2026-11-15T15:04:16.939Z",
-      "updated_at": "2026-11-15T15:04:16.939Z",
+      "updated_at": "2026-11-15T15:06:11.625Z",
       "backfill": true,
       "location": {
         "name": "Rondônia, região de fronteira (referência Porto Velho)",
@@ -7514,7 +7537,7 @@
       "occurred_at_precision": "day verified; clock time unknown",
       "published_at": "2026-11-03T12:00:00-04:00",
       "added_at": "2026-11-15T15:04:41.565Z",
-      "updated_at": "2026-11-15T15:04:41.565Z",
+      "updated_at": "2026-11-15T15:06:11.625Z",
       "backfill": true,
       "location": {
         "name": "Manaus (mandado; apreensão anterior em Tabatinga)",
@@ -7541,7 +7564,7 @@
       "keywords": [
         "Investigação de comércio ilegal de aruanãs"
       ],
-      "evidence_notes": ""
+      "evidence_notes": "The approximately 1000 arowanas were seized January 8, 2026. This November 3 record concerns a NEW search warrant; do not count the fish as seized in November."
     },
     {
       "id": "BR-MT-2026-1106-HYBRIS",
@@ -7575,7 +7598,7 @@
       "occurred_at_precision": "day verified; clock time unknown",
       "published_at": "2026-11-06T12:00:00-04:00",
       "added_at": "2026-11-15T15:04:41.565Z",
-      "updated_at": "2026-11-15T15:04:41.565Z",
+      "updated_at": "2026-11-15T15:06:11.625Z",
       "backfill": true,
       "location": {
         "name": "Nova Olímpia (mandado; madeira atribuída à TI Enawene Nawe)",
@@ -7587,7 +7610,9 @@
         "geo_source": "Approximate site of warrant or region; not exact offense coordinates."
       },
       "protected_area": {
-        "is_protected_area": false
+        "is_protected_area": true,
+        "name": "Terra Indígena Enawene Nawe",
+        "category": "Indigenous territory"
       },
       "cross_border": false,
       "sources": [
@@ -7602,7 +7627,7 @@
       "keywords": [
         "Hybris"
       ],
-      "evidence_notes": ""
+      "evidence_notes": "Search-warrant location is Nova Olímpia; suspected timber origin is TI Enawene Nawe, not necessarily Nova Olímpia."
     },
     {
       "id": "BR-PA-MA-2026-1106-AVENIDA-GURUPI",
@@ -7636,7 +7661,7 @@
       "occurred_at_precision": "day verified; clock time unknown",
       "published_at": "2026-11-09T12:00:00-04:00",
       "added_at": "2026-11-15T15:04:41.565Z",
-      "updated_at": "2026-11-15T15:04:41.565Z",
+      "updated_at": "2026-11-15T15:06:11.625Z",
       "backfill": true,
       "location": {
         "name": "Santa Luzia do Pará / Rio Gurupi (municipal reference)",
@@ -7688,16 +7713,16 @@
       ],
       "operation_name": "Fiscalização Ibama Roraima (dez dias, multissetorial)",
       "agencies": [
-        "Polícia Federal"
+        "Ibama"
       ],
       "priority": "HIGH",
       "validation_status": "CONFIRMED",
       "legal_status_note": "Officially reported operation; no allegation is treated as established guilt.",
       "occurred_at": "2026-10-30T12:00:00-04:00",
-      "occurred_at_precision": "day verified; clock time unknown",
+      "occurred_at_precision": "operational period ending 2026-10-30; actual start day not stated",
       "published_at": "2026-11-04T12:00:00-04:00",
       "added_at": "2026-11-15T15:04:41.565Z",
-      "updated_at": "2026-11-15T15:04:41.565Z",
+      "updated_at": "2026-11-15T15:06:11.625Z",
       "backfill": true,
       "location": {
         "name": "Roraima, várias áreas indígenas e UCs (referência Boa Vista)",
@@ -7724,7 +7749,7 @@
       "keywords": [
         "Fiscalização Ibama Roraima (dez dias, multissetorial)"
       ],
-      "evidence_notes": "Ten-day multi-area aggregate; counted once."
+      "evidence_notes": "Single ten-day multi-area Ibama operation concluded October 30; reported totals must not be counted as multiple individual events."
     },
     {
       "id": "PE-MDD-2026-1104-EL-INFIERNO",
@@ -7760,7 +7785,7 @@
       "occurred_at_precision": "day confirmed; real operation reported between 03:00 and 12:00, displayed noon is a placeholder",
       "published_at": "2026-11-04T18:59:00-05:00",
       "added_at": "2026-11-15T15:05:24.433Z",
-      "updated_at": "2026-11-15T15:05:24.433Z",
+      "updated_at": "2026-11-15T15:06:11.625Z",
       "backfill": true,
       "location": {
         "name": "El Infierno, distrito de Inambari (district centroid reference)",
