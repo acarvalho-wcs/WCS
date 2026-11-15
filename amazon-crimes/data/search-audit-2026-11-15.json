@@ -8,8 +8,9 @@
   "canonical": {
     "path": "amazon-crimes/data/events.json",
     "before": 91,
-    "after": 109,
-    "inserted": 18
+    "after": 110,
+    "inserted": 19,
+    "additional_verified_case": "PE-LOR-2026-1031-ALTO-NANAY-FEMA"
   },
   "scope": "Amazon biome or Amazon-linked environmental crime investigations; Brazil and neighboring Amazonian countries; multilingual search. Coverage is not exhaustive.",
   "method": "Cross-check source, operation date, independent action, geography, event id, source URL and substantive facts. Use [O] official incident evidence; [N] only if an existing news-repository report materially matches relevant territory/method, never as evidence of actor involvement.",
@@ -41,6 +42,13 @@
       "published_at": "2026-11-03",
       "source": "https://www.gov.br/prf/pt-br/noticias/estaduais/acre/prf-resgata-aves-silvestres-mantidas-ilegalmente-em-cativeiro-durante-fiscalizacoes-no-acre",
       "reason": "Multiple individual wildlife seizures were described with no verified day of occurrence; need exact event dates, quantity, and separation of distinct checks."
+    },
+    {
+      "country": "Peru",
+      "area": "Madre de Dios, Puente Caimito, Rosita and Cantonera, Inambari",
+      "published_at": "2026-10-22",
+      "source": "https://www.desdeadentro.pe/2026/10/comando-unificado-golpea-mineria-ilegal-en-madre-de-dios-y-ancash/",
+      "reason": "Confirmed mining interdiction with 32 rafts and 35 camps, but no defensible precise execution day in available reporting; not eligible for date-based canonical ingestion yet."
     }
   ],
   "excluded": [
@@ -56,6 +64,8 @@
     "November 2–3 Vigília is a new physical seizure distinct from September Ramal Fechado and October Madeira-Mamoré II.",
     "November 4–8 Fronteira Dourada II includes simultaneous Marywa results; counted once.",
     "October multi-area Roraima Ibama enforcement is aggregated into a single canonical case.",
-    "November 3 arowana investigation is new, while around 1,000 juvenile fish were previously seized in January, not counted as November confiscation."
-  ]
+    "November 3 arowana investigation is new, while around 1,000 juvenile fish were previously seized in January, not counted as November confiscation.",
+    "Alto Nanay October 28–31 five-dredge FEMA–Navy interdiction is separate from the earlier 2026 Nanay interdictions; anchored to end of documented operation window."
+  ],
+  "audit_updated_at": "2026-11-15T15:09:05.510Z"
 }
