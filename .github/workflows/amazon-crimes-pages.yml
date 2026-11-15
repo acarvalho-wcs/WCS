@@ -54,6 +54,7 @@ jobs:
       - name: Validate JavaScript
         run: |
           node --check public/assets/js/app.js
+          node --check public/assets/js/language-preference.js
           node --check public/assets/js/config.js
           node --check public/assets/js/i18n.js
           node --check public/assets/js/how-it-works.js
