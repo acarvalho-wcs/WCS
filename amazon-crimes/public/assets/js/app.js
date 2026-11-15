@@ -1,5 +1,5 @@
 import { translations } from './i18n.js';
-import { createTemporalFilter } from './temporal-filter.js';
+import { createTemporalFilter } from './temporal-filter.js?v=20261115-lastyear';
 import { crimeTypes, crimeTypeMeta, mapConfig, futureLayerGroups } from './config.js';
 
 let language = localStorage.getItem('amazon-observatory-language') || 'pt';
