@@ -1,4 +1,5 @@
 import { howItWorksContent } from './how-it-works.js';
+import { preferredLanguage, selectLanguage, validLanguage, listenLanguage } from './language-preference.js?v=20261115-unified';
 
 const ui = {
   pt: {
@@ -42,12 +43,8 @@ function escapeHtml(value = '') {
 
 function queryLanguage() {
   const param = new URLSearchParams(window.location.search).get('lang');
-  if (['pt', 'en', 'es'].includes(param)) return param;
-
-  const stored = localStorage.getItem('amazon-observatory-language');
-  if (['pt', 'en', 'es'].includes(stored)) return stored;
-
-  return 'pt';
+  if(validLanguage(param))return selectLanguage(param);
+  return preferredLanguage();
 }
 
 let language = queryLanguage();
@@ -61,7 +58,9 @@ function render() {
   document.title = `${content.eyebrow} | ${content.title}`;
 
   document.querySelectorAll('.lang').forEach((button) => {
-    button.classList.toggle('active', button.dataset.lang === language);
+    const active=button.dataset.lang===language;
+    button.classList.toggle('active',active);
+    button.setAttribute('aria-pressed',String(active));
   });
 
   document.querySelector('#how-page-kicker').textContent = content.eyebrow;
@@ -111,14 +110,16 @@ function render() {
   const url = new URL(window.location.href);
   url.searchParams.set('lang', language);
   history.replaceState(null, '', url);
-  localStorage.setItem('amazon-observatory-language', language);
+  selectLanguage(language);
 }
 
 document.querySelectorAll('.lang').forEach((button) => {
   button.addEventListener('click', () => {
-    language = button.dataset.lang;
+    language = selectLanguage(button.dataset.lang);
     render();
   });
 });
 
 render();
+
+listenLanguage(next=>{if(next!==language){language=next;render();}});
