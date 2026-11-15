@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-11-15T18:00:23.817Z",
+  "generated_at": "2026-11-15T20:00:00Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -10182,6 +10182,440 @@
         "Fiscalização PF Tabatinga",
         "WILDLIFE_CRIME"
       ]
+    },
+    {
+      "id": "BR-MT-2010-0826-ARCO-FOGO",
+      "title": {
+        "pt": "Operação Arco de Fogo — fiscalização Cinta Larga — Parque Indígena do Aripuanã e TI Serra Morena",
+        "en": "Operação Arco de Fogo — fiscalização Cinta Larga — Parque Indígena do Aripuanã e TI Serra Morena",
+        "es": "Operação Arco de Fogo — fiscalização Cinta Larga — Parque Indígena do Aripuanã e TI Serra Morena"
+      },
+      "summary": {
+        "pt": "Polícia Federal, Funai e Ibama apreenderam madeira e maquinário associado à exploração ilegal em terras indígenas Cinta Larga.",
+        "en": "Federal Police, Funai and Ibama seized timber and equipment associated with illegal logging in Cinta Larga Indigenous territories.",
+        "es": "La Policía Federal, Funai e Ibama decomisaron madera y maquinaria vinculadas a tala ilegal en territorios indígenas Cinta Larga."
+      },
+      "case_context": {
+        "pt": "[O] Polícia Federal, Funai e Ibama apreenderam madeira e maquinário associado à exploração ilegal em terras indígenas Cinta Larga.\nFontes: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2010/operacao-arco-de-fogo-conta-com-indigenas-cinta-larga-na-apreensao-de-madeiras-ilegais",
+        "en": "[O] Federal Police, Funai and Ibama seized timber and equipment associated with illegal logging in Cinta Larga Indigenous territories.\nSources: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2010/operacao-arco-de-fogo-conta-com-indigenas-cinta-larga-na-apreensao-de-madeiras-ilegais",
+        "es": "[O] La Policía Federal, Funai e Ibama decomisaron madera y maquinaria vinculadas a tala ilegal en territorios indígenas Cinta Larga.\nFuentes: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2010/operacao-arco-de-fogo-conta-com-indigenas-cinta-larga-na-apreensao-de-madeiras-ilegais"
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": "Operação Arco de Fogo — fiscalização Cinta Larga",
+      "agencies": [
+        "Funai"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Documented official action; any suspected offences are allegations, not findings of individual guilt.",
+      "occurred_at": "2010-08-26T12:00:00-04:00",
+      "occurred_at_precision": "day verified; time unknown",
+      "published_at": "2010-08-26T12:00:00-04:00",
+      "added_at": "2026-11-15T20:00:00Z",
+      "updated_at": "2026-11-15T20:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Parque Indígena do Aripuanã e TI Serra Morena",
+        "admin1": "Mato Grosso",
+        "country": "Brazil",
+        "lat": -10.17,
+        "lon": -59.45,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate regional reference; not the intervention's precise coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Funai",
+          "url": "https://www.gov.br/funai/pt-br/assuntos/noticias/2010/operacao-arco-de-fogo-conta-com-indigenas-cinta-larga-na-apreensao-de-madeiras-ilegais",
+          "published_at": "2010-08-26T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Operação Arco de Fogo — fiscalização Cinta Larga"
+      ],
+      "evidence_notes": "Publication day not independently established; verify before using published_at in temporal analysis."
+    },
+    {
+      "id": "BR-MT-2010-1007-ARCO-FOGO",
+      "title": {
+        "pt": "Operação Arco de Fogo — nova fase em Aripuanã — Aripuanã / aldeias Paralelo 10 e Flor da Selva",
+        "en": "Operação Arco de Fogo — nova fase em Aripuanã — Aripuanã / aldeias Paralelo 10 e Flor da Selva",
+        "es": "Operação Arco de Fogo — nova fase em Aripuanã — Aripuanã / aldeias Paralelo 10 e Flor da Selva"
+      },
+      "summary": {
+        "pt": "Nova ação da Arco de Fogo iniciou em 7 de outubro, com mandados judiciais, apreensão de veículos e prisões relacionadas à extração ilegal de madeira.",
+        "en": "A new Arco de Fogo action began on 7 October, executing court warrants and seizing vehicles in an illegal timber investigation.",
+        "es": "Una nueva actuación de Arco de Fogo comenzó el 7 de octubre, con órdenes judiciales e incautación de vehículos en una investigación por tala ilegal."
+      },
+      "case_context": {
+        "pt": "[O] Nova ação da Arco de Fogo iniciou em 7 de outubro, com mandados judiciais, apreensão de veículos e prisões relacionadas à extração ilegal de madeira.\nFontes: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2010/arco-de-fogo-combate-crimes-na-terra-indigena-aripuana",
+        "en": "[O] A new Arco de Fogo action began on 7 October, executing court warrants and seizing vehicles in an illegal timber investigation.\nSources: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2010/arco-de-fogo-combate-crimes-na-terra-indigena-aripuana",
+        "es": "[O] Una nueva actuación de Arco de Fogo comenzó el 7 de octubre, con órdenes judiciales e incautación de vehículos en una investigación por tala ilegal.\nFuentes: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2010/arco-de-fogo-combate-crimes-na-terra-indigena-aripuana"
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": "Operação Arco de Fogo — nova fase em Aripuanã",
+      "agencies": [
+        "Funai"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Documented official action; any suspected offences are allegations, not findings of individual guilt.",
+      "occurred_at": "2010-10-07T12:00:00-04:00",
+      "occurred_at_precision": "day verified; time unknown",
+      "published_at": "2010-10-11T12:00:00-04:00",
+      "added_at": "2026-11-15T20:00:00Z",
+      "updated_at": "2026-11-15T20:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Aripuanã / aldeias Paralelo 10 e Flor da Selva",
+        "admin1": "Mato Grosso",
+        "country": "Brazil",
+        "lat": -10.17,
+        "lon": -59.45,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate regional reference; not the intervention's precise coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Funai",
+          "url": "https://www.gov.br/funai/pt-br/assuntos/noticias/2010/arco-de-fogo-combate-crimes-na-terra-indigena-aripuana",
+          "published_at": "2010-10-11T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Operação Arco de Fogo — nova fase em Aripuanã"
+      ],
+      "evidence_notes": "Event and publication dates recorded separately."
+    },
+    {
+      "id": "BR-PA-2011-0819-OCARA-II",
+      "title": {
+        "pt": "Operação Ocara II — Cumaru do Norte / entorno TI Kayapó",
+        "en": "Operação Ocara II — Cumaru do Norte / entorno TI Kayapó",
+        "es": "Operação Ocara II — Cumaru do Norte / entorno TI Kayapó"
+      },
+      "summary": {
+        "pt": "Ibama e Funai desativaram três serrarias clandestinas e apreenderam 729 m³ de madeira; foram aplicadas multas de R$ 315 mil.",
+        "en": "Ibama and Funai dismantled three illegal sawmills and seized 729 m³ of timber; fines totalled BRL 315,000.",
+        "es": "Ibama y Funai desmantelaron tres aserraderos ilegales y decomisaron 729 m³ de madera; las multas sumaron 315.000 reales."
+      },
+      "case_context": {
+        "pt": "[O] Ibama e Funai desativaram três serrarias clandestinas e apreenderam 729 m³ de madeira; foram aplicadas multas de R$ 315 mil.\nFontes: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2011/operacao-conjunta-com-ibama-fecha-serrarias-na-terra-indigena-kayapo",
+        "en": "[O] Ibama and Funai dismantled three illegal sawmills and seized 729 m³ of timber; fines totalled BRL 315,000.\nSources: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2011/operacao-conjunta-com-ibama-fecha-serrarias-na-terra-indigena-kayapo",
+        "es": "[O] Ibama y Funai desmantelaron tres aserraderos ilegales y decomisaron 729 m³ de madera; las multas sumaron 315.000 reales.\nFuentes: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2011/operacao-conjunta-com-ibama-fecha-serrarias-na-terra-indigena-kayapo"
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": "Operação Ocara II",
+      "agencies": [
+        "Funai"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Documented official action; any suspected offences are allegations, not findings of individual guilt.",
+      "occurred_at": "2011-08-19T12:00:00-03:00",
+      "occurred_at_precision": "day verified; time unknown",
+      "published_at": "2011-08-23T12:00:00-03:00",
+      "added_at": "2026-11-15T20:00:00Z",
+      "updated_at": "2026-11-15T20:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Cumaru do Norte / entorno TI Kayapó",
+        "admin1": "Pará",
+        "country": "Brazil",
+        "lat": -7.82,
+        "lon": -50.77,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate regional reference; not the intervention's precise coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Funai",
+          "url": "https://www.gov.br/funai/pt-br/assuntos/noticias/2011/operacao-conjunta-com-ibama-fecha-serrarias-na-terra-indigena-kayapo",
+          "published_at": "2011-08-23T12:00:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Operação Ocara II"
+      ],
+      "evidence_notes": "Event and publication dates recorded separately."
+    },
+    {
+      "id": "PE-MDD-2019-0219-MERCURIO",
+      "title": {
+        "pt": "Operación Mercurio 2019 — La Pampa / zona de amortiguamiento de Tambopata",
+        "en": "Operación Mercurio 2019 — La Pampa / zona de amortiguamiento de Tambopata",
+        "es": "Operación Mercurio 2019 — La Pampa / zona de amortiguamiento de Tambopata"
+      },
+      "summary": {
+        "pt": "O Peru iniciou a Operação Mercurio contra mineração ilegal em La Pampa; a fonte oficial também identificou preocupações com tráfico de pessoas e exploração na área.",
+        "en": "Peru launched Operation Mercurio against illegal mining in La Pampa; the official source also identified concerns about trafficking and exploitation in the area.",
+        "es": "Perú inició la Operación Mercurio contra minería ilegal en La Pampa; la fuente oficial también señaló problemas de trata y explotación en la zona."
+      },
+      "case_context": {
+        "pt": "[O] O Peru iniciou a Operação Mercurio contra mineração ilegal em La Pampa; a fonte oficial também identificou preocupações com tráfico de pessoas e exploração na área.\nFontes: [O] https://www.gob.pe/institucion/mininter/noticias/25784-operacion-mercurio-2019-permitira-restituir-el-principio-de-autoridad-en-la-pampa",
+        "en": "[O] Peru launched Operation Mercurio against illegal mining in La Pampa; the official source also identified concerns about trafficking and exploitation in the area.\nSources: [O] https://www.gob.pe/institucion/mininter/noticias/25784-operacion-mercurio-2019-permitira-restituir-el-principio-de-autoridad-en-la-pampa",
+        "es": "[O] Perú inició la Operación Mercurio contra minería ilegal en La Pampa; la fuente oficial también señaló problemas de trata y explotación en la zona.\nFuentes: [O] https://www.gob.pe/institucion/mininter/noticias/25784-operacion-mercurio-2019-permitira-restituir-el-principio-de-autoridad-en-la-pampa"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Operación Mercurio 2019",
+      "agencies": [
+        "Ministerio del Interior del Perú"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Documented official action; any suspected offences are allegations, not findings of individual guilt.",
+      "occurred_at": "2019-02-19T12:00:00-05:00",
+      "occurred_at_precision": "day verified; time unknown",
+      "published_at": "2019-02-19T12:00:00-05:00",
+      "added_at": "2026-11-15T20:00:00Z",
+      "updated_at": "2026-11-15T20:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "La Pampa / zona de amortiguamiento de Tambopata",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.86,
+        "lon": -69.95,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate regional reference; not the intervention's precise coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Ministerio del Interior del Perú",
+          "url": "https://www.gob.pe/institucion/mininter/noticias/25784-operacion-mercurio-2019-permitira-restituir-el-principio-de-autoridad-en-la-pampa",
+          "published_at": "2019-02-19T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Operación Mercurio 2019"
+      ],
+      "evidence_notes": "Event and publication dates recorded separately."
+    },
+    {
+      "id": "BR-AM-2019-0425-ARQUIMEDES",
+      "title": {
+        "pt": "Operação Arquimedes — Manaus (referência operacional)",
+        "en": "Operação Arquimedes — Manaus (referência operacional)",
+        "es": "Operação Arquimedes — Manaus (referência operacional)"
+      },
+      "summary": {
+        "pt": "A PF e o MPF deflagraram investigação sobre extração e comércio ilegais de madeira e suspeitas de corrupção envolvendo setores do licenciamento florestal.",
+        "en": "Federal police and prosecutors launched an investigation into illegal logging and timber trade and suspected corruption in forest licensing.",
+        "es": "La Policía Federal y la Fiscalía investigaron extracción y comercio ilegales de madera y presunta corrupción en la gestión forestal."
+      },
+      "case_context": {
+        "pt": "[O] A PF e o MPF deflagraram investigação sobre extração e comércio ilegais de madeira e suspeitas de corrupção envolvendo setores do licenciamento florestal.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2019/04/pf-deflagra-operacao-contra-a-extracao-e-comercio-ilegal-de-madeira-na-amazonia",
+        "en": "[O] Federal police and prosecutors launched an investigation into illegal logging and timber trade and suspected corruption in forest licensing.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2019/04/pf-deflagra-operacao-contra-a-extracao-e-comercio-ilegal-de-madeira-na-amazonia",
+        "es": "[O] La Policía Federal y la Fiscalía investigaron extracción y comercio ilegales de madera y presunta corrupción en la gestión forestal.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2019/04/pf-deflagra-operacao-contra-a-extracao-e-comercio-ilegal-de-madeira-na-amazonia"
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": "Operação Arquimedes",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Documented official action; any suspected offences are allegations, not findings of individual guilt.",
+      "occurred_at": "2019-04-25T12:00:00-04:00",
+      "occurred_at_precision": "day verified; time unknown",
+      "published_at": "2019-04-25T12:00:00-04:00",
+      "added_at": "2026-11-15T20:00:00Z",
+      "updated_at": "2026-11-15T20:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Manaus (referência operacional)",
+        "admin1": "Amazonas",
+        "country": "Brazil",
+        "lat": -3.12,
+        "lon": -60.02,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate regional reference; not the intervention's precise coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2019/04/pf-deflagra-operacao-contra-a-extracao-e-comercio-ilegal-de-madeira-na-amazonia",
+          "published_at": "2019-04-25T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Operação Arquimedes"
+      ],
+      "evidence_notes": "Event and publication dates recorded separately."
+    },
+    {
+      "id": "PE-LOR-2021-0428-TAHUAMPAS-VI",
+      "title": {
+        "pt": "Tahuampas del Nanay VI — Río Nanay / San Juan de Ungurahual–Albarenga",
+        "en": "Tahuampas del Nanay VI — Río Nanay / San Juan de Ungurahual–Albarenga",
+        "es": "Tahuampas del Nanay VI — Río Nanay / San Juan de Ungurahual–Albarenga"
+      },
+      "summary": {
+        "pt": "A Fiscalía destruiu cinco dragas usadas no garimpo ilegal na bacia do Nanay e apreendeu 540 galões de combustível.",
+        "en": "Prosecutors destroyed five dredges used in illegal mining in the Nanay basin and seized 540 gallons of fuel.",
+        "es": "La Fiscalía destruyó cinco dragas de minería ilegal en la cuenca del Nanay e incautó 540 galones de combustible."
+      },
+      "case_context": {
+        "pt": "[O] A Fiscalía destruiu cinco dragas usadas no garimpo ilegal na bacia do Nanay e apreendeu 540 galões de combustível.\nFontes: [O] https://www.gob.pe/institucion/mpfn/noticias/490191-operativo-tahuampas-del-nanay-del-ministerio-publico-logro-destruccion-de-cinco-dragas-de-mineria-ilegal",
+        "en": "[O] Prosecutors destroyed five dredges used in illegal mining in the Nanay basin and seized 540 gallons of fuel.\nSources: [O] https://www.gob.pe/institucion/mpfn/noticias/490191-operativo-tahuampas-del-nanay-del-ministerio-publico-logro-destruccion-de-cinco-dragas-de-mineria-ilegal",
+        "es": "[O] La Fiscalía destruyó cinco dragas de minería ilegal en la cuenca del Nanay e incautó 540 galones de combustible.\nFuentes: [O] https://www.gob.pe/institucion/mpfn/noticias/490191-operativo-tahuampas-del-nanay-del-ministerio-publico-logro-destruccion-de-cinco-dragas-de-mineria-ilegal"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Tahuampas del Nanay VI",
+      "agencies": [
+        "Ministerio Público del Perú"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Documented official action; any suspected offences are allegations, not findings of individual guilt.",
+      "occurred_at": "2021-04-28T12:00:00-05:00",
+      "occurred_at_precision": "day verified; time unknown",
+      "published_at": "2021-04-29T12:00:00-05:00",
+      "added_at": "2026-11-15T20:00:00Z",
+      "updated_at": "2026-11-15T20:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Río Nanay / San Juan de Ungurahual–Albarenga",
+        "admin1": "Loreto",
+        "country": "Peru",
+        "lat": -3.75,
+        "lon": -73.25,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate regional reference; not the intervention's precise coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Ministerio Público del Perú",
+          "url": "https://www.gob.pe/institucion/mpfn/noticias/490191-operativo-tahuampas-del-nanay-del-ministerio-publico-logro-destruccion-de-cinco-dragas-de-mineria-ilegal",
+          "published_at": "2021-04-29T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Tahuampas del Nanay VI"
+      ],
+      "evidence_notes": "Event and publication dates recorded separately."
+    },
+    {
+      "id": "BR-RR-2022-0524-NICODEMOS",
+      "title": {
+        "pt": "Operação Nicodemos — Alto Alegre / rio Mucajaí, entorno da TI Yanomami",
+        "en": "Operação Nicodemos — Alto Alegre / rio Mucajaí, entorno da TI Yanomami",
+        "es": "Operação Nicodemos — Alto Alegre / rio Mucajaí, entorno da TI Yanomami"
+      },
+      "summary": {
+        "pt": "A PF cumpriu busca em propriedade investigada por possível apoio logístico ao garimpo ilegal na TI Yanomami; um suspeito foi preso em flagrante com munições e pequena quantidade de ouro.",
+        "en": "Federal Police searched property suspected of providing logistical support to illegal mining in Yanomami territory; a suspect was arrested with ammunition and a small amount of gold.",
+        "es": "La Policía Federal registró una finca investigada por supuesto apoyo logístico a minería ilegal en territorio Yanomami; un sospechoso fue detenido con municiones y una pequeña cantidad de oro."
+      },
+      "case_context": {
+        "pt": "[O] A PF cumpriu busca em propriedade investigada por possível apoio logístico ao garimpo ilegal na TI Yanomami; um suspeito foi preso em flagrante com munições e pequena quantidade de ouro.\nFontes: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2022/operacao-da-policia-federal-combate-garimpo-ilegal-na-terra-indigena-yanomami",
+        "en": "[O] Federal Police searched property suspected of providing logistical support to illegal mining in Yanomami territory; a suspect was arrested with ammunition and a small amount of gold.\nSources: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2022/operacao-da-policia-federal-combate-garimpo-ilegal-na-terra-indigena-yanomami",
+        "es": "[O] La Policía Federal registró una finca investigada por supuesto apoyo logístico a minería ilegal en territorio Yanomami; un sospechoso fue detenido con municiones y una pequeña cantidad de oro.\nFuentes: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2022/operacao-da-policia-federal-combate-garimpo-ilegal-na-terra-indigena-yanomami"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Operação Nicodemos",
+      "agencies": [
+        "Funai"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Documented official action; any suspected offences are allegations, not findings of individual guilt.",
+      "occurred_at": "2022-05-24T12:00:00-04:00",
+      "occurred_at_precision": "day verified; time unknown",
+      "published_at": "2022-05-25T12:00:00-04:00",
+      "added_at": "2026-11-15T20:00:00Z",
+      "updated_at": "2026-11-15T20:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Alto Alegre / rio Mucajaí, entorno da TI Yanomami",
+        "admin1": "Roraima",
+        "country": "Brazil",
+        "lat": 2.98,
+        "lon": -61.3,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate regional reference; not the intervention's precise coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Funai",
+          "url": "https://www.gov.br/funai/pt-br/assuntos/noticias/2022/operacao-da-policia-federal-combate-garimpo-ilegal-na-terra-indigena-yanomami",
+          "published_at": "2022-05-25T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Operação Nicodemos"
+      ],
+      "evidence_notes": "Event and publication dates recorded separately."
     }
   ]
 }
