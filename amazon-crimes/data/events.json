@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-11-15T15:04:16.939Z",
+  "generated_at": "2026-11-15T15:04:41.565Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -7481,6 +7481,250 @@
         "Ouro Alheio (Madeira-Mamoré II)"
       ],
       "evidence_notes": ""
+    },
+    {
+      "id": "BR-AM-2026-1103-ARUANA-INVESTIGATION",
+      "title": {
+        "pt": "PF investiga comércio transnacional de aruanãs no Amazonas",
+        "en": "Police probe cross-border trade of arowana fish in Amazonas",
+        "es": "Policía investiga comercio transfronterizo de arawanas en Amazonas"
+      },
+      "summary": {
+        "pt": "PF cumpriu mandado em Manaus e apreendeu dois celulares em investigação iniciada após apreensão de cerca de mil aruanãs em janeiro.",
+        "en": "Police executed a warrant in Manaus and seized two phones in a probe initiated after around 1,000 arowanas were seized in January.",
+        "es": "La policía ejecutó un registro en Manaos e incautó dos teléfonos en una investigación iniciada tras decomiso de unas mil arawanas en enero."
+      },
+      "case_context": {
+        "pt": "[O] PF cumpriu mandado em Manaus e apreendeu dois celulares em investigação iniciada após apreensão de cerca de mil aruanãs em janeiro.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-cumpre-mandado-em-investigacao-sobre-comercio-ilegal-de-peixes-ornamentais",
+        "en": "[O] Police executed a warrant in Manaus and seized two phones in a probe initiated after around 1,000 arowanas were seized in January.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-cumpre-mandado-em-investigacao-sobre-comercio-ilegal-de-peixes-ornamentais",
+        "es": "[O] La policía ejecutó un registro en Manaos e incautó dos teléfonos en una investigación iniciada tras decomiso de unas mil arawanas en enero.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-cumpre-mandado-em-investigacao-sobre-comercio-ilegal-de-peixes-ornamentais"
+      },
+      "primary_crime_type": "WILDLIFE_TRAFFICKING",
+      "crime_types": [
+        "WILDLIFE_TRAFFICKING"
+      ],
+      "operation_name": "Investigação de comércio ilegal de aruanãs",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "priority": "HIGH",
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Officially reported operation; no allegation is treated as established guilt.",
+      "occurred_at": "2026-11-03T12:00:00-04:00",
+      "occurred_at_precision": "day verified; clock time unknown",
+      "published_at": "2026-11-03T12:00:00-04:00",
+      "added_at": "2026-11-15T15:04:41.565Z",
+      "updated_at": "2026-11-15T15:04:41.565Z",
+      "backfill": true,
+      "location": {
+        "name": "Manaus (mandado; apreensão anterior em Tabatinga)",
+        "admin1": "Amazonas",
+        "country": "Brazil",
+        "lat": -3.119,
+        "lon": -60.022,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate site of warrant or region; not exact offense coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-cumpre-mandado-em-investigacao-sobre-comercio-ilegal-de-peixes-ornamentais",
+          "published_at": "2026-11-03T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Investigação de comércio ilegal de aruanãs"
+      ],
+      "evidence_notes": ""
+    },
+    {
+      "id": "BR-MT-2026-1106-HYBRIS",
+      "title": {
+        "pt": "Hybris investiga madeira da TI Enawene Nawe em Mato Grosso",
+        "en": "Hybris investigates timber linked to Enawene Nawe territory",
+        "es": "Hybris investiga madera vinculada al territorio Enawene Nawe"
+      },
+      "summary": {
+        "pt": "PF cumpriu mandado em Nova Olímpia para apurar suposta extração e comercialização ilegal de madeira da TI Enawene Nawe.",
+        "en": "Federal Police executed a warrant in Nova Olímpia investigating alleged illegal logging and timber trade involving Enawene Nawe territory.",
+        "es": "La Policía Federal ejecutó un registro en Nova Olímpia por presunta tala y comercio ilegales de madera del territorio Enawene Nawe."
+      },
+      "case_context": {
+        "pt": "[O] PF cumpriu mandado em Nova Olímpia para apurar suposta extração e comercialização ilegal de madeira da TI Enawene Nawe.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-combate-extracao-e-comercializacao-ilegal-de-recursos-florestais-em-terra-indigena",
+        "en": "[O] Federal Police executed a warrant in Nova Olímpia investigating alleged illegal logging and timber trade involving Enawene Nawe territory.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-combate-extracao-e-comercializacao-ilegal-de-recursos-florestais-em-terra-indigena",
+        "es": "[O] La Policía Federal ejecutó un registro en Nova Olímpia por presunta tala y comercio ilegales de madera del territorio Enawene Nawe.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-combate-extracao-e-comercializacao-ilegal-de-recursos-florestais-em-terra-indigena"
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": "Hybris",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "priority": "HIGH",
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Officially reported operation; no allegation is treated as established guilt.",
+      "occurred_at": "2026-11-06T12:00:00-04:00",
+      "occurred_at_precision": "day verified; clock time unknown",
+      "published_at": "2026-11-06T12:00:00-04:00",
+      "added_at": "2026-11-15T15:04:41.565Z",
+      "updated_at": "2026-11-15T15:04:41.565Z",
+      "backfill": true,
+      "location": {
+        "name": "Nova Olímpia (mandado; madeira atribuída à TI Enawene Nawe)",
+        "admin1": "Mato Grosso",
+        "country": "Brazil",
+        "lat": -14.79,
+        "lon": -57.29,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate site of warrant or region; not exact offense coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-combate-extracao-e-comercializacao-ilegal-de-recursos-florestais-em-terra-indigena",
+          "published_at": "2026-11-06T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Hybris"
+      ],
+      "evidence_notes": ""
+    },
+    {
+      "id": "BR-PA-MA-2026-1106-AVENIDA-GURUPI",
+      "title": {
+        "pt": "Avenida Gurupi reprime transporte ilegal de madeira entre PA e MA",
+        "en": "Avenida Gurupi targets illegal timber transport between Pará and Maranhão",
+        "es": "Avenida Gurupi combate transporte ilegal de madera entre Pará y Maranhão"
+      },
+      "summary": {
+        "pt": "PF cumpriu mandados em balsa e empresa ligadas ao transporte irregular de madeira da Reserva Biológica do Gurupi; apreendeu caminhão com toras.",
+        "en": "Federal Police searched a barge and business linked to timber transport from Gurupi Biological Reserve and seized a truck with logs.",
+        "es": "La policía registró una balsa y empresa vinculadas al transporte de madera de la Reserva Biológica Gurupi e incautó un camión con troncos."
+      },
+      "case_context": {
+        "pt": "[O] PF cumpriu mandados em balsa e empresa ligadas ao transporte irregular de madeira da Reserva Biológica do Gurupi; apreendeu caminhão com toras.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-combate-transporte-ilegal-de-madeira-entre-o-maranhao-e-o-para",
+        "en": "[O] Federal Police searched a barge and business linked to timber transport from Gurupi Biological Reserve and seized a truck with logs.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-combate-transporte-ilegal-de-madeira-entre-o-maranhao-e-o-para",
+        "es": "[O] La policía registró una balsa y empresa vinculadas al transporte de madera de la Reserva Biológica Gurupi e incautó un camión con troncos.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-combate-transporte-ilegal-de-madeira-entre-o-maranhao-e-o-para"
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": "Avenida Gurupi",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "priority": "HIGH",
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Officially reported operation; no allegation is treated as established guilt.",
+      "occurred_at": "2026-11-06T12:00:00-04:00",
+      "occurred_at_precision": "day verified; clock time unknown",
+      "published_at": "2026-11-09T12:00:00-04:00",
+      "added_at": "2026-11-15T15:04:41.565Z",
+      "updated_at": "2026-11-15T15:04:41.565Z",
+      "backfill": true,
+      "location": {
+        "name": "Santa Luzia do Pará / Rio Gurupi (municipal reference)",
+        "admin1": "Pará / Maranhão",
+        "country": "Brazil",
+        "lat": -1.52,
+        "lon": -46.9,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate site of warrant or region; not exact offense coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-combate-transporte-ilegal-de-madeira-entre-o-maranhao-e-o-para",
+          "published_at": "2026-11-09T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Avenida Gurupi"
+      ],
+      "evidence_notes": ""
+    },
+    {
+      "id": "BR-RR-2026-1030-IBAMA-MULTISITE-MINING",
+      "title": {
+        "pt": "Ibama inutiliza aeronaves e balsas de garimpo em Roraima",
+        "en": "Ibama disables mining aircraft and barges across Roraima",
+        "es": "Ibama inutiliza aeronaves y balsas mineras en Roraima"
+      },
+      "summary": {
+        "pt": "Em dez dias até 30/10, o Ibama inutilizou duas aeronaves, dez balsas, dez embarcações de apoio e duas dragas em Roraima.",
+        "en": "Over ten days ending October 30, Ibama disabled two aircraft, ten barges, ten support vessels and two dredges in Roraima.",
+        "es": "Durante diez días hasta el 30 de octubre, Ibama inutilizó dos aeronaves, diez balsas, diez embarcaciones de apoyo y dos dragas en Roraima."
+      },
+      "case_context": {
+        "pt": "[O] Em dez dias até 30/10, o Ibama inutilizou duas aeronaves, dez balsas, dez embarcações de apoio e duas dragas em Roraima. [N] Reportagem sobre a TI Yanomami relata adaptação do garimpo, mas não relaciona agentes desta fiscalização aos entrevistados.\nFontes: [O] https://www.gov.br/ibama/pt-br/assuntos/noticias/2026/ibama-desativa-garimpo-ilegal-em-unidades-de-conservacao-federais-e-terras-indigenas-em-roraima/ | [N] https://news.mongabay.com/2026/06/illegal-miners-adapt-their-strategies-in-yanomami-amazon-territory/",
+        "en": "[O] Over ten days ending October 30, Ibama disabled two aircraft, ten barges, ten support vessels and two dredges in Roraima. [N] Reporting on Yanomami territory describes changing mining tactics without linking this inspection to the reported actors.\nSources: [O] https://www.gov.br/ibama/pt-br/assuntos/noticias/2026/ibama-desativa-garimpo-ilegal-em-unidades-de-conservacao-federais-e-terras-indigenas-em-roraima/ | [N] https://news.mongabay.com/2026/06/illegal-miners-adapt-their-strategies-in-yanomami-amazon-territory/",
+        "es": "[O] Durante diez días hasta el 30 de octubre, Ibama inutilizó dos aeronaves, diez balsas, diez embarcaciones de apoyo y dos dragas en Roraima. [N] Un reportaje sobre el territorio Yanomami describe nuevas tácticas mineras sin vincular a los actores de esta fiscalización.\nFuentes: [O] https://www.gov.br/ibama/pt-br/assuntos/noticias/2026/ibama-desativa-garimpo-ilegal-em-unidades-de-conservacao-federais-e-terras-indigenas-em-roraima/ | [N] https://news.mongabay.com/2026/06/illegal-miners-adapt-their-strategies-in-yanomami-amazon-territory/"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Fiscalização Ibama Roraima (dez dias, multissetorial)",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "priority": "HIGH",
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Officially reported operation; no allegation is treated as established guilt.",
+      "occurred_at": "2026-10-30T12:00:00-04:00",
+      "occurred_at_precision": "day verified; clock time unknown",
+      "published_at": "2026-11-04T12:00:00-04:00",
+      "added_at": "2026-11-15T15:04:41.565Z",
+      "updated_at": "2026-11-15T15:04:41.565Z",
+      "backfill": true,
+      "location": {
+        "name": "Roraima, várias áreas indígenas e UCs (referência Boa Vista)",
+        "admin1": "Roraima",
+        "country": "Brazil",
+        "lat": 2.823,
+        "lon": -60.674,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate site of warrant or region; not exact offense coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Ibama",
+          "url": "https://www.gov.br/ibama/pt-br/assuntos/noticias/2026/ibama-desativa-garimpo-ilegal-em-unidades-de-conservacao-federais-e-terras-indigenas-em-roraima/",
+          "published_at": "2026-11-04T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Fiscalização Ibama Roraima (dez dias, multissetorial)"
+      ],
+      "evidence_notes": "Ten-day multi-area aggregate; counted once."
     }
   ]
 }
