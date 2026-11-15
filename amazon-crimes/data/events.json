@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-11-15T17:30:57.109Z",
+  "generated_at": "2026-11-15T17:59:27.511Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -8051,6 +8051,186 @@
       "source_media": []
     },
     {
+      "id": "BR-AM-2025-1006-ARPAO2-240KG",
+      "title": {
+        "pt": "Fiscalização Arpão 2 — Base Arpão 2 / proximidades Coari",
+        "en": "Fiscalização Arpão 2 — Base Arpão 2 / proximidades Coari",
+        "es": "Fiscalização Arpão 2 — Base Arpão 2 / proximidades Coari"
+      },
+      "summary": {
+        "pt": "A PMAM apreendeu aproximadamente 240 kg de pirarucu sem documentação de origem ou transporte no ferry boat Arafer IX, com um homem detido.",
+        "en": "Amazonas police seized approximately 240 kg of pirarucu without provenance or transport documents aboard the Arafer IX ferry, detaining one man.",
+        "es": "La policía de Amazonas incautó unos 240 kg de paiche sin documentos de origen ni transporte a bordo del ferry Arafer IX y detuvo a un hombre."
+      },
+      "case_context": {
+        "pt": "[O] A PMAM apreendeu aproximadamente 240 kg de pirarucu sem documentação de origem ou transporte no ferry boat Arafer IX, com um homem detido.\nFontes: [O] https://www.ssp.am.gov.br/base-arpao-2-pmam-apreende-240-quilos-de-pirarucu-durante-fiscalizacao/",
+        "en": "[O] Amazonas police seized approximately 240 kg of pirarucu without provenance or transport documents aboard the Arafer IX ferry, detaining one man.\nSources: [O] https://www.ssp.am.gov.br/base-arpao-2-pmam-apreende-240-quilos-de-pirarucu-durante-fiscalizacao/",
+        "es": "[O] La policía de Amazonas incautó unos 240 kg de paiche sin documentos de origen ni transporte a bordo del ferry Arafer IX y detuvo a un hombre.\nFuentes: [O] https://www.ssp.am.gov.br/base-arpao-2-pmam-apreende-240-quilos-de-pirarucu-durante-fiscalizacao/"
+      },
+      "primary_crime_type": "ILLEGAL_FISHING",
+      "crime_types": [
+        "ILLEGAL_FISHING"
+      ],
+      "operation_name": "Fiscalização Arpão 2",
+      "agencies": [
+        "SSP Amazonas"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "Operational date documented by cited official source; georeferencing is approximate; arrest or administrative penalty does not imply criminal conviction.",
+      "occurred_at": "2025-10-06T12:00:00-04:00",
+      "occurred_at_precision": "day",
+      "published_at": "2025-10-06T12:00:00-04:00",
+      "added_at": "2026-11-15T17:59:27.511Z",
+      "updated_at": "2026-11-15T17:59:27.511Z",
+      "backfill": true,
+      "location": {
+        "name": "Base Arpão 2 / proximidades Coari",
+        "admin1": "Amazonas",
+        "country": "Brasil",
+        "lat": -4.09,
+        "lon": -63.14,
+        "precision": "municipality_or_river_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "SSP Amazonas",
+          "url": "https://www.ssp.am.gov.br/base-arpao-2-pmam-apreende-240-quilos-de-pirarucu-durante-fiscalizacao/",
+          "published_at": "2025-10-06T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Fiscalização Arpão 2",
+        "ILLEGAL_FISHING"
+      ]
+    },
+    {
+      "id": "BR-AM-2025-0825-CANUTAMA-TURTLES",
+      "title": {
+        "pt": "Apreensão de quelônios Canutama — Belo Monte / Canutama",
+        "en": "Apreensão de quelônios Canutama — Belo Monte / Canutama",
+        "es": "Apreensão de quelônios Canutama — Belo Monte / Canutama"
+      },
+      "summary": {
+        "pt": "Polícias Civil e Militar apreenderam uma embarcação com 254 quelônios vivos, um tracajá morto e mil ovos, estimados em quatro toneladas, e detiveram um suspeito.",
+        "en": "Civil and military police seized a boat with 254 live freshwater turtles, one dead turtle and 1,000 eggs, estimated at four tonnes, and detained one suspect.",
+        "es": "Las policías civil y militar incautaron una embarcación con 254 tortugas vivas, una muerta y mil huevos, estimados en cuatro toneladas, y detuvieron a un sospechoso."
+      },
+      "case_context": {
+        "pt": "[O] Polícias Civil e Militar apreenderam uma embarcação com 254 quelônios vivos, um tracajá morto e mil ovos, estimados em quatro toneladas, e detiveram um suspeito.\nFontes: [O] https://www.ssp.am.gov.br/em-canutama-policias-civil-e-militar-prendem-homem-por-caca-ilegal-de-mais-de-quatro-toneladas-de-quelonios/",
+        "en": "[O] Civil and military police seized a boat with 254 live freshwater turtles, one dead turtle and 1,000 eggs, estimated at four tonnes, and detained one suspect.\nSources: [O] https://www.ssp.am.gov.br/em-canutama-policias-civil-e-militar-prendem-homem-por-caca-ilegal-de-mais-de-quatro-toneladas-de-quelonios/",
+        "es": "[O] Las policías civil y militar incautaron una embarcación con 254 tortugas vivas, una muerta y mil huevos, estimados en cuatro toneladas, y detuvieron a un sospechoso.\nFuentes: [O] https://www.ssp.am.gov.br/em-canutama-policias-civil-e-militar-prendem-homem-por-caca-ilegal-de-mais-de-quatro-toneladas-de-quelonios/"
+      },
+      "primary_crime_type": "WILDLIFE_CRIME",
+      "crime_types": [
+        "WILDLIFE_CRIME"
+      ],
+      "operation_name": "Apreensão de quelônios Canutama",
+      "agencies": [
+        "SSP Amazonas"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "Operational date documented by cited official source; georeferencing is approximate; arrest or administrative penalty does not imply criminal conviction.",
+      "occurred_at": "2025-08-25T12:00:00-04:00",
+      "occurred_at_precision": "day",
+      "published_at": "2025-08-26T12:00:00-04:00",
+      "added_at": "2026-11-15T17:59:27.511Z",
+      "updated_at": "2026-11-15T17:59:27.511Z",
+      "backfill": true,
+      "location": {
+        "name": "Belo Monte / Canutama",
+        "admin1": "Amazonas",
+        "country": "Brasil",
+        "lat": -6.53,
+        "lon": -64.4,
+        "precision": "municipality_or_river_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "SSP Amazonas",
+          "url": "https://www.ssp.am.gov.br/em-canutama-policias-civil-e-militar-prendem-homem-por-caca-ilegal-de-mais-de-quatro-toneladas-de-quelonios/",
+          "published_at": "2025-08-26T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Apreensão de quelônios Canutama",
+        "WILDLIFE_CRIME"
+      ]
+    },
+    {
+      "id": "BR-AM-2025-0805-BARCELOS-FAUNA",
+      "title": {
+        "pt": "Fiscalização Arpão 2 Barcelos — Boca do Jaú / Barcelos",
+        "en": "Fiscalização Arpão 2 Barcelos — Boca do Jaú / Barcelos",
+        "es": "Fiscalização Arpão 2 Barcelos — Boca do Jaú / Barcelos"
+      },
+      "summary": {
+        "pt": "Em canoa no rio Negro, a PMAM apreendeu 256 quelônios, 50 mantas de pirarucu e cerca de 400 kg de carne de caça; o condutor fugiu.",
+        "en": "On a canoe on the Negro River, police seized 256 turtles, 50 pirarucu portions and about 400 kg of bushmeat; the operator fled.",
+        "es": "En una canoa en el río Negro, la policía incautó 256 tortugas, 50 piezas de paiche y unos 400 kg de carne de caza; el conductor huyó."
+      },
+      "case_context": {
+        "pt": "[O] Em canoa no rio Negro, a PMAM apreendeu 256 quelônios, 50 mantas de pirarucu e cerca de 400 kg de carne de caça; o condutor fugiu.\nFontes: [O] https://www.ssp.am.gov.br/base-arpao-2-pmam-apreende-mais-de-250-quelonios-alem-de-pescado-e-carne-de-caca-ilegais/",
+        "en": "[O] On a canoe on the Negro River, police seized 256 turtles, 50 pirarucu portions and about 400 kg of bushmeat; the operator fled.\nSources: [O] https://www.ssp.am.gov.br/base-arpao-2-pmam-apreende-mais-de-250-quelonios-alem-de-pescado-e-carne-de-caca-ilegais/",
+        "es": "[O] En una canoa en el río Negro, la policía incautó 256 tortugas, 50 piezas de paiche y unos 400 kg de carne de caza; el conductor huyó.\nFuentes: [O] https://www.ssp.am.gov.br/base-arpao-2-pmam-apreende-mais-de-250-quelonios-alem-de-pescado-e-carne-de-caca-ilegais/"
+      },
+      "primary_crime_type": "WILDLIFE_CRIME",
+      "crime_types": [
+        "WILDLIFE_CRIME"
+      ],
+      "operation_name": "Fiscalização Arpão 2 Barcelos",
+      "agencies": [
+        "SSP Amazonas"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "Operational date documented by cited official source; georeferencing is approximate; arrest or administrative penalty does not imply criminal conviction.",
+      "occurred_at": "2025-08-05T12:00:00-04:00",
+      "occurred_at_precision": "day",
+      "published_at": "2025-08-06T12:00:00-04:00",
+      "added_at": "2026-11-15T17:59:27.511Z",
+      "updated_at": "2026-11-15T17:59:27.511Z",
+      "backfill": true,
+      "location": {
+        "name": "Boca do Jaú / Barcelos",
+        "admin1": "Amazonas",
+        "country": "Brasil",
+        "lat": -0.975,
+        "lon": -62.93,
+        "precision": "municipality_or_river_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "SSP Amazonas",
+          "url": "https://www.ssp.am.gov.br/base-arpao-2-pmam-apreende-mais-de-250-quelonios-alem-de-pescado-e-carne-de-caca-ilegais/",
+          "published_at": "2025-08-06T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Fiscalização Arpão 2 Barcelos",
+        "WILDLIFE_CRIME"
+      ]
+    },
+    {
       "id": "VE-AMA-2025-0715-MINA-NUEVA",
       "title": {
         "pt": "Operativo GNB Mina Nueva — Mina Nueva / municipio Atabapo",
@@ -8171,6 +8351,126 @@
         }
       ],
       "source_media": []
+    },
+    {
+      "id": "BR-AM-2025-0519-ARPAO3-210KG",
+      "title": {
+        "pt": "Fiscalização Arpão 3 — Base Arpão 3 / proximidades Coari",
+        "en": "Fiscalização Arpão 3 — Base Arpão 3 / proximidades Coari",
+        "es": "Fiscalização Arpão 3 — Base Arpão 3 / proximidades Coari"
+      },
+      "summary": {
+        "pt": "A PMAM apreendeu 210 kg de pirarucu seco, sem autorização ambiental, no barco Izabel I que seguia de Tonantins a Manaus, com um homem detido.",
+        "en": "Amazonas police seized 210 kg of dried pirarucu without required permits aboard the Izabel I travelling from Tonantins to Manaus; one man was detained.",
+        "es": "La policía de Amazonas incautó 210 kg de paiche seco sin permisos a bordo del Izabel I entre Tonantins y Manaos, y detuvo a un hombre."
+      },
+      "case_context": {
+        "pt": "[O] A PMAM apreendeu 210 kg de pirarucu seco, sem autorização ambiental, no barco Izabel I que seguia de Tonantins a Manaus, com um homem detido.\nFontes: [O] https://www.ssp.am.gov.br/base-arpao-pmam-apreende-210-kg-de-pirarucu-transportado-ilegalmente/",
+        "en": "[O] Amazonas police seized 210 kg of dried pirarucu without required permits aboard the Izabel I travelling from Tonantins to Manaus; one man was detained.\nSources: [O] https://www.ssp.am.gov.br/base-arpao-pmam-apreende-210-kg-de-pirarucu-transportado-ilegalmente/",
+        "es": "[O] La policía de Amazonas incautó 210 kg de paiche seco sin permisos a bordo del Izabel I entre Tonantins y Manaos, y detuvo a un hombre.\nFuentes: [O] https://www.ssp.am.gov.br/base-arpao-pmam-apreende-210-kg-de-pirarucu-transportado-ilegalmente/"
+      },
+      "primary_crime_type": "ILLEGAL_FISHING",
+      "crime_types": [
+        "ILLEGAL_FISHING"
+      ],
+      "operation_name": "Fiscalização Arpão 3",
+      "agencies": [
+        "SSP Amazonas"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "Operational date documented by cited official source; georeferencing is approximate; arrest or administrative penalty does not imply criminal conviction.",
+      "occurred_at": "2025-05-19T12:00:00-04:00",
+      "occurred_at_precision": "day",
+      "published_at": "2025-05-20T12:00:00-04:00",
+      "added_at": "2026-11-15T17:59:27.511Z",
+      "updated_at": "2026-11-15T17:59:27.511Z",
+      "backfill": true,
+      "location": {
+        "name": "Base Arpão 3 / proximidades Coari",
+        "admin1": "Amazonas",
+        "country": "Brasil",
+        "lat": -4.09,
+        "lon": -63.14,
+        "precision": "municipality_or_river_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "SSP Amazonas",
+          "url": "https://www.ssp.am.gov.br/base-arpao-pmam-apreende-210-kg-de-pirarucu-transportado-ilegalmente/",
+          "published_at": "2025-05-20T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Fiscalização Arpão 3",
+        "ILLEGAL_FISHING"
+      ]
+    },
+    {
+      "id": "BR-AM-2025-0517-IRANDUBA-CURIO",
+      "title": {
+        "pt": "Fiscalização passarinhar Iranduba — Iranduba",
+        "en": "Fiscalização passarinhar Iranduba — Iranduba",
+        "es": "Fiscalização passarinhar Iranduba — Iranduba"
+      },
+      "summary": {
+        "pt": "Ipaam e Polícia Militar flagraram três pessoas capturando ou mantendo ilegalmente quatro curiós, aplicando multas administrativas de R$ 25 mil.",
+        "en": "Ipaam and police found three people illegally capturing or keeping four seed-finches (curiós), issuing administrative fines totaling R$25,000.",
+        "es": "Ipaam y la policía encontraron a tres personas capturando o manteniendo ilegalmente cuatro aves curiós y aplicaron multas administrativas por R$ 25.000."
+      },
+      "case_context": {
+        "pt": "[O] Ipaam e Polícia Militar flagraram três pessoas capturando ou mantendo ilegalmente quatro curiós, aplicando multas administrativas de R$ 25 mil.\nFontes: [O] https://www.ssp.am.gov.br/ipaam-e-batalhao-ambiental-da-pm-autuam-tres-pessoas-por-passarinhar-ilegalmente-em-iranduba/",
+        "en": "[O] Ipaam and police found three people illegally capturing or keeping four seed-finches (curiós), issuing administrative fines totaling R$25,000.\nSources: [O] https://www.ssp.am.gov.br/ipaam-e-batalhao-ambiental-da-pm-autuam-tres-pessoas-por-passarinhar-ilegalmente-em-iranduba/",
+        "es": "[O] Ipaam y la policía encontraron a tres personas capturando o manteniendo ilegalmente cuatro aves curiós y aplicaron multas administrativas por R$ 25.000.\nFuentes: [O] https://www.ssp.am.gov.br/ipaam-e-batalhao-ambiental-da-pm-autuam-tres-pessoas-por-passarinhar-ilegalmente-em-iranduba/"
+      },
+      "primary_crime_type": "WILDLIFE_CRIME",
+      "crime_types": [
+        "WILDLIFE_CRIME"
+      ],
+      "operation_name": "Fiscalização passarinhar Iranduba",
+      "agencies": [
+        "SSP Amazonas"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "Operational date documented by cited official source; georeferencing is approximate; arrest or administrative penalty does not imply criminal conviction.",
+      "occurred_at": "2025-05-17T12:00:00-04:00",
+      "occurred_at_precision": "day",
+      "published_at": "2025-05-19T12:00:00-04:00",
+      "added_at": "2026-11-15T17:59:27.511Z",
+      "updated_at": "2026-11-15T17:59:27.511Z",
+      "backfill": true,
+      "location": {
+        "name": "Iranduba",
+        "admin1": "Amazonas",
+        "country": "Brasil",
+        "lat": -3.28,
+        "lon": -60.19,
+        "precision": "municipality_or_river_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "SSP Amazonas",
+          "url": "https://www.ssp.am.gov.br/ipaam-e-batalhao-ambiental-da-pm-autuam-tres-pessoas-por-passarinhar-ilegalmente-em-iranduba/",
+          "published_at": "2025-05-19T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Fiscalização passarinhar Iranduba",
+        "WILDLIFE_CRIME"
+      ]
     },
     {
       "id": "SR-BRO-2025-0516-ZIJIN",
@@ -8369,6 +8669,66 @@
         }
       ],
       "source_media": []
+    },
+    {
+      "id": "BR-AM-2025-0311-MANAUS-CAPTIVITY",
+      "title": {
+        "pt": "Fiscalização Ipaam Parque Dez — Parque Dez / Manaus",
+        "en": "Fiscalização Ipaam Parque Dez — Parque Dez / Manaus",
+        "es": "Fiscalização Ipaam Parque Dez — Parque Dez / Manaus"
+      },
+      "summary": {
+        "pt": "O Ipaam autuou o responsável pela manutenção sem licença de 20 tartarugas-da-Amazônia, quatro pirarucus e 23 tambaquis, aplicando multas de R$ 140 mil.",
+        "en": "Ipaam cited the keeper of 20 giant Amazon river turtles, four pirarucu and 23 tambaqui held without permits, imposing R$140,000 in fines.",
+        "es": "Ipaam sancionó la tenencia sin licencia de 20 tortugas gigantes amazónicas, cuatro paiches y 23 tambaquíes, con multas por R$ 140.000."
+      },
+      "case_context": {
+        "pt": "[O] O Ipaam autuou o responsável pela manutenção sem licença de 20 tartarugas-da-Amazônia, quatro pirarucus e 23 tambaquis, aplicando multas de R$ 140 mil.\nFontes: [O] https://www.ipaam.am.gov.br/ipaam-multa-em-r-140-mil-homem-por-criar-tartarugas-pirarucus-e-tambaquis-ilegalmente-em-casa-no-parque-dez/",
+        "en": "[O] Ipaam cited the keeper of 20 giant Amazon river turtles, four pirarucu and 23 tambaqui held without permits, imposing R$140,000 in fines.\nSources: [O] https://www.ipaam.am.gov.br/ipaam-multa-em-r-140-mil-homem-por-criar-tartarugas-pirarucus-e-tambaquis-ilegalmente-em-casa-no-parque-dez/",
+        "es": "[O] Ipaam sancionó la tenencia sin licencia de 20 tortugas gigantes amazónicas, cuatro paiches y 23 tambaquíes, con multas por R$ 140.000.\nFuentes: [O] https://www.ipaam.am.gov.br/ipaam-multa-em-r-140-mil-homem-por-criar-tartarugas-pirarucus-e-tambaquis-ilegalmente-em-casa-no-parque-dez/"
+      },
+      "primary_crime_type": "WILDLIFE_CRIME",
+      "crime_types": [
+        "WILDLIFE_CRIME"
+      ],
+      "operation_name": "Fiscalização Ipaam Parque Dez",
+      "agencies": [
+        "Ipaam"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "Operational date documented by cited official source; georeferencing is approximate; arrest or administrative penalty does not imply criminal conviction.",
+      "occurred_at": "2025-03-11T12:00:00-04:00",
+      "occurred_at_precision": "day",
+      "published_at": "2025-03-12T12:00:00-04:00",
+      "added_at": "2026-11-15T17:59:27.511Z",
+      "updated_at": "2026-11-15T17:59:27.511Z",
+      "backfill": true,
+      "location": {
+        "name": "Parque Dez / Manaus",
+        "admin1": "Amazonas",
+        "country": "Brasil",
+        "lat": -3.083,
+        "lon": -60,
+        "precision": "municipality_or_river_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Ipaam",
+          "url": "https://www.ipaam.am.gov.br/ipaam-multa-em-r-140-mil-homem-por-criar-tartarugas-pirarucus-e-tambaquis-ilegalmente-em-casa-no-parque-dez/",
+          "published_at": "2025-03-12T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Fiscalização Ipaam Parque Dez",
+        "WILDLIFE_CRIME"
+      ]
     },
     {
       "id": "GY-2025-0223-IWOKRAMA",
@@ -8737,6 +9097,66 @@
         }
       ],
       "source_media": []
+    },
+    {
+      "id": "BO-BENI-2024-0910-TURTLE-EGGS",
+      "title": {
+        "pt": "Interdicción POFOMA huevos de tortuga — Estrada Trinidad–San Andrés",
+        "en": "Interdicción POFOMA huevos de tortuga — Estrada Trinidad–San Andrés",
+        "es": "Interdicción POFOMA huevos de tortuga — Estrada Trinidad–San Andrés"
+      },
+      "summary": {
+        "pt": "A POFOMA apreendeu 11 mil ovos de tartarugas de rio em um veículo na estrada Trinidad–San Andrés, e uma mulher foi detida para investigação.",
+        "en": "POFOMA seized 11,000 river turtle eggs from a vehicle on the Trinidad–San Andrés road, and a woman was detained pending investigation.",
+        "es": "POFOMA incautó 11.000 huevos de tortuga de río de un vehículo en la carretera Trinidad–San Andrés y una mujer fue aprehendida para investigación."
+      },
+      "case_context": {
+        "pt": "[O] A POFOMA apreendeu 11 mil ovos de tartarugas de rio em um veículo na estrada Trinidad–San Andrés, e uma mulher foi detida para investigação.\nFontes: [O] https://www.fiscalia.gob.bo/comunicacion/noticias/fiscalia-de-beni-investiga-a-una-mujer-por-transportar-11000-huevos-de-tortuga-de-rio",
+        "en": "[O] POFOMA seized 11,000 river turtle eggs from a vehicle on the Trinidad–San Andrés road, and a woman was detained pending investigation.\nSources: [O] https://www.fiscalia.gob.bo/comunicacion/noticias/fiscalia-de-beni-investiga-a-una-mujer-por-transportar-11000-huevos-de-tortuga-de-rio",
+        "es": "[O] POFOMA incautó 11.000 huevos de tortuga de río de un vehículo en la carretera Trinidad–San Andrés y una mujer fue aprehendida para investigación.\nFuentes: [O] https://www.fiscalia.gob.bo/comunicacion/noticias/fiscalia-de-beni-investiga-a-una-mujer-por-transportar-11000-huevos-de-tortuga-de-rio"
+      },
+      "primary_crime_type": "WILDLIFE_TRAFFICKING",
+      "crime_types": [
+        "WILDLIFE_TRAFFICKING"
+      ],
+      "operation_name": "Interdicción POFOMA huevos de tortuga",
+      "agencies": [
+        "Fiscalía General del Estado Bolivia"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "Operational date documented by cited official source; georeferencing is approximate; arrest or administrative penalty does not imply criminal conviction.",
+      "occurred_at": "2024-09-10T12:00:00-04:00",
+      "occurred_at_precision": "day",
+      "published_at": "2024-09-12T12:00:00-04:00",
+      "added_at": "2026-11-15T17:59:27.511Z",
+      "updated_at": "2026-11-15T17:59:27.511Z",
+      "backfill": true,
+      "location": {
+        "name": "Estrada Trinidad–San Andrés",
+        "admin1": "Beni",
+        "country": "Bolivia",
+        "lat": -14.835,
+        "lon": -64.9,
+        "precision": "municipality_or_river_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Fiscalía General del Estado Bolivia",
+          "url": "https://www.fiscalia.gob.bo/comunicacion/noticias/fiscalia-de-beni-investiga-a-una-mujer-por-transportar-11000-huevos-de-tortuga-de-rio",
+          "published_at": "2024-09-12T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Interdicción POFOMA huevos de tortuga",
+        "WILDLIFE_TRAFFICKING"
+      ]
     },
     {
       "id": "PE-MDD-2024-0906-BOCA-INAMBARI",
@@ -9337,6 +9757,66 @@
         }
       ],
       "source_media": []
+    },
+    {
+      "id": "BR-AM-2024-0308-TABATINGA-FAUNA",
+      "title": {
+        "pt": "Fiscalização PF Tabatinga — Tabatinga",
+        "en": "Fiscalização PF Tabatinga — Tabatinga",
+        "es": "Fiscalização PF Tabatinga — Tabatinga"
+      },
+      "summary": {
+        "pt": "A PF encontrou mais de 400 kg de pirarucu de origem ilegal, oito pacas abatidas e cinco papagaios mantidos sem autorização, com um suspeito detido.",
+        "en": "Federal Police found over 400 kg of illegally sourced pirarucu, eight hunted pacas and five parrots held without authorization; one suspect was detained.",
+        "es": "La Policía Federal encontró más de 400 kg de paiche de origen ilegal, ocho pacas cazadas y cinco loros sin autorización; un sospechoso fue detenido."
+      },
+      "case_context": {
+        "pt": "[O] A PF encontrou mais de 400 kg de pirarucu de origem ilegal, oito pacas abatidas e cinco papagaios mantidos sem autorização, com um suspeito detido.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2024/03/pf-prenfe",
+        "en": "[O] Federal Police found over 400 kg of illegally sourced pirarucu, eight hunted pacas and five parrots held without authorization; one suspect was detained.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2024/03/pf-prenfe",
+        "es": "[O] La Policía Federal encontró más de 400 kg de paiche de origen ilegal, ocho pacas cazadas y cinco loros sin autorización; un sospechoso fue detenido.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2024/03/pf-prenfe"
+      },
+      "primary_crime_type": "WILDLIFE_CRIME",
+      "crime_types": [
+        "WILDLIFE_CRIME"
+      ],
+      "operation_name": "Fiscalização PF Tabatinga",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "Operational date documented by cited official source; georeferencing is approximate; arrest or administrative penalty does not imply criminal conviction.",
+      "occurred_at": "2024-03-08T12:00:00-04:00",
+      "occurred_at_precision": "day",
+      "published_at": "2024-03-09T12:00:00-04:00",
+      "added_at": "2026-11-15T17:59:27.511Z",
+      "updated_at": "2026-11-15T17:59:27.511Z",
+      "backfill": true,
+      "location": {
+        "name": "Tabatinga",
+        "admin1": "Amazonas",
+        "country": "Brasil",
+        "lat": -4.233,
+        "lon": -69.938,
+        "precision": "municipality_or_river_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2024/03/pf-prenfe",
+          "published_at": "2024-03-09T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Fiscalização PF Tabatinga",
+        "WILDLIFE_CRIME"
+      ]
     }
   ]
 }
