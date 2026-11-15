@@ -89,6 +89,24 @@ try {
     const item=overlays?.find(x=>x.id===id);
     assert(item?.layer&&item?.source&&item?.visibility==='visible',id+' not visible');
   }
+  // Verify that the actual Indigenous Territories PNG has non-transparent pixels.
+  // HTTP 200 and "visible" MapLibre layout properties alone do not prove geography is drawn.
+  const pixelTest=await page.evaluate(async()=>{
+    const url=new URL('./assets/territory-tiles/indigenous_lands/5/10/16.png',document.baseURI);
+    const response=await fetch(url,{cache:'no-store'});
+    if(!response.ok)throw new Error('Indigenous reference PNG HTTP '+response.status);
+    const bitmap=await createImageBitmap(await response.blob());
+    const canvas=document.createElement('canvas');
+    canvas.width=bitmap.width;canvas.height=bitmap.height;
+    const ctx=canvas.getContext('2d',{willReadFrequently:true});
+    ctx.drawImage(bitmap,0,0);
+    const data=ctx.getImageData(0,0,bitmap.width,bitmap.height).data;
+    let opaque=0;
+    for(let i=3;i<data.length;i+=4)if(data[i]>20)opaque++;
+    return {opaque,width:bitmap.width,height:bitmap.height};
+  });
+  console.log('INDIGENOUS_PIXEL_TEST',JSON.stringify(pixelTest));
+  assert(pixelTest.opaque>100,'Indigenous territories WMS image is blank/transparent');
   const localOk=tileResponses.filter(r=>r.url.includes('/assets/territory-tiles/') && r.status===200&&r.contentType.includes('image/'));
   assert(localOk.length>0,'No locally hosted GIS imagery successfully loaded');
   assert(!tileResponses.some(r=>r.url.includes('/assets/territory-tiles/')&&r.status>=400),'Territory raster tile HTTP error');

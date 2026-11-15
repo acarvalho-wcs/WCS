@@ -8,7 +8,7 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const destination=path.join(root,'public/assets/territory-tiles');
 const sources=[
  {id:'protected_areas',service:'https://geo.socioambiental.org/raisg/services/raisg/rg_srv_mapas_anps/MapServer/WMSServer',layers:'1,2,3,4,5,6'},
- {id:'indigenous_lands',service:'https://geo.socioambiental.org/raisg/services/raisg/rg_srv_mapas_tis/MapServer/WMSServer',layers:'1'}
+ {id:'indigenous_lands',service:'https://geo.socioambiental.org/raisg/services/raisg/rg_srv_mapas_tis/MapServer/WMSServer',layers:'0'}
 ];
 const limits={west:-84,south:-21,east:-42,north:16};
 const maxZoom=5; // Regional overview; details above zoom 5 are raster-overscaled.
@@ -58,6 +58,10 @@ async function worker(){
 }
 await Promise.all(Array.from({length:6},()=>worker()));
 console.log('RAISG WMS CACHE',JSON.stringify({made,failed:failures.length,failures:failures.slice(0,12)}));
+const indigenousTile=path.join(destination,'indigenous_lands','5','10','16.png');
+const indigenousSample=await import('node:fs/promises').then(fs=>fs.stat(indigenousTile));
+console.log('RAISG INDIGENOUS MANAUS TILE',JSON.stringify({path:indigenousTile,bytes:indigenousSample.size}));
+if(indigenousSample.size<1500)throw new Error('Indigenous reference tile is unexpectedly empty; likely wrong WMS layer number.');
 if(failures.length)throw new Error('Incomplete RAISG tile snapshot: '+failures.length+' missing images. Aborting deploy.');
 
 // INFRASA hosted feature service integrates MMA and ICMBio data for federal UCs.
