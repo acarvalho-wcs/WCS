@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-11-15T17:30:10.411Z",
+  "generated_at": "2026-11-15T17:30:35.172Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -7989,6 +7989,254 @@
       "source_media": []
     },
     {
+      "id": "PE-LOR-2025-1019-NOCTILIUS",
+      "title": {
+        "pt": "Operación Noctilius — Alto río Nanay",
+        "en": "Operación Noctilius — Alto río Nanay",
+        "es": "Operación Noctilius — Alto río Nanay"
+      },
+      "summary": {
+        "pt": "Entre 11 e 19 de outubro, a Operação Noctilius destruiu 19 dragas e três acampamentos de mineração ilegal na bacia do Alto Nanay.",
+        "en": "From 11 to 19 October, Operation Noctilius destroyed 19 illegal mining dredges and three camps in the Upper Nanay basin.",
+        "es": "Entre el 11 y el 19 de octubre, la Operación Noctilius destruyó 19 dragas y tres campamentos de minería ilegal en el Alto Nanay."
+      },
+      "case_context": {
+        "pt": "[O] Entre 11 e 19 de outubro, a Operação Noctilius destruiu 19 dragas e três acampamentos de mineração ilegal na bacia do Alto Nanay.\nFontes: [O] https://www.gob.pe/institucion/marina/noticias/1269315-marina-de-guerra-del-peru-ejecuto-exitosamente-la-operacion-noctilius-contra-la-mineria-ilegal-en-la-amazonia",
+        "en": "[O] From 11 to 19 October, Operation Noctilius destroyed 19 illegal mining dredges and three camps in the Upper Nanay basin.\nSources: [O] https://www.gob.pe/institucion/marina/noticias/1269315-marina-de-guerra-del-peru-ejecuto-exitosamente-la-operacion-noctilius-contra-la-mineria-ilegal-en-la-amazonia",
+        "es": "[O] Entre el 11 y el 19 de octubre, la Operación Noctilius destruyó 19 dragas y tres campamentos de minería ilegal en el Alto Nanay.\nFuentes: [O] https://www.gob.pe/institucion/marina/noticias/1269315-marina-de-guerra-del-peru-ejecuto-exitosamente-la-operacion-noctilius-contra-la-mineria-ilegal-en-la-amazonia"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Operación Noctilius",
+      "agencies": [
+        "Marina de Guerra del Perú"
+      ],
+      "occurred_at": "2025-10-19T12:00:00-05:00",
+      "published_at": "2025-10-20T12:00:00-05:00",
+      "added_at": "2026-11-15T17:30:35.172Z",
+      "updated_at": "2026-11-15T17:30:35.172Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Dates and alleged offenses follow the cited agency's account. Administrative actions and allegations do not constitute convictions.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Alto río Nanay",
+        "admin1": "Loreto",
+        "country": "Peru",
+        "lat": -3.6,
+        "lon": -74.2,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Operación Noctilius",
+        "ILLEGAL_MINING"
+      ],
+      "sources": [
+        {
+          "publisher": "Marina de Guerra del Perú",
+          "url": "https://www.gob.pe/institucion/marina/noticias/1269315-marina-de-guerra-del-peru-ejecuto-exitosamente-la-operacion-noctilius-contra-la-mineria-ilegal-en-la-amazonia",
+          "published_at": "2025-10-20T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "EC-NAP-2025-0630-RIO-VERDE",
+      "title": {
+        "pt": "Operación Río Verde — Río Paushiyacu / Tena",
+        "en": "Operación Río Verde — Río Paushiyacu / Tena",
+        "es": "Operación Río Verde — Río Paushiyacu / Tena"
+      },
+      "summary": {
+        "pt": "Em 30 de junho, a Fiscalía processou três pessoas por suspeita de mineração ilegal no rio Paushiyacu, após inspeção que encontrou escavadeira, classificadora e motores.",
+        "en": "On 30 June, prosecutors charged three suspects over alleged illegal mining on the Paushiyacu River following an inspection that found an excavator, a classifier and engines.",
+        "es": "El 30 de junio, la Fiscalía procesó a tres sospechosos por presunta minería ilegal en el río Paushiyacu, tras una inspección que halló una excavadora, una clasificadora y motores."
+      },
+      "case_context": {
+        "pt": "[O] Em 30 de junho, a Fiscalía processou três pessoas por suspeita de mineração ilegal no rio Paushiyacu, após inspeção que encontrou escavadeira, classificadora e motores.\nFontes: [O] https://www.fiscalia.gob.ec/3-procesados-por-presunta-mineria-ilegal/",
+        "en": "[O] On 30 June, prosecutors charged three suspects over alleged illegal mining on the Paushiyacu River following an inspection that found an excavator, a classifier and engines.\nSources: [O] https://www.fiscalia.gob.ec/3-procesados-por-presunta-mineria-ilegal/",
+        "es": "[O] El 30 de junio, la Fiscalía procesó a tres sospechosos por presunta minería ilegal en el río Paushiyacu, tras una inspección que halló una excavadora, una clasificadora y motores.\nFuentes: [O] https://www.fiscalia.gob.ec/3-procesados-por-presunta-mineria-ilegal/"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Operación Río Verde",
+      "agencies": [
+        "Fiscalía General del Estado"
+      ],
+      "occurred_at": "2025-06-30T12:00:00-05:00",
+      "published_at": "2025-06-30T12:00:00-05:00",
+      "added_at": "2026-11-15T17:30:35.172Z",
+      "updated_at": "2026-11-15T17:30:35.172Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Dates and alleged offenses follow the cited agency's account. Administrative actions and allegations do not constitute convictions.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Río Paushiyacu / Tena",
+        "admin1": "Napo",
+        "country": "Ecuador",
+        "lat": -0.99,
+        "lon": -77.82,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Operación Río Verde",
+        "ILLEGAL_MINING"
+      ],
+      "sources": [
+        {
+          "publisher": "Fiscalía General del Estado",
+          "url": "https://www.fiscalia.gob.ec/3-procesados-por-presunta-mineria-ilegal/",
+          "published_at": "2025-06-30T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "SR-BRO-2025-0516-ZIJIN",
+      "title": {
+        "pt": "Zijin-concessie politieactie — Zijin concession / Brownsweg",
+        "en": "Zijin-concessie politieactie — Zijin concession / Brownsweg",
+        "es": "Zijin-concessie politieactie — Zijin concession / Brownsweg"
+      },
+      "summary": {
+        "pt": "Em 16 de maio, a polícia deteve quatro pessoas por suspeita de extração não autorizada de ouro na concessão Zijin; a investigação continuava aberta.",
+        "en": "On 16 May, police detained four people suspected of unauthorized gold mining in the Zijin concession; the investigation was ongoing.",
+        "es": "El 16 de mayo, la policía detuvo a cuatro personas sospechosas de extracción no autorizada de oro en la concesión Zijin; la investigación seguía abierta."
+      },
+      "case_context": {
+        "pt": "[O] Em 16 de maio, a polícia deteve quatro pessoas por suspeita de extração não autorizada de ouro na concessão Zijin; a investigação continuava aberta.\nFontes: [O] https://politie.sr/vier-illegale-goudzoekers-aangehouden-in-concessiegebied-zijin/",
+        "en": "[O] On 16 May, police detained four people suspected of unauthorized gold mining in the Zijin concession; the investigation was ongoing.\nSources: [O] https://politie.sr/vier-illegale-goudzoekers-aangehouden-in-concessiegebied-zijin/",
+        "es": "[O] El 16 de mayo, la policía detuvo a cuatro personas sospechosas de extracción no autorizada de oro en la concesión Zijin; la investigación seguía abierta.\nFuentes: [O] https://politie.sr/vier-illegale-goudzoekers-aangehouden-in-concessiegebied-zijin/"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Zijin-concessie politieactie",
+      "agencies": [
+        "Korps Politie Suriname"
+      ],
+      "occurred_at": "2025-05-16T12:00:00-03:00",
+      "published_at": "2025-05-19T12:00:00-03:00",
+      "added_at": "2026-11-15T17:30:35.172Z",
+      "updated_at": "2026-11-15T17:30:35.172Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Dates and alleged offenses follow the cited agency's account. Administrative actions and allegations do not constitute convictions.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Zijin concession / Brownsweg",
+        "admin1": "Brokopondo",
+        "country": "Suriname",
+        "lat": 5.08,
+        "lon": -55.2,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Zijin-concessie politieactie",
+        "ILLEGAL_MINING"
+      ],
+      "sources": [
+        {
+          "publisher": "Korps Politie Suriname",
+          "url": "https://politie.sr/vier-illegale-goudzoekers-aangehouden-in-concessiegebied-zijin/",
+          "published_at": "2025-05-19T12:00:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "GF-2025-0415-ORPAILLAGE-LOGISTIQUE",
+      "title": {
+        "pt": "Démantèlement réseau logistique d'orpaillage — Cayenne / leste da Guiana Francesa (referência regional)",
+        "en": "Démantèlement réseau logistique d'orpaillage — Cayenne / leste da Guiana Francesa (referência regional)",
+        "es": "Démantèlement réseau logistique d'orpaillage — Cayenne / leste da Guiana Francesa (referência regional)"
+      },
+      "summary": {
+        "pt": "Em 15 e 16 de abril, a gendarmaria deteve quatro suspeitos de atuar na logística do garimpo ilegal e apreendeu mais de dez toneladas de suprimentos e 3.700 litros de combustível.",
+        "en": "On 15–16 April, gendarmes detained four suspected illegal-gold-mining logistics operators and seized over ten tonnes of supplies and 3,700 litres of fuel.",
+        "es": "El 15 y 16 de abril, la gendarmería detuvo a cuatro sospechosos de logística de minería aurífera ilegal e incautó más de diez toneladas de suministros y 3.700 litros de combustible."
+      },
+      "case_context": {
+        "pt": "[O] Em 15 e 16 de abril, a gendarmaria deteve quatro suspeitos de atuar na logística do garimpo ilegal e apreendeu mais de dez toneladas de suprimentos e 3.700 litros de combustível.\nFontes: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/criminalite-organisee-et-enquetes/2025/guyane-demantelement-du-plus-important-reseau-logistique-d-orpaillage-illegal",
+        "en": "[O] On 15–16 April, gendarmes detained four suspected illegal-gold-mining logistics operators and seized over ten tonnes of supplies and 3,700 litres of fuel.\nSources: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/criminalite-organisee-et-enquetes/2025/guyane-demantelement-du-plus-important-reseau-logistique-d-orpaillage-illegal",
+        "es": "[O] El 15 y 16 de abril, la gendarmería detuvo a cuatro sospechosos de logística de minería aurífera ilegal e incautó más de diez toneladas de suministros y 3.700 litros de combustible.\nFuentes: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/criminalite-organisee-et-enquetes/2025/guyane-demantelement-du-plus-important-reseau-logistique-d-orpaillage-illegal"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Démantèlement réseau logistique d'orpaillage",
+      "agencies": [
+        "Gendarmerie nationale"
+      ],
+      "occurred_at": "2025-04-15T12:00:00-03:00",
+      "published_at": "2025-04-23T12:00:00-03:00",
+      "added_at": "2026-11-15T17:30:35.172Z",
+      "updated_at": "2026-11-15T17:30:35.172Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Dates and alleged offenses follow the cited agency's account. Administrative actions and allegations do not constitute convictions.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Cayenne / leste da Guiana Francesa (referência regional)",
+        "admin1": "Guyane française",
+        "country": "Guiana Francesa",
+        "lat": 4.94,
+        "lon": -52.33,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Démantèlement réseau logistique d'orpaillage",
+        "ILLEGAL_MINING"
+      ],
+      "sources": [
+        {
+          "publisher": "Gendarmerie nationale",
+          "url": "https://www.gendarmerie.interieur.gouv.fr/gendinfo/criminalite-organisee-et-enquetes/2025/guyane-demantelement-du-plus-important-reseau-logistique-d-orpaillage-illegal",
+          "published_at": "2025-04-23T12:00:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
       "id": "BR-AM-2025-0311-XAPIRI",
       "title": {
         "pt": "Operação Xapiri combate garimpo ilegal e exploração de trabalhadores no rio Madeira",
@@ -8123,6 +8371,68 @@
           "url": "https://newsroom.gy/2025/03/04/illegal-miners-arrested-in-iwokrama-forest/",
           "published_at": "2025-03-04T12:00:00-04:00",
           "source_type": "media_with_official_source"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "BO-PAN-2025-0206-MANURIPI",
+      "title": {
+        "pt": "Suspensión AJAM Manuripi-Iturralde — Reserva Manuripi / Filadelfia, Puerto Rico e El Sena",
+        "en": "Suspensión AJAM Manuripi-Iturralde — Reserva Manuripi / Filadelfia, Puerto Rico e El Sena",
+        "es": "Suspensión AJAM Manuripi-Iturralde — Reserva Manuripi / Filadelfia, Puerto Rico e El Sena"
+      },
+      "summary": {
+        "pt": "A AJAM determinou em 6 de fevereiro a suspensão da mineração não autorizada em 13 áreas de Manuripi e Iturralde; uma denúncia penal foi apresentada no dia 7.",
+        "en": "On 6 February, AJAM ordered unauthorized mining suspended across 13 areas in Manuripi and Iturralde; a criminal complaint was submitted on the following day.",
+        "es": "El 6 de febrero, la AJAM ordenó suspender la minería no autorizada en 13 áreas de Manuripi e Iturralde; una denuncia penal se presentó al día siguiente."
+      },
+      "case_context": {
+        "pt": "[O] A AJAM determinou em 6 de fevereiro a suspensão da mineração não autorizada em 13 áreas de Manuripi e Iturralde; uma denúncia penal foi apresentada no dia 7.\nFontes: [O] https://autoridadminera.gob.bo/index.php/nota_prensa/ajam-activa-proceso-penal-y-dispone-la-inmediata-suspension-de-actividad-minera-ilegal-en-las-reservas-manuripi-e-iturralde/",
+        "en": "[O] On 6 February, AJAM ordered unauthorized mining suspended across 13 areas in Manuripi and Iturralde; a criminal complaint was submitted on the following day.\nSources: [O] https://autoridadminera.gob.bo/index.php/nota_prensa/ajam-activa-proceso-penal-y-dispone-la-inmediata-suspension-de-actividad-minera-ilegal-en-las-reservas-manuripi-e-iturralde/",
+        "es": "[O] El 6 de febrero, la AJAM ordenó suspender la minería no autorizada en 13 áreas de Manuripi e Iturralde; una denuncia penal se presentó al día siguiente.\nFuentes: [O] https://autoridadminera.gob.bo/index.php/nota_prensa/ajam-activa-proceso-penal-y-dispone-la-inmediata-suspension-de-actividad-minera-ilegal-en-las-reservas-manuripi-e-iturralde/"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Suspensión AJAM Manuripi-Iturralde",
+      "agencies": [
+        "AJAM Bolivia"
+      ],
+      "occurred_at": "2025-02-06T12:00:00-04:00",
+      "published_at": "2025-02-26T12:00:00-04:00",
+      "added_at": "2026-11-15T17:30:35.172Z",
+      "updated_at": "2026-11-15T17:30:35.172Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Dates and alleged offenses follow the cited agency's account. Administrative actions and allegations do not constitute convictions.",
+      "priority": "HIGH",
+      "location": {
+        "name": "Reserva Manuripi / Filadelfia, Puerto Rico e El Sena",
+        "admin1": "Pando",
+        "country": "Bolivia",
+        "lat": -11.48,
+        "lon": -67.25,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Suspensión AJAM Manuripi-Iturralde",
+        "ILLEGAL_MINING"
+      ],
+      "sources": [
+        {
+          "publisher": "AJAM Bolivia",
+          "url": "https://autoridadminera.gob.bo/index.php/nota_prensa/ajam-activa-proceso-penal-y-dispone-la-inmediata-suspension-de-actividad-minera-ilegal-en-las-reservas-manuripi-e-iturralde/",
+          "published_at": "2025-02-26T12:00:00-04:00",
+          "source_type": "official"
         }
       ],
       "source_media": []
