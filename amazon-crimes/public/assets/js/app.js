@@ -1020,11 +1020,22 @@ function renderSignals() {
 // Mosaics are referenced individually, but not drawn as invented legal boundaries.
 // No click on a mosaic should be interpreted as a spatial overlap analysis.
 const amazonMosaics = [
-  { name: 'Baixo Rio Negro', law: 'Portaria MMA 483/2010' },
-  { name: 'Amazônia Meridional', law: 'Portaria MMA 332/2011' },
-  { name: 'Oeste do Amapá e Norte do Pará', law: 'Portaria MMA 4/2013' },
-  { name: 'Baixo Rio Madeira', law: 'Portaria MMA 1.331/2025' },
-  { name: 'Gurupi', law: 'Portaria MMA 1.443/2025' }
+  { name: 'Baixo Rio Negro', law: 'Portaria MMA 483/2010',
+    url: 'https://www.gov.br/icmbio/pt-br/assuntos/mosaicos-e-corredores-ecologicos/mosaicos-federais-reconhecidos' },
+  { name: 'Amazônia Meridional', law: 'Portaria MMA 332/2011',
+    url: 'https://www.gov.br/icmbio/pt-br/assuntos/mosaicos-e-corredores-ecologicos/mosaicos-federais-reconhecidos' },
+  { name: 'Oeste do Amapá e Norte do Pará', law: 'Portaria MMA 4/2013',
+    url: 'https://www.gov.br/icmbio/pt-br/assuntos/mosaicos-e-corredores-ecologicos/mosaicos-federais-reconhecidos' },
+  { name: 'Baixo Rio Madeira', law: 'Portaria MMA 1.331/2025',
+    url: 'https://www.gov.br/icmbio/pt-br/assuntos/mosaicos-e-corredores-ecologicos/mosaicos-federais-reconhecidos' },
+  { name: 'Gurupi', law: 'Portaria MMA 1.443/2025',
+    url: 'https://www.gov.br/icmbio/pt-br/assuntos/mosaicos-e-corredores-ecologicos/mosaicos-federais-reconhecidos' },
+  { name: 'Apuí', law: 'Mosaico estadual — Amazonas',
+    url: 'https://www.sema.am.gov.br/programa-arpa/' },
+  { name: 'Lago de Tucuruí', law: 'Mosaico estadual — Pará',
+    url: 'https://ideflorbio.pa.gov.br/nossas-unidades/' },
+  { name: 'Complexo do Rio Gregório', law: 'Decreto estadual 3.433/2008 — Acre',
+    url: 'https://sema.ac.gov.br/departamentos-e-divisoes/divisao-de-areas-naturais-protegidas-e-biodiversidade/' }
 ];
 function renderMosaicCatalog() {
   const label = { pt: 'Mosaicos de áreas protegidas', en: 'Protected-area mosaics', es: 'Mosaicos de áreas protegidas' }[language];
@@ -1033,9 +1044,8 @@ function renderMosaicCatalog() {
     en: 'Official references. Mosaic boundaries are not yet available on this map.',
     es: 'Referencias oficiales. Los límites cartográficos de los mosaicos aún no están disponibles en este mapa.'
   }[language];
-  const source = 'https://www.gov.br/icmbio/pt-br/assuntos/mosaicos-e-corredores-ecologicos/mosaicos-federais-reconhecidos';
-  return `<details class="mosaic-directory"><summary>${escapeHtml(label)} (5)</summary><p class="mosaic-directory-note">${escapeHtml(note)}</p>
-    ${amazonMosaics.map((item) => `<a href="${escapeAttr(source)}" target="_blank" rel="noopener noreferrer" class="mosaic-directory-item"><span>${escapeHtml(item.name)}</span><small>${escapeHtml(item.law)}</small></a>`).join('')}
+  return `<details class="mosaic-directory"><summary>${escapeHtml(label)} (${amazonMosaics.length})</summary><p class="mosaic-directory-note">${escapeHtml(note)}</p>
+    ${amazonMosaics.map((item) => `<a href="${escapeAttr(item.url)}" target="_blank" rel="noopener noreferrer" class="mosaic-directory-item"><span>${escapeHtml(item.name)}</span><small>${escapeHtml(item.law)}</small></a>`).join('')}
   </details>`;
 }
 
