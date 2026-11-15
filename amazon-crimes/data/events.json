@@ -10211,9 +10211,9 @@
       "validation_status": "CONFIRMED",
       "priority": "MEDIUM",
       "legal_status_note": "Documented official action; any suspected offences are allegations, not findings of individual guilt.",
-      "occurred_at": "2010-08-26T12:00:00-04:00",
-      "occurred_at_precision": "day verified; time unknown",
-      "published_at": "2010-08-26T12:00:00-04:00",
+      "occurred_at": null,
+      "occurred_at_precision": "exact occurrence day not reported",
+      "published_at": null,
       "added_at": "2026-11-15T20:00:00Z",
       "updated_at": "2026-11-15T20:00:00Z",
       "backfill": true,
@@ -10235,7 +10235,7 @@
         {
           "publisher": "Funai",
           "url": "https://www.gov.br/funai/pt-br/assuntos/noticias/2010/operacao-arco-de-fogo-conta-com-indigenas-cinta-larga-na-apreensao-de-madeiras-ilegais",
-          "published_at": "2010-08-26T12:00:00-04:00",
+          "published_at": null,
           "source_type": "official"
         }
       ],
@@ -10243,7 +10243,7 @@
       "keywords": [
         "Operação Arco de Fogo — fiscalização Cinta Larga"
       ],
-      "evidence_notes": "Publication day not independently established; verify before using published_at in temporal analysis."
+      "evidence_notes": "Official webpage shows 26 August 2010 publication, but operational day unspecified; occurred_at is currently a placeholder and should not be interpreted as verified."
     },
     {
       "id": "BR-MT-2010-1007-ARCO-FOGO",
@@ -10616,6 +10616,378 @@
         "Operação Nicodemos"
       ],
       "evidence_notes": "Event and publication dates recorded separately."
+    },
+    {
+      "id": "BR-AM-2013-0516-AGATA7-QUIXITO",
+      "title": {
+        "pt": "Operação Ágata 7 — madeira no rio Quixito — Rio Quixito / entorno da Terra Indígena Vale do Javari",
+        "en": "Operação Ágata 7 — madeira no rio Quixito — Rio Quixito / entorno da Terra Indígena Vale do Javari",
+        "es": "Operação Ágata 7 — madeira no rio Quixito — Rio Quixito / entorno da Terra Indígena Vale do Javari"
+      },
+      "summary": {
+        "pt": "Funai, Polícia Federal e Exército apreenderam aproximadamente 250 toras de madeira ilegal; a carga seria escoada pela fronteira com o Peru.",
+        "en": "Funai, Federal Police and the Army seized approximately 250 illegally harvested logs reportedly intended for transport across the Peruvian border.",
+        "es": "Funai, Policía Federal y Ejército decomisaron unas 250 trozas ilegales que, según las autoridades, se transportarían hacia la frontera peruana."
+      },
+      "case_context": {
+        "pt": "[O] Funai, Polícia Federal e Exército apreenderam aproximadamente 250 toras de madeira ilegal; a carga seria escoada pela fronteira com o Peru.\nFontes: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2013/operacao-agata-7-apreende-madeira-ilegal-no-entorno-da-ti-vale-do-javari-am",
+        "en": "[O] Funai, Federal Police and the Army seized approximately 250 illegally harvested logs reportedly intended for transport across the Peruvian border.\nSources: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2013/operacao-agata-7-apreende-madeira-ilegal-no-entorno-da-ti-vale-do-javari-am",
+        "es": "[O] Funai, Policía Federal y Ejército decomisaron unas 250 trozas ilegales que, según las autoridades, se transportarían hacia la frontera peruana.\nFuentes: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2013/operacao-agata-7-apreende-madeira-ilegal-no-entorno-da-ti-vale-do-javari-am"
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": "Operação Ágata 7 — madeira no rio Quixito",
+      "agencies": [
+        "Funai"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Officially documented intervention; individual guilt is not inferred.",
+      "occurred_at": "2013-05-16T12:00:00-04:00",
+      "occurred_at_precision": "day verified; time unknown",
+      "published_at": "2013-05-22T12:00:00-04:00",
+      "added_at": "2026-11-15T20:00:00Z",
+      "updated_at": "2026-11-15T20:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Rio Quixito / entorno da Terra Indígena Vale do Javari",
+        "admin1": "Amazonas",
+        "country": "Brazil",
+        "lat": -4.37,
+        "lon": -70.19,
+        "precision": "regional_approximate",
+        "geo_source": "Regional map reference, not exact intervention site."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Funai",
+          "url": "https://www.gov.br/funai/pt-br/assuntos/noticias/2013/operacao-agata-7-apreende-madeira-ilegal-no-entorno-da-ti-vale-do-javari-am",
+          "published_at": "2013-05-22T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Operação Ágata 7 — madeira no rio Quixito"
+      ],
+      "evidence_notes": "Date and intervention documented by primary source."
+    },
+    {
+      "id": "GF-MAR-2020-0717-CARENAGE",
+      "title": {
+        "pt": "Operação contra base garimpeira — Carénage — Carénage / Maripasoula (referência municipal)",
+        "en": "Operação contra base garimpeira — Carénage — Carénage / Maripasoula (referência municipal)",
+        "es": "Operação contra base garimpeira — Carénage — Carénage / Maripasoula (referência municipal)"
+      },
+      "summary": {
+        "pt": "Gendarmaria e militares desmantelaram uma base logística utilizada por garimpeiros ilegais no setor Carénage, em Maripasoula.",
+        "en": "Gendarmes and military personnel dismantled a logistics base used by illegal gold miners in the Carénage area near Maripasoula.",
+        "es": "Gendarmes y militares desmantelaron una base logística utilizada por mineros ilegales en Carénage, cerca de Maripasoula."
+      },
+      "case_context": {
+        "pt": "[O] Gendarmaria e militares desmantelaram uma base logística utilizada por garimpeiros ilegais no setor Carénage, em Maripasoula.\nFontes: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/criminalite-organisee-et-enquetes/2020/guyane-demantelement-d-une-base-d-orpaillage-illegal",
+        "en": "[O] Gendarmes and military personnel dismantled a logistics base used by illegal gold miners in the Carénage area near Maripasoula.\nSources: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/criminalite-organisee-et-enquetes/2020/guyane-demantelement-d-une-base-d-orpaillage-illegal",
+        "es": "[O] Gendarmes y militares desmantelaron una base logística utilizada por mineros ilegales en Carénage, cerca de Maripasoula.\nFuentes: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/criminalite-organisee-et-enquetes/2020/guyane-demantelement-d-une-base-d-orpaillage-illegal"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Operação contra base garimpeira — Carénage",
+      "agencies": [
+        "Gendarmerie nationale"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Officially documented intervention; individual guilt is not inferred.",
+      "occurred_at": "2020-07-17T12:00:00-03:00",
+      "occurred_at_precision": "day verified; time unknown",
+      "published_at": "2020-07-24T12:00:00-03:00",
+      "added_at": "2026-11-15T20:00:00Z",
+      "updated_at": "2026-11-15T20:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Carénage / Maripasoula (referência municipal)",
+        "admin1": "Ouest",
+        "country": "French Guiana",
+        "lat": 3.64,
+        "lon": -54.03,
+        "precision": "regional_approximate",
+        "geo_source": "Regional map reference, not exact intervention site."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Gendarmerie nationale",
+          "url": "https://www.gendarmerie.interieur.gouv.fr/gendinfo/criminalite-organisee-et-enquetes/2020/guyane-demantelement-d-une-base-d-orpaillage-illegal",
+          "published_at": "2020-07-24T12:00:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Operação contra base garimpeira — Carénage"
+      ],
+      "evidence_notes": "Date and intervention documented by primary source."
+    },
+    {
+      "id": "GF-W-2020-0825-ANACONDA",
+      "title": {
+        "pt": "Opération Anaconda — Oeste da Guiana Francesa (referência Maripasoula)",
+        "en": "Opération Anaconda — Oeste da Guiana Francesa (referência Maripasoula)",
+        "es": "Opération Anaconda — Oeste da Guiana Francesa (referência Maripasoula)"
+      },
+      "summary": {
+        "pt": "Uma operação aerotransportada desmantelou dez locais de garimpo clandestino e apreendeu 32 motobombas, dois trituradores e 1.700 litros de combustível.",
+        "en": "An airborne raid dismantled ten illegal mining sites and seized 32 pumps, two crushers and 1,700 litres of fuel.",
+        "es": "Una operación aerotransportada desmanteló diez sitios de minería ilegal e incautó 32 motobombas, dos trituradoras y 1.700 litros de combustible."
+      },
+      "case_context": {
+        "pt": "[O] Uma operação aerotransportada desmantelou dez locais de garimpo clandestino e apreendeu 32 motobombas, dois trituradores e 1.700 litros de combustível.\nFontes: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/criminalite-organisee-et-enquetes/2020/orpaillage-illegal-en-guyane-les-gendarmes-demantelent-une-dizaine-de-sites-clandestins",
+        "en": "[O] An airborne raid dismantled ten illegal mining sites and seized 32 pumps, two crushers and 1,700 litres of fuel.\nSources: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/criminalite-organisee-et-enquetes/2020/orpaillage-illegal-en-guyane-les-gendarmes-demantelent-une-dizaine-de-sites-clandestins",
+        "es": "[O] Una operación aerotransportada desmanteló diez sitios de minería ilegal e incautó 32 motobombas, dos trituradoras y 1.700 litros de combustible.\nFuentes: [O] https://www.gendarmerie.interieur.gouv.fr/gendinfo/criminalite-organisee-et-enquetes/2020/orpaillage-illegal-en-guyane-les-gendarmes-demantelent-une-dizaine-de-sites-clandestins"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Opération Anaconda",
+      "agencies": [
+        "Gendarmerie nationale"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Officially documented intervention; individual guilt is not inferred.",
+      "occurred_at": "2020-08-25T12:00:00-03:00",
+      "occurred_at_precision": "day verified; time unknown",
+      "published_at": "2020-09-08T12:00:00-03:00",
+      "added_at": "2026-11-15T20:00:00Z",
+      "updated_at": "2026-11-15T20:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Oeste da Guiana Francesa (referência Maripasoula)",
+        "admin1": "Ouest",
+        "country": "French Guiana",
+        "lat": 3.64,
+        "lon": -54.03,
+        "precision": "regional_approximate",
+        "geo_source": "Regional map reference, not exact intervention site."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Gendarmerie nationale",
+          "url": "https://www.gendarmerie.interieur.gouv.fr/gendinfo/criminalite-organisee-et-enquetes/2020/orpaillage-illegal-en-guyane-les-gendarmes-demantelent-une-dizaine-de-sites-clandestins",
+          "published_at": "2020-09-08T12:00:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Opération Anaconda"
+      ],
+      "evidence_notes": "Date and intervention documented by primary source."
+    },
+    {
+      "id": "PE-LOR-2020-1013-TAHUAMPAS-I",
+      "title": {
+        "pt": "Tahuampas del Nanay — primeira intervenção — San Juan de Ungurahual / Alto Nanay",
+        "en": "Tahuampas del Nanay — primeira intervenção — San Juan de Ungurahual / Alto Nanay",
+        "es": "Tahuampas del Nanay — primeira intervenção — San Juan de Ungurahual / Alto Nanay"
+      },
+      "summary": {
+        "pt": "Fiscalía e autoridades parceiras destruíram três dragas artesanais e apreenderam materiais e documentos em uma intervenção no Alto Nanay.",
+        "en": "Prosecutors and partner authorities destroyed three artisanal dredges and seized materials and documents during an Alto Nanay intervention.",
+        "es": "La Fiscalía y las autoridades participantes destruyeron tres dragas artesanales e incautaron materiales y documentos en Alto Nanay."
+      },
+      "case_context": {
+        "pt": "[O] Fiscalía e autoridades parceiras destruíram três dragas artesanais e apreenderam materiais e documentos em uma intervenção no Alto Nanay.\nFontes: [O] https://www.gob.pe/institucion/mpfn/noticias/307293-loreto-destruyen-",
+        "en": "[O] Prosecutors and partner authorities destroyed three artisanal dredges and seized materials and documents during an Alto Nanay intervention.\nSources: [O] https://www.gob.pe/institucion/mpfn/noticias/307293-loreto-destruyen-",
+        "es": "[O] La Fiscalía y las autoridades participantes destruyeron tres dragas artesanales e incautaron materiales y documentos en Alto Nanay.\nFuentes: [O] https://www.gob.pe/institucion/mpfn/noticias/307293-loreto-destruyen-"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Tahuampas del Nanay — primeira intervenção",
+      "agencies": [
+        "Ministerio Público del Perú"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Officially documented intervention; individual guilt is not inferred.",
+      "occurred_at": "2020-10-13T12:00:00-05:00",
+      "occurred_at_precision": "day verified; time unknown",
+      "published_at": "2020-10-15T12:00:00-05:00",
+      "added_at": "2026-11-15T20:00:00Z",
+      "updated_at": "2026-11-15T20:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "San Juan de Ungurahual / Alto Nanay",
+        "admin1": "Loreto",
+        "country": "Peru",
+        "lat": -3.75,
+        "lon": -73.25,
+        "precision": "regional_approximate",
+        "geo_source": "Regional map reference, not exact intervention site."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Ministerio Público del Perú",
+          "url": "https://www.gob.pe/institucion/mpfn/noticias/307293-loreto-destruyen-",
+          "published_at": "2020-10-15T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Tahuampas del Nanay — primeira intervenção"
+      ],
+      "evidence_notes": "Date and intervention documented by primary source."
+    },
+    {
+      "id": "PE-LOR-2020-1028-TAHUAMPAS-II",
+      "title": {
+        "pt": "Tahuampas del Nanay II — Puca Urco / San Juan de Ungurahual / Diamante Azul",
+        "en": "Tahuampas del Nanay II — Puca Urco / San Juan de Ungurahual / Diamante Azul",
+        "es": "Tahuampas del Nanay II — Puca Urco / San Juan de Ungurahual / Diamante Azul"
+      },
+      "summary": {
+        "pt": "A Fiscalía informou a destruição de seis dragas artesanais e a apreensão de materiais e mercúrio no Alto Nanay.",
+        "en": "Prosecutors reported destruction of six artisanal dredges and seizure of equipment and mercury in Alto Nanay.",
+        "es": "La Fiscalía reportó la destrucción de seis dragas artesanales y el decomiso de materiales y mercurio en Alto Nanay."
+      },
+      "case_context": {
+        "pt": "[O] A Fiscalía informou a destruição de seis dragas artesanais e a apreensão de materiais e mercúrio no Alto Nanay.\nFontes: [O] https://www.gob.pe/institucion/mpfn/noticias/311652-fiscalia-participo-en-destruccion-de-dragas-de-mineria-ilegal-en-cuenca-del-alto-nanay",
+        "en": "[O] Prosecutors reported destruction of six artisanal dredges and seizure of equipment and mercury in Alto Nanay.\nSources: [O] https://www.gob.pe/institucion/mpfn/noticias/311652-fiscalia-participo-en-destruccion-de-dragas-de-mineria-ilegal-en-cuenca-del-alto-nanay",
+        "es": "[O] La Fiscalía reportó la destrucción de seis dragas artesanales y el decomiso de materiales y mercurio en Alto Nanay.\nFuentes: [O] https://www.gob.pe/institucion/mpfn/noticias/311652-fiscalia-participo-en-destruccion-de-dragas-de-mineria-ilegal-en-cuenca-del-alto-nanay"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Tahuampas del Nanay II",
+      "agencies": [
+        "Ministerio Público del Perú"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Officially documented intervention; individual guilt is not inferred.",
+      "occurred_at": "2020-10-28T12:00:00-05:00",
+      "occurred_at_precision": "day verified; time unknown",
+      "published_at": "2020-10-29T12:00:00-05:00",
+      "added_at": "2026-11-15T20:00:00Z",
+      "updated_at": "2026-11-15T20:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Puca Urco / San Juan de Ungurahual / Diamante Azul",
+        "admin1": "Loreto",
+        "country": "Peru",
+        "lat": -3.75,
+        "lon": -73.25,
+        "precision": "regional_approximate",
+        "geo_source": "Regional map reference, not exact intervention site."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Ministerio Público del Perú",
+          "url": "https://www.gob.pe/institucion/mpfn/noticias/311652-fiscalia-participo-en-destruccion-de-dragas-de-mineria-ilegal-en-cuenca-del-alto-nanay",
+          "published_at": "2020-10-29T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Tahuampas del Nanay II"
+      ],
+      "evidence_notes": "Date and intervention documented by primary source."
+    },
+    {
+      "id": "BR-PA-2023-1002-DESINTRUSAO-APYTEREWA",
+      "title": {
+        "pt": "Desintrusão Apyterewa e Trincheira Bacajá — TIs Apyterewa e Trincheira Bacajá / região de Altamira",
+        "en": "Desintrusão Apyterewa e Trincheira Bacajá — TIs Apyterewa e Trincheira Bacajá / região de Altamira",
+        "es": "Desintrusão Apyterewa e Trincheira Bacajá — TIs Apyterewa e Trincheira Bacajá / região de Altamira"
+      },
+      "summary": {
+        "pt": "O Governo Federal iniciou a retirada de ocupantes não indígenas irregulares das terras Apyterewa e Trincheira Bacajá, sob determinação judicial.",
+        "en": "Federal authorities began a court-ordered removal of unauthorized non-Indigenous occupants from Apyterewa and Trincheira Bacajá territories.",
+        "es": "El Gobierno federal inició, por orden judicial, la retirada de ocupantes no indígenas irregulares de Apyterewa y Trincheira Bacajá."
+      },
+      "case_context": {
+        "pt": "[O] O Governo Federal iniciou a retirada de ocupantes não indígenas irregulares das terras Apyterewa e Trincheira Bacajá, sob determinação judicial.\nFontes: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2023/governo-federal-inicia-nova-desintrusao-de-terras-indigenas-no-para",
+        "en": "[O] Federal authorities began a court-ordered removal of unauthorized non-Indigenous occupants from Apyterewa and Trincheira Bacajá territories.\nSources: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2023/governo-federal-inicia-nova-desintrusao-de-terras-indigenas-no-para",
+        "es": "[O] El Gobierno federal inició, por orden judicial, la retirada de ocupantes no indígenas irregulares de Apyterewa y Trincheira Bacajá.\nFuentes: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2023/governo-federal-inicia-nova-desintrusao-de-terras-indigenas-no-para"
+      },
+      "primary_crime_type": "MULTIPLE_ENVIRONMENTAL_CRIMES",
+      "crime_types": [
+        "MULTIPLE_ENVIRONMENTAL_CRIMES"
+      ],
+      "operation_name": "Desintrusão Apyterewa e Trincheira Bacajá",
+      "agencies": [
+        "Funai"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Officially documented intervention; individual guilt is not inferred.",
+      "occurred_at": "2023-10-02T12:00:00-03:00",
+      "occurred_at_precision": "day verified; time unknown",
+      "published_at": "2023-10-02T12:00:00-03:00",
+      "added_at": "2026-11-15T20:00:00Z",
+      "updated_at": "2026-11-15T20:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "TIs Apyterewa e Trincheira Bacajá / região de Altamira",
+        "admin1": "Pará",
+        "country": "Brazil",
+        "lat": -3.2,
+        "lon": -52.21,
+        "precision": "regional_approximate",
+        "geo_source": "Regional map reference, not exact intervention site."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Funai",
+          "url": "https://www.gov.br/funai/pt-br/assuntos/noticias/2023/governo-federal-inicia-nova-desintrusao-de-terras-indigenas-no-para",
+          "published_at": "2023-10-02T12:00:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Desintrusão Apyterewa e Trincheira Bacajá"
+      ],
+      "evidence_notes": "Date and intervention documented by primary source."
     }
   ]
 }
