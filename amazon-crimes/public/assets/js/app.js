@@ -1,8 +1,9 @@
 import { translations } from './i18n.js';
+import { preferredLanguage, selectLanguage, listenLanguage } from './language-preference.js?v=20261115-unified';
 import { createTemporalFilter } from './temporal-filter.js?v=20261115-lastyear';
 import { crimeTypes, crimeTypeMeta, mapConfig, futureLayerGroups } from './config.js';
 
-let language = localStorage.getItem('amazon-observatory-language') || 'pt';
+let language = preferredLanguage();
 let mapTheme = localStorage.getItem('amazon-observatory-theme') || 'dark';
 let mapMode = localStorage.getItem('amazon-observatory-map-mode') || '2d';
 if (mapMode === '3d') mapMode = 'globe';
@@ -181,16 +182,18 @@ function locale() {
 }
 
 function setLanguage(next) {
-  language = next;
-  localStorage.setItem('amazon-observatory-language', language);
+  language = selectLanguage(next);
+  document.title = t('title');
   document.documentElement.lang = language === 'pt' ? 'pt-BR' : language;
   $$('[data-i18n]').forEach((el) => { el.textContent = t(el.dataset.i18n); });
   $$('[data-i18n-placeholder]').forEach((el) => { el.placeholder = t(el.dataset.i18nPlaceholder); });
-  $$('.lang').forEach((button) => button.classList.toggle('active', button.dataset.lang === language));
+  $('.lang').forEach((button) => {const active=button.dataset.lang===language;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});
   populateFilters();
   renderLayerPanel();
   render();
 }
+
+listenLanguage(next=>{if(next!==language)setLanguage(next);});
 
 function populateFilters() {
   const crimeSelect = $('#crime-type');
