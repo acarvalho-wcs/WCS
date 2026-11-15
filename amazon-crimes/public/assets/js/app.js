@@ -1081,7 +1081,7 @@ function renderLayerPanel() {
     return `<details class="future-group" ${['environment_realtime', 'extractive_pressure', 'sensors_media', 'territories'].includes(group.id) ? 'open' : ''}><summary>${escapeHtml(groupLabel)}</summary>${layers}${status}</details>`;
   }).join('');
 
-  $('.aux-layer-toggle').forEach((input) => input.addEventListener('change', () => {
+  $$('.aux-layer-toggle').forEach((input) => input.addEventListener('change', () => {
     if (input.checked) { activeAuxLayers.add(input.value); if (!territorialOverlayIds.has(input.value)) loadDynamicLayer(input.value); } else activeAuxLayers.delete(input.value);
     updateLayerVisibility();
   }));
