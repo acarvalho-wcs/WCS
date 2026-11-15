@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-11-15T15:02:36.004Z",
+  "generated_at": "2026-11-15T15:02:59.804Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -6859,6 +6859,258 @@
       "keywords": [
         "Nêmesis I",
         "Rondônia"
+      ]
+    },
+    {
+      "id": "BR-AM-2026-1029-NAVEGACAO-PARALELA",
+      "title": {
+        "pt": "Navegação Paralela investiga logística de garimpo ilegal",
+        "en": "Navegação Paralela probes logistics supporting illegal mining",
+        "es": "Navegação Paralela investiga logística minera ilegal"
+      },
+      "summary": {
+        "pt": "PF cumpriu dois mandados em Manaus e obteve bloqueio superior a R$ 35 milhões para apurar possível logística de garimpo ilegal.",
+        "en": "Police executed two warrants in Manaus and secured an asset freeze over BRL 35 million in an illegal-mining logistics investigation.",
+        "es": "La Policía ejecutó dos registros en Manaos y obtuvo bloqueo de más de R$ 35 millones por presunta logística minera ilegal."
+      },
+      "case_context": {
+        "pt": "[O] PF cumpriu dois mandados em Manaus e obteve bloqueio superior a R$ 35 milhões para apurar possível logística de garimpo ilegal.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-deflagra-operacao-contra-grupo-investigado-por-apoio-logistico-ao-garimpo-ilegal-no-amazonas",
+        "en": "[O] Police executed two warrants in Manaus and secured an asset freeze over BRL 35 million in an illegal-mining logistics investigation.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-deflagra-operacao-contra-grupo-investigado-por-apoio-logistico-ao-garimpo-ilegal-no-amazonas",
+        "es": "[O] La Policía ejecutó dos registros en Manaos y obtuvo bloqueo de más de R$ 35 millones por presunta logística minera ilegal.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-deflagra-operacao-contra-grupo-investigado-por-apoio-logistico-ao-garimpo-ilegal-no-amazonas"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Navegação Paralela",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "Reported operation or investigation; no criminal guilt is inferred.",
+      "occurred_at": "2026-10-29T12:00:00-04:00",
+      "occurred_at_precision": "day_confirmed_time_unknown_noon_placeholder",
+      "published_at": "2026-10-29T12:00:00-04:00",
+      "added_at": "2026-11-15T15:02:59.804Z",
+      "updated_at": "2026-11-15T15:02:59.804Z",
+      "backfill": true,
+      "location": {
+        "name": "Manaus (mandados; garimpos investigados sem coordenadas)",
+        "admin1": "Amazonas",
+        "country": "Brazil",
+        "lat": -3.119,
+        "lon": -60.022,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate place reference, not a verified enforcement coordinate."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-deflagra-operacao-contra-grupo-investigado-por-apoio-logistico-ao-garimpo-ilegal-no-amazonas",
+          "publisher": "Polícia Federal",
+          "published_at": "2026-10-29T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Navegação Paralela",
+        "Amazonas"
+      ]
+    },
+    {
+      "id": "BR-PA-2026-1029-ESCUDO-KAYAPO",
+      "title": {
+        "pt": "Escudo inutiliza equipamentos de garimpo na TI Kayapó",
+        "en": "Escudo disables mining equipment in Kayapó territory",
+        "es": "Escudo inutiliza equipos mineros en territorio Kayapó"
+      },
+      "summary": {
+        "pt": "PF e Funai inutilizaram três escavadeiras, oito motores e 19 barracos na TI Kayapó e socorreram trabalhador ferido.",
+        "en": "Federal Police and Funai disabled three excavators, eight motors and 19 huts in Kayapó territory and assisted an injured worker.",
+        "es": "Policía Federal y Funai inutilizaron tres excavadoras, ocho motores y 19 barracas en territorio Kayapó y auxiliaron a un trabajador herido."
+      },
+      "case_context": {
+        "pt": "[O] PF e Funai inutilizaram três escavadeiras, oito motores e 19 barracos na TI Kayapó e socorreram trabalhador ferido.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-e-funai-inutilizaram-equipamentos-usados-extracao-ilegal-de-ouro-na-terra-indigena-kayapo",
+        "en": "[O] Federal Police and Funai disabled three excavators, eight motors and 19 huts in Kayapó territory and assisted an injured worker.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-e-funai-inutilizaram-equipamentos-usados-extracao-ilegal-de-ouro-na-terra-indigena-kayapo",
+        "es": "[O] Policía Federal y Funai inutilizaron tres excavadoras, ocho motores y 19 barracas en territorio Kayapó y auxiliaron a un trabajador herido.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-e-funai-inutilizaram-equipamentos-usados-extracao-ilegal-de-ouro-na-terra-indigena-kayapo"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Escudo",
+      "agencies": [
+        "Polícia Federal",
+        "Funai"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "Reported operation or investigation; no criminal guilt is inferred.",
+      "occurred_at": "2026-10-29T12:00:00-04:00",
+      "occurred_at_precision": "day_confirmed_time_unknown_noon_placeholder",
+      "published_at": "2026-10-30T12:00:00-04:00",
+      "added_at": "2026-11-15T15:02:59.804Z",
+      "updated_at": "2026-11-15T15:02:59.804Z",
+      "backfill": true,
+      "location": {
+        "name": "Terra Indígena Kayapó (referência Cumaru do Norte)",
+        "admin1": "Pará",
+        "country": "Brazil",
+        "lat": -7.82,
+        "lon": -50.77,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate place reference, not a verified enforcement coordinate."
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "Terra Indígena Kayapó"
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-e-funai-inutilizaram-equipamentos-usados-extracao-ilegal-de-ouro-na-terra-indigena-kayapo",
+          "publisher": "Polícia Federal",
+          "published_at": "2026-10-30T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Escudo",
+        "Pará"
+      ]
+    },
+    {
+      "id": "BR-RO-2026-1030-NEMESIS-II-JIRAU",
+      "title": {
+        "pt": "Nêmesis II atinge dragas ilegais a montante de Jirau",
+        "en": "Nêmesis II targets unlicensed dredges upstream of Jirau",
+        "es": "Nêmesis II interviene dragas ilegales aguas arriba de Jirau"
+      },
+      "summary": {
+        "pt": "PF e Ibama inutilizaram dragas sem licenciamento ambiental acima de Jirau e apreenderam mercúrio, armas e equipamentos.",
+        "en": "Federal Police and Ibama disabled unlicensed dredges upstream of Jirau and seized mercury, weapons and equipment.",
+        "es": "Policía Federal e Ibama inutilizaron dragas sin licencia aguas arriba de Jirau e incautaron mercurio, armas y equipos."
+      },
+      "case_context": {
+        "pt": "[O] PF e Ibama inutilizaram dragas sem licenciamento ambiental acima de Jirau e apreenderam mercúrio, armas e equipamentos. [N] Reportagem registra concentração de balsas de garimpo no rio Madeira, sem identificar estas dragas.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-e-ibama-combatem-garimpo-ilegal-de-ouro-com-uso-de-mercurio-no-rio-madeira-em-porto-velho | [N] https://conexaoplaneta.com.br/blog/mais-de-500-balsas-do-garimpo-ilegal-sao-flagradas-no-rio-madeira/",
+        "en": "[O] Federal Police and Ibama disabled unlicensed dredges upstream of Jirau and seized mercury, weapons and equipment. [N] A report documents mining rafts on the Madeira River without identifying these dredges.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-e-ibama-combatem-garimpo-ilegal-de-ouro-com-uso-de-mercurio-no-rio-madeira-em-porto-velho | [N] https://conexaoplaneta.com.br/blog/mais-de-500-balsas-do-garimpo-ilegal-sao-flagradas-no-rio-madeira/",
+        "es": "[O] Policía Federal e Ibama inutilizaron dragas sin licencia aguas arriba de Jirau e incautaron mercurio, armas y equipos. [N] Un reportaje registra balsas mineras en el río Madeira, sin identificar estas dragas.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-e-ibama-combatem-garimpo-ilegal-de-ouro-com-uso-de-mercurio-no-rio-madeira-em-porto-velho | [N] https://conexaoplaneta.com.br/blog/mais-de-500-balsas-do-garimpo-ilegal-sao-flagradas-no-rio-madeira/"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Nêmesis II",
+      "agencies": [
+        "Polícia Federal",
+        "Ibama"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "Reported operation or investigation; no criminal guilt is inferred.",
+      "occurred_at": "2026-10-30T12:00:00-04:00",
+      "occurred_at_precision": "day_confirmed_time_unknown_noon_placeholder",
+      "published_at": "2026-10-30T12:00:00-04:00",
+      "added_at": "2026-11-15T15:02:59.804Z",
+      "updated_at": "2026-11-15T15:02:59.804Z",
+      "backfill": true,
+      "location": {
+        "name": "Rio Madeira, montante de Jirau (referência da usina)",
+        "admin1": "Rondônia",
+        "country": "Brazil",
+        "lat": -9.26,
+        "lon": -64.65,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate place reference, not a verified enforcement coordinate."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-e-ibama-combatem-garimpo-ilegal-de-ouro-com-uso-de-mercurio-no-rio-madeira-em-porto-velho",
+          "publisher": "Polícia Federal",
+          "published_at": "2026-10-30T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Nêmesis II",
+        "Rondônia"
+      ]
+    },
+    {
+      "id": "BR-AM-2026-1030-AURUM-SOLIMOES",
+      "title": {
+        "pt": "Aurum inutiliza oito dragas no Alto Solimões",
+        "en": "Aurum disables eight dredges on Upper Solimões River",
+        "es": "Aurum inutiliza ocho dragas en el Alto Solimões"
+      },
+      "summary": {
+        "pt": "PF, Funai e Ibama inutilizaram oito dragas e sete estruturas de motor-balsa perto de Santa Rita do Weill, em Tabatinga.",
+        "en": "Federal Police, Funai and Ibama disabled eight dredges and seven motor-raft structures near Santa Rita do Weill, Tabatinga.",
+        "es": "Policía Federal, Funai e Ibama inutilizaron ocho dragas y siete estructuras de motor-balsa cerca de Santa Rita do Weill, Tabatinga."
+      },
+      "case_context": {
+        "pt": "[O] PF, Funai e Ibama inutilizaram oito dragas e sete estruturas de motor-balsa perto de Santa Rita do Weill, em Tabatinga.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-participa-da-operacao-aurum-e-inutiliza-estruturas-de-garimpo-ilegal-no-alto-rio-solimoes",
+        "en": "[O] Federal Police, Funai and Ibama disabled eight dredges and seven motor-raft structures near Santa Rita do Weill, Tabatinga.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-participa-da-operacao-aurum-e-inutiliza-estruturas-de-garimpo-ilegal-no-alto-rio-solimoes",
+        "es": "[O] Policía Federal, Funai e Ibama inutilizaron ocho dragas y siete estructuras de motor-balsa cerca de Santa Rita do Weill, Tabatinga.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-participa-da-operacao-aurum-e-inutiliza-estruturas-de-garimpo-ilegal-no-alto-rio-solimoes"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Aurum",
+      "agencies": [
+        "Polícia Federal",
+        "Funai",
+        "Ibama"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "Reported operation or investigation; no criminal guilt is inferred.",
+      "occurred_at": "2026-10-30T12:00:00-04:00",
+      "occurred_at_precision": "day_confirmed_time_unknown_noon_placeholder",
+      "published_at": "2026-10-30T12:00:00-04:00",
+      "added_at": "2026-11-15T15:02:59.804Z",
+      "updated_at": "2026-11-15T15:02:59.804Z",
+      "backfill": true,
+      "location": {
+        "name": "Santa Rita do Weill, Tabatinga (referência municipal)",
+        "admin1": "Amazonas",
+        "country": "Brazil",
+        "lat": -4.25,
+        "lon": -69.94,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate place reference, not a verified enforcement coordinate."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-participa-da-operacao-aurum-e-inutiliza-estruturas-de-garimpo-ilegal-no-alto-rio-solimoes",
+          "publisher": "Polícia Federal",
+          "published_at": "2026-10-30T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Aurum",
+        "Amazonas"
       ]
     }
   ]
