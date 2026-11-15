@@ -102,8 +102,11 @@ export const futureLayerGroups = [
     label: { pt: 'Territórios e proteção', en: 'Territories & protection', es: 'Territorios y protección' },
     layers: [
       { id: 'amazon_boundary', label: { pt: 'Limite internacional da Amazônia (RAISG)', en: 'International Amazon boundary (RAISG)', es: 'Límite internacional de la Amazonía (RAISG)' }, status: 'fixed', data: './data/amazon-boundary.json', icon: 'protected', source: 'RAISG' },
-      ['indigenous_lands', 'Terras indígenas', 'Indigenous lands', 'Tierras indígenas'],
-      ['protected_areas', 'Unidades de conservação', 'Protected areas', 'Áreas protegidas'],
+      { id: 'protected_areas', label: { pt: 'Áreas naturais protegidas (Amazônia)', en: 'Natural protected areas (Amazon)', es: 'Áreas naturales protegidas (Amazonía)' }, status: 'active', icon: 'protected', source: 'RAISG' },
+      { id: 'brazil_conservation_units', label: { pt: 'Unidades de conservação (Brasil)', en: 'Conservation units (Brazil)', es: 'Unidades de conservación (Brasil)' }, status: 'active', icon: 'protected', source: 'ANM / ICMBio' },
+      { id: 'strict_protection', label: { pt: 'Proteção integral (Brasil)', en: 'Strict protection (Brazil)', es: 'Protección integral (Brasil)' }, status: 'active', icon: 'protected', source: 'ANM / ICMBio' },
+      { id: 'sustainable_use', label: { pt: 'Uso sustentável (Brasil)', en: 'Sustainable use (Brazil)', es: 'Uso sostenible (Brasil)' }, status: 'active', icon: 'protected', source: 'ANM / ICMBio' },
+      { id: 'indigenous_lands', label: { pt: 'Territórios indígenas (Amazônia)', en: 'Indigenous territories (Amazon)', es: 'Territorios indígenas (Amazonía)' }, status: 'active', icon: 'protected', source: 'RAISG' },
       ['traditional_communities', 'Comunidades tradicionais', 'Traditional communities', 'Comunidades tradicionales']
     ]
   }
