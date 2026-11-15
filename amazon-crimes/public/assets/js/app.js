@@ -685,6 +685,23 @@ function openEventPopup(event, lngLat = null) {
   hydrateEventMedia(event, activePopup.getElement());
 }
 
+function renderContextWithLinks(value) {
+  const raw = String(value || '');
+  const splitAt = raw.lastIndexOf('\n');
+  if (splitAt < 0) return '<p>' + escapeHtml(raw) + '</p>';
+  const body = raw.slice(0, splitAt);
+  const references = raw.slice(splitAt + 1);
+  const matches = [...references.matchAll(/\[([ON])\]\s+(https?:\/\/[^\s|]+)/g)];
+  if (!matches.length) return '<p>' + escapeHtml(raw) + '</p>';
+  const links = matches.map((match) => {
+    const marker = match[1];
+    const url = match[2];
+    const domain = new URL(url).hostname.replace(/^www\./, '');
+    return '<a href="' + escapeAttr(url) + '" target="_blank" rel="noopener noreferrer">↗ [' + marker + '] ' + escapeHtml(domain) + '</a>';
+  });
+  return '<p>' + escapeHtml(body) + '</p><div class="context-sources">' + links.join('') + '</div>';
+}
+
 function eventPopupHtml(event) {
   const source = event.sources?.[0];
   const media = (event.source_media || []).filter((m) => m.type === 'image' && m.url);
@@ -699,7 +716,7 @@ function eventPopupHtml(event) {
     <div class="popup-tags">${tags}</div>
     <p>${escapeHtml(localized(event.summary))}</p>
     ${images}
-    <div class="popup-section"><span class="popup-label">${escapeHtml(t('caseContext'))}</span><p>${escapeHtml(localized(event.case_context))}</p></div>
+    <div class="popup-section"><span class="popup-label">${escapeHtml(t('caseContext'))}</span><p>${renderContextWithLinks(localized(event.case_context))}</p></div>
     <dl class="popup-facts">
       ${event.date_basis === 'publication' ? `<div><dt>${escapeHtml(localized(event.date_display_label) || t('publishedDate'))}</dt><dd>${escapeHtml(formatDate(eventDate(event)))}</dd></div>` : `<div><dt>${escapeHtml(t('eventDate'))}</dt><dd>${escapeHtml(formatDateTime(event.occurred_at))}</dd></div><div><dt>${escapeHtml(t('publishedDate'))}</dt><dd>${escapeHtml(formatDateTime(event.published_at))}</dd></div>`}
       <div><dt>${escapeHtml(t('mapPrecision'))}</dt><dd>${escapeHtml(event.location?.precision || '—')}</dd></div>
