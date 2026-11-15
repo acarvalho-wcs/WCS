@@ -2,7 +2,7 @@ import { translations } from './i18n.js';
 import { preferredLanguage, selectLanguage, listenLanguage } from './language-preference.js?v=20261115-unified';
 import { createTemporalFilter } from './temporal-filter.js?v=20261115-lastyear';
 import { crimeTypes, crimeTypeMeta, mapConfig, futureLayerGroups } from './config.js';
-import { territorialOverlays, territorialOverlayIds, installTerritorialOverlays, setTerritorialVisibility } from './territorial-overlays.js?v=20261115-territories1';
+import { territorialOverlays, territorialOverlayIds, installTerritorialOverlays, setTerritorialVisibility } from './territorial-overlays.js?v=20261115-wms-vector-fix';
 
 let language = preferredLanguage();
 let mapTheme = localStorage.getItem('amazon-observatory-theme') || 'dark';

@@ -293,35 +293,35 @@
         {
           "id": "brazil_conservation_units",
           "label": {
-            "pt": "Unidades de conservação (Brasil)",
-            "en": "Conservation units (Brazil)",
-            "es": "Unidades de conservación (Brasil)"
+            "pt": "Unidades de conservação federais (Brasil)",
+            "en": "Federal conservation units (Brazil)",
+            "es": "Unidades de conservación federales (Brasil)"
           },
           "status": "active",
           "icon": "protected",
-          "source": "ANM / ICMBio"
+          "source": "INFRASA / ICMBio / MMA"
         },
         {
           "id": "strict_protection",
           "label": {
-            "pt": "Proteção integral (Brasil)",
-            "en": "Strict protection (Brazil)",
-            "es": "Protección integral (Brasil)"
+            "pt": "Proteção integral federal (Brasil)",
+            "en": "Federal strict protection (Brazil)",
+            "es": "Protección integral federal (Brasil)"
           },
           "status": "active",
           "icon": "protected",
-          "source": "ANM / ICMBio"
+          "source": "INFRASA / ICMBio / MMA"
         },
         {
           "id": "sustainable_use",
           "label": {
-            "pt": "Uso sustentável (Brasil)",
-            "en": "Sustainable use (Brazil)",
-            "es": "Uso sostenible (Brasil)"
+            "pt": "Uso sustentável federal (Brasil)",
+            "en": "Federal sustainable use (Brazil)",
+            "es": "Uso sostenible federal (Brasil)"
           },
           "status": "active",
           "icon": "protected",
-          "source": "ANM / ICMBio"
+          "source": "INFRASA / ICMBio / MMA"
         },
         {
           "id": "indigenous_lands",

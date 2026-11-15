@@ -1,67 +1,93 @@
-// Cache official RAISG/ANM ArcGIS MapServer imagery during GitHub Pages deployment.
-// The official services do not return Access-Control-Allow-Origin to browsers.
-// These files are served only from GitHub Pages, with source credits preserved.
-import { mkdir, writeFile } from 'node:fs/promises';
+// GitHub Actions builds same-origin Amazon GIS imagery from official WMS sources.
+// RAISG and INFRASA original geospatial datasets are credited on the public map.
+import {mkdir,writeFile} from 'node:fs/promises';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import {fileURLToPath} from 'node:url';
 
-const appRoot=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const destination=path.join(appRoot,'public/assets/territory-tiles');
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const destination=path.join(root,'public/assets/territory-tiles');
 const sources=[
-  {id:'protected_areas',service:'https://geo2.socioambiental.org/raisg/rest/services/raisg/raisg_anps/MapServer',layers:'show:2,3,4,5,6,7'},
-  {id:'indigenous_lands',service:'https://geo2.socioambiental.org/raisg/rest/services/raisg/raisg_tis/MapServer',layers:'show:1'},
-  {id:'brazil_conservation_units',service:'https://geo.anm.gov.br/arcgis/rest/services/SIGMINE/protecao_conservacao_natureza/MapServer',layers:'show:0'},
-  {id:'strict_protection',service:'https://geo.anm.gov.br/arcgis/rest/services/SIGMINE/protecao_conservacao_natureza/MapServer',layers:'show:0',definition:'CDRestricao=1'},
-  {id:'sustainable_use',service:'https://geo.anm.gov.br/arcgis/rest/services/SIGMINE/protecao_conservacao_natureza/MapServer',layers:'show:0',definition:'CDRestricao=2'}
+ {id:'protected_areas',service:'https://geo.socioambiental.org/raisg/services/raisg/rg_srv_mapas_anps/MapServer/WMSServer',layers:'1,2,3,4,5,6'},
+ {id:'indigenous_lands',service:'https://geo.socioambiental.org/raisg/services/raisg/rg_srv_mapas_tis/MapServer/WMSServer',layers:'1'}
 ];
-const b={west:-84,south:-21,east:-42,north:16};
-const maxZoom=5; // Regional map coverage; MapLibre overscales raster above this level.
-const lonX=(v,z)=>Math.floor((v+180)/360*2**z);
-const latY=(v,z)=>Math.floor((1-Math.log(Math.tan(v*Math.PI/180)+1/Math.cos(v*Math.PI/180))/Math.PI)/2*2**z);
+const limits={west:-84,south:-21,east:-42,north:16};
+const maxZoom=5; // Regional overview; details above zoom 5 are raster-overscaled.
+const lonX=(lon,z)=>Math.floor((lon+180)/360*2**z);
+const latY=(lat,z)=>Math.floor((1-Math.log(Math.tan(lat*Math.PI/180)+1/Math.cos(lat*Math.PI/180))/Math.PI)/2*2**z);
 const E=20037508.342789244;
-function exportUrl(spec,z,x,y){
-  const n=2**z,side=2*E/n;
-  const bbox=[-E+x*side,E-(y+1)*side,-E+(x+1)*side,E-y*side].join(',');
-  const u=new URL(spec.service+'/export');
-  for(const [k,v] of Object.entries({f:'image',format:'png32',transparent:'true',bbox,bboxSR:'3857',imageSR:'3857',size:'256,256',dpi:'96',layers:spec.layers}))u.searchParams.set(k,v);
-  if(spec.definition)u.searchParams.set('layerDefs',JSON.stringify({0:spec.definition}));
-  return u.toString();
+function tileURL(spec,z,x,y){
+ const side=2*E/(2**z),bbox=[-E+x*side,E-(y+1)*side,-E+(x+1)*side,E-y*side].join(',');
+ const url=new URL(spec.service);
+ for(const [key,value] of Object.entries({
+   SERVICE:'WMS',VERSION:'1.1.1',REQUEST:'GetMap',LAYERS:spec.layers,STYLES:'',
+   SRS:'EPSG:3857',BBOX:bbox,WIDTH:'256',HEIGHT:'256',FORMAT:'image/png',TRANSPARENT:'TRUE'
+ }))url.searchParams.set(key,value);
+ return url.toString();
 }
-async function requestImage(url){
-  let last;
-  for(let attempt=1;attempt<=3;attempt++){
-    try{
-      const res=await fetch(url,{signal:AbortSignal.timeout(18000),headers:{'User-Agent':'AmazonCrimes-GitHubPages-TileBuilder/1.0','Accept':'image/png,image/*'}});
-      if(!res.ok)throw new Error('HTTP '+res.status);
-      const bytes=Buffer.from(await res.arrayBuffer());
-      const sig=Buffer.from([137,80,78,71,13,10,26,10]);
-      if(bytes.length<75||!bytes.subarray(0,8).equals(sig))throw new Error('Not a PNG: '+res.headers.get('content-type')+' '+bytes.subarray(0,110).toString());
-      return bytes;
-    }catch(err){last=err; if(attempt<3)await new Promise(ok=>setTimeout(ok,attempt*350));}
-  }
-  throw last;
-}
-const tasks=[];
-for(const spec of sources)for(let z=0;z<=maxZoom;z++){
- const x1=lonX(b.west,z),x2=lonX(b.east,z),y1=latY(b.north,z),y2=latY(b.south,z);
- for(let x=x1;x<=x2;x++)for(let y=y1;y<=y2;y++)tasks.push({spec,z,x,y});
-}
-let finished=0;const failed=[];
-const bySource=Object.fromEntries(sources.map(x=>[x.id,0]));
-async function worker(){
- while(tasks.length){
-   const item=tasks.shift();
-   const {spec,z,x,y}=item,output=path.join(destination,spec.id,String(z),String(x),y+'.png');
+async function fetchImage(url){
+ let error;
+ for(let retry=0;retry<3;retry++){
    try{
-     const bytes=await requestImage(exportUrl(spec,z,x,y));
-     await mkdir(path.dirname(output),{recursive:true});
-     await writeFile(output,bytes);
-     finished++;bySource[spec.id]++;
-   }catch(error){
-     failed.push({id:spec.id,z,x,y,error:String(error?.message||error)});
-   }
+     const res=await fetch(url,{signal:AbortSignal.timeout(22000),headers:{Accept:'image/png,image/*'}});
+     if(!res.ok)throw new Error('HTTP '+res.status);
+     const ct=res.headers.get('content-type')||'';
+     const data=Buffer.from(await res.arrayBuffer());
+     if(!data.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])))throw new Error('Not PNG ('+ct+'): '+data.subarray(0,160).toString());
+     return data;
+   }catch(e){error=e;if(retry<2)await new Promise(r=>setTimeout(r,400*(retry+1)));}
+ }
+ throw error;
+}
+const jobs=[];
+for(const spec of sources)for(let z=0;z<=maxZoom;z++){
+ const x1=lonX(limits.west,z),x2=lonX(limits.east,z),y1=latY(limits.north,z),y2=latY(limits.south,z);
+ for(let x=x1;x<=x2;x++)for(let y=y1;y<=y2;y++)jobs.push({spec,z,x,y});
+}
+let made=0;const failures=[];
+async function worker(){
+ while(jobs.length){
+   const {spec,z,x,y}=jobs.shift();
+   try {
+     const data=await fetchImage(tileURL(spec,z,x,y));
+     const dir=path.join(destination,spec.id,String(z),String(x));
+     await mkdir(dir,{recursive:true});
+     await writeFile(path.join(dir,y+'.png'),data);
+     made++;
+   }catch(e){failures.push({layer:spec.id,z,x,y,error:String(e?.message||e)});}
  }
 }
 await Promise.all(Array.from({length:6},()=>worker()));
-console.log('TERRITORY CACHE',JSON.stringify({finished,total:finished+failed.length,bySource,failed:failed.slice(0,12),minZoom:0,maxZoom}));
-if(failed.length)throw new Error('Cannot publish incomplete GIS overlay tile cache ('+failed.length+' failures); preserving previous deployed site.');
+console.log('RAISG WMS CACHE',JSON.stringify({made,failed:failures.length,failures:failures.slice(0,12)}));
+if(failures.length)throw new Error('Incomplete RAISG tile snapshot: '+failures.length+' missing images. Aborting deploy.');
+
+// INFRASA hosted feature service integrates MMA and ICMBio data for federal UCs.
+const gis='https://geo.infrasa.gov.br/server/rest/services/Hosted/Unidades_de_Conserva%C3%A7%C3%A3o_no_Brasil/FeatureServer/0/query';
+const features=[];
+const pointInAmazon=coord=>Array.isArray(coord)&&typeof coord[0]==='number'&&coord[0]>=-84&&coord[0]<=-42&&coord[1]>=-21&&coord[1]<=16;
+function intersectsAmazon(value){
+ if(!Array.isArray(value))return false;
+ if(typeof value[0]==='number')return pointInAmazon(value);
+ return value.some(intersectsAmazon);
+}
+for(let offset=0;offset<10000;offset+=400){
+ const url=new URL(gis);
+ for(const [key,value] of Object.entries({
+  where:'1=1',outFields:'nomeuc,grupo',returnGeometry:'true',
+  outSR:'4326',geometryPrecision:'5',maxAllowableOffset:'0.0005',resultRecordCount:'400',
+  resultOffset:String(offset),f:'geojson'
+ }))url.searchParams.set(key,value);
+ const res=await fetch(url,{signal:AbortSignal.timeout(100000)});
+ if(!res.ok)throw new Error('INFRASA data HTTP '+res.status);
+ const json=await res.json();
+ if(!Array.isArray(json.features))throw new Error('INFRASA missing GeoJSON features '+JSON.stringify(json).slice(0,300));
+ for(const feature of json.features)if(feature.geometry?.coordinates&&intersectsAmazon(feature.geometry.coordinates))features.push(feature);
+ console.log('INFRASA PAGE',offset,'downloaded',json.features.length,'selected',features.length);
+ if(json.features.length<400 && !json.exceededTransferLimit)break;
+ if(offset>=9600)throw new Error('INFRASA pagination limit');
+}
+const groups=[...new Set(features.map(x=>x.properties?.grupo).filter(Boolean))];
+if(features.length<20||!groups.includes('PI')||!groups.includes('US'))throw new Error('Incomplete federal UC source '+JSON.stringify({count:features.length,groups}));
+const file=path.join(root,'public/data/uc-federal.geojson');
+await mkdir(path.dirname(file),{recursive:true});
+await writeFile(file,JSON.stringify({type:'FeatureCollection',features}));
+console.log('INFRASA FEDERAL UCs',JSON.stringify({count:features.length,groups,fileBytes:Buffer.byteLength(JSON.stringify(features))}));
