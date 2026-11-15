@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-11-15T17:29:50.782Z",
+  "generated_at": "2026-11-15T17:30:10.411Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -8188,6 +8188,66 @@
       "source_media": []
     },
     {
+      "id": "PE-LOR-2024-1030-PUCA-URQU",
+      "title": {
+        "pt": "Interdicción Puca Urqu — Puca Urqu / Albarenga",
+        "en": "Interdicción Puca Urqu — Puca Urqu / Albarenga",
+        "es": "Interdicción Puca Urqu — Puca Urqu / Albarenga"
+      },
+      "summary": {
+        "pt": "A Fiscalía informou a destruição de dois acampamentos de mineração ilegal e equipamentos, além de uma detenção.",
+        "en": "Prosecutors reported destroying two illegal mining camps and equipment, along with one detention.",
+        "es": "La Fiscalía informó la destrucción de dos campamentos de minería ilegal y equipos, además de una detención."
+      },
+      "case_context": {
+        "pt": "[O] A Fiscalía informou a destruição de dois acampamentos de mineração ilegal e equipamentos, além de uma detenção.\nFontes: [O] https://www.gob.pe/institucion/mpfn/noticias/1049509-fema-de-maynas-dirige-operativo-conjunto-y-da-duro-golpe-a-la-mineria-ilegal-en-la-cuenca-del-rio-nanay",
+        "en": "[O] Prosecutors reported destroying two illegal mining camps and equipment, along with one detention.\nSources: [O] https://www.gob.pe/institucion/mpfn/noticias/1049509-fema-de-maynas-dirige-operativo-conjunto-y-da-duro-golpe-a-la-mineria-ilegal-en-la-cuenca-del-rio-nanay",
+        "es": "[O] La Fiscalía informó la destrucción de dos campamentos de minería ilegal y equipos, además de una detención.\nFuentes: [O] https://www.gob.pe/institucion/mpfn/noticias/1049509-fema-de-maynas-dirige-operativo-conjunto-y-da-duro-golpe-a-la-mineria-ilegal-en-la-cuenca-del-rio-nanay"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Interdicción Puca Urqu",
+      "agencies": [],
+      "occurred_at": "2024-10-30T12:00:00-05:00",
+      "published_at": "2024-10-30T12:00:00-05:00",
+      "added_at": "2026-11-15T17:30:10.411Z",
+      "updated_at": "2026-11-15T17:30:10.411Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Date of official bulletin is used as reporting-date reference when exact intervention day is not specified. No guilt is inferred from detention or charges.",
+      "priority": "MEDIUM",
+      "location": {
+        "name": "Puca Urqu / Albarenga",
+        "admin1": "Loreto",
+        "country": "Peru",
+        "lat": -3.5,
+        "lon": -73.6,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Interdicción Puca Urqu",
+        "ILLEGAL_MINING"
+      ],
+      "sources": [
+        {
+          "publisher": "Peruvian official authority",
+          "url": "https://www.gob.pe/institucion/mpfn/noticias/1049509-fema-de-maynas-dirige-operativo-conjunto-y-da-duro-golpe-a-la-mineria-ilegal-en-la-cuenca-del-rio-nanay",
+          "published_at": "2024-10-30T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
       "id": "BR-PA-2024-1022-ISENGARD",
       "title": {
         "pt": "Operação Isengard — Altamira / Anapu / Pacajá",
@@ -8242,6 +8302,126 @@
           "publisher": "Official agency",
           "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2024/10/pf-fecha-serrarias-ilegais-em-operacao-no-sudoeste-paraense",
           "published_at": "2024-10-23T12:00:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "EC-ZCH-2024-1016-CENTINELA",
+      "title": {
+        "pt": "Operativo Centinela del Cóndor — Centinela del Cóndor",
+        "en": "Operativo Centinela del Cóndor — Centinela del Cóndor",
+        "es": "Operativo Centinela del Cóndor — Centinela del Cóndor"
+      },
+      "summary": {
+        "pt": "A Fiscalía informou processo contra 35 pessoas após uma ação de 16 de outubro contra suspeita de mineração ilegal em Centinela del Cóndor.",
+        "en": "Ecuador's prosecution service reported charges against 35 people after a 16 October intervention targeting suspected illegal mining in Centinela del Cóndor.",
+        "es": "La Fiscalía informó cargos contra 35 personas tras un operativo del 16 de octubre por presunta minería ilegal en Centinela del Cóndor."
+      },
+      "case_context": {
+        "pt": "[O] A Fiscalía informou processo contra 35 pessoas após uma ação de 16 de outubro contra suspeita de mineração ilegal em Centinela del Cóndor.\nFontes: [O] https://www.fiscalia.gob.ec/accesibilidad/prision-preventiva-para-35-procesados-por-mineria-ilegal/",
+        "en": "[O] Ecuador's prosecution service reported charges against 35 people after a 16 October intervention targeting suspected illegal mining in Centinela del Cóndor.\nSources: [O] https://www.fiscalia.gob.ec/accesibilidad/prision-preventiva-para-35-procesados-por-mineria-ilegal/",
+        "es": "[O] La Fiscalía informó cargos contra 35 personas tras un operativo del 16 de octubre por presunta minería ilegal en Centinela del Cóndor.\nFuentes: [O] https://www.fiscalia.gob.ec/accesibilidad/prision-preventiva-para-35-procesados-por-mineria-ilegal/"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Operativo Centinela del Cóndor",
+      "agencies": [],
+      "occurred_at": "2024-10-16T12:00:00-05:00",
+      "published_at": "2024-10-17T12:00:00-05:00",
+      "added_at": "2026-11-15T17:30:10.411Z",
+      "updated_at": "2026-11-15T17:30:10.411Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Date of official bulletin is used as reporting-date reference when exact intervention day is not specified. No guilt is inferred from detention or charges.",
+      "priority": "MEDIUM",
+      "location": {
+        "name": "Centinela del Cóndor",
+        "admin1": "Zamora Chinchipe",
+        "country": "Ecuador",
+        "lat": -3.85,
+        "lon": -78.78,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Operativo Centinela del Cóndor",
+        "ILLEGAL_MINING"
+      ],
+      "sources": [
+        {
+          "publisher": "Fiscalía General del Estado",
+          "url": "https://www.fiscalia.gob.ec/accesibilidad/prision-preventiva-para-35-procesados-por-mineria-ilegal/",
+          "published_at": "2024-10-17T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "PE-MDD-2024-0906-BOCA-INAMBARI",
+      "title": {
+        "pt": "Interdicción Boca Inambari — Playa Jesús / Boca Inambari",
+        "en": "Interdicción Boca Inambari — Playa Jesús / Boca Inambari",
+        "es": "Interdicción Boca Inambari — Playa Jesús / Boca Inambari"
+      },
+      "summary": {
+        "pt": "A Fiscalía comunicou ação contra mineração ilegal em Playa Jesús, comunidade Boca Inambari, com inutilização de equipamentos de extração.",
+        "en": "Prosecutors reported action against illegal mining in Playa Jesús, Boca Inambari community, disabling extraction equipment.",
+        "es": "La Fiscalía informó una intervención contra la minería ilegal en Playa Jesús, comunidad Boca Inambari, con inutilización de equipos."
+      },
+      "case_context": {
+        "pt": "[O] A Fiscalía comunicou ação contra mineração ilegal em Playa Jesús, comunidade Boca Inambari, com inutilização de equipamentos de extração.\nFontes: [O] https://www.gob.pe/institucion/mpfn/noticias/1017874-fema-de-madre-de-dios-dirige-operativo-de-interdiccion-contra-la-mineria-ilegal-en-comunidad-nativa-boca-inambari",
+        "en": "[O] Prosecutors reported action against illegal mining in Playa Jesús, Boca Inambari community, disabling extraction equipment.\nSources: [O] https://www.gob.pe/institucion/mpfn/noticias/1017874-fema-de-madre-de-dios-dirige-operativo-de-interdiccion-contra-la-mineria-ilegal-en-comunidad-nativa-boca-inambari",
+        "es": "[O] La Fiscalía informó una intervención contra la minería ilegal en Playa Jesús, comunidad Boca Inambari, con inutilización de equipos.\nFuentes: [O] https://www.gob.pe/institucion/mpfn/noticias/1017874-fema-de-madre-de-dios-dirige-operativo-de-interdiccion-contra-la-mineria-ilegal-en-comunidad-nativa-boca-inambari"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Interdicción Boca Inambari",
+      "agencies": [],
+      "occurred_at": "2024-09-06T12:00:00-05:00",
+      "published_at": "2024-09-06T12:00:00-05:00",
+      "added_at": "2026-11-15T17:30:10.411Z",
+      "updated_at": "2026-11-15T17:30:10.411Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Date of official bulletin is used as reporting-date reference when exact intervention day is not specified. No guilt is inferred from detention or charges.",
+      "priority": "MEDIUM",
+      "location": {
+        "name": "Playa Jesús / Boca Inambari",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.75,
+        "lon": -69.8,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Interdicción Boca Inambari",
+        "ILLEGAL_MINING"
+      ],
+      "sources": [
+        {
+          "publisher": "Peruvian official authority",
+          "url": "https://www.gob.pe/institucion/mpfn/noticias/1017874-fema-de-madre-de-dios-dirige-operativo-de-interdiccion-contra-la-mineria-ilegal-en-comunidad-nativa-boca-inambari",
+          "published_at": "2024-09-06T12:00:00-05:00",
           "source_type": "official"
         }
       ],
@@ -8363,6 +8543,306 @@
           "url": "https://newsroom.gy/2024/08/18/six-brazilians-arrested-at-illegal-mining-site-near-potaro-river/",
           "published_at": "2024-08-18T12:00:00-04:00",
           "source_type": "media_with_official_source"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "PE-MDD-2024-0801-COLORADO",
+      "title": {
+        "pt": "Interdicción Colorado — Distrito Colorado / Manu",
+        "en": "Interdicción Colorado — Distrito Colorado / Manu",
+        "es": "Interdicción Colorado — Distrito Colorado / Manu"
+      },
+      "summary": {
+        "pt": "Em 1º de agosto, uma interdição no distrito Colorado afetou materiais e equipamentos de mineração ilegal avaliados em S/ 7,6 milhões.",
+        "en": "On 1 August, an interdiction in Colorado district affected illegal mining equipment valued at S/ 7.6 million.",
+        "es": "El 1 de agosto, una interdicción en el distrito de Colorado afectó equipos de minería ilegal valorados en S/ 7,6 millones."
+      },
+      "case_context": {
+        "pt": "[O] Em 1º de agosto, uma interdição no distrito Colorado afetou materiais e equipamentos de mineração ilegal avaliados em S/ 7,6 milhões.\nFontes: [O] https://www.gob.pe/institucion/pcm/noticias/998226-madre-de-dios-operativo-contra-mineria-ilegal-logra-interdiccion-de-materiales-valorizados-en-7-6-millones-de-soles",
+        "en": "[O] On 1 August, an interdiction in Colorado district affected illegal mining equipment valued at S/ 7.6 million.\nSources: [O] https://www.gob.pe/institucion/pcm/noticias/998226-madre-de-dios-operativo-contra-mineria-ilegal-logra-interdiccion-de-materiales-valorizados-en-7-6-millones-de-soles",
+        "es": "[O] El 1 de agosto, una interdicción en el distrito de Colorado afectó equipos de minería ilegal valorados en S/ 7,6 millones.\nFuentes: [O] https://www.gob.pe/institucion/pcm/noticias/998226-madre-de-dios-operativo-contra-mineria-ilegal-logra-interdiccion-de-materiales-valorizados-en-7-6-millones-de-soles"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Interdicción Colorado",
+      "agencies": [],
+      "occurred_at": "2024-08-01T12:00:00-05:00",
+      "published_at": "2024-08-03T12:00:00-05:00",
+      "added_at": "2026-11-15T17:30:10.411Z",
+      "updated_at": "2026-11-15T17:30:10.411Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Date of official bulletin is used as reporting-date reference when exact intervention day is not specified. No guilt is inferred from detention or charges.",
+      "priority": "MEDIUM",
+      "location": {
+        "name": "Distrito Colorado / Manu",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.8,
+        "lon": -70.5,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Interdicción Colorado",
+        "ILLEGAL_MINING"
+      ],
+      "sources": [
+        {
+          "publisher": "Peruvian official authority",
+          "url": "https://www.gob.pe/institucion/pcm/noticias/998226-madre-de-dios-operativo-contra-mineria-ilegal-logra-interdiccion-de-materiales-valorizados-en-7-6-millones-de-soles",
+          "published_at": "2024-08-03T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "PE-LOR-2024-0702-NANAY-NINE",
+      "title": {
+        "pt": "Interdicción Nanay — San Juan de Ungurahual / Nanay",
+        "en": "Interdicción Nanay — San Juan de Ungurahual / Nanay",
+        "es": "Interdicción Nanay — San Juan de Ungurahual / Nanay"
+      },
+      "summary": {
+        "pt": "A Fiscalía comunicou a destruição de nove balsas-dragas e quatro acampamentos na bacia do Nanay.",
+        "en": "Prosecutors reported destroying nine dredge barges and four camps in the Nanay River basin.",
+        "es": "La Fiscalía comunicó la destrucción de nueve balsas-draga y cuatro campamentos en la cuenca del río Nanay."
+      },
+      "case_context": {
+        "pt": "[O] A Fiscalía comunicou a destruição de nove balsas-dragas e quatro acampamentos na bacia do Nanay.\nFontes: [O] https://www.gob.pe/institucion/mpfn/noticias/981984-fiscalia-dirige-operativo-de-interdiccion-contra-la-mineria-ilegal-en-loreto",
+        "en": "[O] Prosecutors reported destroying nine dredge barges and four camps in the Nanay River basin.\nSources: [O] https://www.gob.pe/institucion/mpfn/noticias/981984-fiscalia-dirige-operativo-de-interdiccion-contra-la-mineria-ilegal-en-loreto",
+        "es": "[O] La Fiscalía comunicó la destrucción de nueve balsas-draga y cuatro campamentos en la cuenca del río Nanay.\nFuentes: [O] https://www.gob.pe/institucion/mpfn/noticias/981984-fiscalia-dirige-operativo-de-interdiccion-contra-la-mineria-ilegal-en-loreto"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Interdicción Nanay",
+      "agencies": [],
+      "occurred_at": "2024-07-02T12:00:00-05:00",
+      "published_at": "2024-07-02T12:00:00-05:00",
+      "added_at": "2026-11-15T17:30:10.411Z",
+      "updated_at": "2026-11-15T17:30:10.411Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Date of official bulletin is used as reporting-date reference when exact intervention day is not specified. No guilt is inferred from detention or charges.",
+      "priority": "MEDIUM",
+      "location": {
+        "name": "San Juan de Ungurahual / Nanay",
+        "admin1": "Loreto",
+        "country": "Peru",
+        "lat": -3.5,
+        "lon": -73.6,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Interdicción Nanay",
+        "ILLEGAL_MINING"
+      ],
+      "sources": [
+        {
+          "publisher": "Peruvian official authority",
+          "url": "https://www.gob.pe/institucion/mpfn/noticias/981984-fiscalia-dirige-operativo-de-interdiccion-contra-la-mineria-ilegal-en-loreto",
+          "published_at": "2024-07-02T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "PE-LOR-2024-0624-ALTO-NANAY",
+      "title": {
+        "pt": "Interdicción Alto Nanay — Alto Nanay-Pintuyacu-Chambira",
+        "en": "Interdicción Alto Nanay — Alto Nanay-Pintuyacu-Chambira",
+        "es": "Interdicción Alto Nanay — Alto Nanay-Pintuyacu-Chambira"
+      },
+      "summary": {
+        "pt": "A Fiscalía relatou a destruição de três balsas-dragas na Área de Conservação Regional Alto Nanay-Pintuyacu-Chambira.",
+        "en": "Prosecutors reported destroying three dredge barges in the Alto Nanay-Pintuyacu-Chambira Regional Conservation Area.",
+        "es": "La Fiscalía informó la destrucción de tres balsas-draga en el Área de Conservación Regional Alto Nanay-Pintuyacu-Chambira."
+      },
+      "case_context": {
+        "pt": "[O] A Fiscalía relatou a destruição de três balsas-dragas na Área de Conservação Regional Alto Nanay-Pintuyacu-Chambira.\nFontes: [O] https://www.gob.pe/institucion/mpfn/noticias/977381-fema-de-maynas-efectuo-interdiccion-contra-la-mineria-ilegal-en-el-rio-nanay",
+        "en": "[O] Prosecutors reported destroying three dredge barges in the Alto Nanay-Pintuyacu-Chambira Regional Conservation Area.\nSources: [O] https://www.gob.pe/institucion/mpfn/noticias/977381-fema-de-maynas-efectuo-interdiccion-contra-la-mineria-ilegal-en-el-rio-nanay",
+        "es": "[O] La Fiscalía informó la destrucción de tres balsas-draga en el Área de Conservación Regional Alto Nanay-Pintuyacu-Chambira.\nFuentes: [O] https://www.gob.pe/institucion/mpfn/noticias/977381-fema-de-maynas-efectuo-interdiccion-contra-la-mineria-ilegal-en-el-rio-nanay"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Interdicción Alto Nanay",
+      "agencies": [],
+      "occurred_at": "2024-06-24T12:00:00-05:00",
+      "published_at": "2024-06-24T12:00:00-05:00",
+      "added_at": "2026-11-15T17:30:10.411Z",
+      "updated_at": "2026-11-15T17:30:10.411Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Date of official bulletin is used as reporting-date reference when exact intervention day is not specified. No guilt is inferred from detention or charges.",
+      "priority": "MEDIUM",
+      "location": {
+        "name": "Alto Nanay-Pintuyacu-Chambira",
+        "admin1": "Loreto",
+        "country": "Peru",
+        "lat": -3.2,
+        "lon": -74.4,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Interdicción Alto Nanay",
+        "ILLEGAL_MINING"
+      ],
+      "sources": [
+        {
+          "publisher": "Peruvian official authority",
+          "url": "https://www.gob.pe/institucion/mpfn/noticias/977381-fema-de-maynas-efectuo-interdiccion-contra-la-mineria-ilegal-en-el-rio-nanay",
+          "published_at": "2024-06-24T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "PE-MDD-2024-0528-BALATA",
+      "title": {
+        "pt": "Interdicción Balata — Balata / buffer zone of Tambopata",
+        "en": "Interdicción Balata — Balata / buffer zone of Tambopata",
+        "es": "Interdicción Balata — Balata / buffer zone of Tambopata"
+      },
+      "summary": {
+        "pt": "A PNP informou a destruição de duas balsas-dragas e outros equipamentos usados em mineração ilegal no setor Balata.",
+        "en": "Peru's police reported destroying two dredge barges and other illegal mining equipment in the Balata sector.",
+        "es": "La PNP informó la destrucción de dos balsas-draga y otros equipos de minería ilegal en el sector Balata."
+      },
+      "case_context": {
+        "pt": "[O] A PNP informou a destruição de duas balsas-dragas e outros equipamentos usados em mineração ilegal no setor Balata.\nFontes: [O] https://www.gob.pe/institucion/pnp/noticias/962782-madre-de-dios-destruyen-bienes-y-accesorios-destinados-a-la-mineria-ilegal",
+        "en": "[O] Peru's police reported destroying two dredge barges and other illegal mining equipment in the Balata sector.\nSources: [O] https://www.gob.pe/institucion/pnp/noticias/962782-madre-de-dios-destruyen-bienes-y-accesorios-destinados-a-la-mineria-ilegal",
+        "es": "[O] La PNP informó la destrucción de dos balsas-draga y otros equipos de minería ilegal en el sector Balata.\nFuentes: [O] https://www.gob.pe/institucion/pnp/noticias/962782-madre-de-dios-destruyen-bienes-y-accesorios-destinados-a-la-mineria-ilegal"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Interdicción Balata",
+      "agencies": [],
+      "occurred_at": "2024-05-28T12:00:00-05:00",
+      "published_at": "2024-05-28T12:00:00-05:00",
+      "added_at": "2026-11-15T17:30:10.411Z",
+      "updated_at": "2026-11-15T17:30:10.411Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Date of official bulletin is used as reporting-date reference when exact intervention day is not specified. No guilt is inferred from detention or charges.",
+      "priority": "MEDIUM",
+      "location": {
+        "name": "Balata / buffer zone of Tambopata",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.75,
+        "lon": -69.25,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Interdicción Balata",
+        "ILLEGAL_MINING"
+      ],
+      "sources": [
+        {
+          "publisher": "Peruvian official authority",
+          "url": "https://www.gob.pe/institucion/pnp/noticias/962782-madre-de-dios-destruyen-bienes-y-accesorios-destinados-a-la-mineria-ilegal",
+          "published_at": "2024-05-28T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": []
+    },
+    {
+      "id": "PE-MDD-2024-0528-SECTOR-110",
+      "title": {
+        "pt": "Interdicción Sector 110 — Sector 110 / Inambari",
+        "en": "Interdicción Sector 110 — Sector 110 / Inambari",
+        "es": "Interdicción Sector 110 — Sector 110 / Inambari"
+      },
+      "summary": {
+        "pt": "A PNP informou uma intervenção distinta no setor 110 de Inambari, com inutilização de draga e máquinas de garimpo ilegal.",
+        "en": "Peru's police reported a separate interdiction in Inambari Sector 110, disabling a dredge and illegal mining machinery.",
+        "es": "La PNP informó una intervención distinta en el sector 110 de Inambari, con inutilización de una draga y maquinaria minera ilegal."
+      },
+      "case_context": {
+        "pt": "[O] A PNP informou uma intervenção distinta no setor 110 de Inambari, com inutilização de draga e máquinas de garimpo ilegal.\nFontes: [O] https://www.gob.pe/institucion/pnp/noticias/962580-mas-de-3-millones-en-bienes-destruidos-que-eran-utilizados-para-la-mineria-ilegal-en-madre-de-dios",
+        "en": "[O] Peru's police reported a separate interdiction in Inambari Sector 110, disabling a dredge and illegal mining machinery.\nSources: [O] https://www.gob.pe/institucion/pnp/noticias/962580-mas-de-3-millones-en-bienes-destruidos-que-eran-utilizados-para-la-mineria-ilegal-en-madre-de-dios",
+        "es": "[O] La PNP informó una intervención distinta en el sector 110 de Inambari, con inutilización de una draga y maquinaria minera ilegal.\nFuentes: [O] https://www.gob.pe/institucion/pnp/noticias/962580-mas-de-3-millones-en-bienes-destruidos-que-eran-utilizados-para-la-mineria-ilegal-en-madre-de-dios"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Interdicción Sector 110",
+      "agencies": [],
+      "occurred_at": "2024-05-28T12:00:00-05:00",
+      "published_at": "2024-05-28T12:00:00-05:00",
+      "added_at": "2026-11-15T17:30:10.411Z",
+      "updated_at": "2026-11-15T17:30:10.411Z",
+      "backfill": true,
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Date of official bulletin is used as reporting-date reference when exact intervention day is not specified. No guilt is inferred from detention or charges.",
+      "priority": "MEDIUM",
+      "location": {
+        "name": "Sector 110 / Inambari",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.9,
+        "lon": -69.3,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "impacts": {
+        "indigenous_or_local_communities": false
+      },
+      "cross_border": false,
+      "keywords": [
+        "Interdicción Sector 110",
+        "ILLEGAL_MINING"
+      ],
+      "sources": [
+        {
+          "publisher": "Peruvian official authority",
+          "url": "https://www.gob.pe/institucion/pnp/noticias/962580-mas-de-3-millones-en-bienes-destruidos-que-eran-utilizados-para-la-mineria-ilegal-en-madre-de-dios",
+          "published_at": "2024-05-28T12:00:00-05:00",
+          "source_type": "official"
         }
       ],
       "source_media": []
