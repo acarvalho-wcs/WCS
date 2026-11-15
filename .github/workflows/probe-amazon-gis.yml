@@ -1,0 +1,22 @@
+name: Probe Amazon GIS services
+
+on:
+  push:
+    branches:
+      - amazon-crimes-pages
+    paths:
+      - amazon-crimes/scripts/probe-gis.mjs
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - run: node amazon-crimes/scripts/probe-gis.mjs
