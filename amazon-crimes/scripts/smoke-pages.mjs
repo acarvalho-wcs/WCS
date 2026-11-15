@@ -6,6 +6,10 @@ const { chromium } = require('playwright-core');
 const base = new URL(process.env.PAGE_URL || 'https://acarvalho-wcs.github.io/WCS/');
 const root = new URL(base.pathname.endsWith('/') ? base.pathname : base.pathname+'/',base);
 const diag = [];
+const tileResponses=[];
+const tileFailures=[];
+const isTerritoryUrl=url=>/geo2\.socioambiental\.org|geo\.anm\.gov\.br|territory-source/i.test(url);
+
 const browser = await chromium.launch({
   executablePath: process.env.CHROME_PATH,
   headless: true,
@@ -16,6 +20,8 @@ const page = await context.newPage();
 page.on('pageerror',e=>diag.push('PAGE ERROR: '+e.stack));
 page.on('console',message=>{if(message.type()==='error')diag.push('CONSOLE: '+message.text())});
 page.on('requestfailed',r=>{if(/\/(events\.json|app\.js|temporal-filter\.js|language-preference\.js)/.test(r.url()))diag.push('REQUEST: '+r.url()+' '+r.failure()?.errorText)});
+page.on('requestfailed',r=>{if(isTerritoryUrl(r.url()))tileFailures.push({url:r.url().slice(0,260),error:r.failure()?.errorText})});
+page.on('response',r=>{if(isTerritoryUrl(r.url()))tileResponses.push({status:r.status(),url:r.url().slice(0,310),contentType:r.headers()['content-type']||''})});
 page.on('response',r=>{if(/\/(events\.json|app\.js|temporal-filter\.js|language-preference\.js)/.test(r.url()))console.log('RESOURCE',r.status(),r.url())});
 const assert = (condition,message)=>{if(!condition)throw new Error(message)};
 async function load(){
@@ -63,6 +69,23 @@ try {
   assert(mapState.diagnostics?.layer,'Map crime-events layer missing');
   assert(mapState.diagnostics?.source,'Map event GeoJSON source missing');
   assert(mapState.diagnostics?.rendered>0,'Crime-event circles not visibly rendered on the map');
+  // Diagnose real geographical overlay controls and remote raster sources.
+  await page.locator('#layers-toggle').click();
+  const territoryControlNames=await page.locator('input.aux-layer-toggle').evaluateAll(items=>items.map(i=>i.value));
+  console.log('OVERLAY_CONTROLS',JSON.stringify(territoryControlNames));
+  for(const key of ['protected_areas','brazil_conservation_units','indigenous_lands']){
+    const loc=page.locator('input.aux-layer-toggle[value="'+key+'"]');
+    console.log('OVERLAY_UI',key,await loc.count());
+    if(await loc.count())await loc.check({force:true});
+  }
+  await page.waitForTimeout(12000);
+  console.log('OVERLAY_RESPONSE_SUMMARY',JSON.stringify(tileResponses.slice(0,40)));
+  console.log('OVERLAY_FAILURES',JSON.stringify(tileFailures.slice(0,30)));
+  console.log('OVERLAY_AFTER_TOGGLE',JSON.stringify(await page.evaluate(()=>({
+    active:[...document.querySelectorAll('input.aux-layer-toggle:checked')].map(x=>x.value),
+    map:window.__amazonMapHealth?.()
+  }))));
+
   assert(state.total===147,'Canonical total must be 147');
   assert(state.filtered>0,'Default 12-month filter has no visible events');
   assert(state.rows>0&&state.firstCardVisible,'Event feed cards are not rendered visibly');
