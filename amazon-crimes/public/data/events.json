@@ -10988,6 +10988,378 @@
         "Desintrusão Apyterewa e Trincheira Bacajá"
       ],
       "evidence_notes": "Date and intervention documented by primary source."
+    },
+    {
+      "id": "BR-PA-2012-0621-RIO-FRESCO",
+      "title": {
+        "pt": "Apreensão de equipamentos de garimpo — rio Fresco — Rio Fresco / Terra Indígena Kayapó",
+        "en": "Apreensão de equipamentos de garimpo — rio Fresco — Rio Fresco / Terra Indígena Kayapó",
+        "es": "Apreensão de equipamentos de garimpo — rio Fresco — Rio Fresco / Terra Indígena Kayapó"
+      },
+      "summary": {
+        "pt": "Funai apreendeu uma balsa com escavadeira, trator, sete motobombas e 15 mil litros de diesel destinados a um garimpo ilegal na TI Kayapó.",
+        "en": "Funai seized a barge transporting an excavator, tractor, seven pumps and 15,000 litres of diesel intended for illegal mining in Kayapó Indigenous territory.",
+        "es": "Funai incautó una balsa con excavadora, tractor, siete motobombas y 15.000 litros de diésel destinados a minería ilegal en territorio Kayapó."
+      },
+      "case_context": {
+        "pt": "[O] Funai apreendeu uma balsa com escavadeira, trator, sete motobombas e 15 mil litros de diesel destinados a um garimpo ilegal na TI Kayapó.\nFontes: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2012/funai-em-tucuma-pa-apreende-equipamentos-do-garimpo-ilegal",
+        "en": "[O] Funai seized a barge transporting an excavator, tractor, seven pumps and 15,000 litres of diesel intended for illegal mining in Kayapó Indigenous territory.\nSources: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2012/funai-em-tucuma-pa-apreende-equipamentos-do-garimpo-ilegal",
+        "es": "[O] Funai incautó una balsa con excavadora, tractor, siete motobombas y 15.000 litros de diésel destinados a minería ilegal en territorio Kayapó.\nFuentes: [O] https://www.gov.br/funai/pt-br/assuntos/noticias/2012/funai-em-tucuma-pa-apreende-equipamentos-do-garimpo-ilegal"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Apreensão de equipamentos de garimpo — rio Fresco",
+      "agencies": [
+        "Funai"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Official source documents action; allegations are not findings of individual guilt.",
+      "occurred_at": "2012-06-21T12:00:00-03:00",
+      "occurred_at_precision": "day verified; time unknown",
+      "published_at": "2012-07-23T12:00:00-03:00",
+      "added_at": "2026-11-15T20:00:00Z",
+      "updated_at": "2026-11-15T20:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Rio Fresco / Terra Indígena Kayapó",
+        "admin1": "Pará",
+        "country": "Brazil",
+        "lat": -6.75,
+        "lon": -51.16,
+        "precision": "regional_approximate",
+        "geo_source": "Regional or judicial map reference; not precise site."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Funai",
+          "url": "https://www.gov.br/funai/pt-br/assuntos/noticias/2012/funai-em-tucuma-pa-apreende-equipamentos-do-garimpo-ilegal",
+          "published_at": "2012-07-23T12:00:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Apreensão de equipamentos de garimpo — rio Fresco"
+      ],
+      "evidence_notes": "Verified event day"
+    },
+    {
+      "id": "BR-PA-2015-1204-TRANSCAMETA",
+      "title": {
+        "pt": "Operação Transcametá — BR-422 / entorno Resex Ipaú-Anilzinho, Baião",
+        "en": "Operação Transcametá — BR-422 / entorno Resex Ipaú-Anilzinho, Baião",
+        "es": "Operação Transcametá — BR-422 / entorno Resex Ipaú-Anilzinho, Baião"
+      },
+      "summary": {
+        "pt": "ICMBio informou o desmonte de duas serrarias ilegais e a apreensão de aproximadamente 3 mil m³ de madeira no entorno da Resex Ipaú-Anilzinho.",
+        "en": "ICMBio reported dismantling two illegal sawmills and seizing approximately 3,000 m³ of timber near Ipaú-Anilzinho Extractive Reserve.",
+        "es": "ICMBio informó el desmantelamiento de dos aserraderos ilegales y el decomiso de unos 3.000 m³ de madera cerca de la reserva Ipaú-Anilzinho."
+      },
+      "case_context": {
+        "pt": "[O] ICMBio informou o desmonte de duas serrarias ilegais e a apreensão de aproximadamente 3 mil m³ de madeira no entorno da Resex Ipaú-Anilzinho.\nFontes: [O] https://www.gov.br/icmbio/pt-br/assuntos/noticias/destaque/reserva-no-para-desmonta-serrarias-ilegais",
+        "en": "[O] ICMBio reported dismantling two illegal sawmills and seizing approximately 3,000 m³ of timber near Ipaú-Anilzinho Extractive Reserve.\nSources: [O] https://www.gov.br/icmbio/pt-br/assuntos/noticias/destaque/reserva-no-para-desmonta-serrarias-ilegais",
+        "es": "[O] ICMBio informó el desmantelamiento de dos aserraderos ilegales y el decomiso de unos 3.000 m³ de madera cerca de la reserva Ipaú-Anilzinho.\nFuentes: [O] https://www.gov.br/icmbio/pt-br/assuntos/noticias/destaque/reserva-no-para-desmonta-serrarias-ilegais"
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": "Operação Transcametá",
+      "agencies": [
+        "ICMBio"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Official source documents action; allegations are not findings of individual guilt.",
+      "occurred_at": null,
+      "occurred_at_precision": "Exact operation day not specified; publication date separate",
+      "published_at": "2015-12-04T12:00:00-03:00",
+      "added_at": "2026-11-15T20:00:00Z",
+      "updated_at": "2026-11-15T20:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "BR-422 / entorno Resex Ipaú-Anilzinho, Baião",
+        "admin1": "Pará",
+        "country": "Brazil",
+        "lat": -2.79,
+        "lon": -49.67,
+        "precision": "regional_approximate",
+        "geo_source": "Regional or judicial map reference; not precise site."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "ICMBio",
+          "url": "https://www.gov.br/icmbio/pt-br/assuntos/noticias/destaque/reserva-no-para-desmonta-serrarias-ilegais",
+          "published_at": "2015-12-04T12:00:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Operação Transcametá"
+      ],
+      "evidence_notes": "Event day not independently verified; avoid using publication as occurrence."
+    },
+    {
+      "id": "PE-MDD-2016-0224-MEGA-16",
+      "title": {
+        "pt": "Interdicción Mega 16 — Mega 16 / La Pampa, Madre de Dios",
+        "en": "Interdicción Mega 16 — Mega 16 / La Pampa, Madre de Dios",
+        "es": "Interdicción Mega 16 — Mega 16 / La Pampa, Madre de Dios"
+      },
+      "summary": {
+        "pt": "Em ação iniciada em 23 de fevereiro, forças peruanas destruíram mais de 189 acampamentos e 114 motores ligados à mineração ilegal em La Pampa; três menores vítimas de tráfico de pessoas foram resgatados.",
+        "en": "During operations beginning on 23 February, Peruvian forces destroyed more than 189 illegal mining camps and 114 engines in La Pampa; three minors identified as trafficking victims were rescued.",
+        "es": "En una operación iniciada el 23 de febrero, las autoridades destruyeron más de 189 campamentos y 114 motores de minería ilegal en La Pampa y rescataron a tres menores víctimas de trata."
+      },
+      "case_context": {
+        "pt": "[O] Em ação iniciada em 23 de fevereiro, forças peruanas destruíram mais de 189 acampamentos e 114 motores ligados à mineração ilegal em La Pampa; três menores vítimas de tráfico de pessoas foram resgatados.\nFontes: [O] https://www.gob.pe/institucion/pcm/noticias/10281-destruyen-maquinaria-valorizada-en-mas-de-us-3-millones-destinada-a-la-mineria-ilegal-en-madre-de-dios",
+        "en": "[O] During operations beginning on 23 February, Peruvian forces destroyed more than 189 illegal mining camps and 114 engines in La Pampa; three minors identified as trafficking victims were rescued.\nSources: [O] https://www.gob.pe/institucion/pcm/noticias/10281-destruyen-maquinaria-valorizada-en-mas-de-us-3-millones-destinada-a-la-mineria-ilegal-en-madre-de-dios",
+        "es": "[O] En una operación iniciada el 23 de febrero, las autoridades destruyeron más de 189 campamentos y 114 motores de minería ilegal en La Pampa y rescataron a tres menores víctimas de trata.\nFuentes: [O] https://www.gob.pe/institucion/pcm/noticias/10281-destruyen-maquinaria-valorizada-en-mas-de-us-3-millones-destinada-a-la-mineria-ilegal-en-madre-de-dios"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Interdicción Mega 16",
+      "agencies": [
+        "Presidencia del Consejo de Ministros del Perú"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Official source documents action; allegations are not findings of individual guilt.",
+      "occurred_at": "2016-02-24T12:00:00-05:00",
+      "occurred_at_precision": "day verified; time unknown",
+      "published_at": "2016-02-26T12:00:00-05:00",
+      "added_at": "2026-11-15T20:00:00Z",
+      "updated_at": "2026-11-15T20:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Mega 16 / La Pampa, Madre de Dios",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.86,
+        "lon": -69.95,
+        "precision": "regional_approximate",
+        "geo_source": "Regional or judicial map reference; not precise site."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Presidencia del Consejo de Ministros del Perú",
+          "url": "https://www.gob.pe/institucion/pcm/noticias/10281-destruyen-maquinaria-valorizada-en-mas-de-us-3-millones-destinada-a-la-mineria-ilegal-en-madre-de-dios",
+          "published_at": "2016-02-26T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Interdicción Mega 16"
+      ],
+      "evidence_notes": "Verified event day"
+    },
+    {
+      "id": "CO-AMZ-2018-0309-MARFIL",
+      "title": {
+        "pt": "Operación Marfil — Rio Caquetá / Puerto Santander",
+        "en": "Operación Marfil — Rio Caquetá / Puerto Santander",
+        "es": "Operación Marfil — Rio Caquetá / Puerto Santander"
+      },
+      "summary": {
+        "pt": "A polícia colombiana relatou três capturas, inutilização de nove balsas dragas e apreensão de quatro armas em operação no rio Caquetá.",
+        "en": "Colombian police reported three arrests, nine dredging pontoons disabled and four firearms seized during an operation on the Caquetá River.",
+        "es": "La Policía de Colombia informó tres capturas, nueve balsas dragas inutilizadas y cuatro armas incautadas durante una operación en el río Caquetá."
+      },
+      "case_context": {
+        "pt": "[O] A polícia colombiana relatou três capturas, inutilização de nove balsas dragas e apreensão de quatro armas em operação no rio Caquetá.\nFontes: [O] https://www.policia.gov.co/index.php/noticia/operacion-marfil-contra-mineria-ilegal-en-amazonas",
+        "en": "[O] Colombian police reported three arrests, nine dredging pontoons disabled and four firearms seized during an operation on the Caquetá River.\nSources: [O] https://www.policia.gov.co/index.php/noticia/operacion-marfil-contra-mineria-ilegal-en-amazonas",
+        "es": "[O] La Policía de Colombia informó tres capturas, nueve balsas dragas inutilizadas y cuatro armas incautadas durante una operación en el río Caquetá.\nFuentes: [O] https://www.policia.gov.co/index.php/noticia/operacion-marfil-contra-mineria-ilegal-en-amazonas"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Operación Marfil",
+      "agencies": [
+        "Policía Nacional de Colombia"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Official source documents action; allegations are not findings of individual guilt.",
+      "occurred_at": null,
+      "occurred_at_precision": "Exact operation day not specified; publication date separate",
+      "published_at": "2018-03-09T12:00:00-05:00",
+      "added_at": "2026-11-15T20:00:00Z",
+      "updated_at": "2026-11-15T20:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Rio Caquetá / Puerto Santander",
+        "admin1": "Amazonas",
+        "country": "Colombia",
+        "lat": -0.62,
+        "lon": -72.38,
+        "precision": "regional_approximate",
+        "geo_source": "Regional or judicial map reference; not precise site."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Policía Nacional de Colombia",
+          "url": "https://www.policia.gov.co/index.php/noticia/operacion-marfil-contra-mineria-ilegal-en-amazonas",
+          "published_at": "2018-03-09T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Operación Marfil"
+      ],
+      "evidence_notes": "Event day not independently verified; avoid using publication as occurrence."
+    },
+    {
+      "id": "SR-MAR-2022-0930-STOELMANSEILAND",
+      "title": {
+        "pt": "Ação contra balsas skalian — Stoelmanseiland — Stoelmanseiland / rio Marowijne",
+        "en": "Ação contra balsas skalian — Stoelmanseiland — Stoelmanseiland / rio Marowijne",
+        "es": "Ação contra balsas skalian — Stoelmanseiland — Stoelmanseiland / rio Marowijne"
+      },
+      "summary": {
+        "pt": "O Ministério Público do Suriname e forças de apoio apreenderam e inutilizaram dez balsas mineradoras durante fiscalização de 28 a 30 de setembro.",
+        "en": "Surinamese prosecutors and partner forces seized and disabled ten mining pontoons during enforcement from 28 to 30 September.",
+        "es": "El Ministerio Público de Surinam y fuerzas de apoyo decomisaron e inutilizaron diez pontones mineros durante una intervención del 28 al 30 de septiembre."
+      },
+      "case_context": {
+        "pt": "[O] O Ministério Público do Suriname e forças de apoio apreenderam e inutilizaram dez balsas mineradoras durante fiscalização de 28 a 30 de setembro.\nFontes: [O] https://cds.gov.sr/de-boodschap/aanpak-skalians-in-het-kader-van-bestrijding-milieucriminaliteit/",
+        "en": "[O] Surinamese prosecutors and partner forces seized and disabled ten mining pontoons during enforcement from 28 to 30 September.\nSources: [O] https://cds.gov.sr/de-boodschap/aanpak-skalians-in-het-kader-van-bestrijding-milieucriminaliteit/",
+        "es": "[O] El Ministerio Público de Surinam y fuerzas de apoyo decomisaron e inutilizaron diez pontones mineros durante una intervención del 28 al 30 de septiembre.\nFuentes: [O] https://cds.gov.sr/de-boodschap/aanpak-skalians-in-het-kader-van-bestrijding-milieucriminaliteit/"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Ação contra balsas skalian — Stoelmanseiland",
+      "agencies": [
+        "Governo do Suriname"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Official source documents action; allegations are not findings of individual guilt.",
+      "occurred_at": "2022-09-30T12:00:00-03:00",
+      "occurred_at_precision": "day verified; time unknown",
+      "published_at": "2022-10-01T12:00:00-03:00",
+      "added_at": "2026-11-15T20:00:00Z",
+      "updated_at": "2026-11-15T20:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Stoelmanseiland / rio Marowijne",
+        "admin1": "Marowijne",
+        "country": "Suriname",
+        "lat": 4.35,
+        "lon": -54.41,
+        "precision": "regional_approximate",
+        "geo_source": "Regional or judicial map reference; not precise site."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Governo do Suriname",
+          "url": "https://cds.gov.sr/de-boodschap/aanpak-skalians-in-het-kader-van-bestrijding-milieucriminaliteit/",
+          "published_at": "2022-10-01T12:00:00-03:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Ação contra balsas skalian — Stoelmanseiland"
+      ],
+      "evidence_notes": "Verified event day"
+    },
+    {
+      "id": "EC-NAP-2022-1124-ILLEGAL-MINING-NETWORK",
+      "title": {
+        "pt": "Investigação de organização ligada à mineração ilegal — Napo — Tena (referência processual; buscas em várias províncias)",
+        "en": "Investigação de organização ligada à mineração ilegal — Napo — Tena (referência processual; buscas em várias províncias)",
+        "es": "Investigação de organização ligada à mineração ilegal — Napo — Tena (referência processual; buscas em várias províncias)"
+      },
+      "summary": {
+        "pt": "A Fiscalía equatoriana informou seis prisões preventivas após buscas relacionadas a uma suposta organização criminosa vinculada à mineração ilegal; a investigação envolve também outras províncias.",
+        "en": "Ecuadorian prosecutors reported six pretrial detentions after searches targeting an alleged organized-crime network linked to illegal mining across multiple provinces.",
+        "es": "La Fiscalía ecuatoriana informó prisión preventiva para seis investigados tras allanamientos contra una presunta red de delincuencia organizada vinculada a minería ilegal en varias provincias."
+      },
+      "case_context": {
+        "pt": "[O] A Fiscalía equatoriana informou seis prisões preventivas após buscas relacionadas a uma suposta organização criminosa vinculada à mineração ilegal; a investigação envolve também outras províncias.\nFontes: [O] https://www.fiscalia.gob.ec/prision-preventiva-para-6-procesados-por-presunta-delincuencia-organizada-relacionada-con-mineria-ilegal/",
+        "en": "[O] Ecuadorian prosecutors reported six pretrial detentions after searches targeting an alleged organized-crime network linked to illegal mining across multiple provinces.\nSources: [O] https://www.fiscalia.gob.ec/prision-preventiva-para-6-procesados-por-presunta-delincuencia-organizada-relacionada-con-mineria-ilegal/",
+        "es": "[O] La Fiscalía ecuatoriana informó prisión preventiva para seis investigados tras allanamientos contra una presunta red de delincuencia organizada vinculada a minería ilegal en varias provincias.\nFuentes: [O] https://www.fiscalia.gob.ec/prision-preventiva-para-6-procesados-por-presunta-delincuencia-organizada-relacionada-con-mineria-ilegal/"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Investigação de organização ligada à mineração ilegal — Napo",
+      "agencies": [
+        "Fiscalía General del Estado (Ecuador)"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Official source documents action; allegations are not findings of individual guilt.",
+      "occurred_at": "2022-11-24T12:00:00-05:00",
+      "occurred_at_precision": "day verified; time unknown",
+      "published_at": "2022-11-25T12:00:00-05:00",
+      "added_at": "2026-11-15T20:00:00Z",
+      "updated_at": "2026-11-15T20:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Tena (referência processual; buscas em várias províncias)",
+        "admin1": "Napo",
+        "country": "Ecuador",
+        "lat": -0.99,
+        "lon": -77.81,
+        "precision": "regional_approximate",
+        "geo_source": "Regional or judicial map reference; not precise site."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Fiscalía General del Estado (Ecuador)",
+          "url": "https://www.fiscalia.gob.ec/prision-preventiva-para-6-procesados-por-presunta-delincuencia-organizada-relacionada-con-mineria-ilegal/",
+          "published_at": "2022-11-25T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Investigação de organização ligada à mineração ilegal — Napo"
+      ],
+      "evidence_notes": "Verified event day"
     }
   ]
 }
