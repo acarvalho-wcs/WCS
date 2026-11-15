@@ -6,6 +6,9 @@ const urls=[
 ['RAISG protected TILE',wms('https://geo.socioambiental.org/raisg/services/raisg/rg_srv_mapas_anps/MapServer/WMSServer','1,2,3,4,5,6')],
 ['RAISG WMS indigenous','https://geo.socioambiental.org/raisg/services/raisg/rg_srv_mapas_tis/MapServer/WMSServer?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetCapabilities'],
 ['RAISG indigenous TILE',wms('https://geo.socioambiental.org/raisg/services/raisg/rg_srv_mapas_tis/MapServer/WMSServer','1')],
+['RAISG indigenous layer 0 TILE',wms('https://geo.socioambiental.org/raisg/services/raisg/rg_srv_mapas_tis/MapServer/WMSServer','0')],
+['RAISG indigenous layer 2 TILE',wms('https://geo.socioambiental.org/raisg/services/raisg/rg_srv_mapas_tis/MapServer/WMSServer','2')],
+['RAISG indigenous layers 0,1,2 TILE',wms('https://geo.socioambiental.org/raisg/services/raisg/rg_srv_mapas_tis/MapServer/WMSServer','0,1,2')],
 ['RAISG REST layer query','https://geo2.socioambiental.org/raisg/rest/services/raisg/raisg_anps/MapServer/3/query?where=1%3D1&outFields=objectid%2Cnombre&resultRecordCount=1&returnGeometry=false&f=json'],
 ['ANM REST layer query','https://geo.anm.gov.br/arcgis/rest/services/SIGMINE/protecao_conservacao_natureza/MapServer/0/query?where=1%3D1&outFields=OBJECTID%2CNMUnidadeConservacao&resultRecordCount=1&returnGeometry=false&f=json'],
 ['ANM WMS','https://geo.anm.gov.br/arcgis/services/SIGMINE/protecao_conservacao_natureza/MapServer/WMSServer?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetCapabilities'],
@@ -22,7 +25,7 @@ for(const [name,url] of urls){
     const full=(res.headers.get('content-type')||'').includes('image/')?'binary image:'+bytes.subarray(0,8).toString('hex'):bytes.toString('utf8');
     const body=full.slice(0,1200);
     const names=[...full.matchAll(/<Name>\s*([^<]+)\s*<\/Name>/g)].map(x=>x[1]);
-    results.push({name,status:res.status,type:res.headers.get('content-type'),length:bytes.length,bytePreview:body.slice(0,260),epsg3857:full.includes('EPSG:3857'),names:names.slice(0,35)});
+    results.push({name,status:res.status,type:res.headers.get('content-type'),length:bytes.length,bytePreview:body.slice(0,260),epsg3857:full.includes('EPSG:3857'),wmsDetails:name==='RAISG WMS indigenous'?[...full.matchAll(/<Name>\s*[012]\s*<\/Name>/g)].map(m=>full.slice(Math.max(0,m.index-350),Math.min(full.length,m.index+430))):undefined,names:names.slice(0,35)});
   }catch(err){results.push({name,error:String(err?.message||err)})}
 }
 console.log('GIS SOURCE PROBE '+JSON.stringify(results));
