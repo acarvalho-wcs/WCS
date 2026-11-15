@@ -50,6 +50,19 @@ try {
     firstCardVisible:!!document.querySelector('.event-item')?.getBoundingClientRect().height
   }));
   console.log('DEFAULT:',JSON.stringify(state));
+  await page.waitForTimeout(7000);
+  const mapState=await page.evaluate(()=>({
+    diagnostics:window.__amazonMapHealth?.(),
+    mapUnavailable:document.querySelector('.map-unavailable')?.textContent?.slice(0,400),
+    mapCanvas:!!document.querySelector('.maplibregl-canvas'),
+    markerElements:document.querySelectorAll('.maplibregl-marker').length
+  }));
+  console.log('MAP HEALTH:',JSON.stringify(mapState));
+  assert(mapState.diagnostics?.mapConstructed,'MapLibre map instance was not initialized');
+  assert(mapState.diagnostics?.styleLoaded,'Map style did not load');
+  assert(mapState.diagnostics?.layer,'Map crime-events layer missing');
+  assert(mapState.diagnostics?.source,'Map event GeoJSON source missing');
+  assert(mapState.diagnostics?.rendered>0,'Crime-event circles not visibly rendered on the map');
   assert(state.total===147,'Canonical total must be 147');
   assert(state.filtered>0,'Default 12-month filter has no visible events');
   assert(state.rows>0&&state.firstCardVisible,'Event feed cards are not rendered visibly');

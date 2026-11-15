@@ -1263,6 +1263,32 @@ async function boot() {
   setInterval(() => { if (activeAuxLayers.has('deforestation_alerts')) loadDynamicLayer('deforestation_alerts', true); }, auxMeta.deforestation_alerts.refreshMs);
 }
 
+// Read-only diagnostics for public map state and visible case markers.
+window.__amazonMapHealth = () => {
+  const canvas=document.querySelector('.maplibregl-canvas');
+  const node=document.querySelector('#map');
+  const layer=map?.getLayer?.('crime-events');
+  const source=map?.getSource?.('events');
+  const loaded=Boolean(map?.isStyleLoaded?.());
+  let rendered=0, renderError=null, sourceFeatureCount=null, visible=null;
+  try {
+    if(layer && loaded){
+      rendered=map.queryRenderedFeatures(undefined,{layers:['crime-events']}).length;
+      visible=map.getLayoutProperty('crime-events','visibility');
+    }
+    const data=source?._data;
+    if(data?.features)sourceFeatureCount=data.features.length;
+  }catch(error){renderError=String(error?.message||error);}
+  return {
+    total:events.length, filtered:filteredEvents.length,
+    mapConstructed:Boolean(map),styleLoaded:loaded,
+    mapCanvas:Boolean(canvas),mapError:node?.querySelector('.map-unavailable')?.textContent||null,
+    layer:Boolean(layer),source:Boolean(source),visible,rendered,sourceFeatureCount,
+    mapElementSize:node?{width:node.getBoundingClientRect().width,height:node.getBoundingClientRect().height}:null,
+    zoom:map?.getZoom?.(),center:map?.getCenter?.().toArray?.(),renderError
+  };
+};
+
 boot().catch((error) => {
   console.error('Application boot failed', error);
   showMapUnavailable(error);
