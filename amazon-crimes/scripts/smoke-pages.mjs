@@ -73,7 +73,7 @@ try {
   await page.locator('#layers-toggle').click();
   const territoryControlNames=await page.locator('input.aux-layer-toggle').evaluateAll(items=>items.map(i=>i.value));
   console.log('OVERLAY_CONTROLS',JSON.stringify(territoryControlNames));
-  for(const key of ['protected_areas','brazil_conservation_units','indigenous_lands']){
+  for(const key of ['protected_areas','brazil_conservation_units','indigenous_lands','strict_protection','sustainable_use']){
     const loc=page.locator('input.aux-layer-toggle[value="'+key+'"]');
     console.log('OVERLAY_UI',key,await loc.count());
     if(await loc.count())await loc.check({force:true});
@@ -84,7 +84,7 @@ try {
   console.log('OVERLAY_DIAG',JSON.stringify(diag.slice(-35)));
   const overlays=await page.evaluate(()=>window.__amazonMapHealth?.().territorial);
   console.log('OVERLAY_FULL_STATE',JSON.stringify(overlays));
-  const selected=['protected_areas','brazil_conservation_units','indigenous_lands'];
+  const selected=['protected_areas','brazil_conservation_units','indigenous_lands','strict_protection','sustainable_use'];
   for(const id of selected){
     const item=overlays?.find(x=>x.id===id);
     assert(item?.layer&&item?.source&&item?.visibility==='visible',id+' not visible');

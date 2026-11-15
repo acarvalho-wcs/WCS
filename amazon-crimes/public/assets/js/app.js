@@ -1295,7 +1295,7 @@ window.__amazonMapHealth = () => {
     layer:Boolean(layer),source:Boolean(source),visible,rendered,sourceFeatureCount,
     mapElementSize:node?{width:node.getBoundingClientRect().width,height:node.getBoundingClientRect().height}:null,
     zoom:map?.getZoom?.(),center:map?.getCenter?.().toArray?.(),renderError,
-    territorial:territorialOverlays.map(spec=>({id:spec.id,enabled:activeAuxLayers.has(spec.id),layer:!!map?.getLayer?.('territory-'+spec.id),source:!!map?.getSource?.('territory-source-'+spec.id),visibility:map?.getLayer?.('territory-'+spec.id)?map.getLayoutProperty('territory-'+spec.id,'visibility'):null,tiles:spec.tiles?.[0]?.slice(0,180)}))
+    territorial:territorialOverlays.map(spec=>({id:spec.id,enabled:activeAuxLayers.has(spec.id),layer:!!map?.getLayer?.('territory-'+spec.id),source:!!map?.getSource?.(spec.source||'territory-source-'+spec.id),visibility:map?.getLayer?.('territory-'+spec.id)?map.getLayoutProperty('territory-'+spec.id,'visibility'):null,tiles:spec.tiles?.[0]?.slice(0,180)}))
   };
 };
 
