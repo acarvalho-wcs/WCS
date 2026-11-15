@@ -81,6 +81,7 @@ try {
   await page.waitForTimeout(12000);
   console.log('OVERLAY_RESPONSE_SUMMARY',JSON.stringify(tileResponses.slice(0,40)));
   console.log('OVERLAY_FAILURES',JSON.stringify(tileFailures.slice(0,30)));
+  console.log('OVERLAY_DIAG',JSON.stringify(diag.slice(-35)));
   console.log('OVERLAY_AFTER_TOGGLE',JSON.stringify(await page.evaluate(()=>({
     active:[...document.querySelectorAll('input.aux-layer-toggle:checked')].map(x=>x.value),
     map:window.__amazonMapHealth?.()

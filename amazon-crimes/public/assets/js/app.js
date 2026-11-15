@@ -612,6 +612,13 @@ function updateLayerVisibility() {
   $$('.aux-layer-toggle').forEach((input) => { input.checked = activeAuxLayers.has(input.value); });
   if (!map || !map.isStyleLoaded()) return;
 
+  // The style can finish loading after an earlier layer rebuild. Repair any
+  // missing territory sources/layers at the moment the user changes a toggle.
+  try {
+    installTerritorialOverlays(map, activeAuxLayers, mapTheme);
+  } catch (error) {
+    console.error('Territorial overlay installation failed:', error);
+  }
   const crimeLayer = 'crime-events';
   if (map.getLayer(crimeLayer)) {
     map.setLayoutProperty(crimeLayer, 'visibility', activeCrimeLayers.size ? 'visible' : 'none');
@@ -1285,7 +1292,8 @@ window.__amazonMapHealth = () => {
     mapCanvas:Boolean(canvas),mapError:node?.querySelector('.map-unavailable')?.textContent||null,
     layer:Boolean(layer),source:Boolean(source),visible,rendered,sourceFeatureCount,
     mapElementSize:node?{width:node.getBoundingClientRect().width,height:node.getBoundingClientRect().height}:null,
-    zoom:map?.getZoom?.(),center:map?.getCenter?.().toArray?.(),renderError
+    zoom:map?.getZoom?.(),center:map?.getCenter?.().toArray?.(),renderError,
+    territorial:territorialOverlays.map(spec=>({id:spec.id,enabled:activeAuxLayers.has(spec.id),layer:!!map?.getLayer?.('territory-'+spec.id),source:!!map?.getSource?.('territory-source-'+spec.id),visibility:map?.getLayer?.('territory-'+spec.id)?map.getLayoutProperty('territory-'+spec.id,'visibility'):null,tiles:spec.tiles?.[0]?.slice(0,180)}))
   };
 };
 
