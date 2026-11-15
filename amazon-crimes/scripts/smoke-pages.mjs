@@ -8,7 +8,7 @@ const root = new URL(base.pathname.endsWith('/') ? base.pathname : base.pathname
 const diag = [];
 const tileResponses=[];
 const tileFailures=[];
-const isTerritoryUrl=url=>/geo2\.socioambiental\.org|geo\.anm\.gov\.br|territory-source/i.test(url);
+const isTerritoryUrl=url=>/territory-tiles|geo2\.socioambiental\.org|geo\.anm\.gov\.br|territory-source/i.test(url);
 
 const browser = await chromium.launch({
   executablePath: process.env.CHROME_PATH,
@@ -82,6 +82,16 @@ try {
   console.log('OVERLAY_RESPONSE_SUMMARY',JSON.stringify(tileResponses.slice(0,40)));
   console.log('OVERLAY_FAILURES',JSON.stringify(tileFailures.slice(0,30)));
   console.log('OVERLAY_DIAG',JSON.stringify(diag.slice(-35)));
+  const overlays=await page.evaluate(()=>window.__amazonMapHealth?.().territorial);
+  const selected=['protected_areas','brazil_conservation_units','indigenous_lands'];
+  for(const id of selected){
+    const item=overlays?.find(x=>x.id===id);
+    assert(item?.layer&&item?.source&&item?.visibility==='visible',id+' not visible');
+  }
+  const localOk=tileResponses.filter(r=>r.url.includes('/assets/territory-tiles/') && r.status===200&&r.contentType.includes('image/'));
+  assert(localOk.length>0,'No locally hosted GIS imagery successfully loaded');
+  assert(!tileResponses.some(r=>r.url.includes('/assets/territory-tiles/')&&r.status>=400),'Territory raster tile HTTP error');
+  assert(!tileFailures.some(r=>r.url.includes('/assets/territory-tiles/')),'Territory raster requests failed');
   console.log('OVERLAY_AFTER_TOGGLE',JSON.stringify(await page.evaluate(()=>({
     active:[...document.querySelectorAll('input.aux-layer-toggle:checked')].map(x=>x.value),
     map:window.__amazonMapHealth?.()

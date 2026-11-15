@@ -610,7 +610,7 @@ function updateLayerVisibility() {
   $('#active-layer-count').textContent = String(activeCrimeLayers.size + activeAuxLayers.size + 1);
   $$('.crime-layer-toggle').forEach((input) => { input.checked = activeCrimeLayers.has(input.value); });
   $$('.aux-layer-toggle').forEach((input) => { input.checked = activeAuxLayers.has(input.value); });
-  if (!map || !map.isStyleLoaded()) return;
+  if (!map) return;
 
   // The style can finish loading after an earlier layer rebuild. Repair any
   // missing territory sources/layers at the moment the user changes a toggle.
@@ -619,6 +619,8 @@ function updateLayerVisibility() {
   } catch (error) {
     console.error('Territorial overlay installation failed:', error);
   }
+  setTerritorialVisibility(map, activeAuxLayers);
+  if (!map.isStyleLoaded()) return;
   const crimeLayer = 'crime-events';
   if (map.getLayer(crimeLayer)) {
     map.setLayoutProperty(crimeLayer, 'visibility', activeCrimeLayers.size ? 'visible' : 'none');

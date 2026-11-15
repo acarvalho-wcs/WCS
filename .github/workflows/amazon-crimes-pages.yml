@@ -51,10 +51,15 @@ jobs:
       - name: Refresh public live-data snapshots
         run: node scripts/build-pages-data.mjs
 
+      - name: Generate same-origin protected-area tiles
+        run: node scripts/build-territorial-tiles.mjs
+
       - name: Validate JavaScript
         run: |
           node --check public/assets/js/app.js
           node --check public/assets/js/temporal-filter.js
+          node --check scripts/build-territorial-tiles.mjs
+          node --check public/assets/js/territorial-overlays.js
           node --check public/assets/js/language-preference.js
           node --check public/assets/js/config.js
           node --check public/assets/js/i18n.js
