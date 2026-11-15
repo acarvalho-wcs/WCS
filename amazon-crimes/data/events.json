@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-11-15T17:59:59.606Z",
+  "generated_at": "2026-11-15T18:00:23.817Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -7923,6 +7923,67 @@
       "source_media": []
     },
     {
+      "id": "PE-HUA-2025-1122-PANGUANA-ILLEGAL-MINING",
+      "title": {
+        "pt": "Interdicción ACP Panguana — ACP Panguana / Yuyapichis",
+        "en": "Interdicción ACP Panguana — ACP Panguana / Yuyapichis",
+        "es": "Interdicción ACP Panguana — ACP Panguana / Yuyapichis"
+      },
+      "summary": {
+        "pt": "Uma fiscalização na área privada de conservação Panguana identificou dez acampamentos, sete escavadeiras, sete motobombas e outros equipamentos empregados em mineração ilegal, destruídos pelas autoridades.",
+        "en": "An operation in the Panguana private conservation area identified ten camps, seven excavators, seven pumps and other illegal-mining equipment, which authorities destroyed.",
+        "es": "Una intervención en el área de conservación privada Panguana halló diez campamentos, siete excavadoras, siete motobombas y otros equipos de minería ilegal, que fueron destruidos."
+      },
+      "case_context": {
+        "pt": "[O] Uma fiscalização na área privada de conservação Panguana identificou dez acampamentos, sete escavadeiras, sete motobombas e outros equipamentos empregados em mineração ilegal, destruídos pelas autoridades.\nFontes: [O] https://www.gob.pe/institucion/mpfn/noticias/1294934-huanuco-fiscalia-de-medio-ambiente-interviene-area-de-conservacion-privada-acp-panguana-en-operativo-contra-la-mineria-ilegal",
+        "en": "[O] An operation in the Panguana private conservation area identified ten camps, seven excavators, seven pumps and other illegal-mining equipment, which authorities destroyed.\nSources: [O] https://www.gob.pe/institucion/mpfn/noticias/1294934-huanuco-fiscalia-de-medio-ambiente-interviene-area-de-conservacion-privada-acp-panguana-en-operativo-contra-la-mineria-ilegal",
+        "es": "[O] Una intervención en el área de conservación privada Panguana halló diez campamentos, siete excavadoras, siete motobombas y otros equipos de minería ilegal, que fueron destruidos.\nFuentes: [O] https://www.gob.pe/institucion/mpfn/noticias/1294934-huanuco-fiscalia-de-medio-ambiente-interviene-area-de-conservacion-privada-acp-panguana-en-operativo-contra-la-mineria-ilegal"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING",
+        "PROTECTED_AREA_INVASION"
+      ],
+      "operation_name": "Interdicción ACP Panguana",
+      "agencies": [
+        "Ministerio Público del Perú"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "2025-11-22 is date of official report, not confirmed exact field-operation day.",
+      "occurred_at": "2025-11-22T12:00:00-05:00",
+      "occurred_at_precision": "publication_date_reference",
+      "published_at": "2025-11-22T12:00:00-05:00",
+      "added_at": "2026-11-15T18:00:23.817Z",
+      "updated_at": "2026-11-15T18:00:23.817Z",
+      "backfill": true,
+      "location": {
+        "name": "ACP Panguana / Yuyapichis",
+        "admin1": "Huánuco",
+        "country": "Peru",
+        "lat": -9.56,
+        "lon": -74.9,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": true
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Ministerio Público del Perú",
+          "url": "https://www.gob.pe/institucion/mpfn/noticias/1294934-huanuco-fiscalia-de-medio-ambiente-interviene-area-de-conservacion-privada-acp-panguana-en-operativo-contra-la-mineria-ilegal",
+          "published_at": "2025-11-22T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Interdicción ACP Panguana",
+        "ILLEGAL_MINING"
+      ]
+    },
+    {
       "id": "BR-RR-2025-1111-FOX-TRES",
       "title": {
         "pt": "Operação Fox Três — TI Raposa Serra do Sol / Uiramutã",
@@ -8412,6 +8473,66 @@
         }
       ],
       "source_media": []
+    },
+    {
+      "id": "CO-AMZ-2025-0606-PURE-BINATIONAL",
+      "title": {
+        "pt": "Operación binacional río Puré — Río Puré / Tarapacá",
+        "en": "Operación binacional río Puré — Río Puré / Tarapacá",
+        "es": "Operación binacional río Puré — Río Puré / Tarapacá"
+      },
+      "summary": {
+        "pt": "Uma operação militar binacional de Colômbia e Brasil destruiu oito unidades de mineração ilegal no rio Puré, em território indígena de Tarapacá; o Exército colombiano atribuiu a infraestrutura a economias ilícitas dos Comandos de Frontera.",
+        "en": "A Colombia–Brazil military operation destroyed eight illegal-mining units on the Puré River in Tarapacá Indigenous territory; Colombia's army attributed the infrastructure to illicit economies of Comandos de Frontera.",
+        "es": "Una operación militar binacional de Colombia y Brasil destruyó ocho unidades de minería ilegal en el río Puré, territorio indígena de Tarapacá; el Ejército colombiano vinculó la infraestructura con economías ilícitas de Comandos de Frontera."
+      },
+      "case_context": {
+        "pt": "[O] Uma operação militar binacional de Colômbia e Brasil destruiu oito unidades de mineração ilegal no rio Puré, em território indígena de Tarapacá; o Exército colombiano atribuiu a infraestrutura a economias ilícitas dos Comandos de Frontera.\nFontes: [O] https://www.ejercito.mil.co/ejercitos-de-colombia-y-brasil-golpean-economia-ilicita-de-los-comandos-de-frontera-en-una-megaoperacion-militar-contra-la-extraccion-ilegal-minera-633698/",
+        "en": "[O] A Colombia–Brazil military operation destroyed eight illegal-mining units on the Puré River in Tarapacá Indigenous territory; Colombia's army attributed the infrastructure to illicit economies of Comandos de Frontera.\nSources: [O] https://www.ejercito.mil.co/ejercitos-de-colombia-y-brasil-golpean-economia-ilicita-de-los-comandos-de-frontera-en-una-megaoperacion-militar-contra-la-extraccion-ilegal-minera-633698/",
+        "es": "[O] Una operación militar binacional de Colombia y Brasil destruyó ocho unidades de minería ilegal en el río Puré, territorio indígena de Tarapacá; el Ejército colombiano vinculó la infraestructura con economías ilícitas de Comandos de Frontera.\nFuentes: [O] https://www.ejercito.mil.co/ejercitos-de-colombia-y-brasil-golpean-economia-ilicita-de-los-comandos-de-frontera-en-una-megaoperacion-militar-contra-la-extraccion-ilegal-minera-633698/"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Operación binacional río Puré",
+      "agencies": [
+        "Ejército Nacional de Colombia"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "2025-06-06 is publication-date reference; field-operation date not independently specified. Organization attribution is sourced to the Colombian Army, not independently proven.",
+      "occurred_at": "2025-06-06T12:00:00-05:00",
+      "occurred_at_precision": "publication_date_reference",
+      "published_at": "2025-06-06T12:00:00-05:00",
+      "added_at": "2026-11-15T18:00:23.817Z",
+      "updated_at": "2026-11-15T18:00:23.817Z",
+      "backfill": true,
+      "location": {
+        "name": "Río Puré / Tarapacá",
+        "admin1": "Amazonas",
+        "country": "Colombia",
+        "lat": -2.1,
+        "lon": -69.9,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": true,
+      "sources": [
+        {
+          "publisher": "Ejército Nacional de Colombia",
+          "url": "https://www.ejercito.mil.co/ejercitos-de-colombia-y-brasil-golpean-economia-ilicita-de-los-comandos-de-frontera-en-una-megaoperacion-militar-contra-la-extraccion-ilegal-minera-633698/",
+          "published_at": "2025-06-06T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Operación binacional río Puré",
+        "ILLEGAL_MINING"
+      ]
     },
     {
       "id": "BR-AM-2025-0519-ARPAO3-210KG",
@@ -9700,6 +9821,67 @@
         }
       ],
       "source_media": []
+    },
+    {
+      "id": "PE-UCA-2024-0626-CALLERIA-FAUNA-WOOD",
+      "title": {
+        "pt": "Operativo FEMA Ucayali fauna y bolaina — Callería / Pucallpa",
+        "en": "Operativo FEMA Ucayali fauna y bolaina — Callería / Pucallpa",
+        "es": "Operativo FEMA Ucayali fauna y bolaina — Callería / Pucallpa"
+      },
+      "summary": {
+        "pt": "A Fiscalía apreendeu animais silvestres vivos e taxidermizados sem documentos em dois imóveis de Callería e imobilizou 45 mil tábuas de bolaina sem comprovação de origem no porto Rocha.",
+        "en": "Prosecutors seized undocumented live and preserved wildlife at two premises in Callería and immobilized 45,000 bolaina timber boards without proof of legal origin at Rocha port.",
+        "es": "La Fiscalía incautó fauna silvestre viva y disecada sin documentos en dos inmuebles de Callería e inmovilizó 45.000 tablillas de bolaina sin origen acreditado en el puerto Rocha."
+      },
+      "case_context": {
+        "pt": "[O] A Fiscalía apreendeu animais silvestres vivos e taxidermizados sem documentos em dois imóveis de Callería e imobilizou 45 mil tábuas de bolaina sem comprovação de origem no porto Rocha.\nFontes: [O] https://www.gob.pe/institucion/mpfn/noticias/978350-fema-de-ucayali-incauto-gran-cantidad-de-especies-de-fauna-silvestre-protegidas-e-inmovilizo-productos-forestales",
+        "en": "[O] Prosecutors seized undocumented live and preserved wildlife at two premises in Callería and immobilized 45,000 bolaina timber boards without proof of legal origin at Rocha port.\nSources: [O] https://www.gob.pe/institucion/mpfn/noticias/978350-fema-de-ucayali-incauto-gran-cantidad-de-especies-de-fauna-silvestre-protegidas-e-inmovilizo-productos-forestales",
+        "es": "[O] La Fiscalía incautó fauna silvestre viva y disecada sin documentos en dos inmuebles de Callería e inmovilizó 45.000 tablillas de bolaina sin origen acreditado en el puerto Rocha.\nFuentes: [O] https://www.gob.pe/institucion/mpfn/noticias/978350-fema-de-ucayali-incauto-gran-cantidad-de-especies-de-fauna-silvestre-protegidas-e-inmovilizo-productos-forestales"
+      },
+      "primary_crime_type": "WILDLIFE_TRAFFICKING",
+      "crime_types": [
+        "WILDLIFE_TRAFFICKING",
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": "Operativo FEMA Ucayali fauna y bolaina",
+      "agencies": [
+        "Ministerio Público del Perú"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "HIGH",
+      "legal_status_note": "Multiple inspections described in one agency release, consolidated as one enforcement series; exact operation date not separately documented.",
+      "occurred_at": "2024-06-26T12:00:00-05:00",
+      "occurred_at_precision": "publication_date_reference",
+      "published_at": "2024-06-26T12:00:00-05:00",
+      "added_at": "2026-11-15T18:00:23.817Z",
+      "updated_at": "2026-11-15T18:00:23.817Z",
+      "backfill": true,
+      "location": {
+        "name": "Callería / Pucallpa",
+        "admin1": "Ucayali",
+        "country": "Peru",
+        "lat": -8.38,
+        "lon": -74.55,
+        "precision": "regional_reference_approximate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Ministerio Público del Perú",
+          "url": "https://www.gob.pe/institucion/mpfn/noticias/978350-fema-de-ucayali-incauto-gran-cantidad-de-especies-de-fauna-silvestre-protegidas-e-inmovilizo-productos-forestales",
+          "published_at": "2024-06-26T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Operativo FEMA Ucayali fauna y bolaina",
+        "WILDLIFE_TRAFFICKING"
+      ]
     },
     {
       "id": "PE-LOR-2024-0624-ALTO-NANAY",
