@@ -23,8 +23,7 @@ export function installTerritorialOverlays(map,active,theme){
  if(!map||!map.getStyle?.())return;
  const before=map.getLayer('crime-events')?'crime-events':undefined;
  for(const spec of territorialOverlays){
-   // Do not download a large federal polygon file unless the user chooses it.
-   if(spec.kind==='geojson'&&!active.has(spec.id))continue;
+   // Register vector sources before toggles so map style updates cannot skip them.
    const sourceId=spec.kind==='raster'?'territory-source-'+spec.id:spec.source;
    const layerId='territory-'+spec.id;
    if(!map.getSource(sourceId)){
