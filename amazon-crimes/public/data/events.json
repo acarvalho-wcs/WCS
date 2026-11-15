@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-11-15T20:00:00Z",
+  "generated_at": "2026-11-15T21:00:00Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -11360,6 +11360,316 @@
         "Investigação de organização ligada à mineração ilegal — Napo"
       ],
       "evidence_notes": "Verified event day"
+    },
+    {
+      "id": "PE-MDD-2014-0109-TAMBOPATA-MALINOWSKI",
+      "title": {
+        "pt": "Interdicción Tambopata–Malinowski — Rios Tambopata e Malinowski / RN Tambopata",
+        "en": "Interdicción Tambopata–Malinowski — Rios Tambopata e Malinowski / RN Tambopata",
+        "es": "Interdicción Tambopata–Malinowski — Rios Tambopata e Malinowski / RN Tambopata"
+      },
+      "summary": {
+        "pt": "Forcas peruanas destruiram 13 embarcacoes e 300 galoes de combustivel usados no garimpo ilegal na Reserva Tambopata.",
+        "en": "Peruvian forces destroyed 13 boats and 300 gallons of fuel used in illegal mining in the Tambopata Reserve.",
+        "es": "Fuerzas peruanas destruyeron trece embarcaciones y 300 galones de combustible usados en mineria ilegal en Tambopata."
+      },
+      "case_context": {
+        "pt": "[O] Forcas peruanas destruiram 13 embarcacoes e 300 galoes de combustivel usados no garimpo ilegal na Reserva Tambopata.\nFontes: [O] https://www.gob.pe/institucion/pcm/noticias/11383-destruyen-embarcaciones-fluviales-e-insumos-de-la-mineria-ilegal-en-operativo-de-interdiccion-en-madre-de-dios",
+        "en": "[O] Peruvian forces destroyed 13 boats and 300 gallons of fuel used in illegal mining in the Tambopata Reserve.\nSources: [O] https://www.gob.pe/institucion/pcm/noticias/11383-destruyen-embarcaciones-fluviales-e-insumos-de-la-mineria-ilegal-en-operativo-de-interdiccion-en-madre-de-dios",
+        "es": "[O] Fuerzas peruanas destruyeron trece embarcaciones y 300 galones de combustible usados en mineria ilegal en Tambopata.\nFuentes: [O] https://www.gob.pe/institucion/pcm/noticias/11383-destruyen-embarcaciones-fluviales-e-insumos-de-la-mineria-ilegal-en-operativo-de-interdiccion-en-madre-de-dios"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Interdicción Tambopata–Malinowski",
+      "agencies": [
+        "Presidencia del Consejo de Ministros del Peru"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Documented intervention; allegations do not establish individual guilt.",
+      "occurred_at": null,
+      "occurred_at_precision": "Exact operation day not reported; publication date preserved separately",
+      "published_at": "2014-01-09T12:00:00-05:00",
+      "added_at": "2026-11-15T21:00:00Z",
+      "updated_at": "2026-11-15T21:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Rios Tambopata e Malinowski / RN Tambopata",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.87,
+        "lon": -69.84,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate local/regional reference, not precise intervention coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "Reserva Nacional Tambopata"
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Presidencia del Consejo de Ministros del Peru",
+          "url": "https://www.gob.pe/institucion/pcm/noticias/11383-destruyen-embarcaciones-fluviales-e-insumos-de-la-mineria-ilegal-en-operativo-de-interdiccion-en-madre-de-dios",
+          "published_at": "2014-01-09T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Interdicción Tambopata–Malinowski"
+      ],
+      "evidence_notes": "Occurrence/publication dates kept distinct; grouped actions counted once."
+    },
+    {
+      "id": "PE-MDD-2014-0127-MEGA-TRECE",
+      "title": {
+        "pt": "Interdicción Mega Trece — Mega Trece / zona de amortecimento de Tambopata",
+        "en": "Interdicción Mega Trece — Mega Trece / zona de amortecimento de Tambopata",
+        "es": "Interdicción Mega Trece — Mega Trece / zona de amortecimento de Tambopata"
+      },
+      "summary": {
+        "pt": "Entre 24 e 27 de janeiro, fiscais e policiais destruiram pelo menos 120 equipamentos usados na mineracao ilegal em Mega Trece.",
+        "en": "Between January 24 and 27, prosecutors and police destroyed at least 120 pieces of illegal mining equipment in Mega Trece.",
+        "es": "Entre el 24 y el 27 de enero, fiscales y policias destruyeron al menos 120 equipos empleados en mineria ilegal en Mega Trece."
+      },
+      "case_context": {
+        "pt": "[O] Entre 24 e 27 de janeiro, fiscais e policiais destruiram pelo menos 120 equipamentos usados na mineracao ilegal em Mega Trece.\nFontes: [O] https://www.minam.gob.pe/notas-de-prensa/se-destruyeron-mas-de-120-equipos-usados-por-mineros-ilegales-en-la-reserva-nacional-de-tambopata/",
+        "en": "[O] Between January 24 and 27, prosecutors and police destroyed at least 120 pieces of illegal mining equipment in Mega Trece.\nSources: [O] https://www.minam.gob.pe/notas-de-prensa/se-destruyeron-mas-de-120-equipos-usados-por-mineros-ilegales-en-la-reserva-nacional-de-tambopata/",
+        "es": "[O] Entre el 24 y el 27 de enero, fiscales y policias destruyeron al menos 120 equipos empleados en mineria ilegal en Mega Trece.\nFuentes: [O] https://www.minam.gob.pe/notas-de-prensa/se-destruyeron-mas-de-120-equipos-usados-por-mineros-ilegales-en-la-reserva-nacional-de-tambopata/"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Interdicción Mega Trece",
+      "agencies": [
+        "Ministerio del Ambiente del Peru"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Documented intervention; allegations do not establish individual guilt.",
+      "occurred_at": "2014-01-27T12:00:00-05:00",
+      "occurred_at_precision": "Day recorded; time unknown",
+      "published_at": "2014-01-28T12:00:00-05:00",
+      "added_at": "2026-11-15T21:00:00Z",
+      "updated_at": "2026-11-15T21:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Mega Trece / zona de amortecimento de Tambopata",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.896,
+        "lon": -69.996,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate local/regional reference, not precise intervention coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "Reserva Nacional Tambopata"
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Ministerio del Ambiente del Peru",
+          "url": "https://www.minam.gob.pe/notas-de-prensa/se-destruyeron-mas-de-120-equipos-usados-por-mineros-ilegales-en-la-reserva-nacional-de-tambopata/",
+          "published_at": "2014-01-28T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Interdicción Mega Trece"
+      ],
+      "evidence_notes": "Occurrence/publication dates kept distinct; grouped actions counted once."
+    },
+    {
+      "id": "PE-MDD-2014-0428-PRINCIPIO-AUTORIDAD-1",
+      "title": {
+        "pt": "Operación Principio de Autoridad 1 — Rios Madre de Dios e Inambari / Huepetuhe",
+        "en": "Operación Principio de Autoridad 1 — Rios Madre de Dios e Inambari / Huepetuhe",
+        "es": "Operación Principio de Autoridad 1 — Rios Madre de Dios e Inambari / Huepetuhe"
+      },
+      "summary": {
+        "pt": "Operacao conjunta inutilizou 74 motores, 7 retroescavadeiras, 7 dragas e outros equipamentos usados na mineracao ilegal.",
+        "en": "A joint operation disabled 74 large engines, seven backhoes, seven dredges and other equipment used in illegal mining.",
+        "es": "Una operacion conjunta inutilizo 74 motores grandes, siete retroexcavadoras, siete dragas y otros equipos de mineria ilegal."
+      },
+      "case_context": {
+        "pt": "[O] Operacao conjunta inutilizou 74 motores, 7 retroescavadeiras, 7 dragas e outros equipamentos usados na mineracao ilegal.\nFontes: [O] https://www.gob.pe/institucion/pcm/noticias/11601-operacion-principio-de-autoridad-1-destruyo-maquinaria-e-insumos-usados-por-la-mineria-ilegal-en-madre-de-dios",
+        "en": "[O] A joint operation disabled 74 large engines, seven backhoes, seven dredges and other equipment used in illegal mining.\nSources: [O] https://www.gob.pe/institucion/pcm/noticias/11601-operacion-principio-de-autoridad-1-destruyo-maquinaria-e-insumos-usados-por-la-mineria-ilegal-en-madre-de-dios",
+        "es": "[O] Una operacion conjunta inutilizo 74 motores grandes, siete retroexcavadoras, siete dragas y otros equipos de mineria ilegal.\nFuentes: [O] https://www.gob.pe/institucion/pcm/noticias/11601-operacion-principio-de-autoridad-1-destruyo-maquinaria-e-insumos-usados-por-la-mineria-ilegal-en-madre-de-dios"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Operación Principio de Autoridad 1",
+      "agencies": [
+        "Presidencia del Consejo de Ministros del Peru"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Documented intervention; allegations do not establish individual guilt.",
+      "occurred_at": "2014-04-28T12:00:00-05:00",
+      "occurred_at_precision": "Day recorded; time unknown",
+      "published_at": "2014-04-29T12:00:00-05:00",
+      "added_at": "2026-11-15T21:00:00Z",
+      "updated_at": "2026-11-15T21:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Rios Madre de Dios e Inambari / Huepetuhe",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.89,
+        "lon": -70.2,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate local/regional reference, not precise intervention coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Presidencia del Consejo de Ministros del Peru",
+          "url": "https://www.gob.pe/institucion/pcm/noticias/11601-operacion-principio-de-autoridad-1-destruyo-maquinaria-e-insumos-usados-por-la-mineria-ilegal-en-madre-de-dios",
+          "published_at": "2014-04-29T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Operación Principio de Autoridad 1"
+      ],
+      "evidence_notes": "Occurrence/publication dates kept distinct; grouped actions counted once."
+    },
+    {
+      "id": "CO-AMZ-2014-0816-PUTUMAYO",
+      "title": {
+        "pt": "Operación Putumayo — Puerto Arica / rio Putumayo",
+        "en": "Operación Putumayo — Puerto Arica / rio Putumayo",
+        "es": "Operación Putumayo — Puerto Arica / rio Putumayo"
+      },
+      "summary": {
+        "pt": "Policia e Exercito detiveram nove adultos e apreenderam um adolescente, inutilizaram duas dragas e apreenderam 360 galoes de combustivel.",
+        "en": "Police and army detained nine adults and apprehended one minor, disabled two dredges and seized 360 gallons of fuel.",
+        "es": "Policia y Ejercito capturaron a nueve adultos y aprehendieron a un menor, inutilizaron dos dragas e incautaron 360 galones de combustible."
+      },
+      "case_context": {
+        "pt": "[O] Policia e Exercito detiveram nove adultos e apreenderam um adolescente, inutilizaram duas dragas e apreenderam 360 galoes de combustivel.\nFontes: [O] https://www.policia.gov.co/contenido/asi-derrotamos-mineria-ilegal-en-amazonas",
+        "en": "[O] Police and army detained nine adults and apprehended one minor, disabled two dredges and seized 360 gallons of fuel.\nSources: [O] https://www.policia.gov.co/contenido/asi-derrotamos-mineria-ilegal-en-amazonas",
+        "es": "[O] Policia y Ejercito capturaron a nueve adultos y aprehendieron a un menor, inutilizaron dos dragas e incautaron 360 galones de combustible.\nFuentes: [O] https://www.policia.gov.co/contenido/asi-derrotamos-mineria-ilegal-en-amazonas"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Operación Putumayo",
+      "agencies": [
+        "Policía Nacional de Colombia"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Documented intervention; allegations do not establish individual guilt.",
+      "occurred_at": null,
+      "occurred_at_precision": "Exact operation day not reported; publication date preserved separately",
+      "published_at": "2014-08-16T12:00:00-05:00",
+      "added_at": "2026-11-15T21:00:00Z",
+      "updated_at": "2026-11-15T21:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Puerto Arica / rio Putumayo",
+        "admin1": "Amazonas",
+        "country": "Colombia",
+        "lat": -1.8949,
+        "lon": -71.1658,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate local/regional reference, not precise intervention coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Policía Nacional de Colombia",
+          "url": "https://www.policia.gov.co/contenido/asi-derrotamos-mineria-ilegal-en-amazonas",
+          "published_at": "2014-08-16T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Operación Putumayo"
+      ],
+      "evidence_notes": "Occurrence/publication dates kept distinct; grouped actions counted once."
+    },
+    {
+      "id": "CO-AMZ-2014-1027-COTUHE",
+      "title": {
+        "pt": "Interdicción río Cotuhé — Rio Cotuhe / Tarapaca, entorno PNN Amacayacu",
+        "en": "Interdicción río Cotuhé — Rio Cotuhe / Tarapaca, entorno PNN Amacayacu",
+        "es": "Interdicción río Cotuhé — Rio Cotuhe / Tarapaca, entorno PNN Amacayacu"
+      },
+      "summary": {
+        "pt": "No rio Cotuhe, autoridades relataram 17 prisoes, a apreensao de um adolescente e a inutilizacao de cinco balsas-dragas; tambem apreenderam ouro e mercurio.",
+        "en": "On the Cوتuhe River, authorities reported 17 arrests, one minor apprehended and five dredging rafts disabled; gold and mercury were also seized.",
+        "es": "En el rio Cotuhe se reportaron 17 capturas, un menor aprehendido y cinco balsas dragas inutilizadas; tambien se decomisaron oro y mercurio."
+      },
+      "case_context": {
+        "pt": "[O] No rio Cotuhe, autoridades relataram 17 prisoes, a apreensao de um adolescente e a inutilizacao de cinco balsas-dragas; tambem apreenderam ouro e mercurio.\nFontes: [O] https://www.policia.gov.co/contenido/operaciones-interinstitucionales-dan-golpe-mineria-ilegal-en-amazonas",
+        "en": "[O] On the Cوتuhe River, authorities reported 17 arrests, one minor apprehended and five dredging rafts disabled; gold and mercury were also seized.\nSources: [O] https://www.policia.gov.co/contenido/operaciones-interinstitucionales-dan-golpe-mineria-ilegal-en-amazonas",
+        "es": "[O] En el rio Cotuhe se reportaron 17 capturas, un menor aprehendido y cinco balsas dragas inutilizadas; tambien se decomisaron oro y mercurio.\nFuentes: [O] https://www.policia.gov.co/contenido/operaciones-interinstitucionales-dan-golpe-mineria-ilegal-en-amazonas"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Interdicción río Cotuhé",
+      "agencies": [
+        "Policía Nacional de Colombia"
+      ],
+      "validation_status": "CONFIRMED",
+      "priority": "MEDIUM",
+      "legal_status_note": "Documented intervention; allegations do not establish individual guilt.",
+      "occurred_at": null,
+      "occurred_at_precision": "Exact operation day not reported; publication date preserved separately",
+      "published_at": "2014-10-27T12:00:00-05:00",
+      "added_at": "2026-11-15T21:00:00Z",
+      "updated_at": "2026-11-15T21:00:00Z",
+      "backfill": true,
+      "location": {
+        "name": "Rio Cotuhe / Tarapaca, entorno PNN Amacayacu",
+        "admin1": "Amazonas",
+        "country": "Colombia",
+        "lat": -2.892,
+        "lon": -69.742,
+        "precision": "regional_approximate",
+        "geo_source": "Approximate local/regional reference, not precise intervention coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "Parque Nacional Natural Amacayacu"
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Policía Nacional de Colombia",
+          "url": "https://www.policia.gov.co/contenido/operaciones-interinstitucionales-dan-golpe-mineria-ilegal-en-amazonas",
+          "published_at": "2014-10-27T12:00:00-05:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Interdicción río Cotuhé"
+      ],
+      "evidence_notes": "Occurrence/publication dates kept distinct; grouped actions counted once."
     }
   ]
 }
