@@ -1,0 +1,61 @@
+{
+  "audit_date": "2026-11-15",
+  "window": {
+    "start": "2026-10-16",
+    "end": "2026-11-15",
+    "inclusion_basis": "confirmed occurrence date, not publication date"
+  },
+  "canonical": {
+    "path": "amazon-crimes/data/events.json",
+    "before": 91,
+    "after": 109,
+    "inserted": 18
+  },
+  "scope": "Amazon biome or Amazon-linked environmental crime investigations; Brazil and neighboring Amazonian countries; multilingual search. Coverage is not exhaustive.",
+  "method": "Cross-check source, operation date, independent action, geography, event id, source URL and substantive facts. Use [O] official incident evidence; [N] only if an existing news-repository report materially matches relevant territory/method, never as evidence of actor involvement.",
+  "pending_not_published": [
+    {
+      "country": "Peru",
+      "area": "Loreto: rivers Napo, Mazán, Nanay",
+      "published_at": "2026-10-27",
+      "source": "https://www.dicapi.mil.pe/noticias/capitania-de-puerto-de-iquitos-destruye-materiales-utilizados-en-actividades-de-mineria-ilegal-en-loreto",
+      "reason": "Source reports eight dredging rafts and multi-river interdictions without exact operation date; cannot assign event timestamp confidently."
+    },
+    {
+      "country": "Ecuador",
+      "area": "Napo, Pastaza, Morona Santiago",
+      "published_at": "2026-11-10",
+      "source": "https://www.lahora.com.ec/seguridad/ejercito-desarticula-actividades-de-mineria-ilegal-en-la-amazonia-que-equivalen-a-mas-de-1-millon-20261110-0021.html",
+      "reason": "Multiple concurrent military actions described without a documented exact day; must also verify whether Nov 12 Puni Kotona report overlaps."
+    },
+    {
+      "country": "Ecuador",
+      "area": "Puni Kotona, Carlos Julio Arosemena Tola, Napo",
+      "published_at": "2026-11-14",
+      "source": "https://www.elcomercio.com/actualidad/seguridad/ejercito-ecuatoriano-inhabilita-seis-excavadoras-mineri-ilegal-napo/",
+      "reason": "Six excavators documented, but reporter explicitly states exact operation day was not released; possible overlap with November 10 multi-site report."
+    },
+    {
+      "country": "Brazil",
+      "area": "Vale do Juruá, Acre",
+      "published_at": "2026-11-03",
+      "source": "https://www.gov.br/prf/pt-br/noticias/estaduais/acre/prf-resgata-aves-silvestres-mantidas-ilegalmente-em-cativeiro-durante-fiscalizacoes-no-acre",
+      "reason": "Multiple individual wildlife seizures were described with no verified day of occurrence; need exact event dates, quantity, and separation of distinct checks."
+    }
+  ],
+  "excluded": [
+    {
+      "country": "Bolivia",
+      "place": "Villazón, Potosí",
+      "reason": "Outside Amazon geographic scope",
+      "source": "https://autoridadminera.gob.bo/index.php/nota_prensa/un-cerro-perforado-por-decenas-de-excavaciones-y-mas-de-50-personas-extrayendo-oro-asi-fue-la-intervencion-de-la-ajam-contra-la-mineria-ilegal-en-villazon/"
+    }
+  ],
+  "deduplication_notes": [
+    "October 27 Nêmesis Calama–São Carlos and October 30 Nêmesis II above Jirau are separately documented phases.",
+    "November 2–3 Vigília is a new physical seizure distinct from September Ramal Fechado and October Madeira-Mamoré II.",
+    "November 4–8 Fronteira Dourada II includes simultaneous Marywa results; counted once.",
+    "October multi-area Roraima Ibama enforcement is aggregated into a single canonical case.",
+    "November 3 arowana investigation is new, while around 1,000 juvenile fish were previously seized in January, not counted as November confiscation."
+  ]
+}
