@@ -651,3 +651,49 @@ body.how-it-works-open { overflow: hidden; }
 .context-sources { display: flex; flex-wrap: wrap; column-gap: 12px; row-gap: 6px; margin-top: 8px; }
 .context-sources a { color: var(--blue); text-decoration: underline; font-size: 10.5px; line-height: 1.5; overflow-wrap: anywhere; }
 .context-sources a:hover { color: var(--text); }
+
+
+/* Temporal filter — shared date-basis and calendar-range controls. */
+.filters-panel { flex-wrap: wrap; }
+.temporal-control { min-width: 205px; flex: 0 1 250px; }
+#time-open { min-height: 42px; padding: 0 12px; text-align: left; border: 1px solid var(--line); border-radius: 10px; color: var(--text); background: var(--input); cursor: pointer; font: inherit; }
+#time-open:hover { border-color: rgba(98,214,141,.55); }
+#time-open:focus-visible, .time-reset:focus-visible, .time-dialog :focus-visible { outline: 2px solid rgba(98,214,141,.75); outline-offset: 2px; }
+.time-reset { font-size: 12px; }
+.time-reset[hidden], .time-comparison[hidden], #time-compare-fields[hidden] { display: none !important; }
+.time-summary-row { color: var(--muted); font-size: 12px; margin: 0 0 10px 3px; line-height: 1.5; }
+.time-comparison { padding: 12px 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface-2); margin-bottom: 12px; }
+.time-comparison-head { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.time-comparison-head span { margin-left: auto; color: var(--muted); font-size: 12px; }
+.time-comparison-head button { border: 1px solid var(--line); background: var(--input); color: var(--text); border-radius: 8px; cursor: pointer; padding: 7px 12px; }
+.time-comparison-head button[aria-pressed="true"] { border-color: var(--accent); font-weight: 700; }
+.time-comparison-dates { font-size: 12px; color: var(--muted); margin: 10px 0; }
+.time-comparison-table { overflow-x: auto; }
+.time-comparison-table table { border-collapse: collapse; width: 100%; font-size: 13px; }
+.time-comparison-table th, .time-comparison-table td { border-bottom: 1px solid var(--line); padding: 8px 10px; text-align: right; }
+.time-comparison-table th:first-child { text-align: left; }
+.time-dialog { box-sizing: border-box; padding: 0; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 14px; width: min(590px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); overflow: auto; box-shadow: 0 18px 70px #0008; }
+.time-dialog::backdrop { background: #0009; }
+.time-dialog * { box-sizing: border-box; }
+.time-dialog header, .time-dialog footer { display: flex; justify-content: space-between; gap: 10px; align-items: center; padding: 13px 18px; background: var(--surface); }
+.time-dialog header { border-bottom: 1px solid var(--line); }
+.time-dialog h2 { font-size: 18px; margin: 0; }
+.time-dialog footer { justify-content: flex-end; border-top: 1px solid var(--line); position: sticky; bottom: 0; }
+.time-dialog .time-dialog-body { padding: 16px 18px; }
+.time-dialog label { display: flex; flex-direction: column; gap: 6px; font-size: 13px; margin-bottom: 12px; }
+.time-dialog input[type=date], .time-dialog select { min-height: 42px; width: 100%; color: var(--text); background: var(--input); }
+.time-dialog fieldset { border: 1px solid var(--line); border-radius: 9px; padding: 12px; margin: 12px 0; min-width: 0; }
+.time-dialog legend { padding: 0 5px; font-size: 12px; color: var(--muted); }
+.time-dialog .time-date-row { display: grid; gap: 10px; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.time-dialog label.time-compare-check { display: flex; flex-direction: row; gap: 10px; align-items: center; font-weight: 650; }
+.time-dialog label.time-compare-check input { width: 18px; height: 18px; flex: none; }
+.time-dialog button { min-height: 40px; padding: 7px 12px; border: 1px solid var(--line); background: var(--input); color: var(--text); border-radius: 8px; cursor: pointer; font: inherit; }
+.time-dialog button.time-apply { border-color: rgba(98,214,141,.7); font-weight: 700; }
+.time-dialog .time-method { font-size: 12px; color: var(--muted); line-height: 1.5; }
+#time-error { color: #ff9696; font-size: 12px; }
+.time-dialog input:disabled { opacity: .6; }
+@media (max-width: 650px) {
+  .temporal-control { width: 100%; flex: auto; }
+  .time-dialog .time-date-row { grid-template-columns: minmax(0, 1fr); }
+  .time-comparison-head span { margin-left: 0; width: 100%; }
+}

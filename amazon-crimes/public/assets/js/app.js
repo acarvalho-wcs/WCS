@@ -1,4 +1,5 @@
 import { translations } from './i18n.js';
+import { createTemporalFilter } from './temporal-filter.js';
 import { crimeTypes, crimeTypeMeta, mapConfig, futureLayerGroups } from './config.js';
 
 let language = localStorage.getItem('amazon-observatory-language') || 'pt';
@@ -33,12 +34,13 @@ const htmlMarkerLayerIds = new Set(['weather_stations', 'river_gauges', 'armed_g
 // layer selections to survive reloads and make valid events disappear from the map.
 const activeCrimeLayers = new Set(crimeTypes);
 const activeAuxLayers = new Set();
-const state = { search: '', crimeType: 'all', status: 'all', timeWindow: 'all' };
+const state = { search: '', crimeType: 'all', status: 'all' };
 let initialEventFitDone = false;
 
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
 const t = (key) => translations[language]?.[key] ?? translations.pt[key] ?? key;
+const temporal = createTemporalFilter({getLanguage: () => language, onChange: () => applyFilters(), getBaseEvents: () => events.filter(matchesNonTemporal)});
 const crimeLabel = (id) => crimeTypeMeta[id]?.label?.[language] || crimeTypeMeta[id]?.label?.pt || id;
 const layerIdFor = (id) => `crime-${id.toLowerCase().replaceAll('_', '-')}`;
 const iconNameFor = (id) => `pictogram-${id.toLowerCase().replaceAll('_', '-')}`;
@@ -200,9 +202,6 @@ function populateFilters() {
   $('#validation-status').innerHTML = statuses.map(([value, label]) => `<option value="${value}">${escapeHtml(label)}</option>`).join('');
   $('#validation-status').value = state.status;
 
-  const times = [['all', t('entireBase')], ['24h', t('last24')], ['7d', t('last7')], ['30d', t('last30')], ['year', t('currentYear')]];
-  $('#time-window').innerHTML = times.map(([value, label]) => `<option value="${value}">${escapeHtml(label)}</option>`).join('');
-  $('#time-window').value = state.timeWindow;
 }
 
 function eventDate(event) {
@@ -215,31 +214,20 @@ function isRecent(event, hours = 24) {
   return !Number.isNaN(date.getTime()) && (Date.now() - date.getTime()) <= hours * 3600 * 1000;
 }
 
-function inTimeWindow(event, window) {
-  if (window === 'all') return true;
-  const date = eventDate(event);
-  if (Number.isNaN(date.getTime())) return false;
-  const ageMs = Date.now() - date.getTime();
-  if (window === '24h') return ageMs <= 24 * 3600 * 1000;
-  if (window === '7d') return ageMs <= 7 * 24 * 3600 * 1000;
-  if (window === '30d') return ageMs <= 30 * 24 * 3600 * 1000;
-  if (window === 'year') return date.getFullYear() === new Date().getFullYear();
-  return true;
+function matchesNonTemporal(event) {
+  const q = state.search.trim().toLowerCase();
+  const searchable = [
+    localized(event.title), localized(event.summary), localized(event.case_context),
+    event.location?.name, event.location?.admin1, event.location?.country,
+    event.operation_name, ...(event.agencies || []), ...(event.species || []), ...(event.keywords || [])
+  ].filter(Boolean).join(' ').toLowerCase();
+  return (!q || searchable.includes(q)) &&
+    (state.crimeType === 'all' || (event.crime_types || []).includes(state.crimeType)) &&
+    (state.status === 'all' || event.validation_status === state.status);
 }
 
 function applyFilters() {
-  const q = state.search.trim().toLowerCase();
-  filteredEvents = events.filter((event) => {
-    const searchable = [
-      localized(event.title), localized(event.summary), localized(event.case_context),
-      event.location?.name, event.location?.admin1, event.location?.country,
-      event.operation_name, ...(event.agencies || []), ...(event.species || []), ...(event.keywords || [])
-    ].filter(Boolean).join(' ').toLowerCase();
-    return (!q || searchable.includes(q)) &&
-      (state.crimeType === 'all' || (event.crime_types || []).includes(state.crimeType)) &&
-      (state.status === 'all' || event.validation_status === state.status) &&
-      inTimeWindow(event, state.timeWindow);
-  });
+  filteredEvents = events.filter((event) => matchesNonTemporal(event) && temporal.matches(event));
   render();
 }
 
@@ -250,6 +238,7 @@ function render() {
   renderSignals();
   updateMapData();
   updateLayerVisibility();
+  temporal.render();
 }
 
 function renderStats() {
@@ -718,7 +707,7 @@ function eventPopupHtml(event) {
     ${images}
     <div class="popup-section"><span class="popup-label">${escapeHtml(t('caseContext'))}</span><p>${renderContextWithLinks(localized(event.case_context))}</p></div>
     <dl class="popup-facts">
-      ${event.date_basis === 'publication' ? `<div><dt>${escapeHtml(localized(event.date_display_label) || t('publishedDate'))}</dt><dd>${escapeHtml(formatDate(eventDate(event)))}</dd></div>` : `<div><dt>${escapeHtml(t('eventDate'))}</dt><dd>${escapeHtml(formatDateTime(event.occurred_at))}</dd></div><div><dt>${escapeHtml(t('publishedDate'))}</dt><dd>${escapeHtml(formatDateTime(event.published_at))}</dd></div>`}
+      ${temporal.hasOccurrence(event) ? `<div><dt>${escapeHtml(t('eventDate'))}</dt><dd>${escapeHtml(formatDateTime(event.occurred_at))}</dd></div>` : ''}<div><dt>${escapeHtml(t('publishedDate'))}</dt><dd>${escapeHtml(formatDateTime(event.published_at))}</dd></div>
       <div><dt>${escapeHtml(t('mapPrecision'))}</dt><dd>${escapeHtml(event.location?.precision || '—')}</dd></div>
     </dl>
     ${event.date_basis === 'publication' && localized(event.date_note) ? `<div class="legal-note">${escapeHtml(localized(event.date_note))}</div>` : ''}
@@ -971,9 +960,10 @@ function renderFeed() {
     container.innerHTML = `<div class="empty-state"><strong>${escapeHtml(t('noEvents'))}</strong><span>${escapeHtml(t('emptyHint'))}</span></div>`;
     return;
   }
-  const sorted = [...filteredEvents].sort((a, b) => eventDate(b) - eventDate(a));
+  const sorted = [...filteredEvents].sort((a, b) => temporal.info(b).date - temporal.info(a).date);
   container.innerHTML = sorted.slice(0, 100).map((event) => {
     const recent = isRecent(event);
+    const displayedTime = temporal.info(event);
     const location = [event.location?.name, event.location?.admin1, event.location?.country].filter(Boolean).join(' • ');
     const primary = event.primary_crime_type || 'OTHER_ENVIRONMENTAL_CRIME';
     const media = (event.source_media || []).find((m) => m.type === 'image' && m.url);
@@ -982,7 +972,7 @@ function renderFeed() {
     return `<article class="event-item ${hasMedia ? 'has-thumb' : ''}" data-event-id="${escapeAttr(event.id)}" tabindex="0" role="button">
       ${imageHtml}
       <div class="event-item-body">
-        <div class="event-meta"><span>${escapeHtml(location)}</span><span>${escapeHtml(event.date_basis === 'publication' ? (localized(event.date_display_label) || t('publishedDate')) + ': ' : '')}${escapeHtml(formatDate(eventDate(event)))}</span></div>
+        <div class="event-meta"><span>${escapeHtml(location)}</span><span>${escapeHtml(displayedTime.label + ': ')}${escapeHtml(formatDate(displayedTime.date))}</span></div>
         <div class="event-title-row"><span class="event-dot-marker" style="--icon-bg:${escapeAttr(crimeTypeMeta[primary]?.color || '#777')}"></span><h3>${escapeHtml(localized(event.title))}</h3></div>
         <p>${escapeHtml(localized(event.summary))}</p>
         <div class="event-tags">${recent ? `<span class="tag recent">${escapeHtml(t('recent'))}</span>` : ''}<span class="tag crime" style="--tag-color:${escapeAttr(crimeTypeMeta[primary]?.color || '#777')}">${escapeHtml(crimeLabel(primary))}</span>${hasMedia ? `<span class="tag">▧ ${escapeHtml(t('sourceImages'))}</span>` : ''}</div>
@@ -1156,10 +1146,10 @@ function bindControls() {
   $('#search').addEventListener('input', (event) => { state.search = event.target.value; applyFilters(); });
   $('#crime-type').addEventListener('change', (event) => { state.crimeType = event.target.value; applyFilters(); });
   $('#validation-status').addEventListener('change', (event) => { state.status = event.target.value; applyFilters(); });
-  $('#time-window').addEventListener('change', (event) => { state.timeWindow = event.target.value; applyFilters(); });
+  temporal.bind();
   $('#clear-filters').addEventListener('click', () => {
-    state.search = ''; state.crimeType = 'all'; state.status = 'all'; state.timeWindow = 'all';
-    $('#search').value = ''; populateFilters(); applyFilters();
+    state.search = ''; state.crimeType = 'all'; state.status = 'all';
+    $('#search').value = ''; populateFilters(); temporal.resetDefault();
   });
   $$('[data-theme-choice]').forEach((button) => button.addEventListener('click', () => setTheme(button.dataset.themeChoice)));
   $$('[data-mode]').forEach((button) => button.addEventListener('click', () => setMapMode(button.dataset.mode)));
