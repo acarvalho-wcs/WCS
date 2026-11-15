@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-11-15T15:02:59.804Z",
+  "generated_at": "2026-11-15T15:03:57.993Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -7111,6 +7111,189 @@
       "keywords": [
         "Aurum",
         "Amazonas"
+      ]
+    },
+    {
+      "id": "BR-RO-2026-1103-VIGILIA",
+      "title": {
+        "pt": "Vigília prende três suspeitos e inutiliza caminhão com madeira",
+        "en": "Vigília arrests three and disables a timber truck",
+        "es": "Vigília detiene a tres e inutiliza un camión con madera"
+      },
+      "summary": {
+        "pt": "Entre 2 e 3/11, a PF e parceiros prenderam três pessoas e inutilizaram caminhão com madeira na TI Igarapé Lage.",
+        "en": "On November 2–3, police and partners arrested three people and disabled a timber truck in Igarapé Lage territory.",
+        "es": "El 2 y 3 de noviembre, la policía y aliados detuvieron a tres personas e inutilizaron un camión maderero en Igarapé Lage."
+      },
+      "case_context": {
+        "pt": "[O] Entre 2 e 3/11, a PF e parceiros prenderam três pessoas e inutilizaram caminhão com madeira na TI Igarapé Lage.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/operacao-integrada-prende-tres-pessoas-e-inutiliza-caminhao-com-madeira-retirada-de-terra-indigena-em-nova-mamore-ro",
+        "en": "[O] On November 2–3, police and partners arrested three people and disabled a timber truck in Igarapé Lage territory.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/operacao-integrada-prende-tres-pessoas-e-inutiliza-caminhao-com-madeira-retirada-de-terra-indigena-em-nova-mamore-ro",
+        "es": "[O] El 2 y 3 de noviembre, la policía y aliados detuvieron a tres personas e inutilizaron un camión maderero en Igarapé Lage.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/operacao-integrada-prende-tres-pessoas-e-inutiliza-caminhao-com-madeira-retirada-de-terra-indigena-em-nova-mamore-ro"
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": "Vigília",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "priority": "HIGH",
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Officially reported investigation/action; guilt is not inferred.",
+      "occurred_at": "2026-11-03T12:00:00-04:00",
+      "occurred_at_precision": "day confirmed, clock time unknown",
+      "published_at": "2026-11-03T12:00:00-04:00",
+      "added_at": "2026-11-15T15:03:57.993Z",
+      "updated_at": "2026-11-15T15:03:57.993Z",
+      "backfill": true,
+      "location": {
+        "name": "TI Igarapé Lage, Nova Mamoré (municipal reference)",
+        "admin1": "Rondônia",
+        "country": "Brazil",
+        "lat": -10.4093,
+        "lon": -65.3268,
+        "precision": "regional_approximate",
+        "geo_source": "Reference, not exact police site."
+      },
+      "protected_area": {
+        "is_protected_area": true,
+        "name": "TI Igarapé Lage"
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/operacao-integrada-prende-tres-pessoas-e-inutiliza-caminhao-com-madeira-retirada-de-terra-indigena-em-nova-mamore-ro",
+          "published_at": "2026-11-03T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Vigília"
+      ]
+    },
+    {
+      "id": "BR-RR-2026-1105-BURUBURU-II",
+      "title": {
+        "pt": "Buruburu II investiga patrimônio ligado ao garimpo na TI Yanomami",
+        "en": "Buruburu II probes assets linked to Yanomami mining",
+        "es": "Buruburu II investiga activos vinculados a minería Yanomami"
+      },
+      "summary": {
+        "pt": "PF cumpriu três mandados em Santarém e Goiânia e aplicou medidas patrimoniais superiores a R$ 248 milhões por suspeita de mineração e lavagem.",
+        "en": "Police executed three warrants in Santarém and Goiânia with asset measures exceeding BRL 248 million in a mining and laundering probe.",
+        "es": "La Policía Federal ejecutó tres registros en Santarém y Goiânia y medidas sobre más de R$ 248 millones por presunta minería y lavado."
+      },
+      "case_context": {
+        "pt": "[O] PF cumpriu três mandados em Santarém e Goiânia e aplicou medidas patrimoniais superiores a R$ 248 milhões por suspeita de mineração e lavagem.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-deflagra-operacao-contra-garimpo-ilegal-e-lavagem-de-capitais/",
+        "en": "[O] Police executed three warrants in Santarém and Goiânia with asset measures exceeding BRL 248 million in a mining and laundering probe.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-deflagra-operacao-contra-garimpo-ilegal-e-lavagem-de-capitais/",
+        "es": "[O] La Policía Federal ejecutó tres registros en Santarém y Goiânia y medidas sobre más de R$ 248 millones por presunta minería y lavado.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-deflagra-operacao-contra-garimpo-ilegal-e-lavagem-de-capitais/"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Buruburu — fase 2",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "priority": "HIGH",
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Officially reported investigation/action; guilt is not inferred.",
+      "occurred_at": "2026-11-05T12:00:00-04:00",
+      "occurred_at_precision": "day confirmed, clock time unknown",
+      "published_at": "2026-11-05T12:00:00-04:00",
+      "added_at": "2026-11-15T15:03:57.993Z",
+      "updated_at": "2026-11-15T15:03:57.993Z",
+      "backfill": true,
+      "location": {
+        "name": "Santarém, Pará (site of one warrant; other in Goiânia)",
+        "admin1": "Pará",
+        "country": "Brazil",
+        "lat": -2.438,
+        "lon": -54.699,
+        "precision": "regional_approximate",
+        "geo_source": "Reference, not exact police site."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-deflagra-operacao-contra-garimpo-ilegal-e-lavagem-de-capitais/",
+          "published_at": "2026-11-05T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Buruburu — fase 2"
+      ]
+    },
+    {
+      "id": "BR-AC-2026-1106-USURPARE-V",
+      "title": {
+        "pt": "Usurpare V combate invasões e desmatamento no Acre",
+        "en": "Usurpare V targets land incursions and clearing in Acre",
+        "es": "Usurpare V combate invasiones y deforestación en Acre"
+      },
+      "summary": {
+        "pt": "PF e órgãos parceiros atuaram no PAE Porto Dias, Acrelândia, contra suspeitas de invasão, desmatamento e abertura de ramais ilegais.",
+        "en": "Federal Police and partner agencies acted in Porto Dias, Acrelândia, against suspected invasions, forest clearing and illegal tracks.",
+        "es": "La Policía Federal y otras entidades intervinieron en Porto Dias, Acrelândia, por invasiones, deforestación y caminos ilegales."
+      },
+      "case_context": {
+        "pt": "[O] PF e órgãos parceiros atuaram no PAE Porto Dias, Acrelândia, contra suspeitas de invasão, desmatamento e abertura de ramais ilegais.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-deflagra-operacao-para-combater-invasoes-e-desmatamento-em-acrelandia-ac",
+        "en": "[O] Federal Police and partner agencies acted in Porto Dias, Acrelândia, against suspected invasions, forest clearing and illegal tracks.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-deflagra-operacao-para-combater-invasoes-e-desmatamento-em-acrelandia-ac",
+        "es": "[O] La Policía Federal y otras entidades intervinieron en Porto Dias, Acrelândia, por invasiones, deforestación y caminos ilegales.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-deflagra-operacao-para-combater-invasoes-e-desmatamento-em-acrelandia-ac"
+      },
+      "primary_crime_type": "ILLEGAL_DEFORESTATION",
+      "crime_types": [
+        "ILLEGAL_DEFORESTATION"
+      ],
+      "operation_name": "Usurpare V",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "priority": "HIGH",
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Officially reported investigation/action; guilt is not inferred.",
+      "occurred_at": "2026-11-06T12:00:00-04:00",
+      "occurred_at_precision": "day confirmed, clock time unknown",
+      "published_at": "2026-11-06T12:00:00-04:00",
+      "added_at": "2026-11-15T15:03:57.993Z",
+      "updated_at": "2026-11-15T15:03:57.993Z",
+      "backfill": true,
+      "location": {
+        "name": "PAE Porto Dias, Acrelândia (municipal reference)",
+        "admin1": "Acre",
+        "country": "Brazil",
+        "lat": -9.828,
+        "lon": -66.897,
+        "precision": "regional_approximate",
+        "geo_source": "Reference, not exact police site."
+      },
+      "protected_area": {
+        "is_protected_area": false,
+        "name": null
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "publisher": "Polícia Federal",
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/11/pf-deflagra-operacao-para-combater-invasoes-e-desmatamento-em-acrelandia-ac",
+          "published_at": "2026-11-06T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Usurpare V"
       ]
     }
   ]
