@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-11-15T15:04:41.565Z",
+  "generated_at": "2026-11-15T15:05:24.433Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -7725,6 +7725,94 @@
         "Fiscalização Ibama Roraima (dez dias, multissetorial)"
       ],
       "evidence_notes": "Ten-day multi-area aggregate; counted once."
+    },
+    {
+      "id": "PE-MDD-2026-1104-EL-INFIERNO",
+      "title": {
+        "pt": "Comando Unificado destrói 16 balsas de mineração ilegal em El Infierno",
+        "en": "Unified Command destroys 16 illegal-mining rafts in El Infierno",
+        "es": "Comando Unificado destruye 16 balsas de minería ilegal en El Infierno"
+      },
+      "summary": {
+        "pt": "Em 04/11, a PNP e parceiros inutilizaram 16 balsas, 13 motores submersos e oito acampamentos em El Infierno, Inambari.",
+        "en": "On November 4, police and partners disabled 16 rafts, 13 submerged motors and eight camps in El Infierno, Inambari.",
+        "es": "El 4 de noviembre, la PNP y aliados inutilizaron 16 balsas, 13 motores sumergidos y ocho campamentos en El Infierno, Inambari."
+      },
+      "case_context": {
+        "pt": "[O] Em 04/11, a PNP e parceiros inutilizaram 16 balsas, 13 motores submersos e oito acampamentos em El Infierno, Inambari.\nFontes: [O] https://elperuano.pe/noticia/308354-comando-unificado-destruye-bienes-e-infraestructura-de-la-mineria-ilegal-valorizados-en-s116-millones",
+        "en": "[O] On November 4, police and partners disabled 16 rafts, 13 submerged motors and eight camps in El Infierno, Inambari.\nSources: [O] https://elperuano.pe/noticia/308354-comando-unificado-destruye-bienes-e-infraestructura-de-la-mineria-ilegal-valorizados-en-s116-millones",
+        "es": "[O] El 4 de noviembre, la PNP y aliados inutilizaron 16 balsas, 13 motores sumergidos y ocho campamentos en El Infierno, Inambari.\nFuentes: [O] https://elperuano.pe/noticia/308354-comando-unificado-destruye-bienes-e-infraestructura-de-la-mineria-ilegal-valorizados-en-s116-millones"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Comando Unificado — El Infierno",
+      "agencies": [
+        "Policía Nacional del Perú",
+        "Ejército del Perú",
+        "Ministerio Público del Perú"
+      ],
+      "priority": "HIGH",
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "An enforcement action, not evidence of individual criminal guilt.",
+      "occurred_at": "2026-11-04T12:00:00-05:00",
+      "occurred_at_precision": "day confirmed; real operation reported between 03:00 and 12:00, displayed noon is a placeholder",
+      "published_at": "2026-11-04T18:59:00-05:00",
+      "added_at": "2026-11-15T15:05:24.433Z",
+      "updated_at": "2026-11-15T15:05:24.433Z",
+      "backfill": true,
+      "location": {
+        "name": "El Infierno, distrito de Inambari (district centroid reference)",
+        "admin1": "Madre de Dios",
+        "country": "Peru",
+        "lat": -12.9767,
+        "lon": -69.9388,
+        "precision": "district_reference_approximate",
+        "geo_source": "Inambari district reference only, not operation coordinates."
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "quantities": [
+        {
+          "item": "mining rafts destroyed",
+          "value": 16,
+          "unit": "units"
+        },
+        {
+          "item": "submerged engines destroyed",
+          "value": 13,
+          "unit": "units"
+        },
+        {
+          "item": "camps destroyed",
+          "value": 8,
+          "unit": "units"
+        },
+        {
+          "item": "reported asset value",
+          "value": 11629100,
+          "unit": "PEN"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Diario Oficial El Peruano",
+          "url": "https://elperuano.pe/noticia/308354-comando-unificado-destruye-bienes-e-infraestructura-de-la-mineria-ilegal-valorizados-en-s116-millones",
+          "published_at": "2026-11-04T18:59:00-05:00",
+          "source_type": "official",
+          "language": "es"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "El Infierno",
+        "Inambari",
+        "Madre de Dios",
+        "16 balsas"
+      ]
     }
   ]
 }
