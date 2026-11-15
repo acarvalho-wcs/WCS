@@ -10213,7 +10213,7 @@
       "legal_status_note": "Documented official action; any suspected offences are allegations, not findings of individual guilt.",
       "occurred_at": null,
       "occurred_at_precision": "exact occurrence day not reported",
-      "published_at": null,
+      "published_at": "2010-08-26T12:00:00-04:00",
       "added_at": "2026-11-15T20:00:00Z",
       "updated_at": "2026-11-15T20:00:00Z",
       "backfill": true,
@@ -10235,7 +10235,7 @@
         {
           "publisher": "Funai",
           "url": "https://www.gov.br/funai/pt-br/assuntos/noticias/2010/operacao-arco-de-fogo-conta-com-indigenas-cinta-larga-na-apreensao-de-madeiras-ilegais",
-          "published_at": null,
+          "published_at": "2010-08-26T12:00:00-04:00",
           "source_type": "official"
         }
       ],
@@ -10243,7 +10243,7 @@
       "keywords": [
         "Operação Arco de Fogo — fiscalização Cinta Larga"
       ],
-      "evidence_notes": "Official webpage shows 26 August 2010 publication, but operational day unspecified; occurred_at is currently a placeholder and should not be interpreted as verified."
+      "evidence_notes": "Source was published on 26 August 2010; actual intervention day not established, occurred_at remains null."
     },
     {
       "id": "BR-MT-2010-1007-ARCO-FOGO",
