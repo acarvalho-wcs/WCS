@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-11-15T15:06:11.625Z",
+  "generated_at": "2026-11-15T15:08:49.356Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -7838,6 +7838,89 @@
         "Madre de Dios",
         "16 balsas"
       ]
+    },
+    {
+      "id": "PE-LOR-2026-1031-ALTO-NANAY-FEMA",
+      "title": {
+        "pt": "Operação destrói cinco dragas no Alto Nanay, Loreto",
+        "en": "Operation destroys five mining dredges on Alto Nanay River, Loreto",
+        "es": "Operación destruye cinco dragas en Alto Nanay, Loreto"
+      },
+      "summary": {
+        "pt": "Entre 28 e 31/10, a Fiscalía Ambiental de Maynas e a Marinha peruana destruíram cinco dragas usadas presumivelmente na mineração ilegal no Alto Nanay, Loreto.",
+        "en": "Between October 28 and 31, Maynas environmental prosecutors and the Peruvian Navy destroyed five dredges allegedly used for illegal mining on Alto Nanay River, Loreto.",
+        "es": "Del 28 al 31 de octubre, la Fiscalía Ambiental de Maynas y la Marina del Perú destruyeron cinco dragas presuntamente utilizadas en minería ilegal en Alto Nanay, Loreto."
+      },
+      "case_context": {
+        "pt": "[O] Entre 28 e 31/10, a Fiscalía Ambiental de Maynas e a Marinha peruana destruíram cinco dragas usadas presumivelmente na mineração ilegal no Alto Nanay, Loreto.\nFontes: [O] https://www.desdeadentro.pe/2026/11/fema-y-marina-destruyen-5-dragas-de-la-mineria-ilegal-en-maynas/",
+        "en": "[O] Between October 28 and 31, Maynas environmental prosecutors and the Peruvian Navy destroyed five dredges allegedly used for illegal mining on Alto Nanay River, Loreto.\nSources: [O] https://www.desdeadentro.pe/2026/11/fema-y-marina-destruyen-5-dragas-de-la-mineria-ilegal-en-maynas/",
+        "es": "[O] Del 28 al 31 de octubre, la Fiscalía Ambiental de Maynas y la Marina del Perú destruyeron cinco dragas presuntamente utilizadas en minería ilegal en Alto Nanay, Loreto.\nFuentes: [O] https://www.desdeadentro.pe/2026/11/fema-y-marina-destruyen-5-dragas-de-la-mineria-ilegal-en-maynas/"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Fiscalía–Marina Alto Nanay",
+      "agencies": [
+        "Fiscalía Especializada en Materia Ambiental de Maynas",
+        "Marina de Guerra del Perú"
+      ],
+      "priority": "HIGH",
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Environmental enforcement reported by Fiscalía; criminal guilt is not inferred.",
+      "occurred_at": "2026-10-31T12:00:00-05:00",
+      "occurred_at_precision": "2026-10-28 to 2026-10-31 operation; end day selected; hour unspecified",
+      "published_at": "2026-11-03T12:00:00-05:00",
+      "added_at": "2026-11-15T15:08:49.356Z",
+      "updated_at": "2026-11-15T15:08:49.356Z",
+      "backfill": true,
+      "location": {
+        "name": "Alto Nanay, Loreto (Iquitos administrative reference)",
+        "admin1": "Loreto",
+        "country": "Peru",
+        "lat": -3.749,
+        "lon": -73.253,
+        "precision": "municipality_seat_reference_approximate",
+        "geo_source": "Iquitos administrative marker, not an exact Alto Nanay operation coordinate"
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "impacts": {
+        "water": true
+      },
+      "quantities": [
+        {
+          "item": "dredges destroyed",
+          "value": 5,
+          "unit": "units"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Desde Adentro / Ministerio Público",
+          "url": "https://www.desdeadentro.pe/2026/11/fema-y-marina-destruyen-5-dragas-de-la-mineria-ilegal-en-maynas/",
+          "published_at": "2026-11-03T12:00:00-05:00",
+          "source_type": "news",
+          "language": "es"
+        },
+        {
+          "publisher": "Rumbo Minero",
+          "url": "https://www.rumbominero.com/actualidad/mineria-ilegal-loreto-destruyen-cinco-dragas-el-alto-nanay/",
+          "published_at": "2026-11-03T12:00:00-05:00",
+          "source_type": "news",
+          "language": "es"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Alto Nanay",
+        "Loreto",
+        "5 dragas",
+        "FEMA Maynas"
+      ],
+      "evidence_notes": "Operation Oct 28–31 confirmed in both news accounts attributed to prosecutors; no invented routes or alleged networks."
     }
   ]
 }
