@@ -1,6 +1,6 @@
 {
   "schema_version": "0.6.9",
-  "generated_at": "2026-11-15T14:28:00.907Z",
+  "generated_at": "2026-11-15T15:02:36.004Z",
   "note": "Canonical Amazon Crimes event database. Maintained in GitHub and published automatically to the dashboard after validation.",
   "events": [
     {
@@ -6675,6 +6675,191 @@
         "validated_at": "2026-10-22T13:59:30.650Z",
         "context_updated_at": "2026-11-15T14:25:54.378Z"
       }
+    },
+    {
+      "id": "BR-PA-2026-1021-SALDO-ZERO",
+      "title": {
+        "pt": "Saldo Zero investiga comércio ilegal de madeira no Pará",
+        "en": "Saldo Zero probes illegal timber trade in Pará",
+        "es": "Saldo Zero investiga comercio ilegal de madera en Pará"
+      },
+      "summary": {
+        "pt": "PF e Ibama cumpriram cinco mandados em serrarias e outros imóveis de Anapu e São Domingos do Araguaia por suspeita de comércio ilegal de madeira.",
+        "en": "Federal Police and Ibama executed five warrants at timber businesses in Anapu and São Domingos do Araguaia over suspected illegal timber trade.",
+        "es": "Policía Federal e Ibama ejecutaron cinco órdenes en Anapu y São Domingos do Araguaia por sospechas de comercio ilegal de madera."
+      },
+      "case_context": {
+        "pt": "[O] PF e Ibama cumpriram cinco mandados em serrarias e outros imóveis de Anapu e São Domingos do Araguaia por suspeita de comércio ilegal de madeira.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-e-ibama-combatem-exploracao-e-venda-ilegais-de-madeira-no-para/",
+        "en": "[O] Federal Police and Ibama executed five warrants at timber businesses in Anapu and São Domingos do Araguaia over suspected illegal timber trade.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-e-ibama-combatem-exploracao-e-venda-ilegais-de-madeira-no-para/",
+        "es": "[O] Policía Federal e Ibama ejecutaron cinco órdenes en Anapu y São Domingos do Araguaia por sospechas de comercio ilegal de madera.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-e-ibama-combatem-exploracao-e-venda-ilegais-de-madeira-no-para/"
+      },
+      "primary_crime_type": "ILLEGAL_LOGGING",
+      "crime_types": [
+        "ILLEGAL_LOGGING"
+      ],
+      "operation_name": "Saldo Zero",
+      "agencies": [
+        "Polícia Federal",
+        "Ibama"
+      ],
+      "priority": "HIGH",
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official report of an investigation or operation, not a finding of criminal guilt.",
+      "occurred_at": "2026-10-21T12:00:00-04:00",
+      "occurred_at_precision": "day_confirmed_time_unknown_noon_placeholder",
+      "published_at": "2026-10-22T12:00:00-04:00",
+      "added_at": "2026-11-15T15:02:36.004Z",
+      "updated_at": "2026-11-15T15:02:36.004Z",
+      "backfill": true,
+      "location": {
+        "name": "Anapu, Pará (municipal reference)",
+        "admin1": "Pará",
+        "country": "Brazil",
+        "lat": -3.47,
+        "lon": -51.2,
+        "precision": "regional_approximate",
+        "geo_source": "Municipality or district reference, not exact intervention position."
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-e-ibama-combatem-exploracao-e-venda-ilegais-de-madeira-no-para/",
+          "publisher": "Polícia Federal",
+          "published_at": "2026-10-22T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Saldo Zero",
+        "Pará"
+      ]
+    },
+    {
+      "id": "BR-AM-2026-1027-FAGULHA",
+      "title": {
+        "pt": "Fagulha investiga incêndio e desmatamento no Amazonas",
+        "en": "Fagulha investigates suspected fires and forest clearing in Amazonas",
+        "es": "Fagulha investiga incendios y deforestación en Amazonas"
+      },
+      "summary": {
+        "pt": "PF cumpriu três mandados em Manaus após indícios de queimadas, degradação e supressão de vegetação em imóvel rural do Amazonas.",
+        "en": "Federal Police executed three warrants in Manaus investigating suspected burning and forest clearing at a rural property in Amazonas.",
+        "es": "La Policía Federal ejecutó tres órdenes en Manaos por indicios de quemas y deforestación en un inmueble rural de Amazonas."
+      },
+      "case_context": {
+        "pt": "[O] PF cumpriu três mandados em Manaus após indícios de queimadas, degradação e supressão de vegetação em imóvel rural do Amazonas.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-apura-crimes-ambientais-no-amazonas",
+        "en": "[O] Federal Police executed three warrants in Manaus investigating suspected burning and forest clearing at a rural property in Amazonas.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-apura-crimes-ambientais-no-amazonas",
+        "es": "[O] La Policía Federal ejecutó tres órdenes en Manaos por indicios de quemas y deforestación en un inmueble rural de Amazonas.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-apura-crimes-ambientais-no-amazonas"
+      },
+      "primary_crime_type": "ILLEGAL_DEFORESTATION",
+      "crime_types": [
+        "ILLEGAL_DEFORESTATION"
+      ],
+      "operation_name": "Fagulha",
+      "agencies": [
+        "Polícia Federal"
+      ],
+      "priority": "HIGH",
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official report of an investigation or operation, not a finding of criminal guilt.",
+      "occurred_at": "2026-10-27T12:00:00-04:00",
+      "occurred_at_precision": "day_confirmed_time_unknown_noon_placeholder",
+      "published_at": "2026-10-27T12:00:00-04:00",
+      "added_at": "2026-11-15T15:02:36.004Z",
+      "updated_at": "2026-11-15T15:02:36.004Z",
+      "backfill": true,
+      "location": {
+        "name": "Manaus (warrant locations; rural site unlocated)",
+        "admin1": "Amazonas",
+        "country": "Brazil",
+        "lat": -3.119,
+        "lon": -60.022,
+        "precision": "regional_approximate",
+        "geo_source": "Municipality or district reference, not exact intervention position."
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-apura-crimes-ambientais-no-amazonas",
+          "publisher": "Polícia Federal",
+          "published_at": "2026-10-27T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Fagulha",
+        "Amazonas"
+      ]
+    },
+    {
+      "id": "BR-RO-2026-1027-NEMESIS-I",
+      "title": {
+        "pt": "Nêmesis inutiliza 72 equipamentos de garimpo no rio Madeira",
+        "en": "Nêmesis disables 72 mining assets on Madeira River",
+        "es": "Nêmesis inutiliza 72 equipos mineros en el río Madeira"
+      },
+      "summary": {
+        "pt": "PF e Ibama inutilizaram 17 dragas e 55 outros equipamentos usados no garimpo ilegal entre Calama e São Carlos, no rio Madeira.",
+        "en": "Federal Police and Ibama disabled 17 dredges and 55 other illegal-mining assets between Calama and São Carlos on Madeira River.",
+        "es": "Policía Federal e Ibama inutilizaron 17 dragas y otros 55 equipos mineros entre Calama y São Carlos en el río Madeira."
+      },
+      "case_context": {
+        "pt": "[O] PF e Ibama inutilizaram 17 dragas e 55 outros equipamentos usados no garimpo ilegal entre Calama e São Carlos, no rio Madeira. [N] Reportagem registra balsas de garimpo no mesmo rio, sem identificar os participantes desta operação.\nFontes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-deflagram-operacao-e-inutilizam-72-embarcacoes-e-maquinarios-do-garimpo-ilegal-no-rio-madeira | [N] https://conexaoplaneta.com.br/blog/mais-de-500-balsas-do-garimpo-ilegal-sao-flagradas-no-rio-madeira/",
+        "en": "[O] Federal Police and Ibama disabled 17 dredges and 55 other illegal-mining assets between Calama and São Carlos on Madeira River. [N] Reporting documents mining rafts on the same river without identifying those involved in this operation.\nSources: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-deflagram-operacao-e-inutilizam-72-embarcacoes-e-maquinarios-do-garimpo-ilegal-no-rio-madeira | [N] https://conexaoplaneta.com.br/blog/mais-de-500-balsas-do-garimpo-ilegal-sao-flagradas-no-rio-madeira/",
+        "es": "[O] Policía Federal e Ibama inutilizaron 17 dragas y otros 55 equipos mineros entre Calama y São Carlos en el río Madeira. [N] Un reportaje documenta balsas mineras en el mismo río sin identificar a los participantes de este operativo.\nFuentes: [O] https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-deflagram-operacao-e-inutilizam-72-embarcacoes-e-maquinarios-do-garimpo-ilegal-no-rio-madeira | [N] https://conexaoplaneta.com.br/blog/mais-de-500-balsas-do-garimpo-ilegal-sao-flagradas-no-rio-madeira/"
+      },
+      "primary_crime_type": "ILLEGAL_MINING",
+      "crime_types": [
+        "ILLEGAL_MINING"
+      ],
+      "operation_name": "Nêmesis I",
+      "agencies": [
+        "Polícia Federal",
+        "Ibama"
+      ],
+      "priority": "HIGH",
+      "validation_status": "CONFIRMED",
+      "legal_status_note": "Official report of an investigation or operation, not a finding of criminal guilt.",
+      "occurred_at": "2026-10-27T12:00:00-04:00",
+      "occurred_at_precision": "day_confirmed_time_unknown_noon_placeholder",
+      "published_at": "2026-10-27T12:00:00-04:00",
+      "added_at": "2026-11-15T15:02:36.004Z",
+      "updated_at": "2026-11-15T15:02:36.004Z",
+      "backfill": true,
+      "location": {
+        "name": "Rio Madeira, Calama–São Carlos (regional reference)",
+        "admin1": "Rondônia",
+        "country": "Brazil",
+        "lat": -8.7608,
+        "lon": -63.8999,
+        "precision": "regional_approximate",
+        "geo_source": "Municipality or district reference, not exact intervention position."
+      },
+      "protected_area": {
+        "is_protected_area": false
+      },
+      "cross_border": false,
+      "sources": [
+        {
+          "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/10/pf-deflagram-operacao-e-inutilizam-72-embarcacoes-e-maquinarios-do-garimpo-ilegal-no-rio-madeira",
+          "publisher": "Polícia Federal",
+          "published_at": "2026-10-27T12:00:00-04:00",
+          "source_type": "official"
+        }
+      ],
+      "source_media": [],
+      "keywords": [
+        "Nêmesis I",
+        "Rondônia"
+      ]
     }
   ]
 }
