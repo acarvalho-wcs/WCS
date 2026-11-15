@@ -187,7 +187,7 @@ function setLanguage(next) {
   document.documentElement.lang = language === 'pt' ? 'pt-BR' : language;
   $$('[data-i18n]').forEach((el) => { el.textContent = t(el.dataset.i18n); });
   $$('[data-i18n-placeholder]').forEach((el) => { el.placeholder = t(el.dataset.i18nPlaceholder); });
-  $('.lang').forEach((button) => {const active=button.dataset.lang===language;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});
+  $$('.lang').forEach((button) => {const active=button.dataset.lang===language;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});
   populateFilters();
   renderLayerPanel();
   render();
