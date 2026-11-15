@@ -99,7 +99,16 @@ for (const [index, event] of events.entries()) {
     }
   }
 
-  for (const field of ['occurred_at', 'published_at', 'added_at', 'updated_at']) {
+  // Historical sources may establish a publication day without documenting the
+  // exact operation day. Preserve that uncertainty instead of inventing a date.
+  if (event?.occurred_at == null) {
+    if (!/unknown|not reported|not specified|not verified|unconfirmed/i.test(String(event?.occurred_at_precision || ''))) {
+      fail(`${id}: null occurred_at requires an explicit unknown-day precision note`);
+    }
+  } else if (!isValidDate(event.occurred_at)) {
+    fail(`${id}: occurred_at must be a valid timestamp or null for an unknown day`);
+  }
+  for (const field of ['published_at', 'added_at', 'updated_at']) {
     if (!isValidDate(event?.[field])) fail(`${id}: ${field} must be a valid timestamp`);
   }
 
