@@ -705,3 +705,13 @@ body.how-it-works-open { overflow: hidden; }
 .mosaic-directory-item { display: flex; gap: 6px; flex-direction: column; padding: 8px 4px; border-bottom: 1px solid var(--line); font-size: 10px; line-height: 1.4; color: var(--text); text-decoration: none; }
 .mosaic-directory-item:hover { color: var(--green-2); }
 .mosaic-directory-item small { font-size: 9px; color: var(--muted); }
+
+/* Independently selectable Amazonian mosaics reconstructed from REMAP WCS 2026. */
+.mosaic-layer-row { display:flex; justify-content:space-between; align-items:center; gap:8px; border-bottom:1px solid var(--line); padding:8px 3px; font-size:10px; color:var(--text); cursor:pointer; }
+.mosaic-layer-label { display:flex; align-items:center; min-width:0; gap:9px; line-height:1.35; }
+.mosaic-layer-label input { width:14px; height:14px; margin:0; accent-color:var(--green); flex:0 0 auto; }
+.mosaic-layer-swatch { background:var(--swatch); width:12px; height:12px; border:1px solid rgba(0,0,0,.24); border-radius:3px; flex:0 0 auto; }
+.mosaic-layer-row small { color:var(--muted); font-size:9px; }
+.mosaic-popup strong { display:block; margin-bottom:8px; font-size:13px; }
+.mosaic-popup p { font-size:11px; line-height:1.5; margin:0 0 7px; }
+.mosaic-popup small { color:var(--muted); font-size:10px; }
