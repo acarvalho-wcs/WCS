@@ -1,0 +1,48 @@
+{
+  "source": "REMAP WCS A0 PDF, cartographic reconstruction, SIRGAS 2000",
+  "crs": "EPSG:4674",
+  "mosaics": [
+    {
+      "id": "mosaic-01",
+      "label": "Mosaico Lago de Tucuruí",
+      "file": "./data/mosaics/mosaic-01.geojson",
+      "legend_number": 1
+    },
+    {
+      "id": "mosaic-12",
+      "label": "Mosaico Apuí",
+      "file": "./data/mosaics/mosaic-12.geojson",
+      "legend_number": 12
+    },
+    {
+      "id": "mosaic-16",
+      "label": "Mosaico Baixo Rio Negro",
+      "file": "./data/mosaics/mosaic-16.geojson",
+      "legend_number": 16
+    },
+    {
+      "id": "mosaic-20",
+      "label": "Mosaico da Amazônia Meridional",
+      "file": "./data/mosaics/mosaic-20.geojson",
+      "legend_number": 20
+    },
+    {
+      "id": "mosaic-22",
+      "label": "Mosaico da Amazônia Oriental",
+      "file": "./data/mosaics/mosaic-22.geojson",
+      "legend_number": 22
+    },
+    {
+      "id": "mosaic-28",
+      "label": "Mosaico do Baixo Rio Madeira",
+      "file": "./data/mosaics/mosaic-28.geojson",
+      "legend_number": 28
+    },
+    {
+      "id": "mosaic-30",
+      "label": "Mosaico do Gurupi",
+      "file": "./data/mosaics/mosaic-30.geojson",
+      "legend_number": 30
+    }
+  ]
+}
