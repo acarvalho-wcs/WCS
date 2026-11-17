@@ -31,6 +31,9 @@ let mapResyncNonce = 0;
 let camera2d = null;
 let cameraGlobe = null;
 const htmlLayerMarkers = new Map();
+// DOM event pins remain visible independently from style/projection GeoJSON circles.
+// Event cards and canonical source data are unchanged.
+const eventHtmlMarkers = new Map();
 const htmlMarkerLayerIds = new Set(['weather_stations', 'river_gauges', 'armed_groups', 'clandestine_airstrips', 'public_routes']);
 
 // Layer state is intentionally session-scoped. Persisting visibility caused stale/empty
@@ -123,12 +126,14 @@ function initMap() {
   map.addControl(new maplibregl.NavigationControl({ visualizePitch: true }), 'bottom-right');
   map.addControl(new maplibregl.ScaleControl({ maxWidth: 120, unit: 'metric' }), 'bottom-left');
   map.on('load', () => {
+    syncEventHtmlMarkers();
     rebuildMapData();
     applyMapMode(false);
     fitInitialEventsOnce();
     scheduleMapResync('initial-load', 60);
   });
   map.on('style.load', () => {
+    syncEventHtmlMarkers();
     rebuildMapData();
     applyMapMode(false);
     scheduleMapResync('style-load', 90);
@@ -236,6 +241,7 @@ function matchesNonTemporal(event) {
 
 function applyFilters() {
   filteredEvents = events.filter((event) => matchesNonTemporal(event) && temporal.matches(event));
+  syncEventHtmlMarkers();
   render();
 }
 
@@ -271,6 +277,44 @@ function eventsGeoJson() {
     }];
   });
   return { type: 'FeatureCollection', features };
+}
+
+// Maintain native MapLibre DOM markers as a safety net for browsers where
+// symbol/circle layers fail to reappear after a globe or basemap style change.
+function syncEventHtmlMarkers() {
+  if (!map || !maplibregl?.Marker) return;
+  const wanted = new Set();
+  for (const event of filteredEvents) {
+    const category = event.primary_crime_type || 'OTHER_ENVIRONMENTAL_CRIME';
+    if (!activeCrimeLayers.has(category)) continue;
+    const lon = Number(event.location?.lon), lat = Number(event.location?.lat);
+    if (!Number.isFinite(lon) || !Number.isFinite(lat) || lat < -90 || lat > 90 || lon < -180 || lon > 180) continue;
+    wanted.add(event.id);
+    let entry = eventHtmlMarkers.get(event.id);
+    if (!entry) {
+      const element = document.createElement('button');
+      element.type = 'button';
+      element.className = 'event-html-pin';
+      element.style.setProperty('--event-pin-color', crimeTypeMeta[category]?.color || '#7f8c8d');
+      element.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        openEventPopup(event, { lng: lon, lat });
+      });
+      const marker = new maplibregl.Marker({ element, anchor: 'center' })
+        .setLngLat([lon, lat]).addTo(map);
+      entry = { marker, element };
+      eventHtmlMarkers.set(event.id, entry);
+    }
+    entry.element.classList.toggle('recent', isRecent(event));
+    entry.element.setAttribute('aria-label', localized(event.title) || event.id);
+    entry.element.title = localized(event.title) || event.id;
+  }
+  for (const [id, entry] of eventHtmlMarkers) {
+    if (wanted.has(id)) continue;
+    entry.marker.remove();
+    eventHtmlMarkers.delete(id);
+  }
 }
 
 function radiosGeoJson() {
@@ -433,6 +477,9 @@ function rebuildMapData() {
   addAuxCircleLayer('radio_stations', 'radios', auxMeta.radio_stations.color, 3.4, 7.2);
   addAuxCircleLayer('public_cameras', 'cameras', auxMeta.public_cameras.color, 3.4, 7.2);
   addAuxLineLayer('public_routes', 'public-routes', auxMeta.public_routes.color);
+  // Always prioritize crime records over environmental fills and auxiliary layers.
+  if (map.getLayer('crime-events')) map.moveLayer('crime-events');
+  syncEventHtmlMarkers();
   syncHtmlLayerMarkers();
   updateLayerVisibility();
 }
@@ -611,6 +658,7 @@ function updateMapData() {
 }
 
 function updateLayerVisibility() {
+  syncEventHtmlMarkers();
   $('#active-layer-count').textContent = String(activeCrimeLayers.size + activeAuxLayers.size + activeMosaics.size + 1);
   $$('.crime-layer-toggle').forEach((input) => { input.checked = activeCrimeLayers.has(input.value); });
   $$('.aux-layer-toggle').forEach((input) => { input.checked = activeAuxLayers.has(input.value); });
@@ -1339,6 +1387,7 @@ window.__amazonMapHealth = () => {
     mapConstructed:Boolean(map),styleLoaded:loaded,
     mapCanvas:Boolean(canvas),mapError:node?.querySelector('.map-unavailable')?.textContent||null,
     layer:Boolean(layer),source:Boolean(source),visible,rendered,sourceFeatureCount,
+    htmlEventMarkers:eventHtmlMarkers.size,
     mapElementSize:node?{width:node.getBoundingClientRect().width,height:node.getBoundingClientRect().height}:null,
     zoom:map?.getZoom?.(),center:map?.getCenter?.().toArray?.(),renderError,
     territorial:territorialOverlays.map(spec=>({id:spec.id,enabled:activeAuxLayers.has(spec.id),layer:!!map?.getLayer?.('territory-'+spec.id),source:!!map?.getSource?.(spec.source||'territory-source-'+spec.id),visibility:map?.getLayer?.('territory-'+spec.id)?map.getLayoutProperty('territory-'+spec.id,'visibility'):null,tiles:spec.tiles?.[0]?.slice(0,180)}))
