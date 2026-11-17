@@ -715,3 +715,15 @@ body.how-it-works-open { overflow: hidden; }
 .mosaic-popup strong { display:block; margin-bottom:8px; font-size:13px; }
 .mosaic-popup p { font-size:11px; line-height:1.5; margin:0 0 7px; }
 .mosaic-popup small { color:var(--muted); font-size:10px; }
+
+/* Resilient DOM-rendered event dots: these survive MapLibre style/projection resets. */
+.event-html-pin {
+  display:block; box-sizing:border-box; width:11px; height:11px; padding:0;
+  border-radius:50%; border:1.6px solid #ffffff; background:var(--event-pin-color, #77b8ff);
+  box-shadow:0 0 0 1px rgba(0,0,0,.75),0 1px 4px rgba(0,0,0,.55);
+  cursor:pointer; pointer-events:auto;
+}
+.event-html-pin.recent { width:13px; height:13px; background:#ff4f64; }
+.event-html-pin:hover,.event-html-pin:focus-visible {
+  width:17px; height:17px; outline:2px solid #ffffff; outline-offset:2px; z-index:1;
+}
