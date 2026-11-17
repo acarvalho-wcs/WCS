@@ -614,7 +614,7 @@ function updateLayerVisibility() {
   $('#active-layer-count').textContent = String(activeCrimeLayers.size + activeAuxLayers.size + activeMosaics.size + 1);
   $$('.crime-layer-toggle').forEach((input) => { input.checked = activeCrimeLayers.has(input.value); });
   $('.aux-layer-toggle').forEach((input) => { input.checked = activeAuxLayers.has(input.value); });
-  $('.mosaic-layer-toggle').forEach((input) => { input.checked = activeMosaics.has(input.value); });
+  $$('.mosaic-layer-toggle').forEach((input) => { input.checked = activeMosaics.has(input.value); });
   if (!map) return;
 
   // The style can finish loading after an earlier layer rebuild. Repair any
@@ -1139,7 +1139,7 @@ function renderLayerPanel() {
     if (input.checked) { activeAuxLayers.add(input.value); if (!territorialOverlayIds.has(input.value)) loadDynamicLayer(input.value); } else activeAuxLayers.delete(input.value);
     updateLayerVisibility();
   }));
-  $('.mosaic-layer-toggle').forEach((input) => input.addEventListener('change', () => toggleMosaic(input.value, input.checked)));
+  $$('.mosaic-layer-toggle').forEach((input) => input.addEventListener('change', () => toggleMosaic(input.value, input.checked)));
 }
 
 function setTheme(next) {
