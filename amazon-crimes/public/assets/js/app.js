@@ -3,6 +3,7 @@ import { preferredLanguage, selectLanguage, listenLanguage } from './language-pr
 import { createTemporalFilter } from './temporal-filter.js?v=20261115-lastyear';
 import { crimeTypes, crimeTypeMeta, mapConfig, futureLayerGroups } from './config.js';
 import { territorialOverlays, territorialOverlayIds, installTerritorialOverlays, setTerritorialVisibility } from './territorial-overlays.js?v=20261115-wms-vector-fix';
+import { mosaicDefinitions, mosaicStatus, fetchMosaic, installMosaicLayers, syncMosaicLayers, refreshMosaicData, interactiveMosaicLayerIds, mosaicByLayer, mosaicExtent } from './amazon-mosaics.js?v=20261117-remap-v1';
 
 let language = preferredLanguage();
 let mapTheme = localStorage.getItem('amazon-observatory-theme') || 'dark';
@@ -36,6 +37,8 @@ const htmlMarkerLayerIds = new Set(['weather_stations', 'river_gauges', 'armed_g
 // layer selections to survive reloads and make valid events disappear from the map.
 const activeCrimeLayers = new Set(crimeTypes);
 const activeAuxLayers = new Set();
+const activeMosaics = new Set();
+const mosaicErrors = new Map();
 const state = { search: '', crimeType: 'all', status: 'all' };
 let initialEventFitDone = false;
 
@@ -424,6 +427,7 @@ function rebuildMapData() {
   }
 
   installTerritorialOverlays(map, activeAuxLayers, mapTheme);
+  installMosaicLayers(map, activeMosaics, mapTheme);
   addAuxCircleLayer('fire_hotspots', 'fire-hotspots', auxMeta.fire_hotspots.color, 2.2, 5.2);
   addDeforestationLayer();
   addAuxCircleLayer('radio_stations', 'radios', auxMeta.radio_stations.color, 3.4, 7.2);
@@ -607,9 +611,10 @@ function updateMapData() {
 }
 
 function updateLayerVisibility() {
-  $('#active-layer-count').textContent = String(activeCrimeLayers.size + activeAuxLayers.size + 1);
+  $('#active-layer-count').textContent = String(activeCrimeLayers.size + activeAuxLayers.size + activeMosaics.size + 1);
   $$('.crime-layer-toggle').forEach((input) => { input.checked = activeCrimeLayers.has(input.value); });
-  $$('.aux-layer-toggle').forEach((input) => { input.checked = activeAuxLayers.has(input.value); });
+  $('.aux-layer-toggle').forEach((input) => { input.checked = activeAuxLayers.has(input.value); });
+  $('.mosaic-layer-toggle').forEach((input) => { input.checked = activeMosaics.has(input.value); });
   if (!map) return;
 
   // The style can finish loading after an earlier layer rebuild. Repair any
@@ -621,6 +626,7 @@ function updateLayerVisibility() {
   }
   setTerritorialVisibility(map, activeAuxLayers);
   if (!map.isStyleLoaded()) return;
+  syncMosaicLayers(map, activeMosaics, mapTheme);
   const crimeLayer = 'crime-events';
   if (map.getLayer(crimeLayer)) {
     map.setLayoutProperty(crimeLayer, 'visibility', activeCrimeLayers.size ? 'visible' : 'none');
@@ -646,6 +652,7 @@ function interactiveLayerIds() {
   if (activeAuxLayers.has('fire_hotspots') && map.getLayer('aux-fire_hotspots')) ids.push('aux-fire_hotspots');
   if (activeAuxLayers.has('public_routes') && map.getLayer('aux-public_routes')) ids.push('aux-public_routes');
   if (activeAuxLayers.has('deforestation_alerts') && map.getLayer('aux-deforestation_alerts')) ids.push('aux-deforestation_alerts');
+  ids.push(...interactiveMosaicLayerIds(map, activeMosaics));
   return ids;
 }
 
@@ -654,6 +661,20 @@ function handleMapClick(e) {
   if (!candidateLayers.length) return;
   const feature = map.queryRenderedFeatures(e.point, { layers: candidateLayers })[0];
   if (!feature) return;
+  const mosaic = mosaicByLayer(feature.layer.id);
+  if (mosaic) {
+    closePopup();
+    const note = {
+      pt: 'Limite reconstruído de mapa PDF georreferenciado (REMAP/WCS, 2026). Não substitui a geometria oficial para análises jurídicas ou de precisão.',
+      en: 'Boundary reconstructed from a georeferenced PDF map (REMAP/WCS, 2026). Not an authoritative legal or precision GIS boundary.',
+      es: 'Límite reconstruido de un mapa PDF georreferenciado (REMAP/WCS, 2026). No sustituye la geometría oficial para análisis jurídicos o de precisión.'
+    }[language];
+    activePopup = new maplibregl.Popup({ closeButton: true, maxWidth: '340px', offset: 12 })
+      .setLngLat(e.lngLat)
+      .setHTML(`<div class="mosaic-popup"><strong>${escapeHtml(mosaic.name)}</strong><p>${escapeHtml(note)}</p><small>REMAP WCS · 2026 · ${mosaic.number}</small></div>`)
+      .addTo(map);
+    return;
+  }
   const kind = feature.properties.source_kind;
   if (kind === 'crime') {
     const event = events.find((item) => item.id === feature.properties.id);
@@ -1026,36 +1047,60 @@ function renderSignals() {
   $('#signal-crossborder').textContent = filteredEvents.filter((e) => e.cross_border === true).length;
 }
 
-// Mosaics are referenced individually, but not drawn as invented legal boundaries.
-// No click on a mosaic should be interpreted as a spatial overlap analysis.
-const amazonMosaics = [
-  { name: 'Baixo Rio Negro', law: 'Portaria MMA 483/2010',
-    url: 'https://www.gov.br/icmbio/pt-br/assuntos/mosaicos-e-corredores-ecologicos/mosaicos-federais-reconhecidos' },
-  { name: 'Amazônia Meridional', law: 'Portaria MMA 332/2011',
-    url: 'https://www.gov.br/icmbio/pt-br/assuntos/mosaicos-e-corredores-ecologicos/mosaicos-federais-reconhecidos' },
-  { name: 'Oeste do Amapá e Norte do Pará', law: 'Portaria MMA 4/2013',
-    url: 'https://www.gov.br/icmbio/pt-br/assuntos/mosaicos-e-corredores-ecologicos/mosaicos-federais-reconhecidos' },
-  { name: 'Baixo Rio Madeira', law: 'Portaria MMA 1.331/2025',
-    url: 'https://www.gov.br/icmbio/pt-br/assuntos/mosaicos-e-corredores-ecologicos/mosaicos-federais-reconhecidos' },
-  { name: 'Gurupi', law: 'Portaria MMA 1.443/2025',
-    url: 'https://www.gov.br/icmbio/pt-br/assuntos/mosaicos-e-corredores-ecologicos/mosaicos-federais-reconhecidos' },
-  { name: 'Apuí', law: 'Mosaico estadual — Amazonas',
-    url: 'https://www.sema.am.gov.br/programa-arpa/' },
-  { name: 'Lago de Tucuruí', law: 'Mosaico estadual — Pará',
-    url: 'https://ideflorbio.pa.gov.br/nossas-unidades/' },
-  { name: 'Complexo do Rio Gregório', law: 'Decreto estadual 3.433/2008 — Acre',
-    url: 'https://sema.ac.gov.br/departamentos-e-divisoes/divisao-de-areas-naturais-protegidas-e-biodiversidade/' }
-];
+// Only the seven Amazonian mosaics geometrically reconstructed from the REMAP PDF.
+// Each independently switchable map layer preserves the user's current theme and 2D/globe view.
 function renderMosaicCatalog() {
-  const label = { pt: 'Mosaicos de áreas protegidas', en: 'Protected-area mosaics', es: 'Mosaicos de áreas protegidas' }[language];
+  const label = { pt: 'Mosaicos da Amazônia', en: 'Amazonian mosaics', es: 'Mosaicos amazónicos' }[language];
   const note = {
-    pt: 'Referências oficiais. Os limites cartográficos dos mosaicos ainda não estão disponíveis neste mapa.',
-    en: 'Official references. Mosaic boundaries are not yet available on this map.',
-    es: 'Referencias oficiales. Los límites cartográficos de los mosaicos aún no están disponibles en este mapa.'
+    pt: 'Sete mosaicos do REMAP/WCS (2026). Limites vetoriais reconstruídos de PDF: cartográficos, não cadastrais.',
+    en: 'Seven REMAP/WCS mosaics (2026). PDF-reconstructed vector boundaries: cartographic, not cadastral.',
+    es: 'Siete mosaicos REMAP/WCS (2026). Límites vectoriales reconstruidos de PDF: cartográficos, no catastrales.'
   }[language];
-  return `<details class="mosaic-directory"><summary>${escapeHtml(label)} (${amazonMosaics.length})</summary><p class="mosaic-directory-note">${escapeHtml(note)}</p>
-    ${amazonMosaics.map((item) => `<a href="${escapeAttr(item.url)}" target="_blank" rel="noopener noreferrer" class="mosaic-directory-item"><span>${escapeHtml(item.name)}</span><small>${escapeHtml(item.law)}</small></a>`).join('')}
-  </details>`;
+  const rows = mosaicDefinitions.map((mosaic) => {
+    const status = mosaicErrors.has(mosaic.id) ? t('unavailable') : mosaicStatus(mosaic.id) === 'loading' ? t('loading') : '';
+    return `<label class="mosaic-layer-row"><span class="mosaic-layer-label">
+      <input type="checkbox" class="mosaic-layer-toggle" value="${escapeAttr(mosaic.id)}" ${activeMosaics.has(mosaic.id) ? 'checked' : ''}>
+      <span class="mosaic-layer-swatch" style="--swatch:${mosaic.color}"></span>
+      <span>${escapeHtml(mosaic.name)}</span>
+      </span><small>${escapeHtml(status)}</small></label>`;
+  }).join('');
+  return `<details class="mosaic-directory" open><summary>${escapeHtml(label)} (${mosaicDefinitions.length})</summary>
+    <p class="mosaic-directory-note">${escapeHtml(note)}</p>${rows}</details>`;
+}
+
+async function toggleMosaic(id, enabled) {
+  if (!mosaicDefinitions.some(item => item.id === id)) return;
+  mosaicErrors.delete(id);
+  if (!enabled) {
+    activeMosaics.delete(id);
+    updateLayerVisibility();
+    renderLayerPanel();
+    return;
+  }
+  activeMosaics.add(id);
+  updateLayerVisibility();
+  renderLayerPanel();
+  try {
+    await fetchMosaic(id);
+    if (!activeMosaics.has(id)) return;
+    if (map?.isStyleLoaded()) {
+      installMosaicLayers(map, activeMosaics, mapTheme);
+      refreshMosaicData(map, id);
+      syncMosaicLayers(map, activeMosaics, mapTheme);
+      const extent = mosaicExtent(id);
+      if (extent && mapMode === '2d') {
+        map.fitBounds(extent, { padding: 64, maxZoom: 7, duration: 650 });
+      } else if (extent && mapMode === 'globe') {
+        map.easeTo({ center: [(extent[0][0]+extent[1][0])/2, (extent[0][1]+extent[1][1])/2], zoom: 4, duration: 650 });
+      }
+    }
+  } catch (error) {
+    console.warn('REMAP mosaic could not be loaded:', id, error);
+    mosaicErrors.set(id, String(error?.message || error));
+    activeMosaics.delete(id);
+  }
+  updateLayerVisibility();
+  renderLayerPanel();
 }
 
 function renderLayerPanel() {
@@ -1090,10 +1135,11 @@ function renderLayerPanel() {
     return `<details class="future-group" ${['environment_realtime', 'extractive_pressure', 'sensors_media', 'territories'].includes(group.id) ? 'open' : ''}><summary>${escapeHtml(groupLabel)}</summary>${layers}${status}</details>`;
   }).join('');
 
-  $$('.aux-layer-toggle').forEach((input) => input.addEventListener('change', () => {
+  $('.aux-layer-toggle').forEach((input) => input.addEventListener('change', () => {
     if (input.checked) { activeAuxLayers.add(input.value); if (!territorialOverlayIds.has(input.value)) loadDynamicLayer(input.value); } else activeAuxLayers.delete(input.value);
     updateLayerVisibility();
   }));
+  $('.mosaic-layer-toggle').forEach((input) => input.addEventListener('change', () => toggleMosaic(input.value, input.checked)));
 }
 
 function setTheme(next) {
