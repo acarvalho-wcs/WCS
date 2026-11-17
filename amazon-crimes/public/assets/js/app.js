@@ -613,7 +613,7 @@ function updateMapData() {
 function updateLayerVisibility() {
   $('#active-layer-count').textContent = String(activeCrimeLayers.size + activeAuxLayers.size + activeMosaics.size + 1);
   $$('.crime-layer-toggle').forEach((input) => { input.checked = activeCrimeLayers.has(input.value); });
-  $('.aux-layer-toggle').forEach((input) => { input.checked = activeAuxLayers.has(input.value); });
+  $$('.aux-layer-toggle').forEach((input) => { input.checked = activeAuxLayers.has(input.value); });
   $$('.mosaic-layer-toggle').forEach((input) => { input.checked = activeMosaics.has(input.value); });
   if (!map) return;
 
@@ -1135,7 +1135,7 @@ function renderLayerPanel() {
     return `<details class="future-group" ${['environment_realtime', 'extractive_pressure', 'sensors_media', 'territories'].includes(group.id) ? 'open' : ''}><summary>${escapeHtml(groupLabel)}</summary>${layers}${status}</details>`;
   }).join('');
 
-  $('.aux-layer-toggle').forEach((input) => input.addEventListener('change', () => {
+  $$('.aux-layer-toggle').forEach((input) => input.addEventListener('change', () => {
     if (input.checked) { activeAuxLayers.add(input.value); if (!territorialOverlayIds.has(input.value)) loadDynamicLayer(input.value); } else activeAuxLayers.delete(input.value);
     updateLayerVisibility();
   }));
